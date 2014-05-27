@@ -17,38 +17,24 @@
 
         <h1>LE PLATEAU - MONT ROYAL</h1>
 
-        <section class="ac-container">
-            <div>
-                <input id="ac-1" name="accordion" type="radio">
-                <label for="ac-1">Great Photos</label>
-                <article class="ac-large">
-                    <div class="viewer">
-                        <div class="fotorama" data-arrows="true">
-                            <img src="http://s.fotorama.io/1.jpg">
-                            <img src="http://s.fotorama.io/2.jpg">
-                        </div>
-                    </div>
-                </article>
+        <div class="viewer">
+            <div class="fotorama" data-arrows="true" data-width="100%">
+                <img src="http://s.fotorama.io/1.jpg">
+                <img src="http://s.fotorama.io/2.jpg">
             </div>
-            <div>
-                <input id="ac-2" name="accordion" type="radio">
-                <label for="ac-2">The Map</label>
-                <article class="ac-large">
-                    <div class="viewer">
-                        <iframe src="http://www.openstreetmap.org/export/embed.html"></iframe>
-                        <div class="btn-group-vertical ico">
-                            <button type="button" class="btn btn-default"><i class="fa fa-university"></i></button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-building"></i></button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-compass"></i></button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-graduation-cap"></i></button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-tree"></i></button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-ambulance"></i></button>
-                            <button type="button" class="btn btn-default"><i class="fa fa-usd"></i></button>
-                        </div>
-                    </div>
-                </article>
+        </div>
+        <div class="viewer map">
+            <div class="mapbar"><i class="fa fa-compass"></i> Map</div>
+            <iframe src="http://www.openstreetmap.org/export/embed.html"></iframe>
+            <div class="btn-group-vertical ico">
+                <button type="button" class="btn btn-default"><i class="fa fa-university"></i></button>
+                <button type="button" class="btn btn-default"><i class="fa fa-building"></i></button>
+                <button type="button" class="btn btn-default"><i class="fa fa-graduation-cap"></i></button>
+                <button type="button" class="btn btn-default"><i class="fa fa-tree"></i></button>
+                <button type="button" class="btn btn-default"><i class="fa fa-ambulance"></i></button>
+                <button type="button" class="btn btn-default"><i class="fa fa-usd"></i></button>
             </div>
-        </section>
+        </div>
 
     </body>
 </html>

@@ -8,65 +8,34 @@
     src: url(http://themes.googleusercontent.com/static/fonts/montserrat/v4/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff);
 }
 
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 body {
     text-align: center;
     font-family: 'Montserrat';
     font-size: 1em;
     font-weight: normal;
     color: @font_color;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
-.ac-container {
-    width: 100%;
-    margin: 32px auto;
-
-    label {
-        font-family: 'Montserrat';
-        padding: 6px 20px;
-        position: relative;
-        z-index: 20;
-        display: block;
-        height: 40px;
-        cursor: pointer;
-        color: #777;
-        line-height: 32px;
-        font-size: 20px;
-        border-top: 1px solid #BBB;
-
-        :hover {
-            background: #FFF;
-        }
-    }
-
-    input:checked + label, input:checked + label:hover {
-        //background: #F2F2F2;
-    }
-
-    article {
-        background: rgba(255, 255, 255, 0.5);
-        margin-top: -1;
-        overflow: hidden;
-        height: 0;
-        position: relative;
-        z-index: 10;
-        transition: height .3s;
-    }
-
-    input {
-        display: none;
-    }
-
-    input:checked ~ article.ac-large {
-        height: 520px;
-    }
-
+h1 {
+    height: 64px;
+    line-height: 60px;
+    margin: 0;
 }
 
 .viewer {
-    //max-width: 960px;
     width: 100%;
+    height: 100%;
+    margin-top: -64px;
     margin: 0 auto;
-    text-align: left;
     clear: both;
     position: relative;
     text-align: center;
@@ -75,9 +44,28 @@ body {
         box-sizing: border-box;
         width: 100%;
         //padding-left: 64px;
-        height: 540px;
+        height: 100%;
         border: none;
         margin-bottom: 8px;
+    }
+
+    &.map {
+        position: absolute;
+        top: 100%;
+
+        .mapbar {
+            width: 100%;
+            height: 64px;
+            top: -64px;
+            position: absolute;
+            background: white;
+            font-size: 36px;
+            text-align: left;
+            padding-left: 16px;
+            line-height: 60px;
+            cursor: pointer;
+        }
+
     }
 
     .ico {
