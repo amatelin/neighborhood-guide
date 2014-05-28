@@ -14,11 +14,12 @@
         <script src="./js/jquery-2.1.1.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/fotorama.js"></script>
-        <script src="./js/quartier.js"></script>
+        <script src="./js/handlebars-v1.3.0.js"></script>
         <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
         </script>
         <script src="./js/map.js"></script>
+        <script src="./js/quartier.js"></script>
 
         <h1>LE PLATEAU - MONT ROYAL</h1>
 
@@ -56,17 +57,29 @@
                         <img class="mini" src="./img/resto.jpg">
                         <span class="stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
                         <h3>Au Petit Bigorneau</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                     <div class="item">
                         <img class="mini" src="./img/resto.jpg">
                         <span class="stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
                         <h3>Plaisir des Moules</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script id="item-template" type="text/x-handlebars-template">
+            {{#each infos}}
+                <div class="item">
+                    <img class="mini" src="./img/{{this.url}}.jpg">
+                    <span class="stars">{{#times this.stars}} <i class="fa fa-star"></i>{{/times}}</span>
+                    <h3>{{this.name}}</h3>
+                    <p>{{this.desc}}</p>
+                </div>
+            {{/each}}
+        </script>
+
 
     </body>
 </html>
