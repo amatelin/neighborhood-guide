@@ -68,7 +68,7 @@ h1 {
         position: absolute;
         top: 100%;
         transition: top .3s;
-        top: 64px;
+        //top: 64px;
 
         .mapbar {
             width: 100%;
@@ -98,8 +98,22 @@ h1 {
             overflow-x: hidden;
             text-align: left;
             font-size: 14px;
+            display: none;
+            //transition: opacity .3s;
+
+            .panel-heading {
+                .right {
+                    float: right;
+                    //font-size: 16px;
+                    opacity: 1;
+                    width: 8px;
+                    line-height: 20px;
+                    cursor: pointer;
+                }
+            }
 
             .item {
+                margin-bottom: 16px;
 
                 .stars {
                     float: right;
