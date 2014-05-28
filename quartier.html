@@ -14,17 +14,22 @@
         <script src="/js/jquery-2.1.1.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/fotorama.js"></script>
+        <script src="/js/quartier.js"></script>
 
         <h1>LE PLATEAU - MONT ROYAL</h1>
 
         <div class="viewer">
-            <div class="fotorama" data-arrows="true" data-width="100%">
-                <img src="http://s.fotorama.io/1.jpg">
-                <img src="http://s.fotorama.io/2.jpg">
+            <div class="fotorama" data-arrows="true" data-width="100%" data-nav="false">
+                <img src="/img/mont3.jpg">
+                <img src="/img/mont1.jpg">
+                <img src="/img/mont2.jpg">
+            </div>
+            <div class="shadow">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
         </div>
-        <div class="viewer map">
-            <div class="mapbar"><i class="fa fa-compass"></i> Map</div>
+        <div id="map" class="viewer">
+            <div class="mapbar"><i class="fa fa-compass"></i> Map<span class="right">LE PLATEAU</span></div>
             <iframe src="http://www.openstreetmap.org/export/embed.html"></iframe>
             <div class="btn-group-vertical ico">
                 <button type="button" class="btn btn-default"><i class="fa fa-university"></i></button>

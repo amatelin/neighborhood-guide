@@ -1,12 +1,13 @@
 
 @font_color: #2C3E50;
-
+/*
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: bold;
     src: url(http://themes.googleusercontent.com/static/fonts/montserrat/v4/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff);
-}
+}*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 html {
     height: 100%;
@@ -29,6 +30,7 @@ h1 {
     height: 64px;
     line-height: 60px;
     margin: 0;
+    font-weight: bold;
 }
 
 .viewer {
@@ -49,9 +51,24 @@ h1 {
         margin-bottom: 8px;
     }
 
-    &.map {
+    .shadow {
+        position: absolute;
+        height: 100%;
+        background: rgba(0, 0, 0, .7);
+        width: 380px;
+        top: 0;
+        right: 64px;
+        padding: 16px 32px;
+        color: white;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    &#map {
         position: absolute;
         top: 100%;
+        transition: top .3s;
+        //top: 64px;
 
         .mapbar {
             width: 100%;
@@ -64,8 +81,15 @@ h1 {
             padding-left: 16px;
             line-height: 60px;
             cursor: pointer;
+            font-weight: bold;
         }
 
+        .right {
+            float: right;
+            padding-right: 16px;
+            opacity: 0;
+            transition: opacity .3s;
+        }
     }
 
     .ico {
