@@ -88,6 +88,11 @@ h1 {
   text-align: left;
   font-size: 14px;
 }
+.viewer#map .panel .item .stars {
+  float: right;
+  color: gold;
+  line-height: 14px;
+}
 .viewer#map .panel .item .mini {
   width: 100px;
   height: 75px;

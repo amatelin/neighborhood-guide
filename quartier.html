@@ -15,6 +15,10 @@
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/fotorama.js"></script>
         <script src="./js/quartier.js"></script>
+        <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
+        </script>
+        <script src="./js/map.js"></script>
 
         <h1>LE PLATEAU - MONT ROYAL</h1>
 
@@ -30,7 +34,7 @@
         </div>
         <div id="map" class="viewer">
             <div class="mapbar"><i class="fa fa-compass"></i> Map<span class="right">LE PLATEAU</span></div>
-            <iframe src="http://www.openstreetmap.org/export/embed.html"></iframe>
+            <div id="map_canvas"></div>
             <div class="btn-group ico">
                 <div class="btn-group">
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cutlery"></i></button>
@@ -56,6 +60,7 @@
                 <div class="panel-body">
                     <div class="item">
                         <img class="mini" src="./img/resto.jpg">
+                        <span class="stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
                         <h3>Au Petit Bigorneau</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
                     </div>
