@@ -71,11 +71,17 @@ hr.star-primary:after {
     color: #2C3E50;
     background-color: #fff;
 }
-
+nav .navbar .navbar-default .navbar-fixed-top > .container{
+    padding:0;
+    margin:0;
+}
 .img-centered {
     margin: 0 auto;
 }
 
+/**
+*HEADER
+**/
 header {
     text-align: center;
     color: #fff;
@@ -86,11 +92,6 @@ header {
     z-index: -1;
 }
 
-header .container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 header img {
     display: block;
     margin: 0 auto 20px;
@@ -98,10 +99,10 @@ header img {
 
 header .intro-text{
     /*margin-top:475px;*/
-    margin-top: -35px;
+    margin-top: -150px;
     margin-left:-80px;
     color:#fff;
-    background:rgba(42,68,80,0.7);
+    background:rgba(42,68,80,0.8);
     border-radius: 20px;
 }
 header .intro-text .name {
@@ -133,6 +134,10 @@ header .intro-text .skills {
     }
 }
 
+
+/**
+*NAVBAR
+**/
 @media(min-width:768px) {
     .navbar-fixed-top {
         padding: 25px 0;
@@ -143,9 +148,10 @@ header .intro-text .skills {
 
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
+        padding:0;
+        margin: 15px 0 -15px 0;
+        margin-left: 0;
+
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -179,7 +185,22 @@ header .intro-text .skills {
 .navbar-inverse {
     border: 0;
 }
+nav{
+    opacity:0;
+}
+.displayed{
+    display: inline;
+}
+.not-displayed{
+    display:none;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+}
 
+/**
+*SECTION
+**/
 section {
     padding: 100px 0;
 }
@@ -204,6 +225,9 @@ section.success {
     }
 }
 
+/**
+*PORTFOLIO
+**/
 #portfolio .portfolio-item {
     right: 0;
     margin-top: 45px;
@@ -269,6 +293,9 @@ section.success {
     }
 }
 
+/**
+*FORMULAIRE CONTRIBUTE
+**/
 .btn-outline {
     margin-top: 15px;
     border: solid 2px #fff;
@@ -346,6 +373,39 @@ section.success {
 form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee;
 }
+#contribute{
+    background-color: #18bc9c;
+}
+#contribute h2{
+    color:#fff;
+}
+.form-control{
+    color:#fff;
+}
+.btn-success{
+    background-color:#fff;
+    border-color:#fff;
+    color:#18bc9c;
+}
+.form-control::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:  1;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:  1;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #fff;
+}
+
+
+/**
+*FOOTER
+**/
 
 footer {
     color: #fff;
@@ -407,6 +467,9 @@ footer .footer-below {
     outline: 0;
 }
 
+/**
+*PORTFOLIO-MODAL
+**/
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -465,47 +528,3 @@ footer .footer-below {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-
-#contribute{
-    background-color: #18bc9c;
-}
-#contribute h2{
-    color:#fff;
-}
-.form-control{
-    color:#fff;
-}
-
-.btn-success{
-    background-color:#fff;
-    border-color:#fff;
-    color:#18bc9c;
-}
-
-.form-control::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #fff;
-}
-.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #fff;
-    opacity:  1;
-}
-.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #fff;
-    opacity:  1;
-}
-.form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #fff;
-}
-.img-info{
-    bottom:0; 
-    height:25px;
-    width:100%;
-    background-color: black;
-    color:#fff;
-    margin-top: 20px;
-    opacity:0.55;
-}
-/*.img-info:hover{
-    height:500px;
-    opacity:1;
-}*/

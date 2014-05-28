@@ -24,3 +24,29 @@ $(function() {
 $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
+
+$(window).load(function(){
+    var nav = $('nav');
+    var temp = $(window).scrollTop();
+    var neigh =$('#neighborhoods-list');
+    if(temp >= 1200){
+            nav.removeClass('not-displayed');
+            nav.addClass('displayed');            
+            nav.animate({opacity:"1"},"slow");
+            neigh.animate({'margin-top':"150px"},"slow");
+    }
+    $(window).scroll(function(e){
+        if($(window).scrollTop() >= 1200 && nav.hasClass('not-displayed')){
+            nav.removeClass('not-displayed');
+            nav.addClass('displayed');            
+            nav.animate({opacity:"1"},"slow");
+            neigh.animate({'margin-top':"150px"},"slow");
+        }
+        else if($(window).scrollTop() <= 1199 && nav.hasClass('displayed')){
+           nav.animate({opacity:"0"},"slow");
+           nav.addClass('not-displayed');
+           nav.removeClass('displayed');
+           neigh.animate({'margin-top':"0px"},"slow");
+        }
+    });
+});
