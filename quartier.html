@@ -31,13 +31,35 @@
         <div id="map" class="viewer">
             <div class="mapbar"><i class="fa fa-compass"></i> Map<span class="right">LE PLATEAU</span></div>
             <iframe src="http://www.openstreetmap.org/export/embed.html"></iframe>
-            <div class="btn-group-vertical ico">
-                <button type="button" class="btn btn-default"><i class="fa fa-university"></i></button>
+            <div class="btn-group ico">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cutlery"></i></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Café</a></li>
+                    </ul>
+                </div>
                 <button type="button" class="btn btn-default"><i class="fa fa-building"></i></button>
                 <button type="button" class="btn btn-default"><i class="fa fa-graduation-cap"></i></button>
                 <button type="button" class="btn btn-default"><i class="fa fa-tree"></i></button>
                 <button type="button" class="btn btn-default"><i class="fa fa-ambulance"></i></button>
-                <button type="button" class="btn btn-default"><i class="fa fa-usd"></i></button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="fa fa-usd"></i></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Dropdown link</a></li>
+                        <li><a href="#">Dropdown link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Restaurant</div>
+                <div class="panel-body">
+                    <div class="item">
+                        <img class="mini" src="./img/resto.jpg">
+                        <h3>Au Petit Bigorneau</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                    </div>
+                </div>
             </div>
         </div>
 
