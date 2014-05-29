@@ -241,6 +241,7 @@ section.success {
     background-color: rgba(44,62,80,0.1);
     border-radius: 9px;
     margin-top: -4px;
+    padding-bottom: 15px;
 }
 
 .title{
