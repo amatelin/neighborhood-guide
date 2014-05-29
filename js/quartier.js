@@ -104,6 +104,12 @@ $(function() {
 
     var top = false
 
+    $('#showMap').click(function() {
+        $('#map').css('top', '114px')
+        $('#map').find('.right').css('opacity', top ? '0' : '1')
+        top = !top
+    })
+
     $('#map').find('.mapbar').click(function() {
         $('#map').css('top', top ? '100%' : '114px')
         $('#map').find('.right').css('opacity', top ? '0' : '1')
