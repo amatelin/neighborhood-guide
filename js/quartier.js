@@ -1,5 +1,22 @@
-
 var datas = [
+    {
+        name:'Bons Plans',
+        infos: [
+            {
+                name: 'La distillerie',
+                stars: 4,
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+                url: 'resto'
+            },
+            {
+                name: 'Le rouge',
+                stars: 3,
+                desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+                url: 'resto'
+            },
+        ]
+
+    },
     {
         name:'Restaurant',
         infos: [
@@ -42,9 +59,7 @@ var datas = [
         ]
 
     }
-
 ]
-
 
 // Display Infos
 $(function() {
@@ -78,16 +93,28 @@ $(function() {
         console.log('Undefined items ' + search)
     })
 
+    $('nav').css('display','displayed');
+    $('.navbar').css('opacity','1');
 })
+
+
 
 // Display Map
 $(function() {
+
     var top = false
 
     $('#map').find('.mapbar').click(function() {
-        $('#map').css('top', top ? '100%' : '64px')
+        $('#map').css('top', top ? '100%' : '114px')
         $('#map').find('.right').css('opacity', top ? '0' : '1')
         top = !top
-        $('.panel').first().css('display', 'none')
+        if(top){
+            var source   = $('#item-template').html()
+            var template = Handlebars.compile(source)
+            var html = template(datas[0])
+            $('.panel').children('.panel-heading').children('span').html(datas[0].name)
+            $('.panel').children('.panel-body').html(html)
+            $('.panel').first().css('display', 'block')
+        }
     })
 })

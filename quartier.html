@@ -7,20 +7,58 @@
         <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
         <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="./css/fotorama.css">
+        <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/quartier.css">
     </head>
     <body>
 
         <script src="./js/jquery-2.1.1.min.js"></script>
         <script src="./js/bootstrap.min.js"></script>
-        <script src="./js/fotorama.js"></script>
         <script src="./js/handlebars-v1.3.0.js"></script>
+        <script src="./js/fotorama.js"></script>
+        <script src="./js/quartier.js"></script>
         <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
         </script>
         <script src="./js/map.js"></script>
-        <script src="./js/quartier.js"></script>
 
+        <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="logo"></span>
+                <a class="navbar-brand" href="#page-top">NestFinder Guide</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#neighborhoods-list">Visiter les quartiers</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contribute">Contribuer</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">A propos</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div id="presentation">
         <h1>LE PLATEAU - MONT ROYAL</h1>
 
         <div class="viewer">
@@ -33,6 +71,8 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
         </div>
+    </div>
+
         <div id="map" class="viewer">
             <div class="mapbar"><i class="fa fa-compass"></i> Map<span class="right">LE PLATEAU</span></div>
             <div id="map_canvas"></div>
@@ -51,18 +91,18 @@
                 <button type="button" class="btn btn-default"><i class="fa fa-usd"></i></button>
             </div>
             <div class="panel panel-default">
-                <div class="panel-heading"><span>Restaurant</span><i class="fa fa-times right"></i></div>
+                <div class="panel-heading"><span>Bons plans</span><i class="fa fa-times right"></i></div>
                 <div class="panel-body">
                     <div class="item">
                         <img class="mini" src="./img/resto.jpg">
                         <span class="stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
-                        <h3>Au Petit Bigorneau</h3>
+                        <h3>La distillerie</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                     <div class="item">
                         <img class="mini" src="./img/resto.jpg">
                         <span class="stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
-                        <h3>Plaisir des Moules</h3>
+                        <h3>Le rouge</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
                     </div>
                 </div>
@@ -79,7 +119,6 @@
                 </div>
             {{/each}}
         </script>
-
 
     </body>
 </html>
