@@ -1,3 +1,7 @@
+html, body{
+    height:100%;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -85,26 +89,52 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
 header {
     text-align: center;
     color: #fff;
-    height:900px;
-    background-image: url('../img/montreal.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 900px;
-    z-index: -1;    
+    z-index: -1;
+    height: 100%;
+    background-image: url("../img/montreal2.jpg");
+   -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+
+}
+
+header .container {
+    padding-top: 0px;
+    padding-bottom: 50px;
+    width: 800px;
 }
 
 header img {
     display: block;
     margin: 0 auto 20px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -khtml-border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+
+header .gps-image {
+    display: block;
+    border-color: rgba(42,68,80,1);
+    border-width: 5px;
+    border-style: solid;
+    margin: 0 auto 20px;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -khtml-border-radius: 30px;
+    -webkit-border-radius: 30px;
 }
 
 header .intro-text{
-    /*margin-top:475px;*/
-    margin-top: -150px;
-    margin-left:-80px;
+
+    padding: 15px;
     color:#fff;
     background:rgba(42,68,80,0.8);
     border-radius: 20px;
+    width: 800px;
 }
+
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
@@ -122,11 +152,11 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     header .container {
-        padding: 200px 0 100px;
+        padding: 50px 0 100px;
     }
 
     header .intro-text .name {
-        font-size: 5em;
+        font-size: 4.6em;
     }
 
     header .intro-text .skills {
