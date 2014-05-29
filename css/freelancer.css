@@ -210,8 +210,12 @@ header .intro-text .skills {
     letter-spacing: 1px;
 }
 
-.navbar .navbar-nav li a:focus {
+.navbar .navbar-nav li a{
+    color:white;
+}
+.navbar .navbar-nav li a:hover {
     outline: 0;
+    background-color: #233140;    
 }
 
 .navbar-default,
@@ -238,6 +242,11 @@ nav{
 
 .navbar-header{
     margin-top: -25px;
+}
+
+.my-navbar-default{
+    background-color:#2C3E50;
+    color:white;
 }
 
 /**
@@ -272,8 +281,8 @@ section.success {
 **/
 .neigh{
     background-color: rgba(44,62,80,0.1);
-    border-radius: 9px;
-    margin-top: -4px;
+    border-radius: 9px;    
+    margin-top: -3px;
     padding-bottom: 15px;
 }
 
@@ -474,6 +483,12 @@ form .row:first-child .floating-label-form-group {
     border-color:#fff;
     color:#18bc9c;
 }
+.btn-success:hover{
+    background-color:#128F76;
+    border-color:#128F76;
+}
+
+
 .form-control::-webkit-input-placeholder { /* WebKit browsers */
     color:    #fff;
 }
