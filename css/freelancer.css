@@ -85,11 +85,11 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
 header {
     text-align: center;
     color: #fff;
-    height:1200px;
+    height:900px;
     background-image: url('../img/montreal.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 1200px;
-    z-index: -1;
+    background-size: 100% 900px;
+    z-index: -1;    
 }
 
 header img {
@@ -186,8 +186,8 @@ header .intro-text .skills {
     border: 0;
 }
 nav{
-    opacity:0;
-      height: 50px;
+    opacity:1;
+    height: 50px;
 }
 .displayed{
     display: inline;
@@ -211,7 +211,7 @@ nav{
 *SECTION
 **/
 section {
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 section h2 {
@@ -237,17 +237,50 @@ section.success {
 /**
 *PORTFOLIO
 **/
-.neighborhoods-wrapper h4{
-    margin-top: 50px;
+.neigh{
+    background-color: rgba(44,62,80,0.1);
+    border-radius: 9px;
+    margin-top: -4px;
 }
-#neighborhoods-list{
-    margin-top:100px;
+
+.title{
+    nowrap:none;
+}
+
+.tab{
+    margin-top:50px;   
+}
+
+.tab>ul>li {
+    display:inline;
+    list-style: none;
+    border-style: solid solid none solid;
+    border-color: rgba(44,62,80,0.1);
+    border-width:1px;
+    margin-left: -5px;
+    padding: 8px 15px;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.active {        
+    background-color: rgba(44,62,80,0.1);
+    color:#2C3E50;
+}
+
+.tab>ul>li>h4{
+    cursor:pointer;
+    margin:0;
+    padding:0;
+    display:inline;
 }
 
 #portfolio .portfolio-item {
     right: 0;
-    margin-top: 45px;
-    margin: 0 0 15px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -572,7 +605,7 @@ span.title {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgba(30,30,30,0.8);
+    background: rgba(50,50,50,0.8);
     text-align: center;
     padding: 5px 0 4px;
     font-size: 14px;
