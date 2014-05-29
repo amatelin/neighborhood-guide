@@ -97,17 +97,22 @@ $(function() {
     $('.navbar').css('opacity','1');
 })
 
-
-
 // Display Map
 $(function() {
 
-    var top = false
+    var top = false,
+        dist = '114px'
 
-    $('#map').find('.mapbar').click(function() {
-        $('#map').css('top', top ? '100%' : '114px')
+    $('#showMap').click(function() {
+        $('#map').css('top', dist)
         $('#map').find('.right').css('opacity', top ? '0' : '1')
         top = !top
+    })
+
+    $('#map').find('.mapbar').click(function() {
+        $('#map').css('top', top ? '100%' : dist)
+        $('#map').find('.right').css('opacity', top ? '0' : '1')
+        window.setTimeout(function() {top = !top}, 300)
         if(top){
             var source   = $('#item-template').html()
             var template = Handlebars.compile(source)
@@ -116,5 +121,14 @@ $(function() {
             $('.panel').children('.panel-body').html(html)
             $('.panel').first().css('display', 'block')
         }
+    })
+
+    $('#map').mouseenter(function() {
+        if (top) {
+            return
+        }
+        $('#map').css('top', top ? '100%' : dist)
+        $('#map').find('.right').css('opacity', top ? '0' : '1')
+        top = !top
     })
 })
