@@ -27,7 +27,7 @@ $('body').scrollspy({
 
 
 function navScroll(){
-    var headerPictureSize = parseInt($('header').css('background-size').split(' ')[1].split('p')[0]);
+    var headerPictureSize = parseInt($('header').css('height'));
     var nav = $('nav');
     var actualPosition = $(window).scrollTop();
 
@@ -66,6 +66,7 @@ function tabNavigation(){
 }
 
 $(window).load(function(){
+    console.log('test');
     navScroll();
     tabNavigation();   
 });
