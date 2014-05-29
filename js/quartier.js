@@ -101,10 +101,10 @@ $(function() {
 $(function() {
 
     var top = false,
-        dist = '146px'
+        dist = '165px'
 
     $('#showMap').click(function() {
-        $('#map').css('top', '114px')
+        $('#map').css('top', dist)
         $('#map').find('.right').css('opacity', top ? '0' : '1')
         top = !top
     })
