@@ -1,3 +1,7 @@
+html, body{
+    height:100%;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -85,9 +89,8 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
 header {
     text-align: center;
     color: #fff;
-    height:1000px;
     z-index: -1;
-    xbackground: #18bc9c;
+    height: 100%;
     background-image: url("../img/montreal2.jpg");
    -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
