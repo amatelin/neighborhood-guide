@@ -103,6 +103,12 @@ $(function() {
     var top = false,
         dist = '146px'
 
+    $('#showMap').click(function() {
+        $('#map').css('top', '114px')
+        $('#map').find('.right').css('opacity', top ? '0' : '1')
+        top = !top
+    })
+
     $('#map').find('.mapbar').click(function() {
         $('#map').css('top', top ? '100%' : dist)
         $('#map').find('.right').css('opacity', top ? '0' : '1')
