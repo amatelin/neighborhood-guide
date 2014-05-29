@@ -3,13 +3,13 @@ var datas = [
         name:'Bons Plans',
         infos: [
             {
-                name: 'La distillerie',
-                stars: 4,
+                name: 'La Distillerie',
+                stars: 0,
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
                 url: 'resto'
             },
             {
-                name: 'Le rouge',
+                name: 'Le Rouge',
                 stars: 3,
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
                 url: 'resto'
