@@ -169,9 +169,7 @@ header .log-form{
     margin-left: -100px;
     color:#233140;
 }
-header .log-form label{
-    color:#fff;
-}
+header .log-form label,
 header .checkbox{
     color:#fff;
 }
@@ -183,17 +181,23 @@ header #submit:hover{
     background-color:#233140;
     color:#fff;
 }
-header .form-control::-moz-placeholder{
+header .form-control{
     color:#233140;
 }
+header .form-control::-moz-placeholder {
+    color:rgba(44,62,80,0.5);
+}
 header .form-control::-webkit-input-placeholder {
-    color:    #233140;
+    color:rgba(44,62,80,0.5);
 }
 header .form-control:-moz-placeholder {
-    color:    #233140;
+    color:rgba(44,62,80,0.5);
 }
 header .form-control:-ms-input-placeholder {
-    color:    #233140;
+    color:rgba(44,62,80,0.5);
+}
+header fieldset{
+    margin-top: 50px;
 }
 @media(min-width:768px) {
     header .container {
