@@ -122,6 +122,7 @@ nav {
   text-align: left;
   font-size: 14px;
 }
+
 .viewer#map {
   position: absolute;
   top: 100%;
@@ -211,17 +212,15 @@ nav {
 
 #showMap {
   margin-top: 10px;
-  margin-left: 20%;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  background-color: white;
+  margin-left: 25%;
+  /*  Text dimensions
+  width: 316px;
+  height: 316px; */
+  width:158px;
+  height: 158px;
   opacity: 0.75;
-  font-size: 16px;
-  line-height: 210%;
 }
 
-#showMap i {
-  vertical-align: middle;
-  font-size: 30px;
+#showMap:hover {
+  cursor: pointer;
 }

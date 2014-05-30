@@ -282,7 +282,7 @@ section.success {
 .neigh{
     background-color: rgba(44,62,80,0.1);
     border-radius: 9px;    
-    margin-top: -3px;
+    margin-top: -4px;
     padding-bottom: 15px;
 }
 
@@ -487,8 +487,6 @@ form .row:first-child .floating-label-form-group {
     background-color:#128F76;
     border-color:#128F76;
 }
-
-
 .form-control::-webkit-input-placeholder { /* WebKit browsers */
     color:    #fff;
 }
