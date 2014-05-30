@@ -140,7 +140,7 @@ nav {
   line-height: 60px;
   cursor: pointer;
   font-weight: bold;
-  box-shadow: 0 0 10px rgba(64, 64, 64, .8);
+  box-shadow: 0 8px 10px -10px rgba(64, 64, 64, .8);
 }
 .viewer#map .dropdown-menu {
   text-align: left;
