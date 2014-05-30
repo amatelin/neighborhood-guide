@@ -183,6 +183,18 @@ header #submit:hover{
     background-color:#233140;
     color:#fff;
 }
+header .form-control::-moz-placeholder{
+    color:#233140;
+}
+header .form-control::-webkit-input-placeholder {
+    color:    #233140;
+}
+header .form-control:-moz-placeholder {
+    color:    #233140;
+}
+header .form-control:-ms-input-placeholder {
+    color:    #233140;
+}
 @media(min-width:768px) {
     header .container {
         padding: 150px 0 100px;
@@ -196,7 +208,6 @@ header #submit:hover{
         font-size: 1.75em;
     }
 }
-
 
 /**
 *NAVBAR
