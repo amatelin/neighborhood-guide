@@ -66,7 +66,6 @@ function tabNavigation(){
 }
 
 $(window).load(function(){
-    console.log('test');
     navScroll();
     tabNavigation();   
 });
