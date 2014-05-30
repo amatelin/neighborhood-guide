@@ -101,7 +101,7 @@ $(function() {
 $(function() {
 
     var top = false,
-        dist = '114px'
+        dist = '146px'
 
     $('#showMap').click(function() {
         $('#map').css('top', dist)
