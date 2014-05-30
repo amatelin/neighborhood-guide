@@ -106,12 +106,14 @@ $(function() {
     $('#showMap').click(function() {
         $('#map').css('top', dist)
         $('#map').find('.right').css('opacity', top ? '0' : '1')
+        $('#map').find('.piti') .css('opacity', top ? '1' : '0')
         top = !top
     })
 
     $('#map').find('.mapbar').click(function() {
         $('#map').css('top', top ? '100%' : dist)
         $('#map').find('.right').css('opacity', top ? '0' : '1')
+        $('#map').find('.piti') .css('opacity', top ? '1' : '0')
         window.setTimeout(function() {top = !top}, 300)
         if(top){
             var source   = $('#item-template').html()
@@ -123,6 +125,7 @@ $(function() {
         }
     })
 
+    /*
     $('#map').mouseenter(function() {
         if (top) {
             return
@@ -130,5 +133,5 @@ $(function() {
         $('#map').css('top', top ? '100%' : dist)
         $('#map').find('.right').css('opacity', top ? '0' : '1')
         top = !top
-    })
+    })//*/
 })
