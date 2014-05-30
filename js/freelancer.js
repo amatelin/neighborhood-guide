@@ -24,3 +24,50 @@ $(function() {
 $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
+
+
+function navScroll(){
+    var headerPictureSize = parseInt($('header').css('height'));
+    var nav = $('nav');
+    var actualPosition = $(window).scrollTop();
+
+    if(actualPosition >= headerPictureSize){ 
+            nav.removeClass('not-displayed');       
+            nav.fadeIn("fast");
+    }
+    $(window).scroll(function(e){
+        if($(window).scrollTop() >= headerPictureSize){         
+            nav.fadeIn("fast");
+        }
+        else if($(window).scrollTop() <= headerPictureSize){
+           nav.fadeOut("fast");
+        }
+    });
+}
+
+function tabNavigation(){
+    var monTab = [];
+    $.each($('.tab ul li h4'),function(){
+        monTab.push($(this).text().replace(' ','_'));        
+        $(this).click(function(){
+            $('#'+$('#neighborhoods-list .active h4').text().replace(' ','_')).addClass('not-displayed');
+            $('#neighborhoods-list .active').removeClass('active');
+            $($(this).parent()).addClass('active');
+
+            $('#'+$(this).text().replace(' ','_')).removeClass('not-displayed');
+
+        });
+    })
+    var i = 0;
+    $.each($('.neigh'),function(){
+        $(this).attr('id',monTab[i]);
+        ++i;
+    });
+}
+
+$(window).load(function(){
+    console.log('test');
+    navScroll();
+    tabNavigation();   
+});
+

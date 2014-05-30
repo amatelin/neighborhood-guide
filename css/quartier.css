@@ -27,6 +27,71 @@ h1 {
   margin: 0;
   font-weight: bold;
 }
+/**
+*NAVBAR
+**/
+@media (min-width: 768px) {
+  .navbar-fixed-top {
+    padding: 25px 0;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+  .navbar-fixed-top .navbar-brand {
+    font-size: 2em;
+    padding: 0;
+    margin: 15px 0 -15px 0;
+    margin-left: 0;
+  }
+  .navbar-fixed-top.navbar-shrink {
+    padding: 10px 0;
+  }
+  .navbar-fixed-top.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+.navbar {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+.navbar a:focus {
+  outline: 0;
+}
+.navbar .navbar-nav {
+  letter-spacing: 1px;
+}
+.navbar .navbar-nav li a:focus {
+  outline: 0;
+}
+.navbar-default,
+.navbar-inverse {
+  border: 0;
+}
+nav {
+  opacity: 0;
+  height: 50px;
+}
+.displayed {
+  display: inline;
+}
+.not-displayed {
+  display: none;
+}
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+  margin-left: 0px;
+}
+.nav.navbar-nav.navbar-right {
+  margin-top: -25px;
+}
+.navbar-header {
+  margin-top: -25px;
+}
+#presentation {
+  position: relative;
+  top: 50px;
+}
 .viewer {
   width: 100%;
   height: 100%;
@@ -36,11 +101,13 @@ h1 {
   position: relative;
   text-align: center;
 }
-.viewer iframe {
+.viewer #map_canvas {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   border: none;
+  position: relative;
+  top: -32px;
   margin-bottom: 8px;
 }
 .viewer .shadow {
@@ -55,6 +122,7 @@ h1 {
   text-align: left;
   font-size: 14px;
 }
+
 .viewer#map {
   position: absolute;
   top: 100%;
@@ -63,7 +131,7 @@ h1 {
 .viewer#map .mapbar {
   width: 100%;
   height: 64px;
-  top: -64px;
+  top: -96px;
   position: absolute;
   background: white;
   font-size: 36px;
@@ -72,6 +140,47 @@ h1 {
   line-height: 60px;
   cursor: pointer;
   font-weight: bold;
+}
+.viewer#map .dropdown-menu {
+  text-align: left;
+}
+.viewer#map .panel {
+  position: absolute;
+  top: 64px;
+  left: 16px;
+  width: 30%;
+  max-height: 75%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: left;
+  font-size: 14px;
+  display: none;
+}
+.viewer#map .panel .panel-heading .right {
+  float: right;
+  opacity: 1;
+  width: 8px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.viewer#map .panel .item {
+  margin-bottom: 16px;
+}
+.viewer#map .panel .item .stars {
+  float: right;
+  color: gold;
+  line-height: 14px;
+}
+.viewer#map .panel .item .mini {
+  width: 100px;
+  height: 75px;
+  float: left;
+  margin-right: 8px;
+}
+.viewer#map .panel .item h3 {
+  margin: 0;
+  font-size: 1.2em;
+  margin-bottom: 4px;
 }
 .viewer#map .right {
   float: right;
@@ -82,10 +191,26 @@ h1 {
 .viewer .ico {
   position: absolute;
   top: 16px;
-  right: 16px;
+  left: 16px;
 }
 .viewer .ico button {
   font-size: 14px;
   width: 32px;
   height: 32px;
 }
+
+#showMap {
+  margin-top: 10px;
+  margin-left: 25%;
+  /*  Text dimensions
+  width: 316px;
+  height: 316px; */
+  width:158px;
+  height: 158px;
+  opacity: 0.75;
+}
+
+#showMap:hover {
+  cursor: pointer;
+}
+

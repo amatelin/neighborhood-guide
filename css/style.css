@@ -3,6 +3,25 @@
     background-size: cover;
     width: 62px;
     height: 55px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:0;   
     float: left;
-    margin-right: 10px;
+    margin-right: 0px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.center {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
 }
