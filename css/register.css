@@ -166,7 +166,22 @@ header .intro-text .skills {
     font-weight: 300;
 }
 header .log-form{
+    margin-left: -100px;
     color:#233140;
+}
+header .log-form label{
+    color:#fff;
+}
+header .checkbox{
+    color:#fff;
+}
+header #submit{
+    float:right;
+    margin-right: -150px;
+}
+header #submit:hover{
+    background-color:#233140;
+    color:#fff;
 }
 @media(min-width:768px) {
     header .container {
