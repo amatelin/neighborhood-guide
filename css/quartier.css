@@ -133,6 +133,7 @@ nav {
   height: 64px;
   top: -96px;
   position: absolute;
+  z-index: 50;
   background: white;
   font-size: 36px;
   text-align: left;
@@ -140,6 +141,16 @@ nav {
   line-height: 60px;
   cursor: pointer;
   font-weight: bold;
+}
+.shadow_map {
+  box-shadow: 0 8px 10px -10px rgba(64, 64, 64, .8);
+}
+.piti {
+    font-size: 0.4em;
+    vertical-align: top;
+    margin-left: 16px;
+    opacity: 1;
+    transition: opacity .3s;
 }
 .viewer#map .dropdown-menu {
   text-align: left;
