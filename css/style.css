@@ -266,7 +266,6 @@ header .form-control:-ms-input-placeholder {
 **/
 @media (min-width: 768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -275,10 +274,7 @@ header .form-control:-ms-input-placeholder {
         margin-top: 5px;
     }
     .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
-        padding: 0;
-        margin: 15px 0 -15px 0;
-        margin-left: 0;
+        font-size: 25px;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -288,7 +284,6 @@ header .form-control:-ms-input-placeholder {
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
-
 }
 
 @media(max-width: 767px) {
@@ -296,15 +291,11 @@ header .form-control:-ms-input-placeholder {
         height: none;
         min-height: none;
     }
-     .navbar-fixed-top .navbar-brand {
-        font-size: 25px;
-    }
-    /*.navbar-header {
-        padding-top: 24px;
-    }*/
+
+
     .nav.navbar-nav.navbar-right{
-    /*padding-top: 24px;*/
-    background-color: #2C3E50;
+        xpadding-top: 24px;
+        background-color: #2C3E50;
     }
     header {
         text-align: center;
@@ -343,7 +334,7 @@ header .form-control:-ms-input-placeholder {
 }
 
 @media(max-width: 480px) {
-         .navbar-fixed-top .navbar-brand {
+    .navbar-fixed-top .navbar-brand {
         font-size: 25px;
     }
     /*.navbar-header {
@@ -394,6 +385,9 @@ header .form-control:-ms-input-placeholder {
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
+.navbar-collapse {
+    border-top: 0px solid transparent;
+}
 .navbar a:focus {
     outline: 0;
 }
@@ -415,9 +409,21 @@ header .form-control:-ms-input-placeholder {
 .navbar-inverse {
     border: 0;
 }
+
+.navbar-toggle {
+    color: white;
+    background-color: #233140;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: white;
+}
 nav {
     opacity: 1;
-    height: 50px;
+    margin-bottom: -20px;
 }
 .displayed {
     display: inline;
@@ -435,21 +441,15 @@ nav {
     */
 }
 
-.container-navbar {
-    margin-left: 15px;
-    padding-left: 15px;
-    padding-right: 30px;
-}
-.navbar > .container .navbar-brand,
+navbar > .container .navbar-brand,
 .navbar > .container-fluid .navbar-brand {
     margin-left: 0px;
 }
-.nav.navbar-nav.navbar-right {
-    margin-top: -25px;
-}
+
 .navbar-header {
-    margin-top: -25px;
+    xmargin-top: -13px;
 }
+
 .my-navbar-default{
     background-color:#2C3E50;
     color: white;
@@ -1035,9 +1035,8 @@ div.image.slideBottom:hover span {
 }
 
 .navbar-brand {
-    font-size: 30px;
-    margin-top: 3px;
-    margin-bottom: 15px;
+    font-size: 25px;
+    margin-top: -1px;
     text-transform: uppercase;
     color: white;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
