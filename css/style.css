@@ -247,6 +247,31 @@ header .form-control:-ms-input-placeholder {
     text-decoration: none;
 }
 
+/**
+* Portfolio Hover Over
+*/
+
+span.title {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(50,50,50,0.8);
+    text-align: center;
+    padding: 5px 0 4px;
+    font-size: 14px;
+    color: white;
+    font-family: "Lucida Sans", "Trebuchet MS", Arial, sans-serif;
+    
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    
+}
+
+
 @media(min-width:768px) {
     header .container {
         padding: 50px 0 0px;
@@ -259,6 +284,7 @@ header .form-control:-ms-input-placeholder {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+    
 }
 
 /**
@@ -284,6 +310,7 @@ header .form-control:-ms-input-placeholder {
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
+
 }
 
 @media(max-width: 767px) {
@@ -291,7 +318,6 @@ header .form-control:-ms-input-placeholder {
         height: none;
         min-height: none;
     }
-
 
     .nav.navbar-nav.navbar-right{
         xpadding-top: 24px;
@@ -985,31 +1011,6 @@ img {
     padding:0;
     display:inline;
 }
-span.title {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(50,50,50,0.8);
-    text-align: center;
-    padding: 5px 0 4px;
-    font-size: 14px;
-    color: white;
-    font-family: "Lucida Sans", "Trebuchet MS", Arial, sans-serif;
-    
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    -ms-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-    
-}
-
-div.image.slideBottom span { 
-    height: 200px;
-    width: 100%;
-    bottom: -175px;
-}
-
 div.image.slideBottom:hover span {
     bottom: 0px;
 
@@ -1020,10 +1021,6 @@ div.image.slideBottom:hover span {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
-
-
-
-
 .logo {
     background: url('../img/logo.png');
     background-size: cover;
@@ -1035,7 +1032,6 @@ div.image.slideBottom:hover span {
     float: left;
     margin-right: 0px;
 }
-
 .navbar-brand {
     font-size: 25px;
     margin-top: -1px;
@@ -1044,9 +1040,21 @@ div.image.slideBottom:hover span {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
 .center {
     display: block;
     width: 300px;
     margin: 0 auto;
+}
+div.image.slideBottom span { 
+    height: 200px;
+    max-width: 400px;
+    bottom: -175px;
+}
+
+.image {
+
+}
+
+.img-responsive {
+    min-width:360px;
 }
