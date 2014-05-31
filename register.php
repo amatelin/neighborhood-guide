@@ -1,4 +1,4 @@
-<?php include './inc/header-small.php' ?>
+<?php include './inc/header.php' ?>
 
     <header>
         <div class="container">
@@ -34,7 +34,7 @@
                                     <div class="form-group">
                                       <label class="col-md-4 control-label" for="email">Email</label>  
                                       <div class="col-md-6">
-                                      <input id="email" name="email" placeholder="Typer your adress mail" class="form-control input-md" type="text">
+                                      <input id="email" name="email" placeholder="Type your adress mail" class="form-control input-md" type="text">
                                         
                                       </div>
                                     </div>
@@ -43,7 +43,7 @@
                                     <div class="form-group">
                                       <label class="col-md-4 control-label" for="password">Password</label>
                                       <div class="col-md-6">
-                                        <input id="password" name="password" placeholder="Typer your password" class="form-control input-md" type="password">
+                                        <input id="password" name="password" placeholder="Type your password" class="form-control input-md" type="password">
                                         
                                       </div>
                                     </div>

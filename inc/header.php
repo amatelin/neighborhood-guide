@@ -18,11 +18,9 @@
     <link rel="stylesheet" href="./css/fotorama.css">
 
     <!-- CSS body { overflow: hidden } hack -->
-    <?php
-    if ($page == "quartier") {
-        echo '<link rel="stylesheet" href="./css/quartier.css">';
-    }
-    ?>  
+    <?php if ($page == "quartier"): ?>
+    <link rel="stylesheet" href="./css/quartier.css">';
+    <?php endif; ?>  
     
     <!-- Javascript -->  
     <script src="./js/jquery-2.1.1.min.js"></script>
@@ -30,7 +28,13 @@
     <script src="./js/handlebars-v1.3.0.js"></script>
     <script src="./js/fotorama.js"></script>
     <script src="./js/quartier.js"></script>
+    
+    
+    <!-- Navbar fix hack; only load this on index.php -->
+    <?php if ($page == "index"): ?>
     <script src="./js/freelancer.js"></script>
+    <?php endif; ?>
+    
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
     </script>
@@ -50,8 +54,7 @@
 </head>
 
 <body id="page-top" class="index">
-    
-
+    <?php if ($page == "index"): ?>    
     <header>
         <div class="container">
             <div class="row">
@@ -71,9 +74,16 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header>   
+    <?php endif; ?>
+    
     <!-- Navigation -->
-    <nav class="navbar my-navbar-default navbar-fixed-top not-displayed" role="navigation">
+    <?php if ($page == "index"): ?>
+    <nav class="navbar my-navbar-default navbar-fixed-top not-displayed">
+    <?php else: ?>
+    <nav class="navbar my-navbar-default navbar-fixed-top">
+    <?php endif; ?>    
+        
         <div class="container-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -84,7 +94,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <span class="logo"></span>
-                <a class="navbar-brand" href="#page-top">NestFinder</a>
+                <a class="navbar-brand" href="index.php">NestFinder</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

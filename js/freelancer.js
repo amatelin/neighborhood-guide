@@ -1,3 +1,4 @@
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('.page-scroll a').bind('click', function(event) {
@@ -71,4 +72,3 @@ $(window).load(function(){
     navScroll();
     tabNavigation();   
 });
-

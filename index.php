@@ -1,4 +1,8 @@
-<?php include 'inc/header.php' ?>
+
+<?php 
+$page = "index";
+include 'inc/header.php' 
+?>
 
     <section id="neighborhoods-list">
         <div class="container">

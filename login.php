@@ -1,4 +1,4 @@
-<?php include './inc/header-small.php'; ?>
+<?php include './inc/header.php' ?>
 
     <header>
         <div class="container">
@@ -33,7 +33,7 @@
                                 <div class="form-group">
                                   <label class="col-md-4 control-label" for="submit"></label>
                                   <div class="col-md-4">
-                                    <button id="submit" name="submit" class="btn btn-inverse">Connexion !</button>
+                                    <button id="submit" name="submit" class="btn btn-inverse">Login</button>
                                   </div>
                                 </div>
 

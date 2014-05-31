@@ -322,6 +322,13 @@ nav {
     padding-left: 15px;
     padding-right: 30px;
 }
+
+.container {
+  position: relative;
+  top: 10%;
+  transform: translateY(-10%);
+}
+
 .navbar > .container .navbar-brand,
 .navbar > .container-fluid .navbar-brand {
     margin-left: 0px;
@@ -415,6 +422,11 @@ nav {
   font-size: 14px;
   display: none;
 }
+.viewer#map .panel .panel-heading .center {
+  text-align: center;
+  opacity: 1;
+  width: 700px;
+}
 .viewer#map .panel .panel-heading .right {
   float: right;
   opacity: 1;
@@ -441,6 +453,15 @@ nav {
   font-size: 1.2em;
   margin-bottom: 4px;
 }
+
+.viewer#map .center {
+  text-align: center;
+  padding-right: 16px;
+  opacity: 0;
+  width: 700px;
+  transition: opacity .3s;
+}
+
 .viewer#map .right {
   float: right;
   padding-right: 16px;
@@ -689,6 +710,7 @@ footer .footer-below {
     text-align: center;
     font-size: 20px;
     line-height: 45px;
+    padding-top: px;
 }
 
 .btn:focus,

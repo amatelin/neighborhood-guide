@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -52,7 +51,7 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar my-navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar my-navbar-default navbar-fixed-top">
         <div class="container-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">

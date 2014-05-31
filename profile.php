@@ -1,4 +1,4 @@
-<?php include './inc/header-small.php'; ?>
+<?php include './inc/header.php' ?>
 
     <header>
         <div class="container">
