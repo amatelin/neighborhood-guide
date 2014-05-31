@@ -23,17 +23,14 @@
     <?php endif; ?>  
     
     <!-- Javascript -->  
-    <script src="./js/jquery-2.1.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/handlebars-v1.3.0.js"></script>
     <script src="./js/fotorama.js"></script>
     <script src="./js/quartier.js"></script>
-    <script src="./js/neighbourhoodguide.js"></script>
-      
+    <script src="./js/map.js"></script>  
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
     </script>
-    <script src="./js/map.js"></script>
+    
     
     <!-- Fonts -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
@@ -63,7 +60,7 @@
                         <span class="logo"></span>
                         <a class="navbar-brand" href="#page-top">NestFinder</a>
                         </div>
-                        <img class="gps-image img-responsive" src="img/map-welcome.png" alt="">
+                        <img class="gps-image img-responsive" width="600px" src="img/map-welcome.png" alt="">
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
                         <span class="skills">The open source neighbourhood guide created by the community for the community. Click on the arrow to the right and discover the guide!</span>

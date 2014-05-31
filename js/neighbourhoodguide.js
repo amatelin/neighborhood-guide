@@ -28,11 +28,11 @@ $('body').scrollspy({
 
 
 function navScroll(){
-    var shiftWindow = function() { scrollBy(0, -50) };
+    var shiftWindow = function() { scrollBy(0, 0) };
     if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
     
-    var headerPictureSize = parseInt($('header').css('height')) - 50;
+    var headerPictureSize = parseInt($('header').css('height')) ;
     var nav = $('nav');
     var actualPosition = $(window).scrollTop();
 
