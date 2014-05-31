@@ -1,9 +1,31 @@
-html, body{
-    height:100%;
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    src: url(http://themes.googleusercontent.com/static/fonts/montserrat/v4/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff);
+}*/
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
-
 body {
-    overflow-x: hidden;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    font-weight: normal;
+    color: #2c3e50;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+h1 {
+  height: 64px;
+  line-height: 60px;
+  margin: 0;
+  font-weight: bold;
 }
 
 p {
@@ -43,6 +65,8 @@ hr.star-primary {
     border-top: solid 5px;
     text-align: center;
 }
+
+
 
 hr.star-light:after,
 hr.star-primary:after {
@@ -100,10 +124,16 @@ header {
 
 }
 
-header .container {
+header .container {/*
+    position: relative;
+    top: 50%;
+    transform: translateY(-65%);*/
     padding-top: 0px;
     padding-bottom: 50px;
     width: 800px;
+}
+header .control-group{
+    display:inline;
 }
 
 header img {
@@ -135,7 +165,17 @@ header .intro-text{
     width: 800px;
 }
 
+header .intro-text-form{
+    margin-top: 15px;
+    padding: 15px;
+    color:#fff;
+    background:rgba(42,68,80,0.8);
+    border-radius: 20px;
+    width: 800px;
+}
+
 header .intro-text .name {
+    text-align: center;
     display: block;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -149,10 +189,44 @@ header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
+header .log-form{
+    margin-left: -100px;
+    color:#233140;
+}
+header .log-form label,
 
+header .checkbox{
+    color:#fff;
+}
+header #submit{
+    float:right;
+    margin-right: -150px;
+}
+header #submit:hover{
+    background-color:#233140;
+    color:#fff;
+}
+header .form-control{
+    color:#233140;
+}
+header .form-control::-moz-placeholder {
+    color:rgba(44,62,80,0.5);
+}
+header .form-control::-webkit-input-placeholder {
+    color:rgba(44,62,80,0.5);
+}
+header .form-control:-moz-placeholder {
+    color:rgba(44,62,80,0.5);
+}
+header .form-control:-ms-input-placeholder {
+    color:rgba(44,62,80,0.5);
+}
+header fieldset{
+    margin-top: 50px;
+}
 @media(min-width:768px) {
     header .container {
-        padding: 50px 0 100px;
+        padding: 150px 0 100px;
     }
 
     header .intro-text .name {
@@ -164,13 +238,12 @@ header .intro-text .skills {
     }
 }
 
-
 /**
 *NAVBAR
 **/
-@media(min-width:768px) {
+@media (min-width: 768px) {
     .navbar-fixed-top {
-        /*padding: 25px 0;*/
+        padding: 25px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -180,9 +253,8 @@ header .intro-text .skills {
     }
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
-        padding:0;
-        margin-top: 20px;
-        margin: 15px 0 15px 0;
+    padding: 0;
+    margin: 15px 0 -15px 0;
         margin-left: 0;
 
     }
@@ -194,39 +266,35 @@ header .intro-text .skills {
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
-
 }
 
 @media(max-width: 767px) {
      .navbar-fixed-top .navbar-brand {
         font-size: 25px;
     }
-
-     /*.navbar-header {
+    /*.navbar-header {
         padding-top: 24px;
     }*/
-
     .nav.navbar-nav.navbar-right{
     /*padding-top: 24px;*/
     background-color: #2C3E50;
     }
-
 }
 
 .navbar {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
-
 .navbar a:focus {
     outline: 0;
 }
-
 .navbar .navbar-nav {
     letter-spacing: 1px;
 }
-
+.navbar .navbar-nav li a:focus {
+  outline: 0;
+}
 .navbar .navbar-nav li a{
     color:white;
 }
@@ -239,125 +307,167 @@ header .intro-text .skills {
 .navbar-inverse {
     border: 0;
 }
-nav{
-    opacity:1;
-    height: 50px;
+nav {
+  opacity: 1;
+  height: 50px;
 }
-
-.displayed{
+.displayed {
     display: inline;
 }
-.not-displayed{
-    display:none;
+.not-displayed {
+  display: none;
 }
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
     margin-left: 0px;
 }
-
-/*.nav.navbar-nav.navbar-right{
+.nav.navbar-nav.navbar-right {
     margin-top: -25px;
 }
-
-.navbar-header{
+.navbar-header {
     margin-top: -25px;
-}*/
-
+}
 .my-navbar-default{
     background-color:#2C3E50;
+    color: white;
 }
-
-.navbar-toggle{
-        border-color: #fff;
-    }
-
-    .icon-bar{
-        color: #fff;
-        background-color: #fff;
-    }
-
-/**
-*SECTION
-**/
-section {
-    padding: 120px 0;
-}
-
-section h2 {
-    margin: 0;
-    font-size: 3em;
-}
-
-section.success {
-    color: #2C3E50;
-    background: #FFFFFF;
-}
-
-@media(max-width:767px) {
-    section {
-        padding: 75px 0;
-    }
-
-    section.first {
-        padding-top: 75px;
-    }
-}
-
-/**
-*PORTFOLIO
-**/
-.neigh{
-    background-color: rgba(44,62,80,0.1);
-    border-radius: 9px;    
-    margin-top: -4px;
-    padding-bottom: 15px;
-}
-
-.title{
-    nowrap:none;
-}
-
-.tab{
-    margin-top:50px;   
-}
-
-.tab>ul>li {
-    display:inline;
-    list-style: none;
-    border-style: solid solid none solid;
-    border-color: rgba(44,62,80,0.1);
-    border-width:1px;
-    margin-left: -5px;
-    padding: 8px 15px;
-    -webkit-border-top-left-radius: 15px;
-    -webkit-border-top-right-radius: 15px;
-    -moz-border-radius-topleft: 15px;
-    -moz-border-radius-topright: 15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.active {        
-    background-color: rgba(44,62,80,0.1);
-    color:#2C3E50;
-}
-
-.tab>ul>li>h4{
-    cursor:pointer;
-    margin:0;
-    padding:0;
-    display:inline;
-}
-
-#portfolio .portfolio-item {
-    right: 0;
-}
-
-#portfolio .portfolio-item .portfolio-link {
-    display: block;
+#presentation {
     position: relative;
-    margin: 0 auto;
-    max-width: 400px;
+  top: 50px;
 }
+.viewer {
+  width: 100%;
+  height: 100%;
+  margin-top: -64px;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+  text-align: center;
+}
+.viewer #map_canvas {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: relative;
+  top: -32px;
+  margin-bottom: 8px;
+}
+.viewer .shadow {
+  position: absolute;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 380px;
+  top: 0;
+  right: 64px;
+  padding: 16px 32px;
+  color: white;
+  text-align: left;
+  font-size: 14px;
+}
+
+.viewer#map {
+  position: absolute;
+  top: 100%;
+  transition: top .3s;
+}
+.viewer#map .mapbar {
+  width: 100%;
+  height: 64px;
+  top: -96px;
+  position: absolute;
+  z-index: 50;
+  background: white;
+  font-size: 36px;
+  text-align: left;
+  padding-left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.shadow_map {
+  box-shadow: 0 8px 10px -10px rgba(64, 64, 64, .8);
+}
+.piti {
+    font-size: 0.4em;
+    vertical-align: top;
+    margin-left: 16px;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.viewer#map .dropdown-menu {
+  text-align: left;
+}
+.viewer#map .panel {
+  position: absolute;
+  top: 64px;
+  left: 16px;
+  width: 30%;
+  max-height: 75%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: left;
+  font-size: 14px;
+  display: none;
+}
+.viewer#map .panel .panel-heading .right {
+  float: right;
+  opacity: 1;
+  width: 8px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.viewer#map .panel .item {
+  margin-bottom: 16px;
+}
+.viewer#map .panel .item .stars {
+  float: right;
+  color: gold;
+  line-height: 14px;
+}
+.viewer#map .panel .item .mini {
+  width: 100px;
+  height: 75px;
+  float: left;
+  margin-right: 8px;
+}
+.viewer#map .panel .item h3 {
+  margin: 0;
+  font-size: 1.2em;
+  margin-bottom: 4px;
+}
+.viewer#map .right {
+  float: right;
+  padding-right: 16px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+.viewer .ico {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.viewer .ico button {
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+}
+
+#showMap {
+  margin-top: 10px;
+  margin-left: 25%;
+  /*  Text dimensions
+  width: 316px;
+  height: 316px; */
+  width:158px;
+  height: 158px;
+  opacity: 0.75;
+}
+
+#showMap:hover {
+  cursor: pointer;
+}
+
 
 .portfolio-item img {
     width: 400px;
@@ -714,3 +824,4 @@ div.image.slideBottom:hover span {
     border-top-left-radius: 9px;
     border-top-right-radius: 9px;
 }
+

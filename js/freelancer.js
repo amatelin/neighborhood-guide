@@ -33,8 +33,9 @@ function navScroll(){
 
     if(actualPosition >= headerPictureSize){ 
             nav.removeClass('not-displayed');       
-            nav.fadeIn("fast");
+            nav.fadeIn("fast");       
     }
+    
     $(window).scroll(function(e){
         if($(window).scrollTop() >= headerPictureSize){         
             nav.fadeIn("fast");
