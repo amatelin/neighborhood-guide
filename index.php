@@ -6,14 +6,14 @@
             <div class="neighborhoods-central">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2>Les quartiers</h2>
+                        <h2>The Neighbourhoods</h2>
                         <hr class="star-primary">
                     </div>
                     <div class="tab">
                         <ul class="col-lg-12 text-center">
                             <li class="tab active"><h4>Central&nbsp;Montreal</h4></li>
                             <li class="tab"><h4>West&nbsp;Island</h4></li>
-                            <li class="tab"><h4>North&nbsp;Island</h4></li>
+                            <li class="tab"><h4>Montreal&nbsp;North</h4></li>
                             <li class="tab"><h4>East&nbsp;End</h4></li>                            
                         </ul>
                     </div>                    
@@ -33,7 +33,7 @@
                             <a href="quartier.php" class="portfolio-link">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/oldmontreal.jpg" class="img-responsive" alt="" />
-                                    <span class="title">OldMontreal</span>
+                                    <span class="title">Old Montreal</span>
                                 </div>
                             </a>
                         </div>
@@ -294,7 +294,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contribuer au guide !</h2>
+                    <h2>Contribute to the guide!</h2>
                     <hr class="star-light">
                 </div>
             </div>
@@ -335,16 +335,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>A propos</h2>
+                    <h2>About Us</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Le Guide des Quartiers NestFinder est un projet destine a offrir l'information la plus complete et pertinentes aux nouveaux arrivants a Montreal. Et qui sait, les habitants de l'ile y trouveront apprendrons peut-etre de nouvelles choses sur leur ville preferee et ses nombreux quartiers.</p>
+                    <p>
+                        The Neighbourhood Guide from Nestfinder is a project which aims to offer a pertinent and comprehensive information source
+                        to both those who are new to Montreal and its existing residents.
+                    </p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Nous reconnaissons chez NestFinder que les habitants d'une ville sont les mieux places pour la faire decouvrir. C'est pourquoi nous souhaitons travailler de concert vous pour faire de ce guide votre guide, ecrit par des Montrealais pour des Montrealais. Reportez-vous a la section Contribuer pour plus d'informations sur la marche a suivre.</p>
+                    <p>
+                        At Nestfinder, we recognize that a city's inhabitants are those best placed to help others discover their city.
+                        This is why we wish to work in tandem to make this guide, your guide, written by Montrealers for Montrealers.
+                        Check out the contribute section for more information on you can make your experience part of this open source project.
+                    </p>
                 </div>
             </div>
         </div>

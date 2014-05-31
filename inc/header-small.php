@@ -73,13 +73,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#neighborhoods-list">Visiter les quartiers</a>
+                        <a href="#neighborhoods-list">Visit the Neighbourhoods</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contribute">Contribuer</a>
+                        <a href="#contribute">Contribute</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">A propos</a>
+                        <a href="#about">About Us</a>
                     </li>
                 </ul>
             </div>

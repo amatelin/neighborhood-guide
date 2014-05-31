@@ -3,12 +3,12 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Adresse</h3>
+                        <h3>Address</h3>
                         <p>1009 rue de Bleury
                             <br>Monteal, QC H1L1L1</p>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Reseaux Sociaux</h3>
+                        <h3>Social Networks</h3>
                         <ul class="list-inline">
                             <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
                             </li>
@@ -23,8 +23,11 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>A propos de NestFinder</h3>
-                        <p>NestFinder est une startup cree par de jeunes entrepreuneurs Montrealais. Voir le <a href="#">blog</a> pour suivre les avancees du projet.</p>
+                        <h3>About NestFinder</h3>
+                        <p>
+                            Nestfinder is a startup created by young Montreal entrepreneurs.
+                            Visit the <a href="#">blog</a> to follow this project's progress.
+                        </p>
                     </div>
                 </div>
             </div>
