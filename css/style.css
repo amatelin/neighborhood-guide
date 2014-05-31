@@ -12,7 +12,6 @@ html {
   /* xoverflow: hidden; // Makes Page freeze once the top navbar appears */
 }
 body {
-    overflow-x: hidden;
     /* text-align: center; // breaks portfolio hover */
     font-family: 'Montserrat';
     font-size: 1em;
@@ -252,9 +251,8 @@ header .form-control:-ms-input-placeholder {
     }
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
-        padding:0;
-        margin-top: 20px;
-        margin: 15px 0 15px 0;
+    padding: 0;
+    margin: 15px 0 -15px 0;
         margin-left: 0;
 
     }

@@ -1,4 +1,7 @@
-<?php include './inc/header-small.php' ?>
+<?php 
+    $page = "quartier";
+    include './inc/header-small.php'; 
+?>
 
     <div id="presentation">
         <h1>LE PLATEAU - MONT ROYAL</h1>

@@ -16,6 +16,13 @@
     <!-- NestFinder CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fotorama.css">
+
+    <!-- CSS body { overflow: hidden } hack -->
+    <?php
+        if ($page == "quartier") {
+            echo "<link rel=\"stylesheet\" href=\"./css/quartier.css\">";
+        }
+    ?>  
     
     <!-- Javascript -->  
     <script src="./js/jquery-2.1.1.min.js"></script>
