@@ -359,6 +359,7 @@ include 'inc/header.php'
                 </div>
             </div>
         </div>
+        
     </section>
 
  <?php include 'inc/footer.php' ?>
