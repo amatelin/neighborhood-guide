@@ -28,7 +28,9 @@ $('body').scrollspy({
 
 
 function navScroll(){
-    window.addEventListener("hashchange", function() { scrollBy(0, -50) })
+    var shiftWindow = function() { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
     
     var headerPictureSize = parseInt($('header').css('height')) - 50;
     var nav = $('nav');
