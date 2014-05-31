@@ -424,7 +424,9 @@ header .form-control:-ms-input-placeholder {
 nav {
     opacity: 1;
     margin-bottom: -20px;
+    padding-right: 25px;
 }
+
 .displayed {
     display: inline;
 }
