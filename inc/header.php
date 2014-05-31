@@ -19,7 +19,7 @@
 
     <!-- CSS body { overflow: hidden } hack -->
     <?php if ($page == "quartier"): ?>
-    <link rel="stylesheet" href="./css/quartier.css">';
+        <link rel="stylesheet" href="./css/quartier.css">';
     <?php endif; ?>  
     
     <!-- Javascript -->  
@@ -28,13 +28,8 @@
     <script src="./js/handlebars-v1.3.0.js"></script>
     <script src="./js/fotorama.js"></script>
     <script src="./js/quartier.js"></script>
-    
-    
-    <!-- Navbar fix hack; only load this on index.php -->
-    <?php if ($page == "index"): ?>
-    <script src="./js/freelancer.js"></script>
-    <?php endif; ?>
-    
+    <script src="./js/neighbourhoodguide.js"></script>
+      
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
     </script>
@@ -54,6 +49,8 @@
 </head>
 
 <body id="page-top" class="index">
+    
+
     <?php if ($page == "index"): ?>    
     <header>
         <div class="container">
@@ -75,10 +72,8 @@
             </div>
         </div>
     </header>   
-    <?php endif; ?>
-    
+
     <!-- Navigation -->
-    <?php if ($page == "index"): ?>
     <nav class="navbar my-navbar-default navbar-fixed-top not-displayed">
     <?php else: ?>
     <nav class="navbar my-navbar-default navbar-fixed-top">
@@ -101,7 +96,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="index.php#page-top"></a>
                     </li>
                     <li class="page-scroll">
                         <a href="#neighborhoods-list">Visit the Neighbourhoods</a>
@@ -118,3 +113,4 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+        

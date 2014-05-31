@@ -22,11 +22,15 @@ body {
     position: relative;
 }
 h1 {
-  height: 64px;
-  line-height: 60px;
-  margin: 0;
-  font-weight: bold;
-  text-align: center;
+    height: 64px;
+    line-height: 60px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 75px;
 }
 
 p {
@@ -292,7 +296,7 @@ header .form-control:-ms-input-placeholder {
     letter-spacing: 1px;
 }
 .navbar .navbar-nav li a:focus {
-  outline: 0;
+    outline: 0;
 }
 .navbar .navbar-nav li a{
     font-size: 1.3em;
@@ -302,33 +306,31 @@ header .form-control:-ms-input-placeholder {
     outline: 0;
     background-color: #233140;    
 }
-
 .navbar-default,
 .navbar-inverse {
     border: 0;
 }
 nav {
-  opacity: 1;
-  height: 50px;
+    opacity: 1;
+    height: 50px;
 }
 .displayed {
     display: inline;
 }
 .not-displayed {
-  display: none;
+    display: none;
+}
+.container {
+    position: relative;
+    top: 5%;
+    transform: translateY(-5%);
+    xmargin-bottom: 100px;
 }
 .container-navbar {
     margin-left: 15px;
     padding-left: 15px;
     padding-right: 30px;
 }
-
-.container {
-  position: relative;
-  top: 10%;
-  transform: translateY(-10%);
-}
-
 .navbar > .container .navbar-brand,
 .navbar > .container-fluid .navbar-brand {
     margin-left: 0px;
@@ -343,59 +345,64 @@ nav {
     background-color:#2C3E50;
     color: white;
 }
+
+/**
+* Neighbourhood Map Viewer (Quartier))
+**/
+
 #presentation {
     position: relative;
-  top: 50px;
+    top: 50px;
 }
 .viewer {
-  width: 100%;
-  height: 100%;
-  margin-top: -64px;
-  margin: 0 auto;
-  clear: both;
-  position: relative;
-  text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -64px;
+    margin: 0 auto;
+    clear: both;
+    position: relative;
+    text-align: center;
 }
 .viewer #map_canvas {
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border: none;
-  position: relative;
-  top: -32px;
-  margin-bottom: 8px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: relative;
+    top: -32px;
+    margin-bottom: 8px;
 }
 .viewer .shadow {
-  position: absolute;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  width: 380px;
-  top: 0;
-  right: 64px;
-  padding: 16px 32px;
-  color: white;
-  text-align: left;
-  font-size: 14px;
+    position: absolute;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    width: 380px;
+    top: 0;
+    right: 64px;
+    padding: 16px 32px;
+    color: white;
+    text-align: left;
+    font-size: 14px;
 }
 
 .viewer#map {
-  position: absolute;
-  top: 100%;
-  transition: top .3s;
+    position: absolute;
+    top: 100%;
+    transition: top .3s;
 }
 .viewer#map .mapbar {
-  width: 100%;
-  height: 64px;
-  top: -96px;
-  position: absolute;
-  z-index: 50;
-  background: white;
-  font-size: 36px;
-  text-align: left;
-  padding-left: 16px;
-  line-height: 60px;
-  cursor: pointer;
-  font-weight: bold;
+    width: 100%;
+    height: 64px;
+    top: -96px;
+    position: absolute;
+    z-index: 50;
+    background: white;
+    font-size: 36px;
+    text-align: left;
+    padding-left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    font-weight: bold;
 }
 .shadow_map {
   box-shadow: 0 8px 10px -10px rgba(64, 64, 64, .8);
@@ -408,90 +415,90 @@ nav {
     transition: opacity .3s;
 }
 .viewer#map .dropdown-menu {
-  text-align: left;
+    text-align: left;
 }
 .viewer#map .panel {
-  position: absolute;
-  top: 64px;
-  left: 16px;
-  width: 30%;
-  max-height: 75%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  text-align: left;
-  font-size: 14px;
-  display: none;
+    position: absolute;
+    top: 64px;
+    left: 16px;
+    width: 30%;
+    max-height: 75%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: left;
+    font-size: 14px;
+    display: none;
 }
 .viewer#map .panel .panel-heading .center {
-  text-align: center;
-  opacity: 1;
-  width: 700px;
+    text-align: center;
+    opacity: 1;
+    width: 700px;
 }
 .viewer#map .panel .panel-heading .right {
-  float: right;
-  opacity: 1;
-  width: 8px;
-  line-height: 20px;
-  cursor: pointer;
+    float: right;
+    opacity: 1;
+    width: 8px;
+    line-height: 20px;
+    cursor: pointer;
 }
 .viewer#map .panel .item {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 .viewer#map .panel .item .stars {
-  float: right;
-  color: gold;
-  line-height: 14px;
+    float: right;
+    color: gold;
+    line-height: 14px;
 }
 .viewer#map .panel .item .mini {
-  width: 100px;
-  height: 75px;
-  float: left;
-  margin-right: 8px;
+    width: 100px;
+    height: 75px;
+    float: left;
+    margin-right: 8px;
 }
 .viewer#map .panel .item h3 {
-  margin: 0;
-  font-size: 1.2em;
-  margin-bottom: 4px;
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 4px;
 }
 
 .viewer#map .center {
-  text-align: center;
-  padding-right: 16px;
-  opacity: 0;
-  width: 700px;
-  transition: opacity .3s;
+    text-align: center;
+    padding-right: 16px;
+    opacity: 0;
+    width: 700px;
+    transition: opacity .3s;
 }
 
 .viewer#map .right {
-  float: right;
-  padding-right: 16px;
-  opacity: 0;
-  transition: opacity .3s;
+    float: right;
+    padding-right: 16px;
+    opacity: 0;
+    transition: opacity .3s;
 }
 .viewer .ico {
-  position: absolute;
-  top: 16px;
-  left: 16px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
 }
 .viewer .ico button {
-  font-size: 14px;
-  width: 32px;
-  height: 32px;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
 }
 
 #showMap {
-  margin-top: 10px;
-  margin-left: 25%;
-  /*  Text dimensions
-  width: 316px;
-  height: 316px; */
-  width:158px;
-  height: 158px;
-  opacity: 0.75;
+    margin-top: 10px;
+    margin-left: 25%;
+    /*  Text dimensions
+    width: 316px;
+    height: 316px; */
+    width:158px;
+    height: 158px;
+    opacity: 0.75;
 }
 
 #showMap:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 #portfolio .portfolio-item {
