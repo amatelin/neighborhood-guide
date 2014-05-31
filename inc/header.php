@@ -16,6 +16,13 @@
     <!-- NestFinder CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fotorama.css">
+
+    <!-- CSS body { overflow: hidden } hack -->
+    <?php
+    if ($page == "quartier") {
+        echo '<link rel="stylesheet" href="./css/quartier.css">';
+    }
+    ?>  
     
     <!-- Javascript -->  
     <script src="./js/jquery-2.1.1.min.js"></script>
@@ -67,7 +74,7 @@
     </header>
     <!-- Navigation -->
     <nav class="navbar my-navbar-default navbar-fixed-top not-displayed" role="navigation">
-        <div class="container">
+        <div class="container-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

@@ -9,7 +9,7 @@
 html {
   height: 100%;
   width: 100%;
-  /* xoverflow: hidden; // Makes Page freeze once the top navbar appears */
+  /* overflow: hidden; // Makes webpage freeze once the top navbar appears */
 }
 body {
     /* text-align: center; // breaks portfolio hover */
@@ -26,6 +26,7 @@ h1 {
   line-height: 60px;
   margin: 0;
   font-weight: bold;
+  text-align: center;
 }
 
 p {
@@ -99,6 +100,7 @@ hr.star-primary:after {
     color: #2C3E50;
     background-color: #fff;
 }
+
 nav .navbar .navbar-default .navbar-fixed-top > .container{
     padding:0;
     margin:0;
@@ -224,7 +226,7 @@ header .form-control:-ms-input-placeholder {
 }
 @media(min-width:768px) {
     header .container {
-        padding: 150px 0 100px;
+        padding: 50px 0 100px;
     }
 
     header .intro-text .name {
@@ -251,10 +253,9 @@ header .form-control:-ms-input-placeholder {
     }
     .navbar-fixed-top .navbar-brand {
         font-size: 2em;
-    padding: 0;
-    margin: 15px 0 -15px 0;
+        padding: 0;
+        margin: 15px 0 -15px 0;
         margin-left: 0;
-
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -294,6 +295,7 @@ header .form-control:-ms-input-placeholder {
   outline: 0;
 }
 .navbar .navbar-nav li a{
+    font-size: 1.3em;
     color:white;
 }
 .navbar .navbar-nav li a:hover {
@@ -314,6 +316,11 @@ nav {
 }
 .not-displayed {
   display: none;
+}
+.container-navbar {
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-right: 30px;
 }
 .navbar > .container .navbar-brand,
 .navbar > .container-fluid .navbar-brand {

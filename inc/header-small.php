@@ -19,9 +19,9 @@
 
     <!-- CSS body { overflow: hidden } hack -->
     <?php
-        if ($page == "quartier") {
-            echo "<link rel=\"stylesheet\" href=\"./css/quartier.css\">";
-        }
+    if ($page == "quartier") {
+        echo '<link rel="stylesheet" href="./css/quartier.css">';
+    }
     ?>  
     
     <!-- Javascript -->  
@@ -30,6 +30,7 @@
     <script src="./js/handlebars-v1.3.0.js"></script>
     <script src="./js/fotorama.js"></script>
     <script src="./js/quartier.js"></script>
+    <script src="./js/freelancer.js"></script>
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
     </script>
@@ -49,10 +50,10 @@
 </head>
 
 <body id="page-top" class="index">
-    
+
     <!-- Navigation -->
-    <nav class="navbar my-navbar-default navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar my-navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
