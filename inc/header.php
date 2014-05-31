@@ -63,7 +63,7 @@
                         <span class="logo"></span>
                         <a class="navbar-brand" href="#page-top">NestFinder</a>
                         </div>
-                        <img class="gps-image img-responsive" width="750px" src="img/map-welcome.png" alt="">
+                        <img class="gps-image img-responsive" src="img/map-welcome.png" alt="">
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
                         <span class="skills">The open source neighbourhood guide created by the community for the community. Click on the arrow to the right and discover the guide!</span>
