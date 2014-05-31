@@ -66,10 +66,15 @@
                         <img class="gps-image img-responsive" width="750px" src="img/map-welcome.png" alt="">
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
-                        <span class="skills">The open source neighbourhood guide created by the community for the community.</span>
+                        <span class="skills">The open source neighbourhood guide created by the community for the community. Click on the arrow to the right and discover the guide!</span>
+                        <br>
+                        <a href="#neighborhoods-list" title="Discover the guide!" class="fa fa-chevron-down"></i></a>
+                        <br/>
+                        <br/>
                     </div>
                 </div>
             </div>
+            
         </div>
     </header>   
 
