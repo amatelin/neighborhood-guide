@@ -23,7 +23,7 @@ body {
 }
 
 section {
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -511,14 +511,34 @@ navbar > .container .navbar-brand,
 .viewer .shadow {
     position: absolute;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(35,49,64,.8);
     width: 380px;
     top: 0;
-    right: 64px;
+    left: 64px;
     padding: 16px 32px;
     color: white;
     text-align: left;
     font-size: 14px;
+}
+
+.viewer .shadow-main {
+    position: absolute;
+    height: 100%;
+    background: rgba(35,49,64,.8);
+    width: 60%;
+    top: 0;
+    left: 504px;
+    padding: 16px 32px;
+    color: white;
+    text-align: left;
+    font-size: 14px;
+        margin: 0 100px 0 0;
+}
+
+.viewer .shadow-column {
+    width: 25%;
+    float: left;
+    padding: 0 33px;
 }
 
 .viewer#map {
@@ -977,8 +997,7 @@ img {
 .neigh{
     background-color: rgba(44,62,80,0.1);
     border-radius: 9px;    
-    margin-top: -4px;
-    padding: 15px;
+    padding: 0px 10px 10px 10px;
     margin: 0 auto;
 
 }

@@ -22,6 +22,43 @@
                 </p>
                 <img id="showMap" src="./img/Boussole.png">
             </div>
+            
+            <div class="shadow-main">
+                <ul class="shadow-column">
+                    <li>Restaurants </li>
+                    <ul>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+                    <li>Cafes</li>
+                    
+                    <ul>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+                </ul>
+                                <ul class="shadow-column">
+                    <li>Restaurants </li>
+                    <li>Cafes</li>
+                </ul>
+                                <ul class="shadow-column">
+                    <li>Restaurants </li>
+                    <li>Cafes</li>
+                </ul>
+                                <ul class="shadow-column">
+                    <li>Restaurants </li>
+                    <li>Cafes</li>
+                </ul>
+                                <ul class="shadow-column">
+                    <li>Restaurants </li>
+                    <li>Cafes</li>
+                </ul>
+              
+            </div>
         </div>
     </div>
 
