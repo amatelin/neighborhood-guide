@@ -6,7 +6,7 @@
     <div id="presentation">
         <div id="presentation-menu">
             <a href="#next"> << </a> 
-            <h1>LE PLATEAU - MONT ROYAL</h1> 
+            <h1>LE PLATEAU</h1> 
              <a href="#next"> >> </a>
         </div>
         <div class="viewer">
@@ -55,19 +55,19 @@
                         <li>test</li>
                     </ul>
                 </ul>
-                                <ul class="shadow-column">
+                <ul class="shadow-column">
                     <li>Restaurants </li>
                     <li>Cafes</li>
                 </ul>
-                                <ul class="shadow-column">
+                <ul class="shadow-column">
                     <li>Restaurants </li>
                     <li>Cafes</li>
                 </ul>
-                                <ul class="shadow-column">
+                <ul class="shadow-column">
                     <li>Restaurants </li>
                     <li>Cafes</li>
                 </ul>
-                                <ul class="shadow-column">
+                <ul class="shadow-column">
                     <li>Restaurants </li>
                     <li>Cafes</li>
                 </ul>
@@ -78,7 +78,7 @@
 
         <div id="map" class="viewer">
             <div class="mapbar shadow_map">
-                <i class="fa fa-compass"></i> Map 
+                <i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>
                 
                 <span class="right"><a href="#next"> << </a> LE PLATEAU <a href="#next"> >> </a></span>
             </div>
