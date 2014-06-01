@@ -521,6 +521,21 @@ navbar > .container .navbar-brand,
     font-size: 14px;
 }
 
+#presentation-menu {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#presentation h1 {
+    display: inline;
+    text-align: center;
+}
+
+#presentation h3 {
+    display: inline;
+    text-align: center;
+}
+
 .viewer .shadow-main {
     position: absolute;
     height: 100%;

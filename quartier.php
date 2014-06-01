@@ -4,8 +4,11 @@
 ?>
 
     <div id="presentation">
-        <h1>LE PLATEAU - MONT ROYAL</h1>
-
+        <div id="presentation-menu">
+            <h3>Previous << </h3>
+            <h1>LE PLATEAU - MONT ROYAL</h1>
+            <h3> >> Next </h3>
+        </div>
         <div class="viewer">
             <div class="fotorama" data-arrows="true" data-width="100%" data-nav="false" data-loop="true"data-autoplay="true">
                 <img src="./img/mont3.jpg">
@@ -13,17 +16,28 @@
                 <img src="./img/mont2.jpg">
             </div>
             <div class="shadow">
+                <div class="col-lg-12 text-center">
+                    <h2>Overview</h2>
+                    <img src="img/white-star.png">
+                    <br/>
+                    <br/>
+                </div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                    deserunt mollit anim id est laborum.
+                    eu fugiat nulla pariatur.
                 </p>
                 <img id="showMap" src="./img/Boussole.png">
             </div>
             
             <div class="shadow-main">
+                <div class="col-lg-12 text-center">
+                    <h2>The Neighbourhood</h2>
+                    <img src="img/white-star.png">
+                    <br/>
+                    <br/>
+                </div>
                 <ul class="shadow-column">
                     <li>Restaurants </li>
                     <ul>
