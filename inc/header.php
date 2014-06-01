@@ -94,8 +94,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                <?php if ($page == "index"): ?>
                     <li class="hidden">
-                        <a href="index.php#page-top"></a>
+                        <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
                         <a href="#neighborhoods-list">Visit the Neighbourhoods</a>
@@ -106,6 +107,20 @@
                     <li class="page-scroll">
                         <a href="#about">About Us</a>
                     </li>
+                <?php else: ?>
+                    <li class="hidden">
+                        <a href="index.php#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="index.php#neighborhoods-list">Visit the Neighbourhoods</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="index.php#contribute">Contribute</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="index.php#about">About Us</a>
+                    </li>
+                <?php endif; ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
