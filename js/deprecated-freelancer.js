@@ -1,3 +1,4 @@
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('.page-scroll a').bind('click', function(event) {
@@ -27,14 +28,19 @@ $('body').scrollspy({
 
 
 function navScroll(){
+    var shiftWindow = function() { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+
     var headerPictureSize = parseInt($('header').css('height'));
     var nav = $('nav');
     var actualPosition = $(window).scrollTop();
 
     if(actualPosition >= headerPictureSize){ 
             nav.removeClass('not-displayed');       
-            nav.fadeIn("fast");
+            nav.fadeIn("fast");       
     }
+    
     $(window).scroll(function(e){
         if($(window).scrollTop() >= headerPictureSize){         
             nav.fadeIn("fast");
@@ -70,4 +76,3 @@ $(window).load(function(){
     navScroll();
     tabNavigation();   
 });
-
