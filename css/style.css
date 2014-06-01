@@ -601,7 +601,7 @@ font-weight: 700;
 }
 .viewer#map .panel {
     position: absolute;
-    top: 64px;
+    top: 39px;
     left: 16px;
     width: 30%;
     max-height: 75%;
@@ -660,6 +660,7 @@ font-weight: 700;
 }
 .viewer .ico {
     position: absolute;
+    margin-top: -25px;
     top: 16px;
     left: 16px;
 }
