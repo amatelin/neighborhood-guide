@@ -80,7 +80,7 @@
             <div class="mapbar shadow_map">
                 <i class="fa fa-compass"></i> Map 
                 
-                <span class="right"><a href="#next"> << </a> LE PLATEAU - MONT ROYAL<a href="#next"> >> </a></span>
+                <span class="right"><a href="#next"> << </a> LE PLATEAU <a href="#next"> >> </a></span>
             </div>
             <div id="map_canvas"></div>
             <div class="btn-group ico shadow_map">

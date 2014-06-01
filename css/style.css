@@ -611,6 +611,9 @@ font-weight: 700;
     font-size: 14px;
     display: none;
 }
+.viewer#map .panel p {
+    font-size: 15px;
+}
 .viewer#map .panel .panel-heading .center {
     text-align: center;
     opacity: 1;
@@ -642,7 +645,6 @@ font-weight: 700;
     font-size: 1.2em;
     margin-bottom: 4px;
 }
-
 .viewer#map .center {
     text-align: center;
     padding-right: 16px;
@@ -650,9 +652,8 @@ font-weight: 700;
     width: 700px;
     transition: opacity .3s;
 }
-
 .viewer#map .right {
-    xfloat: right;
+    float: right;
     text-align: center;
     padding-right: 16px;
     opacity: 0;
