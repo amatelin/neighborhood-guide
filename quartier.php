@@ -10,8 +10,9 @@
                 <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
                 <h1> LE PLATEAU </h1>
                 <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
-                <a class="next-neighbourhood" href="#next">Westmount</a>               
+                <a class="next-neighbourhood" href="#next">Westmount</a>        
             </span>
+            
             
         </div>
         <div class="viewer">

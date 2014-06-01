@@ -52,6 +52,16 @@ a.active {
     color: #18bc9c;
 }
 
+.navbar a {
+    color: white;
+}
+.navbar a:hover {
+    color: white;
+}
+
+#bs-example-navbar-collapse-1 > ul > li > div > ul {
+    background-color: white;
+}
 h1,
 h2,
 h3,
@@ -176,12 +186,13 @@ header .intro-text{
 }
 
 header .intro-text-form{
-    margin-top: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
     padding: 15px;
     color:#fff;
-    background:rgba(42,68,80,0.8);
+    background:rgba(35,49,64,.8);
     border-radius: 20px;
-    width: 800px;
+    width: 625px;
 }
 
 header .intro-text .name {
@@ -424,7 +435,20 @@ span.title {
 }
 .navbar .navbar-nav li a{
     font-size: 1.3em;
-    color:white;
+}
+
+.navbar .navbar-nav ul a{
+    font-size: 1em;
+    xcolor:#2c3e50;
+}
+
+.navbar .navbar-nav .white {
+    color:#2c3e50;
+    background-color: red;
+}
+.navbar .navbar-nav ul a:hover{
+    font-size: 1em;
+    color: white;
 }
 .navbar .navbar-nav li a:hover {
     outline: 0;
@@ -553,9 +577,11 @@ span.right a {
     vertical-align:middle;
     display:inline-block;
 }
-
-#presentation-menu\20 > span > a 
-{
+#presentation-menu\20 > span > a:nth-child(5) {
+    color: #475a6d;
+    font-size: 20px;
+}
+#presentation-menu\20 > span > a:nth-child(1) {
     color: #475a6d;
     font-size: 20px;
 }
@@ -1157,4 +1183,8 @@ div.image.slideBottom span {
     height: 200px;
     max-width: 400px;
     bottom: -175px;
+}
+
+.btn-group-nav {
+    margin-top: 7px;
 }

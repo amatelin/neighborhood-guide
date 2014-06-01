@@ -112,20 +112,49 @@
                         <a href="#contribute">Contribute</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About Us</a>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <div class="btn-group btn-group-nav">
+                          <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
+                              <a href="profile.php"><i class="fa fa-gear"></i></a>
+                            <span class="caret"></span>
+                          </div>
+                          <ul class="dropdown-menu white">
+                              <li><a href="login.php">Register</a></li>
+                            <li><a href="login.php">Login</a></li>  
+                            <li><a href="profile.php">Profile</a></li>
+                            <li><a href="#">Logout</a></li>
+                          </ul>
+                        </div>
                     </li>
                 <?php else: ?>
                     <li class="hidden">
                         <a href="index.php#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.php#neighborhoods-list">Visit the Neighbourhoods</a>
+                        <a href="index.php#neighborhoods-list">Visit Neighbourhoods</a>
                     </li>
                     <li class="page-scroll">
                         <a href="index.php#contribute">Contribute</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.php#about">About Us</a>
+                        <a href="index.php#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <div class="btn-group btn-group-nav">
+                          <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
+                              <a href="profile.php"><i class="fa fa-gear"></i></a>
+                            <span class="caret"></span>
+                          </div>
+                          <ul class="dropdown-menu">
+                            <li><a href="login.php">Login</a></li>
+                            <li><a href="login.php">Register</a></li>
+                            <li><a href="profile.php">Profile</a></li>
+                            <li><a href="#">Logout</a></li>
+                          </ul>
+                        </div>
                     </li>
                 <?php endif; ?>
                 </ul>
