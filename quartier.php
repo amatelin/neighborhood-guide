@@ -4,13 +4,15 @@
 ?>
 
     <div id="presentation">
-        <div id="presentation-menu">
-            <a href="#next"> << </a> 
-            <h1>LE PLATEAU</h1> 
-             <a href="#next"> >> </a>
+        <div id="presentation-menu ">
+            <span class="right">
+                <a href="#next"><i class="fa fa-arrow-left valign"></i></a> 
+                <h1> LE PLATEAU </h1>
+                <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
+            </span>
         </div>
         <div class="viewer">
-            <div class="fotorama" data-arrows="true" data-width="100%" data-nav="false" data-loop="true"data-autoplay="true">
+            <div class="fotorama" data-arrows="true" data-width="100%" data-nav="false" data-loop="true" data-autoplay="true">
                 <img src="./img/mont3.jpg">
                 <img src="./img/mont1.jpg">
                 <img src="./img/mont2.jpg">
@@ -78,9 +80,12 @@
 
         <div id="map" class="viewer">
             <div class="mapbar shadow_map">
-                <i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>
-                
-                <span class="right"><a href="#next"> << </a> LE PLATEAU <a href="#next"> >> </a></span>
+                <i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>               
+                <span class="right">
+                    <a href="#next"><i class="fa fa-arrow-left valign"></i></a> 
+                     LE PLATEAU 
+                    <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
+                </span>            
             </div>
             <div id="map_canvas"></div>
             <div class="btn-group ico shadow_map">

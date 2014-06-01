@@ -235,14 +235,14 @@ header .form-control:-ms-input-placeholder {
     color:rgba(44,62,80,0.5);
 }
 
-.fa-chevron-down {
+.fa-arrow-down {
     margin-top: -10px;
     font-size: 50px;
     float: right;
     color: white;
 }
 
-.fa-chevron-down:hover {
+.fa-arrow-down:hover {
     color:#18bc9c;
     text-decoration: none;
 }
@@ -270,11 +270,6 @@ span.title {
     transition: all .3s ease-out; 
 }
 
-span.right a {
-    
-    color: #2c3e50;
-    text-decoration: none;
-}
 
 @media(min-width:768px) {
     header .container {
@@ -494,10 +489,12 @@ navbar > .container .navbar-brand,
 #presentation {
     position: relative;
     top: 45px;
+    box-shadow: 0 8px 10px -10px rgba(64, 64, 64, .8);
 }
 .viewer {
     width: 100%;
     height: 100%;
+        min-height: 1000px;
     margin-top: -64px;
     margin: 0 auto;
     clear: both;
@@ -515,7 +512,7 @@ navbar > .container .navbar-brand,
 }
 .viewer .shadow {
     position: absolute;
-    height: 100%;
+    height: 50%;
     background: rgba(35,49,64,.8);
     width: 380px;
     top: 0;
@@ -524,29 +521,50 @@ navbar > .container .navbar-brand,
     color: white;
     text-align: left;
     font-size: 14px;
-}
-
-#presentation-menu {
+    
+    /* Test stuff */
+    background:rgba(35,49,64,.8);
+    border-radius: 20px;
+    xwidth: 435px;
     margin: 0 auto;
+    margin-top: 25px;
+}
+#presentation-menu {
     text-align: center;
 }
 
+#presentation-menu h1 {
+    margin: 0 auto;
+    text-align: center
+}
+span.right {
+    display: block;
+    text-align: center;
+}
+span.right a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 32px;
+        width:80px;
+    height:70px;
+    line-height:80px;
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block;
+}
 #presentation h1 {
     display: inline;
 }
-
 #presentation a {
-    font-size: 30px;
-    vertical-align: center;
-    display: inline;
+    margin-top: -30px;
+    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     color: #2c3e50;
-    text-transform: uppercase;
-font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-font-weight: 700;
 }
-
+.fa-arrow-left {
+    vertical-algin: middle;
+}
 .viewer .shadow-main {
     position: absolute;
     height: 100%;
@@ -559,6 +577,13 @@ font-weight: 700;
     text-align: left;
     font-size: 14px;
         margin: 0 100px 0 0;
+        
+    /* Test stuff */
+    background:rgba(35,49,64,.8);
+    border-radius: 20px;
+    xwidth: 435px;
+    margin: 0 auto;
+    margin-top: 25px;
 }
 
 .viewer .shadow-column {
@@ -585,6 +610,15 @@ font-weight: 700;
     line-height: 70px;
     cursor: pointer;
     font-weight: bold;
+}
+.viewer#map .mapbar a {
+    width:80px;
+    height:80px;
+    line-height:80px;
+    text-align:center;
+    vertical-align:middle;
+    display:inline-block;
+    margin-top: -5px;
 }
 span.small {
     font-size: 15px;

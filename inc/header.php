@@ -58,10 +58,13 @@
                         <img class="gps-image img-responsive" width="600px" src="img/map-welcome.png" alt="">
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
-                        <span class="skills">The open source neighbourhood guide created by the community for the community. Click on the arrow to the right and discover the guide!</span>
+                        <span class="skills">
+                            The open source neighbourhood guide created by the community for the community. 
+                            Click on the arrow to the right and discover the guide!
+                        </span>
                         <br>
                         <li class="page-scroll">
-                            <a href="#neighborhoods-list" title="Discover the guide!" class="fa fa-chevron-down"></i></a>
+                            <a href="#neighborhoods-list" title="Discover the guide!"><i class="fa fa-arrow-down"></i></a>
                         </li>
                         <br/>
                         <br/>
@@ -88,7 +91,11 @@
                     <span class="icon-bar"></span>
                 </button>
                 <span class="logo"></span>
+                <?php if ($page == "index"): ?>
+                <a class="navbar-brand" href="#page-top">NestFinder</a>
+                <?php else: ?>
                 <a class="navbar-brand" href="index.php">NestFinder</a>
+                <?php endif; ?>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
