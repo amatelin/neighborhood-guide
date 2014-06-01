@@ -45,6 +45,7 @@
 
     <?php if ($page == "index"): ?>    
     <header>
+        <div id="header-index"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
