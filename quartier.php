@@ -5,9 +5,9 @@
 
     <div id="presentation">
         <div id="presentation-menu">
-            <h3>Previous << </h3>
-            <h1>LE PLATEAU - MONT ROYAL</h1>
-            <h3> >> Next </h3>
+            <a href="#next"> << </a> 
+            <h1>LE PLATEAU - MONT ROYAL</h1> 
+             <a href="#next"> >> </a>
         </div>
         <div class="viewer">
             <div class="fotorama" data-arrows="true" data-width="100%" data-nav="false" data-loop="true"data-autoplay="true">
@@ -79,8 +79,8 @@
         <div id="map" class="viewer">
             <div class="mapbar shadow_map">
                 <i class="fa fa-compass"></i> Map 
-                <span class="piti">Cliquez ici pour ouvrir</span>
-                <span class="right">LE PLATEAU</span>
+                
+                <span class="right"><a href="#next"> << </a> LE PLATEAU - MONT ROYAL<a href="#next"> >> </a></span>
             </div>
             <div id="map_canvas"></div>
             <div class="btn-group ico shadow_map">

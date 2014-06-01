@@ -270,6 +270,11 @@ span.title {
     transition: all .3s ease-out; 
 }
 
+span.right a {
+    
+    color: #2c3e50;
+    text-decoration: none;
+}
 
 @media(min-width:768px) {
     header .container {
@@ -488,7 +493,7 @@ navbar > .container .navbar-brand,
 
 #presentation {
     position: relative;
-    top: 50px;
+    top: 45px;
 }
 .viewer {
     width: 100%;
@@ -528,12 +533,18 @@ navbar > .container .navbar-brand,
 
 #presentation h1 {
     display: inline;
-    text-align: center;
 }
 
-#presentation h3 {
+#presentation a {
+    font-size: 30px;
+    vertical-align: center;
     display: inline;
-    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2c3e50;
+    text-transform: uppercase;
+font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 700;
 }
 
 .viewer .shadow-main {
@@ -571,7 +582,7 @@ navbar > .container .navbar-brand,
     font-size: 36px;
     text-align: left;
     padding-left: 16px;
-    line-height: 60px;
+    line-height: 70px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -641,7 +652,8 @@ navbar > .container .navbar-brand,
 }
 
 .viewer#map .right {
-    float: right;
+    xfloat: right;
+    text-align: center;
     padding-right: 16px;
     opacity: 0;
     transition: opacity .3s;
