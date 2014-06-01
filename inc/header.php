@@ -21,17 +21,7 @@
     <?php if ($page == "quartier"): ?>
         <link rel="stylesheet" href="./css/quartier.css">';
     <?php endif; ?>  
-    
-    <!-- Javascript -->  
-    <script src="./js/handlebars-v1.3.0.js"></script>
-    <script src="./js/fotorama.js"></script>
-    <script src="./js/quartier.js"></script>
-    <script src="./js/map.js"></script>  
-    <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
-    </script>
-    
-    
+        
     <!-- Fonts -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
