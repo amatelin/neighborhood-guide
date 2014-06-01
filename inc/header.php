@@ -21,6 +21,11 @@
     <?php if ($page == "quartier"): ?>
         <link rel="stylesheet" href="./css/quartier.css">';
     <?php endif; ?>  
+    
+        <!-- Javascript -->  
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/neighbourhoodguide.js"></script>  
         
     <!-- Fonts -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
@@ -55,7 +60,9 @@
                         <img src="img/white-star.png">
                         <span class="skills">The open source neighbourhood guide created by the community for the community. Click on the arrow to the right and discover the guide!</span>
                         <br>
-                        <a href="#neighborhoods-list" title="Discover the guide!" class="fa fa-chevron-down"></i></a>
+                        <li class="page-scroll">
+                            <a href="#neighborhoods-list" title="Discover the guide!" class="fa fa-chevron-down"></i></a>
+                        </li>
                         <br/>
                         <br/>
                     </div>

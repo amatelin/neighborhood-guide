@@ -53,12 +53,10 @@
     <?php endif; ?>
 
     <!-- Javascript -->  
-    <script src="./js/jquery-2.1.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="./js/handlebars-v1.3.0.js"></script>
     <script src="./js/fotorama.js"></script>
-    <script src="./js/neighbourhoodguide.js"></script>   
+     
 
     <?php if ($page == "quartier"): ?>
         <script type="text/javascript"
