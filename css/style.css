@@ -637,6 +637,10 @@ navbar > .container .navbar-brand,
     cursor: pointer;
 }
 
+.slideBottom {
+    max-width: 400px;
+}
+
 #portfolio .portfolio-item {
     right: 0;
 }
@@ -947,6 +951,7 @@ footer .footer-below {
 /**
 *SLIDE PORTFOLIO
 **/
+
 .image .slideBottom{
     height: 0;
 }
