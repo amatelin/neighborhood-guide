@@ -45,7 +45,7 @@
                     <br/>
                 </div>
                 <ul class="col-lg-3 shadow-column">
-                    <li>Restaurants <a href="./forms/addResto.php"> <i class="fa fa-plus"></i></a></li> 
+                    <li>Restaurants <a href="addResto.php"> <i class="fa fa-plus"></i></a></li> 
                    <ul>
                         <li>test</li>
                         <li>test</li>

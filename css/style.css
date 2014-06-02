@@ -635,10 +635,8 @@ span.right a {
 }
 
 .viewer .shadow-column {
-    xwidth: 25%;
     width: 150px;
-    float: right;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .viewer#map {
