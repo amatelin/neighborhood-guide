@@ -27,13 +27,13 @@ $('body').scrollspy({
 })
 
 
-function navScroll(){
+function navScroll(){    
     if ($('#header-index').length > 0) { 
         var shiftWindow = function() { scrollBy(0, 0) };
         if (location.hash) shiftWindow();
         window.addEventListener("hashchange", shiftWindow);
 
-        var headerPictureSize = parseInt($('header').css('height')) - 50 ;
+        headerPictureSize = parseInt($('header').css('height')) - 50 ;
         var nav = $('nav');
         var actualPosition = $(window).scrollTop();
 
@@ -73,7 +73,12 @@ function tabNavigation(){
     });
 }
 
+
+$(window).resize(function(){
+    navScroll();
+});
 $(window).load(function(){
+
     navScroll();
     tabNavigation();   
 });
