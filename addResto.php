@@ -1,7 +1,7 @@
 <?php include './inc/header.php' ?>
 
     <header>
-        <div class="container">
+        <div class="container middle">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text ">
