@@ -56,13 +56,15 @@
 
                                     <!-- Select -->
                                     <script type="text/template" id="input-select">
-                                        <label class="col-md-4 control-label" for="{{name}}">{{name}}</label>
-                                        <div class="col-md-4">
-                                            <select id="{{name}}" name="{{name}}" class="form-control">
-                                                {{#each options}}
-                                                    <option value="{{this}}">{{this}}</option>
-                                                {{/each}}
-                                            </select>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="{{name}}">{{name}}</label>
+                                            <div class="col-md-4">
+                                                <select id="{{name}}" name="{{name}}" class="form-control">
+                                                    {{#each options}}
+                                                        <option value="{{this}}">{{this}}</option>
+                                                    {{/each}}
+                                                </select>
+                                            </div>
                                         </div>
                                     </script>
 
