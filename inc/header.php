@@ -44,9 +44,9 @@
     
 
     <?php if ($page == "index"): ?>    
-    <header>
+    <header class="index">
         <div id="header-index"></div>
-        <div class="container">
+        <div class="container index">
             <div class="row">
                 <div class="col-lg-12">
                     <!--<img class="img-responsive" src="img/GPS.png" alt="">-->

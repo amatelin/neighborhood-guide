@@ -21,12 +21,10 @@ body {
     width: 100%;
     position: relative;
 }
-
 section {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
 h1 {
     height: 64px;
     line-height: 60px;
@@ -34,15 +32,12 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
-
 p {
     font-size: 20px;
 }
-
 p.small {
     font-size: 16px;
 }
-
 a,
 a:hover,
 a:focus,
@@ -51,14 +46,12 @@ a.active {
     outline: 0;
     color: #18bc9c;
 }
-
 .navbar a {
     color: white;
 }
 .navbar a:hover {
     color: white;
 }
-
 #bs-example-navbar-collapse-1 > ul > li > div > ul {
     background-color: white;
 }
@@ -72,7 +65,6 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -83,9 +75,6 @@ hr.star-primary {
     text-align: center;
     
 }
-
-
-
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f005";
@@ -99,25 +88,20 @@ hr.star-primary:after {
 hr.white-star{
     background-image: url('../img/white-star.png'); 
 }
-
 hr.star-light {
     border-color: #fff;
 }
-
 hr.star-light:after {
     color: #fff;
     background-color: #18bc9c;
 }
-
 hr.star-primary {
     border-color: #2C3E50;
 }
-
 hr.star-primary:after {
     color: #2C3E50;
     background-color: #fff;
 }
-
 nav .navbar .navbar-default .navbar-fixed-top > .container{
     padding:0;
     margin:0;
@@ -142,7 +126,6 @@ header {
     background-size: cover;         /* Generic*/
 
 }
-
 header .container {
     position: relative;
     transform: translateY(-65%);
@@ -153,7 +136,6 @@ header .container {
 header .control-group{
     display:inline;
 }
-
 header img {
     display: block;
     margin: 0 auto 20px;
@@ -162,7 +144,6 @@ header img {
     -khtml-border-radius: 30px;
     -webkit-border-radius: 30px;
 }
-
 header .gps-image {
     width: 600px;
     display: block;
@@ -175,7 +156,6 @@ header .gps-image {
     -khtml-border-radius: 30px;
     -webkit-border-radius: 30px;
 }
-
 header .intro-text{
     padding: 15px;
     color:#fff;
@@ -188,13 +168,11 @@ header .intro-text{
     top: 50%;
     transform: translateY(-50%);
 }
-
 .container.middle {
     position: relative;
-    top: 15%;
-    transform: translateY(-15%);
+    top: 10%;
+    transform: translateY(-10%);
 }
-
 header .intro-text-form{
     margin: 0 auto;
     margin-top: 10px;
@@ -204,7 +182,6 @@ header .intro-text-form{
     border-radius: 20px;
     width: 625px;
 }
-
 header .intro-text .name {
     text-align: center;
     display: block;
@@ -223,7 +200,9 @@ header .intro-text .skills {
     padding: 0 15 0 15px;
 }
 header .log-form{
+    margin: 0 auto;
     color:#233140;
+    max-width: 80%;
 }
 header fieldset{
     margin-top: 50px;
@@ -254,12 +233,10 @@ header .form-control:-moz-placeholder {
 header .form-control:-ms-input-placeholder {
     color:rgba(44,62,80,0.5);
 }
-
 .fa-arrow-down {
     font-size: 50px;
     color: white;
 }
-
 .fa-arrow-down:hover {
     color:#18bc9c;
     text-decoration: none;
@@ -337,7 +314,6 @@ span.title {
     }
 
     .nav.navbar-nav.navbar-right{
-        xpadding-top: 24px;
         background-color: #2C3E50;
     }
     header {
@@ -345,14 +321,16 @@ span.title {
         color: #fff;
         z-index: -1;
         height: 100%;
-        min-height: 580px;
-        max-height: 580px;
         background-image: url("../img/montreal2.jpg");
         -webkit-background-size: cover; /* For WebKit*/
         -moz-background-size: cover;    /* Mozilla*/
         -o-background-size: cover;      /* Opera*/
         background-size: cover;         /* Generic*/
-    }    
+    }
+    header.index {
+        min-height: 580px;
+        max-height: 580px;
+    }
     header .gps-image {
         width: 415px;
         display: block;
@@ -374,6 +352,15 @@ span.title {
         width: 435px;
         margin: 0 auto;
     }
+    header .intro-text-form {
+        padding: 15px;
+        color:#fff;
+        background:rgba(35,49,64,.8);
+        border-radius: 20px;
+        width: 435px;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
 }
 
 @media(max-width: 480px) {
@@ -392,13 +379,16 @@ span.title {
         color: #fff;
         z-index: -1;
         height: 100%;
-        min-height: 480px;
-        max-height: 480px;
+
         background-image: url("../img/montreal2.jpg");
         -webkit-background-size: cover; /* For WebKit*/
         -moz-background-size: cover;    /* Mozilla*/
         -o-background-size: cover;      /* Opera*/
         background-size: cover;         /* Generic*/
+    }
+    header.index {
+        min-height: 480px;
+        max-height: 480px;
     }
     header .gps-image {
         width: 300px;
@@ -413,13 +403,23 @@ span.title {
         -webkit-border-radius: 30px;
     }
     
-    header .intro-text{
-        padding: 15ox 15px 0 15px;
+    header .intro-text {
+        padding: 0 15px 0 15px;
         color:#fff;
         background:rgba(35,49,64,.8);
         border-radius: 20px;
         width: 325px;
         margin: 0 auto;
+    }    
+    
+    header .intro-text-form {
+        padding: 15px 15px 0 15px;
+        color:#fff;
+        background:rgba(35,49,64,.8);
+        border-radius: 20px;
+        width: 325px;
+        margin: 0 auto;
+        margin-top: 15px;
     }
 }
 
@@ -926,9 +926,6 @@ form .row:first-child .floating-label-form-group {
 #contribute h2{
     color:#fff;
 }
-.form-control{
-    color:#fff;
-}
 .btn-success{
     background-color:#fff;
     border-color:#fff;
@@ -937,6 +934,9 @@ form .row:first-child .floating-label-form-group {
 .btn-success:hover{
     background-color:#128F76;
     border-color:#128F76;
+}
+.form-control{
+    color:#fff;
 }
 .form-control::-webkit-input-placeholder { /* WebKit browsers */
     color:    #fff;

@@ -1,6 +1,6 @@
    <?php if ($page != "quartier"): ?>
     <footer class="text-center">
-        <div class="footer-above">
+        <div class="footer-above footer-spacer">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
