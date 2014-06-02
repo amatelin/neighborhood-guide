@@ -2,27 +2,12 @@
 var json_input = {
     "2": [
         {
-            name: "Name",
-            placeholder: "Taper nom",
-            type: "text"
-        },
-        {
-            name: "Description",
-            placeholder: "Taper descr",
-            type: "textarea"
+            name: "Place",
+            type: "select",
+            options: ["0 - 50", "50 - 75", "75 - 100", "100+"]
         }
     ],
     "4": [
-        {
-            name: "Name",
-            placeholder: "Taper nom",
-            type: "text"
-        },
-        {
-            name: "Description",
-            placeholder: "Taper descr",
-            type: "textarea"
-        },
         {
             name: "Etoile",
             type: "select",
@@ -41,14 +26,16 @@ $(function() {
 
     function updateForm() {
         var elems = json_input[$('#selectbasic').val()]
-        if (!elems)
-            return
 
-        var result = ''
+        var result = $('#input-before').html()
 
-        elems.forEach(function(input) {
-            result += template[input.type](input)
-        })
+        if (elems) {
+            elems.forEach(function(input) {
+                result += template[input.type](input)
+            })
+        }
+
+        result += $('#input-after').html()
 
         $('#box').html(result)
 
