@@ -11,21 +11,38 @@ var json_input = {
             placeholder: "Taper descr",
             type: "textarea"
         }
+    ],
+    "4": [
+        {
+            name: "Name",
+            placeholder: "Taper nom",
+            type: "text"
+        },
+        {
+            name: "Description",
+            placeholder: "Taper descr",
+            type: "textarea"
+        },
+        {
+            name: "Etoile",
+            type: "select",
+            options: [0, 1, 2, 3, 4, 5]
+        }
     ]
 }
 
 $(function() {
 
-    var source   = $('#input-text').html()
-    var template = Handlebars.compile(source)
     var template = {
-        text:     Handlebars.compile($('#input-text').html())
-        textarea: Handlebars.compile($('#input-textaera').html())
+        text:     Handlebars.compile($('#input-text').html()),
+        textarea: Handlebars.compile($('#input-textarea').html()),
+        select:   Handlebars.compile($('#input-select').html())
     }
-
 
     $('#selectbasic').change(function() {
         var elems = json_input[this.value]
+        if (!elems)
+            return
 
         var result = ''
 
@@ -33,7 +50,6 @@ $(function() {
             result += template[input.type](input)
         })
 
-        console.log(result)
         $('#box').html(result)
     })
 })

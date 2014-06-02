@@ -22,11 +22,11 @@
                                                 <option value="1" disabled selected>Label</option>
                                                 <optgroup label="Entertainement">
                                                     <option value="2">Cinema</option>
-                                                    <option value="3">Theatre</option>
+                                                    <!--<option value="3">Theatre</option>-->
                                                 </optgrounp>
                                                 <optgroup label="Restaurants">
                                                     <option value="4">Cafe</option>
-                                                    <option value="5">Resto</option>
+                                                    <!--<option value="5">Resto</option>-->
                                                 </optgrounp>
                                             </select>
                                         </div>
@@ -45,7 +45,7 @@
                                     </script>
 
                                     <!-- Textarea -->
-                                    <script type="text/template" id="input-text">
+                                    <script type="text/template" id="input-textarea">
                                         <div class="form-group">
                                             <label class="col-md-4 control-label" for="{{name}}">{{name}}</label>
                                             <div class="col-md-4">
@@ -53,6 +53,20 @@
                                             </div>
                                         </div>
                                     </script>
+
+                                    <!-- Select -->
+                                    <script type="text/template" id="input-select">
+                                        <label class="col-md-4 control-label" for="{{name}}">{{name}}</label>
+                                        <div class="col-md-4">
+                                            <select id="{{name}}" name="{{name}}" class="form-control">
+                                                {{#each options}}
+                                                    <option value="{{this}}">{{this}}</option>
+                                                {{/each}}
+                                            </select>
+                                        </div>
+                                    </script>
+
+
 
                                     <script type="text/template">
                                     <!-- Text input-->
