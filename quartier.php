@@ -45,8 +45,8 @@
                     <br/>
                 </div>
                 <ul class="shadow-column">
-                    <li>Restaurants </li>
-                    <ul>
+                    <li>Restaurants <a href="addResto.php"> <i class="fa fa-plus"></i></a></li> 
+                   <ul>
                         <li>test</li>
                         <li>test</li>
                         <li>test</li>

@@ -607,6 +607,10 @@ span.right a {
     text-decoration: none;
     color: #2c3e50;
 }
+#presentation ul li a  {
+    color: white;
+    text-transform: none;
+}
 .fa-arrow-left {
     vertical-algin: middle;
 }
