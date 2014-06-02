@@ -56,6 +56,7 @@
                         <span class="logo"></span>
                         <a class="navbar-brand" href="#page-top">NestFinder</a>
                         </div>
+                        </br>
                         <img class="gps-image img-responsive" width="600px" src="img/map-welcome.png" alt="">
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">

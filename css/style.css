@@ -1015,10 +1015,15 @@ footer .footer-below {
     border-radius: 100%;
     font-size: 20px;
     line-height: 28px;
+    opacity: 0.4;
 }
 
 .scroll-top .btn:focus {
     outline: 0;
+}
+
+.scroll-top .btn:hover {
+    opacity: 1;
 }
 
 /**
