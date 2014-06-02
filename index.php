@@ -1,7 +1,7 @@
 
 <?php 
 $page = "index";
-include 'inc/header.php' 
+include './inc/header.php' 
 ?>
 
     <section id="neighborhoods-list">

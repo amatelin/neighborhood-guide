@@ -45,7 +45,7 @@
                     <br/>
                 </div>
                 <ul class="shadow-column">
-                    <li>Restaurants <a href="addResto.php"> <i class="fa fa-plus"></i></a></li> 
+                    <li>Restaurants <a href="./forms/addResto.php"> <i class="fa fa-plus"></i></a></li> 
                    <ul>
                         <li>test</li>
                         <li>test</li>
@@ -62,26 +62,77 @@
                     </ul>
                 </ul>
                 <ul class="shadow-column">
-                    <li>Restaurants </li>
-                    <li>Cafes</li>
+                    <li>Shopping</li>
+                    <ul>
+                        <li>Stores</li>
+                    </ul>
+                </ul>
+                
+                <ul class="shadow-column">
+                    <li>Sports</li>
+                    <ul>
+                        <li>Gyms</li>
+                        <li>Soccer Fields</li>
+                        <li>Baseball Fields</li>
+                        <li>Swimming Pools</li>
+                    </ul>
                 </ul>
                 <ul class="shadow-column">
-                    <li>Restaurants </li>
-                    <li>Cafes</li>
+                    <li>Events</li>
+                    <ul>
+                        <li>Shows</li>
+                        <li>Festivals</li>
+                        <li>Races</li>
+                    </ul>
                 </ul>
                 <ul class="shadow-column">
-                    <li>Restaurants </li>
-                    <li>Cafes</li>
+                    <li>Financial</li>
+                    <ul>
+                        <li>Banks</li>
+                        <li>ATMs</li>
+                    </ul>
+                </ul>
+               <ul class="shadow-column">
+                    <li>Accommodations</li>
+                    <ul>
+                        <li>Hotels</li>
+                        <li>Motels</li>
+                        <li>Camping</li>
+                        <li>Bed & Breakfast</li>
+                        <li>Hostels</li>
+                    </ul>
                 </ul>
                 <ul class="shadow-column">
-                    <li>Restaurants </li>
-                    <li>Cafes</li>
+                    <li>Public Services</li>
+                    <ul>
+                        <li>Police Stations</li>
+                        <li>Fire Stations</li>
+                        <li>Hospitals</li>
+                        <li>Schools</li>
+                        <li>CLSC</li>
+                        <li>Library</li>
+                    </ul>
                 </ul>
-              
+                <ul class="shadow-column">
+                    <li>Transportation</li>
+                    <ul>
+                        <li>Metro Stations</li>
+                        <li>Bus Stations</li>
+                        <li>Intercity Bus Station</li>
+                        <li>Train Stations</li>
+                        <li>Airports</li>
+                    </ul>
+                </ul>
             </div>
         </div>
     </div>
-
+    <ul class="shadow-column">
+        <li>Financial</li>
+    <ul>
+        <li>Banks</li>
+                        <li>ATMs</li>
+                    </ul>
+                </ul>
         <div id="map" class="viewer">
             <div class="mapbar shadow_map">
                 <i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>               
