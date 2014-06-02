@@ -155,12 +155,13 @@ header .gps-image {
     -webkit-border-radius: 30px;
 }
 header .intro-text{
+    margin-top: 150px;
     padding: 15px;
     color:#fff;
     background:rgba(35,49,64,.8);
     border-radius: 20px;
     width: 625px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 .container.middle {
     position: relative;
@@ -363,7 +364,7 @@ span.title {
 
 @media(max-width: 480px) {
     .navbar-fixed-top .navbar-brand {
-        font-size: 25px;
+        font-size: 23px;
     }
     /*.navbar-header {
         padding-top: 24px;
@@ -418,6 +419,9 @@ span.title {
         width: 325px;
         margin: 0 auto;
         margin-top: 15px;
+    }
+    header .col-lg-12{
+        padding:0;
     }
 }
 
@@ -497,7 +501,7 @@ nav {
     */
 }
 
-navbar > .container .navbar-brand,
+.navbar > .container .navbar-brand,
 .navbar > .container-fluid .navbar-brand {
     margin-left: 0px;
 }
@@ -616,7 +620,7 @@ span.right a {
     position: absolute;
     xheight: 60%;
     background: rgba(35,49,64,.8);
-    xwidth: 60%;
+    width: 60%;
     top: 0;
     left: 504px;
     padding: 16px 32px;
@@ -631,12 +635,12 @@ span.right a {
     xwidth: 435px;
     margin: 0 auto;
     margin-top: 25px;
-    margin-right: 50px;
 }
 
 .viewer .shadow-column {
-    width: 150px;
-    padding: 20px 20px 0px 20px;
+    width: 25%;
+    float: left;
+    padding: 0 33px;
 }
 
 .viewer#map {
@@ -1111,7 +1115,7 @@ img {
     background-color: rgba(44,62,80,0.1);
     border-radius: 9px;    
     padding: 0px 10px 10px 10px;
-    margin: 0 auto;
+    margin: -3px auto 0 auto;
 
 }
 
@@ -1153,6 +1157,10 @@ img {
     margin:0;
     padding:0;
     display:inline;
+}
+.tab>ul>li:hover{
+    background-color: rgba(44,62,80,0.1);
+    color:#2C3E50;
 }
 div.image.slideBottom:hover span {
     bottom: 0px;
@@ -1196,4 +1204,12 @@ div.image.slideBottom span {
 
 .btn-group-nav {
     margin-top: 7px;
+}
+
+.intro-text .login-page{
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform:translateY(-50%)
+    position: relative;
+    top: 0%;
 }
