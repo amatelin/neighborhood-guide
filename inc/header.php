@@ -122,7 +122,7 @@
                             <span class="caret"></span>
                           </div>
                           <ul class="dropdown-menu white">
-                              <li><a href="login.php">Register</a></li>
+                              <li><a href="register.php">Register</a></li>
                             <li><a href="login.php">Login</a></li>  
                             <li><a href="profile.php">Profile</a></li>
                             <li><a href="#">Logout</a></li>
@@ -149,8 +149,8 @@
                             <span class="caret"></span>
                           </div>
                           <ul class="dropdown-menu">
+                            <li><a href="register.php">Register</a></li>
                             <li><a href="login.php">Login</a></li>
-                            <li><a href="login.php">Register</a></li>
                             <li><a href="profile.php">Profile</a></li>
                             <li><a href="#">Logout</a></li>
                           </ul>

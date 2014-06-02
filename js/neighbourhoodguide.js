@@ -33,7 +33,7 @@ function navScroll(){
         if (location.hash) shiftWindow();
         window.addEventListener("hashchange", shiftWindow);
 
-        var headerPictureSize = parseInt($('header').css('height')) ;
+        var headerPictureSize = parseInt($('header').css('height')) - 50 ;
         var nav = $('nav');
         var actualPosition = $(window).scrollTop();
 

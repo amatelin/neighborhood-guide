@@ -1,10 +1,10 @@
 <?php include './inc/header.php' ?>
 
     <header>
-        <div class="container">
+        <div class="container middle">
             <div class="row">
                 <div class="col-lg-12">                    
-                    <div class="intro-text ">                       
+                    <div class="intro-text">                       
                         <span class="name">Login</span>
                         <img src="img/white-star.png">                    
                         <div class="log-form">
