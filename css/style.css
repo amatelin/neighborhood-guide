@@ -183,6 +183,10 @@ header .intro-text{
     border-radius: 20px;
     width: 625px;
     margin: 0 auto;
+    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 header .intro-text-form{
@@ -209,7 +213,8 @@ header .intro-text hr.star-light{
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
-    width: 300px;
+    width: 500px;
+    padding: 0 15 0 15px;
 }
 header .log-form{
     margin-left: -100px;
@@ -247,9 +252,7 @@ header .form-control:-ms-input-placeholder {
 }
 
 .fa-arrow-down {
-    margin-top: -10px;
     font-size: 50px;
-    float: right;
     color: white;
 }
 

@@ -61,14 +61,13 @@
                         <img src="img/white-star.png">
                         <span class="skills">
                             The open source neighbourhood guide created by the community for the community. 
-                            Click on the arrow to the right and discover the guide!
+                           
                         </span>
-                        <br>
-                        <li class="page-scroll">
-                            <a href="#neighborhoods-list" title="Discover the guide!"><i class="fa fa-arrow-down"></i></a>
-                        </li>
                         <br/>
                         <br/>
+                        <div class="page-scroll">
+                            <a href="#neighborhoods-list" title="Discover the guide!" class="fa fa-arrow-down"></a>
+                        </div>
                     </div>
                 </div>
             </div>
