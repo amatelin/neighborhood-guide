@@ -44,8 +44,8 @@
                     <br/>
                     <br/>
                 </div>
-                <ul class="shadow-column">
-                    <li>Restaurants <a href="./forms/addResto.php"> <i class="fa fa-plus"></i></a></li> 
+                <ul class="col-lg-3 shadow-column">
+                    <li>Restaurants <a href="addResto.php"> <i class="fa fa-plus"></i></a></li> 
                    <ul>
                         <li>test</li>
                         <li>test</li>
@@ -61,14 +61,14 @@
                         <li>test</li>
                     </ul>
                 </ul>
-                <ul class="shadow-column">
+                <ul class="col-lg-3 shadow-column">
                     <li>Shopping</li>
                     <ul>
                         <li>Stores</li>
                     </ul>
                 </ul>
                 
-                <ul class="shadow-column">
+                <ul class="col-lg-3 shadow-column">
                     <li>Sports</li>
                     <ul>
                         <li>Gyms</li>
@@ -77,7 +77,7 @@
                         <li>Swimming Pools</li>
                     </ul>
                 </ul>
-                <ul class="shadow-column">
+                <ul class="col-lg-3 shadow-column">
                     <li>Events</li>
                     <ul>
                         <li>Shows</li>
@@ -85,14 +85,14 @@
                         <li>Races</li>
                     </ul>
                 </ul>
-                <ul class="shadow-column">
+                <ul class="col-lg-3 shadow-column">
                     <li>Financial</li>
                     <ul>
                         <li>Banks</li>
                         <li>ATMs</li>
                     </ul>
                 </ul>
-               <ul class="shadow-column">
+               <ul class="col-lg-3 shadow-column">
                     <li>Accommodations</li>
                     <ul>
                         <li>Hotels</li>
@@ -102,7 +102,7 @@
                         <li>Hostels</li>
                     </ul>
                 </ul>
-                <ul class="shadow-column">
+                <ul class="col-lg-3 shadow-column">
                     <li>Public Services</li>
                     <ul>
                         <li>Police Stations</li>
@@ -113,7 +113,7 @@
                         <li>Library</li>
                     </ul>
                 </ul>
-                <ul class="shadow-column">
+                <ul class="col-lg-3 shadow-column">
                     <li>Transportation</li>
                     <ul>
                         <li>Metro Stations</li>
@@ -123,16 +123,17 @@
                         <li>Airports</li>
                     </ul>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <ul class="shadow-column">
-        <li>Financial</li>
-    <ul>
-        <li>Banks</li>
+                <ul class="col-lg-3 shadow-column">
+                    <li>Financial</li>
+                    <ul>
+                        <li>Banks</li>
                         <li>ATMs</li>
                     </ul>
                 </ul>
+            </div>
+        </div>
+    </div>
+ 
         <div id="map" class="viewer">
             <div class="mapbar shadow_map">
                 <i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>               
