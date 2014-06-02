@@ -22,7 +22,7 @@
                                                 <option value="1" disabled selected>Label</option>
                                                 <optgroup label="Entertainement">
                                                     <option value="2">Cinema</option>
-                                                    <!--<option value="3">Theatre</option>-->
+                                                    <option value="3">Theatre</option>
                                                 </optgrounp>
                                                 <optgroup label="Restaurants">
                                                     <option value="4">Cafe</option>
@@ -33,6 +33,27 @@
                                     </div>
                                     <div id="box">
                                     </div>
+
+                                    <!-- Default form before -->
+                                    <script type="text/template" id="input-before">
+                                        <div class="form-group">
+                                          <label class="col-md-4 control-label" for="name">Name</label>
+                                          <div class="col-md-6">
+                                              <input id="name" name="name" placeholder="Enter the name" class="form-control input-md" type="text">
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label" for="desc">Description</label>
+                                            <div class="col-md-4">
+                                                <textarea class="form-control" id="desc" name="desc" placeholder="Enter the description"></textarea>
+                                            </div>
+                                        </div>
+                                    </script>
+
+                                    <!-- Default form after -->
+                                    <script type="text/template" id="input-after">
+                                    <button type="submit" id="submit" name="submit" class="btn btn-primary">Send</button>
+                                    </script>
 
                                     <!-- Text input-->
                                     <script type="text/template" id="input-text">
