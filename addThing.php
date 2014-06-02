@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text ">
-                        <span class="name">Add Restaurant</span>
+                        <span class="name">Add Place</span>
                         <img src="img/white-star.png">
                     </div>
                     <div class="intro-text-form">

@@ -39,8 +39,8 @@ $(function() {
         select:   Handlebars.compile($('#input-select').html())
     }
 
-    $('#selectbasic').change(function() {
-        var elems = json_input[this.value]
+    function updateForm() {
+        var elems = json_input[$('#selectbasic').val()]
         if (!elems)
             return
 
@@ -51,5 +51,14 @@ $(function() {
         })
 
         $('#box').html(result)
-    })
+
+    }
+
+    $('#selectbasic').change(updateForm)
+
+    if (window.location.hash) {
+        $('#selectbasic').val(window.location.hash.substring(1))
+        updateForm()
+    }
+
 })
