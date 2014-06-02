@@ -616,7 +616,7 @@ span.right a {
     position: absolute;
     xheight: 60%;
     background: rgba(35,49,64,.8);
-    width: 60%;
+    xwidth: 60%;
     top: 0;
     left: 504px;
     padding: 16px 32px;
@@ -631,12 +631,14 @@ span.right a {
     xwidth: 435px;
     margin: 0 auto;
     margin-top: 25px;
+    margin-right: 50px;
 }
 
 .viewer .shadow-column {
-    width: 25%;
-    float: left;
-    padding: 0 33px;
+    xwidth: 25%;
+    width: 150px;
+    float: right;
+    padding: 20px;
 }
 
 .viewer#map {
