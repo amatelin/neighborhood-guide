@@ -127,8 +127,6 @@ header {
 
 }
 header .container {
-    position: relative;
-    transform: translateY(-65%);
     padding-top: 0px;
     padding-bottom: 50px;
     /*width: 800px;*/
@@ -163,15 +161,15 @@ header .intro-text{
     border-radius: 20px;
     width: 625px;
     margin: 0 auto;
-    
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 .container.middle {
     position: relative;
-    top: 10%;
-    transform: translateY(-10%);
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 header .intro-text-form{
     margin: 0 auto;
