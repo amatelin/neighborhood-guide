@@ -581,7 +581,7 @@ nav {
     /*xheight: 50%;*/
     background: rgba(35,49,64,.8);
     width: 19.79%;
-    max-height: 75%;
+    max-height: 85%;
     overflow: auto;
     top: 0;
     left: 64px;
@@ -660,8 +660,9 @@ span.right a {
     xheight: 60%;
     background: rgba(35,49,64,.8);
     width: 60%;
+    max-height: 85%;
     top: 0;
-    left: 504px;
+    left: 25%;
     padding: 16px 32px;
     color: white;
     text-align: left;
