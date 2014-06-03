@@ -101,10 +101,10 @@ $(function() {
 $(function() {
 
     var top = false,
-        dist = '146px'
+        dist = '107px'
 
         function showMap() {
-            $('#map').css('top', top ? '100%' : dist)
+            $('#map').css('top', top ? '97%' : dist)
             $('#map').find('.right').css('opacity', top ? '0' : '1')
             $('#map').find('.piti') .css('opacity', top ? '1' : '0')
             window.setTimeout(function() {top = !top}, 300)
