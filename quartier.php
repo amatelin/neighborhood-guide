@@ -46,7 +46,7 @@
                 </div>
 
 
-                <div class="item">
+                <div class="place">
                     <li>Restaurants <a href="addResto.php"> <i class="fa fa-plus"></i></a></li>
                     <ul>
                         <li>test</li>
@@ -55,7 +55,7 @@
                         <li>test</li>
                     </ul>
                 </div>
-                <div class="item">
+                <div class="place">
                     <li>Cafes</li>
                     <ul>
                         <li>test</li>
@@ -64,13 +64,13 @@
                         <li>test</li>
                     </ul>
                 </div>
-                <div class="item">
+                <div class="place">
                     <li>Shopping</li>
                     <ul>
                         <li>Stores</li>
                     </ul>
                 </div>
-                <div class="item">
+                <div class="place">
                     <li>Sports</li>
                     <ul>
                         <li>Gyms</li>
@@ -79,7 +79,7 @@
                         <li>Swimming Pools</li>
                     </ul>
                 </div>
-                <div class="item">
+                <div class="place">
                     <li>Events</li>
                     <ul>
                         <li>Shows</li>
@@ -87,14 +87,14 @@
                         <li>Races</li>
                     </ul>
                 </div>
-                <div class="item">
+                <div class="place">
                     <li>Financial</li>
                     <ul>
                         <li>Banks</li>
                         <li>ATMs</li>
                     </ul>
                 </div>
-                <div class="item">
+                <div class="place">
                     <li>Accommodations</li>
                     <ul>
                         <li>Hotels</li>
@@ -104,7 +104,7 @@
                         <li>Hostels</li>
                     </ul>
                 </div>
-                <div class="item">
+                <div class="place">
                     <li>Public Services</li>
                     <ul>
                         <li>Police Stations</li>
@@ -115,7 +115,7 @@
                         <li>Library</li>
                     </ul>
                 </div>
-                <div class="item">
+                <div class="place">
                     <li>Transportation</li>
                     <ul>
                         <li>Metro Stations</li>
@@ -125,7 +125,7 @@
                         <li>Airports</li>
                     </ul>
                 </div>
-                <div class="item">
+                <div class="place">
                     <li>Financial</li>
                     <ul>
                         <li>Banks</li>

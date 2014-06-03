@@ -140,6 +140,6 @@ $(function() {
 $(function() {
     $('.shadow-main').first().masonry({
         columnWidth: 200,
-        itemSelector: '.item'
+        itemSelector: '.place'
     })
 })
