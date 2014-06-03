@@ -27,7 +27,7 @@
                         <h3>About NestFinder</h3>
                         <p>
                             Nestfinder is a startup created by young Montreal entrepreneurs.
-                            Visit the <a href="#">blog</a> to follow this project's progress.
+                            Visit the <a href="team.php">team</a> page to learn more about us!
                         </p>
                     </div>
                 </div>
