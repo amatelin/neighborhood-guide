@@ -149,6 +149,7 @@
             <div class="panel panel-default shadow_map">
                 <div class="panel-heading"><span>Bons plans</span><i class="fa fa-times right"></i></div>
                 <div class="panel-body">
+                    <!--
                     <div class="item">
                         <img class="mini" src="./img/resto.jpg">
                         <span class="stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
@@ -160,7 +161,7 @@
                         <span class="stars"><i class="fa fa-star"></i> <i class="fa fa-star"></i></span>
                         <h3>Le rouge</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -174,6 +175,12 @@
                     <span class="stars">{{#times this.stars}} <i class="fa fa-star"></i>{{/times}}</span>
                     <h3>{{this.name}}</h3>
                     <p>{{this.desc}}</p>
+                    <div class="mask" name="{{this.name}}">
+                        <p>Nb place : 3</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
                 </div>
             {{/each}}
         </script>
