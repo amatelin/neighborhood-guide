@@ -100,6 +100,7 @@
                 <?php else: ?>
                 <a class="navbar-brand" href="index.php">NestFinder</a>
                 <?php endif; ?>
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

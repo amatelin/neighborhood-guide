@@ -50,8 +50,9 @@ a.active {
 .navbar a {
     color: white;
 }
+
 .navbar a:hover {
-    color: white;
+    color: #18bc9c;
 }
 
 .white {
@@ -1382,6 +1383,7 @@ header .intro-text-team {
     padding-top:2px;
     background-color: #fff;
 }
+
 /*
 .profile-pic > img,
 .profile-pic > div {
