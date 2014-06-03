@@ -52,6 +52,16 @@ a.active {
 .navbar a:hover {
     color: white;
 }
+
+.white {
+    color: white;
+}
+
+.description {
+    padding: 25px 0 50px 0px;
+    text-align: center;
+}
+
 #bs-example-navbar-collapse-1 > ul > li > div > ul {
     background-color: white;
 }
@@ -563,6 +573,7 @@ nav {
     background-image: url('../img/mont3.jpg');
     background-size: cover;
     height: 84%;
+    overflow-y: auto; 
 }
 #map {
     height: 100%;
@@ -577,13 +588,12 @@ nav {
     margin-bottom: 8px;
 }
 .viewer .shadow {
-    position: absolute;
-    /*xheight: 50%;*/
+    float: left;
     background: rgba(35,49,64,.8);
     width: 19.79%;
+    min-width: 200px;
     max-height: 80%;
     overflow: auto;
-    top: 0;
     left: 64px;
     padding: 16px 32px;
     color: white;
@@ -595,6 +605,13 @@ nav {
     xwidth: 435px;
     margin: 0 auto;
     margin-top: 25px;
+    margin-left: 32px;
+    margin-right: 30px;
+}
+@media(max-width: 1140px) {
+    .viewer .shadow h2 {
+        font-size: 20px;
+    }
 }
 .shadow > p {
     font-size: 14px;
@@ -653,16 +670,14 @@ span.right a {
     text-transform: none;
 }
 .fa-arrow-left {
-    vertical-algin: middle;
+    vertical-align: middle;
 }
 .viewer .shadow-main {
-    position: absolute;
-    xheight: 60%;
+    float: left;
     background: rgba(35,49,64,.8);
     width: 60%;
+    min-width: 400px;
     max-height: 80%;
-    top: 0;
-    left: 25%;
     padding: 16px 32px;
     color: white;
     text-align: left;
@@ -677,13 +692,14 @@ span.right a {
     margin: 0 auto;
     margin-top: 25px;
 }
-
 .viewer .shadow-column {
     width: 25%;
     float: left;
     padding: 0 33px;
 }
-
+.place {
+    min-height: 110px;
+}
 .viewer#map {
     position: absolute;
     top: 97%;
@@ -1252,9 +1268,9 @@ div.image.slideBottom span {
 }
 
 .intro-text .login-page{
-    -webkit-transform: translateY(-50%)
-    -ms-transform: translateY(-50%)
-    transform:translateY(-50%)
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform:translateY(-50%);
     position: relative;
     top: 0%;
 }
@@ -1274,4 +1290,53 @@ div.image.slideBottom span {
     .neigh{
         margin-top: 0px;
     }
+}
+header .intro-text-team{
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 15px;
+    color:#fff;
+    background:rgba(35,49,64,.8);
+    border-radius: 20px;
+    padding-bottom: 55px;
+    min-width: 120px;
+}
+
+.team {
+    text-align: center;
+    display: inline-block;
+}
+
+.team img {
+    float: left;
+    width: 105px;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.team p {
+    font-size: 15px;
+    min-height: 100px;
+}
+
+.team h3 {
+    padding: 5px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.team-profile {
+    display: inline-block;
+    margin:0 auto;
+    position: relative;
+    width: 320px;
+    min-height: 100px;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }

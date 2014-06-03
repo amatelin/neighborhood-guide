@@ -40,21 +40,28 @@
                                     </div>
 
                                     <!-- Password input-->
-                                    <div class="form-group">
-                                      <label class="col-md-4 control-label" for="password">Password</label>
-                                      <div class="col-md-6">
-                                        <input id="password" name="password" placeholder="Type your password" class="form-control input-md" type="password">
-                                        
-                                      </div>
-                                    </div>
 
+                                    <div class="form-group">
+                                      <label for="inputPassword" class="control-label col-md-4">Password</label>
+                                      <div class="col-md-6">
+                                        <input type="password" data-toggle="validator" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+                                        <span class="help-block white">Minimum of 6 characters</span>
+                                      </div>
+                                      
+                                      <label for="inputPassword" class="control-label col-md-4">Confirm Password</label>
+                                      <div class="col-md-6">
+                                        <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+                                        <div class="help-block with-errors"></div>
+                                      </div>
+                                    </div>                            
+                                    
                                     <!-- Multiple Checkboxes (inline) -->
                                     <div class="form-group">
-                                      <label class="col-md-4 control-label" for="checkboxes"></label>
-                                      <div class="col-md-4">
+                                      <label class="col-md-2 control-label" for="checkboxes"></label>
+                                      <div class="col-md-8">
                                         <label class="checkbox-inline" for="checkboxes-0">
                                           <input name="checkboxes" id="checkboxes-0" value="" type="checkbox">
-                                          I've read and i agree with NestFinder's rules.
+                                          I've read and i agree with NestFinder's terms of service.
                                         </label>
                                       </div>
                                     </div>
