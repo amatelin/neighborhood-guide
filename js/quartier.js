@@ -134,3 +134,12 @@ $(function() {
         showMap()
     })//*/
 })
+
+
+// Masonry
+$(function() {
+    $('.shadow-main').first().masonry({
+        columnWidth: 200,
+        itemSelector: '.item'
+    })
+})
