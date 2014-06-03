@@ -1274,15 +1274,25 @@ div.image.slideBottom span {
     }
 }
 
-header .intro-text-team{
+header .intro-text-team {
     margin: 0 auto;
     margin-top: 10px;
     padding: 15px;
     color:#fff;
     background:rgba(35,49,64,.8);
     border-radius: 20px;
-    padding-bottom: 55px;
-    min-width: 120px;
+    xmin-width: 120px;
+}
+header .intro-text-team .name {
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .intro-text-team {
+    font-size: 25px;
 }
 
 .team {
