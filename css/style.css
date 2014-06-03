@@ -52,6 +52,16 @@ a.active {
 .navbar a:hover {
     color: white;
 }
+
+.white {
+    color: white;
+}
+
+.description {
+    padding: 25px 0 50px 0px;
+    text-align: center;
+}
+
 #bs-example-navbar-collapse-1 > ul > li > div > ul {
     background-color: white;
 }
@@ -1240,9 +1250,9 @@ div.image.slideBottom span {
 }
 
 .intro-text .login-page{
-    -webkit-transform: translateY(-50%)
-    -ms-transform: translateY(-50%)
-    transform:translateY(-50%)
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform:translateY(-50%);
     position: relative;
     top: 0%;
 }
