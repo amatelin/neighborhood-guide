@@ -20,12 +20,16 @@
     <!-- CSS body { overflow: hidden } hack -->
     <?php if ($page == "quartier"): ?>
         <link rel="stylesheet" href="./css/quartier.css">';
-    <?php endif; ?>  
+    <?php endif; ?>
+    <link rel="stylesheet" href="./css/datepicker.css">
+    
     
         <!-- Javascript -->  
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/neighbourhoodguide.js"></script>  
+    <script src="./js/neighbourhoodguide.js"></script>
+    <script src="./js/bootstrap-datepicker.js"></script>
+
         
     <!-- Fonts -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
@@ -131,6 +135,7 @@
                     <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
+                             <a href="profile.php">
                              <a href="profile.php"><img src="img/neighborhoods/neighborhoods/joscar.jpg" class="nav-profile-picture"></a>
                              <span id="username">Scar-Jo</span>
                           </div>
