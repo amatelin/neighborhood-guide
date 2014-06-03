@@ -13,7 +13,7 @@
                 <a class="next-neighbourhood" href="#next">Westmount</a>        
             </span>
         </div>
-        <div class="viewer">
+        <div id="viewer-top" class="viewer">
 <!--             <img src="./img/mont3.jpg"> -->
             <div class="shadow">
                 <div class="col-lg-12 text-center">
@@ -39,7 +39,7 @@
                     <br/>
                 </div>
                 <ul class="shadow-column">
-                    <li>Restaurants <a href="./forms/addResto.php"> <i class="fa fa-plus"></i></a></li> 
+                    <li>Restaurants <a href="./addResto.php"> <i class="fa fa-plus"></i></a></li> 
                    <ul>
                         <li>test</li>
                         <li>test</li>
