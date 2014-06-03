@@ -756,7 +756,8 @@ span.small {
     cursor: pointer;
 }
 .viewer#map .panel .item {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
+    cursor: pointer;
 }
 .viewer#map .panel .item .stars {
     float: right;

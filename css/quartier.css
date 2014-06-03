@@ -6,3 +6,8 @@ body {
     width: 200px;
     float: left;
 }
+
+.mask {
+    height: 0;
+    overflow: hidden;
+}
