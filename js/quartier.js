@@ -103,35 +103,43 @@ $(function() {
     var top = false,
         dist = '146px'
 
+        function showMap() {
+            $('#map').css('top', top ? '100%' : dist)
+            $('#map').find('.right').css('opacity', top ? '0' : '1')
+            $('#map').find('.piti') .css('opacity', top ? '1' : '0')
+            window.setTimeout(function() {top = !top}, 300)
+            if(!top){
+                var source   = $('#item-template').html()
+                var template = Handlebars.compile(source)
+                var html = template(datas[0])
+                $('.panel').children('.panel-heading').children('span').html(datas[0].name)
+                $('.panel').children('.panel-body').html(html)
+                $('.panel').first().css('display', 'block')
+            }
+        }
+
     $('#showMap').click(function() {
-        $('#map').css('top', dist)
-        $('#map').find('.right').css('opacity', top ? '0' : '1')
-        $('#map').find('.piti') .css('opacity', top ? '1' : '0')
-        top = !top
+        showMap()
     })
 
     $('#map').find('.mapbar').click(function() {
-        $('#map').css('top', top ? '100%' : dist)
-        $('#map').find('.right').css('opacity', top ? '0' : '1')
-        $('#map').find('.piti') .css('opacity', top ? '1' : '0')
-        window.setTimeout(function() {top = !top}, 300)
-        if(top){
-            var source   = $('#item-template').html()
-            var template = Handlebars.compile(source)
-            var html = template(datas[0])
-            $('.panel').children('.panel-heading').children('span').html(datas[0].name)
-            $('.panel').children('.panel-body').html(html)
-            $('.panel').first().css('display', 'block')
-        }
+        showMap()
     })
 
-    /*
+    /* Display Map on hover
     $('#map').mouseenter(function() {
         if (top) {
             return
         }
-        $('#map').css('top', top ? '100%' : dist)
-        $('#map').find('.right').css('opacity', top ? '0' : '1')
-        top = !top
+        showMap()
     })//*/
+})
+
+
+// Masonry
+$(function() {
+    $('.shadow-main').first().masonry({
+        columnWidth: 200,
+        itemSelector: '.item'
+    })
 })

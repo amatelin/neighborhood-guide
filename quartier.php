@@ -1,6 +1,6 @@
-<?php 
+<?php
     $page = "quartier";
-    include './inc/header.php'; 
+    include './inc/header.php';
 ?>
 
     <div id="presentation">
@@ -10,8 +10,13 @@
                 <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
                 <h1> LE PLATEAU </h1>
                 <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
-                <a class="next-neighbourhood" href="#next">Westmount</a>        
+                <a class="next-neighbourhood" href="#next">Westmount</a>
             </span>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 416fe79abe1a2394e9292a73ac713fdf40a5d6d2
         </div>
         <div id="viewer-top" class="viewer">
 <!--             <img src="./img/mont3.jpg"> -->
@@ -23,14 +28,14 @@
                     <br>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
                     eu fugiat nulla pariatur.
                     <img id="showMap" src="./img/Boussole.png">
                 </p>
             </div>
-            
+
             <div class="shadow-main">
                 <div class="col-lg-12 text-center">
                     <h2>The Neighbourhood</h2>
@@ -38,31 +43,32 @@
                     <br/>
                     <br/>
                 </div>
-                <ul class="shadow-column">
-                    <li>Restaurants <a href="./addResto.php"> <i class="fa fa-plus"></i></a></li> 
-                   <ul>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                    </ul>
-                    <li>Cafes</li>
-                    
+
+                <div class="item">
+                    <li>Restaurants <a href="addResto.php"> <i class="fa fa-plus"></i></a></li>
                     <ul>
                         <li>test</li>
                         <li>test</li>
                         <li>test</li>
                         <li>test</li>
                     </ul>
-                </ul>
-                <ul class="shadow-column">
+                </div>
+                <div class="item">
+                    <li>Cafes</li>
+                    <ul>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+                </div>
+                <div class="item">
                     <li>Shopping</li>
                     <ul>
                         <li>Stores</li>
                     </ul>
-                </ul>
-                
-                <ul class="shadow-column">
+                </div>
+                <div class="item">
                     <li>Sports</li>
                     <ul>
                         <li>Gyms</li>
@@ -70,33 +76,33 @@
                         <li>Baseball Fields</li>
                         <li>Swimming Pools</li>
                     </ul>
-                </ul>
-                <ul class="shadow-column">
+                </div>
+                <div class="item">
                     <li>Events</li>
                     <ul>
                         <li>Shows</li>
                         <li>Festivals</li>
                         <li>Races</li>
                     </ul>
-                </ul>
-                <ul class="shadow-column">
+                </div>
+                <div class="item">
                     <li>Financial</li>
                     <ul>
                         <li>Banks</li>
                         <li>ATMs</li>
                     </ul>
-                </ul>
-               <ul class="shadow-column">
+                </div>
+                <div class="item">
                     <li>Accommodations</li>
                     <ul>
                         <li>Hotels</li>
                         <li>Motels</li>
                         <li>Camping</li>
-                        <li>Bed & Breakfast</li>
+                        <li>Bed Breakfast</li>
                         <li>Hostels</li>
                     </ul>
-                </ul>
-                <ul class="shadow-column">
+                </div>
+                <div class="item">
                     <li>Public Services</li>
                     <ul>
                         <li>Police Stations</li>
@@ -106,8 +112,8 @@
                         <li>CLSC</li>
                         <li>Library</li>
                     </ul>
-                </ul>
-                <ul class="shadow-column">
+                </div>
+                <div class="item">
                     <li>Transportation</li>
                     <ul>
                         <li>Metro Stations</li>
@@ -122,12 +128,12 @@
     </div>
         <div id="map" class="viewer">
             <div class="mapbar shadow_map">
-                <i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>               
+                <i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>
                 <span class="right">
-                    <a href="#next"><i class="fa fa-arrow-left valign"></i></a> 
-                     LE PLATEAU 
+                    <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
+                     LE PLATEAU
                     <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
-                </span>            
+                </span>
             </div>
             <div id="map_canvas"></div>
             <div class="btn-group ico shadow_map">
@@ -163,8 +169,8 @@
             </div>
         </div>
 
-       
-        
+
+
         <script id="item-template" type="text/x-handlebars-template">
             {{#each infos}}
                 <div class="item">

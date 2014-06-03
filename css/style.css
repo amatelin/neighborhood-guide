@@ -276,10 +276,26 @@ span.title {
 
     header .intro-text .skills {
         font-size: 1.75em;
-    }
-    
+    }   
 }
-
+@media(max-width: 768px){
+    .tab>ul>li{
+        display:block;
+        border-style: solid;
+        border-width:10px;
+        border-radius: 9px;
+        border-color: black;
+        float:left;
+        margin:0;
+        width:100%;
+        clear: both;       
+    }
+    .neigh{
+        -webkit-border-top-left-radius: 1px;
+        -moz-border-radius-topleft: 1px;
+        border-top-left-radius: 1px;
+    }
+}
 /**
 *NAVBAR
 **/
@@ -513,6 +529,16 @@ nav {
 .my-navbar-default{
     background-color:#2C3E50;
     color: white;
+}
+
+.nav-profile-picture{
+    height: 40px;
+    width: 40px;
+    margin-top: -7px;
+}
+
+.fa-gear{
+    background-color:#2C3E50;
 }
 
 /**
@@ -1112,6 +1138,8 @@ div.image {
     position: relative;
     overflow: hidden;
     margin-top: 25px;
+    margin-right: 10px;
+    width:100%;
 }
 
 img {
@@ -1226,4 +1254,21 @@ div.image.slideBottom span {
     transform:translateY(-50%)
     position: relative;
     top: 0%;
+}
+@media(max-width: 1000px){
+    .tab>ul>li>h4{
+        font-size: 17px;
+    }
+
+}
+@media(max-width: 480px){
+    .tab>ul>li{
+        display:block;
+        margin:0;
+        border-bottom-style: solid;
+        border-radius: 9px;
+    }
+    .neigh{
+        margin-top: 0px;
+    }
 }
