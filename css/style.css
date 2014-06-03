@@ -1323,3 +1323,31 @@ header .intro-text-team{
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+@media(max-width: 767px) {
+    .team img {
+        float: left;
+        width: 61px;
+        padding: 5px;
+        margin-bottom: 0px;
+    }
+    
+    .team h2 {
+        font-size: 20px;
+    }
+    
+    .team h3 {
+        font-size: 17px;
+        margin: 0;
+    }
+    
+    .team-profile {
+        width: 100%;
+    }
+}
+
+@media(max-width: 480px){
+    .team {
+        width: 300px;
+    }
+}
