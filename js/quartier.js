@@ -61,6 +61,17 @@ var datas = [
     }
 ]
 
+function attachInfo() {
+    $('.item').click(function() {
+        var elem = $(this).children('.mask').first()
+        if (elem.height() == '0') {
+            elem.height('auto')
+        } else {
+            elem.height('0')
+        }
+    })
+}
+
 // Display Infos
 $(function() {
     // Handlerbar
@@ -72,6 +83,7 @@ $(function() {
     })
     var source   = $('#item-template').html()
     var template = Handlebars.compile(source)
+
 
     // Hide Panel
     $('.panel-heading').first().children('i').click(function() {
@@ -87,11 +99,13 @@ $(function() {
                 $('.panel').children('.panel-heading').children('span').html(datas[x].name)
                 $('.panel').children('.panel-body').html(html)
                 $('.panel').css('display', 'block')
+                attachInfo()
                 return
             }
         }
         console.log('Undefined items ' + search)
     })
+
 
     $('nav').css('display','displayed');
     $('.navbar').css('opacity','1');
@@ -115,6 +129,7 @@ $(function() {
                 $('.panel').children('.panel-heading').children('span').html(datas[0].name)
                 $('.panel').children('.panel-body').html(html)
                 $('.panel').first().css('display', 'block')
+                attachInfo()
             }
         }
 
@@ -135,11 +150,11 @@ $(function() {
     })//*/
 })
 
-
 // Masonry
 $(function() {
+    /*
     $('.shadow-main').first().masonry({
         columnWidth: 200,
         itemSelector: '.place'
-    })
+    })//*/
 })
