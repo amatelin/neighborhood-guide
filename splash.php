@@ -78,12 +78,10 @@
                                 </div>    
                             </div>
                         </div>
-                        <!--
-                        <div class="page-scroll">
+                      
+                        <div class="page-scroll downarrow">
                             <a href="#contribute" title="Discover the guide!" class="fa fa-arrow-down"></a>
-                        </div>
-                        -->
-                    </div>
+
                 </div>
             </div>
             
