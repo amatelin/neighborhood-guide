@@ -1558,11 +1558,14 @@ header .intro-text-team {
     background-color: #18bc9c;
 }
 .email-length {
-    width: 250px;
-    height: 25px;
+    width: 300px;
+    height: 30px;
     color: #233140;
 }
-
+.well input[type="text"]
+{
+    font-size:19px;
+}
 @media(max-width: 767px) {
     .downarrow {
         position: absolute;
