@@ -593,7 +593,7 @@ nav {
     background-image: url('../img/mont3.jpg');
     background-size: cover;
     height: 84%;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 #map {
     height: 100%;
@@ -632,7 +632,7 @@ nav {
         width: 300px;
         height: 150px;
         margin-left: 10px;
-        margin-top: 5px; 
+        margin-top: 5px;
     }
     .viewer .shadow-main {
         height: 150px;
@@ -834,8 +834,11 @@ span.small {
     cursor: pointer;
 }
 .viewer#map .panel .item {
-    margin-bottom: 32px;
+    margin-top: 32px;
     cursor: pointer;
+}
+.viewer#map .panel .item:first-child {
+    margin-top: 0;
 }
 .viewer#map .panel .item .stars {
     float: right;

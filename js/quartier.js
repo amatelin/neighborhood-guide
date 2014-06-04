@@ -108,10 +108,12 @@ $(function() {
 		return accum
 	})
 	Handlebars.registerHelper('page', function(n, p, block) {
-		var accum = ''
+		if (n == 1)
+			return
+		var accum = '<ul class="pagination">'
 		for(var i = 0 ; i < n ; ++i)
 			accum += block.fn({page: p, value: (i + 1)})
-		return accum
+		return accum + '</ul>'
 	})
 	Handlebars.registerHelper('ifEq', function(v1, v2, block) {
         if (v1 == (v2 - 1))

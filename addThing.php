@@ -20,14 +20,14 @@
                                         <label class="col-md-4 control-label" for="selectbasic">Select Categorie</label>
                                         <div class="col-md-4">
                                             <select id="selectbasic" name="selectbasic" class="form-control">
-                                                <option value="1" disabled selected>Label</option>
+                                                <option value="none" disabled selected>Label</option>
                                                 <optgroup label="Entertainement">
-                                                    <option value="2">Cinema</option>
-                                                    <option value="3">Theatre</option>
+                                                    <option value="cinema">Cinema</option>
+                                                    <option value="theatre">  Theatre</option>
                                                 </optgrounp>
                                                 <optgroup label="Restaurants">
-                                                    <option value="4">Cafe</option>
-                                                    <!--<option value="5">Resto</option>-->
+                                                    <option value="cafe">Cafe</option>
+                                                    <option value="resto">Resto</option>
                                                 </optgrounp>
                                             </select>
                                         </div>
