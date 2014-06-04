@@ -1156,7 +1156,7 @@ img {
     background-color: rgba(44,62,80,0.1);
     border-radius: 9px;
     padding: 0px 10px 10px 10px;
-    margin: -3px auto 0 auto;
+    margin: -2px auto 0 auto;
 
 }
 
@@ -1165,7 +1165,7 @@ img {
 }
 
 .title{
-    nowrap:none;
+    white-space:nowrap;
 }
 
 .tab{
@@ -1359,7 +1359,6 @@ header .intro-text-team {
     .team {
         width: 300px;
     }
-<<<<<<< HEAD
 }
 /**
 *ADMINISTRATION
@@ -1383,15 +1382,19 @@ header .intro-text-team {
     font-size:15px;
     text-decoration: none;
 }
-.intro-text-admin tbody>tr:hover{
-    color:#2C3E50;
-}
+.intro-text-admin tbody>tr:hover,
 .intro-text-admin tbody>tr:hover>td>a>i{
+    color:#2C3E50;
 }
 .intro-text-admin tbody>tr>td>a>i{
     color:#fff;
 }
-
+#info{
+    margin-top: 130px;
+}
+#central{
+    margin-left: 8%;
+}
 @media(max-width:2500px){
     #info>div>div{
         padding-left: 0px;       
@@ -1406,6 +1409,7 @@ header .intro-text-team {
     }
 }
 
+
 .intro-text-admin-right{
     margin-top: 10px;
     color:#fff;
@@ -1417,7 +1421,8 @@ header .intro-text-team {
 }
 .sidebar{
     margin-right: 10px;
-    padding-left:450px; 
+    margin-left: 100px;
+    padding-left:250px; 
 }
 .moderationqueue-wrapper{
     padding-top: 150px;
@@ -1433,6 +1438,37 @@ header .intro-text-team {
 
 header .intro-text-team {
     font-size: 15px;
+}
+
+.intro-text-admin-menu{  
+    height:100%;  
+    list-style: none;
+    margin-left:5px;
+    margin-top: 140px;
+    color:#fff;
+    background:rgba(35,49,64,.8);
+    border-radius: 20px;
+    min-width: 120px;
+    text-align: left;
+}
+.intro-text-admin-menu>ul{
+    list-style: none;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.intro-text-admin-menu>ul>li{
+    margin-top:5px;
+}
+.intro-text-admin-menu>ul>li>ul{
+    list-style: none;
+    font-size:15px;
+}
+.intro-text-admin-menu a{
+    color:#fff;    
+}
+#menu{    
+    padding-right: 50px;
 }
 
 

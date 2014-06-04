@@ -7,7 +7,24 @@ include './inc/header.php'
      <header>
         <div class="moderationqueue-wrapper">
             <div class="row">
-                <div class="col-lg-6 col-lg-offset-3">     
+                <div class="col-lg-2" id="menu">
+                    <div class="intro-text-admin-menu">
+                        <ul>
+                            <li>
+                                <a href="">New</a>
+                                <ul>
+                                    <li><a href="newplaces.php">Places&nbsp;/&nbsp;Submissions</a></li>
+                                    <li><a href="newusers.php">Users</a></li>
+                                    <li><a href="newcategories.php">Categories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="users.php">Users</a></li>
+                            <li><a href="places.php">Places</a></li>
+                            <li><a href="categories.php">Categories</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6" id="central">     <!--col-lg-offset-3-->
 
                     <div class="intro-text ">                       
                         <span class="name">Moderation</span>
