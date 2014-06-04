@@ -148,7 +148,7 @@ header .control-group{
 }
 header img {
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 0px;
     border-radius: 30px;
     -moz-border-radius: 30px;
     -khtml-border-radius: 30px;
@@ -1408,3 +1408,42 @@ header .intro-text-team {
 .profile-pic > div {
     display:block;
 }*/
+
+.well {
+     background-color:transparent;
+     border: 0px;   
+     margin: 0 auto;
+}
+.span12 {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+#subscribe {
+    background-color: #233140;
+    color: white;
+}
+#subscribe:hover {
+    background-color: #18bc9c;
+}
+.email-length {
+    width: 250px;
+    height: 25px;
+    color: #233140;
+}
+
+
+
+@media(max-width: 480px) {
+    .well {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .span12 h2 {
+    margin-top: 0;
+}
+
+.span12 p {
+    font-size: 17px;
+}
+}
