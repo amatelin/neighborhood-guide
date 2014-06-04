@@ -70,7 +70,7 @@
                         <br/>
                         <br/>
                         <div class="page-scroll">
-                            <a href="#neighborhoods-list" title="Discover the guide!" class="fa fa-arrow-down"></a>
+                            <a href="#neighborhoods-list" title="Discover the guide!" class="fa fa-arrow-down fa-arrow-down-white"></a>
                         </div>
                     </div>
                 </div>

@@ -245,11 +245,11 @@ header .form-control:-moz-placeholder {
 header .form-control:-ms-input-placeholder {
     color:rgba(44,62,80,0.5);
 }
-.fa-arrow-down {
+.fa-arrow-down-white {
     font-size: 50px;
     color: white;
 }
-.fa-arrow-down:hover {
+.fa-arrow-down-white:hover {
     color:#18bc9c;
     text-decoration: none;
 }
