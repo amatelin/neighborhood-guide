@@ -1593,3 +1593,11 @@ header .intro-text-team {
 
     }
 }
+
+#photocredit {
+    margin-top: -15px;
+    margin-left: 3px;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+}
