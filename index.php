@@ -304,6 +304,14 @@ include './inc/header.php'
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
+                    <p class="white description">Looking for a way to improve the guide and help it grow? You can contribute your own knowledge to this open source repository of information strengthening your community
+                    by submitting information about your favorite places.</p>
+                    <p class="white description">If you have any questions, please contact us, we'd love to hear from you!</p>
+                    
+                <div class="col-lg-12 text-center">
+                    <h2>Conact Us!</h2>
+                    <hr class="star-light">
+                </div>
                     <form role="form">
                         <div class="row">
                             <div class="form-group col-xs-12 floating-label-form-group">

@@ -4,13 +4,13 @@
 ?>
 
     <div id="presentation">
-        <div id="presentation-menu ">
+        <div id="presentation-menu">
             <span class="right">
-                <a class="next-neighbourhood" href="#next">Cote St-Luc</a>
+                <div class="next-neighbourhood-name"><a class="next-neighbourhood" href="#next">Cote St-Luc</a></div>
                 <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
                 <h1> LE PLATEAU </h1>
                 <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
-                <a class="next-neighbourhood" href="#next">Westmount</a>
+                <div class="next-neighbourhood-name"><a class="next-neighbourhood" href="#next">Westmount</a></div>
             </span>
 
         </div>
@@ -28,6 +28,7 @@
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
                     eu fugiat nulla pariatur.
+                    <br>
                     <img id="showMap" src="./img/Boussole.png">
                 </p>
             </div>
@@ -39,7 +40,6 @@
                     <br/>
                     <br/>
                 </div>
-
                 <div class="place">
                     <li>Restaurants <a href="addResto.php"> <i class="fa fa-plus"></i></a></li>
                     <ul>
