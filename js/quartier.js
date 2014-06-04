@@ -115,7 +115,7 @@ $(function() {
 $(function() {
 
     var top = false,
-        dist = '107px'
+        dist = '107px'   
 
         function showMap() {
             $('#map').css('top', top ? '97%' : dist)
@@ -139,6 +139,12 @@ $(function() {
 
     $('#map').find('.mapbar').click(function() {
         showMap()
+        if(!top && (window.innerWidth < 690)){
+            $('#mapbar-title').html('LE PLATEAU <i class="fa fa-arrow-down"></i>')
+        }
+        if(top && (window.innerWidth < 690)){
+            $('#mapbar-title').html('<i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>')
+        }
     })
 
     /* Display Map on hover

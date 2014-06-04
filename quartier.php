@@ -123,7 +123,7 @@
     </div>
         <div id="map" class="viewer">
             <div class="mapbar shadow_map">
-                <i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>
+                <span id="mapbar-title"><i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span></span>
                 <span class="right">
                     <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
                      LE PLATEAU

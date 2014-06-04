@@ -450,7 +450,11 @@ span.title {
         padding:0;
     }
 }
-
+@media(max-width: 329px) {
+    .navbar-fixed-top .navbar-brand {
+        font-size: 20px;
+    }
+}
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -612,22 +616,12 @@ nav {
     margin-top: 25px;
     margin-left: 32px;
 }
-@media(max-width: 400px) {
+@media(max-width: 350px) {
     .viewer .shadow {
         width: 300px;
         height: 150px;
         margin-left: 10px;
         margin-top: 5px; 
-    }
-    .viewer .shadow-main {
-        height: 150px;
-        margin-left: 10px;
-        margin-top: 5px;
-    }
-}
-@media(max-width: 690px){
-    .viewer .right {
-        display: none;
     }
 }
 @media(max-width: 1140px) {
@@ -645,6 +639,17 @@ nav {
     text-align: center;
     margin-top: 5px;
     margin-bottom: -5px;
+}
+@media(max-width: 358px) {
+    #presentation-menu h1 {
+        font-size: 25px !important;
+    }
+    .fa-arrow-right {
+        font-size: 25px;
+    }
+    .fa-arrow-left {
+        font-size: 25px;
+    }
 }
 .next-neighbourhood-name {
     display: inline;
@@ -711,7 +716,7 @@ span.right a {
 .viewer .shadow-main {
     float: left;
     background: rgba(35,49,64,.8);
-    width: 60%;
+    width: 70%;
     min-width: 300px;
     max-height: 80%;
     padding: 16px 32px;
@@ -729,7 +734,7 @@ span.right a {
     margin-top: 25px;
     margin-left: 32px;
 }
-@media(max-width: 400px){
+@media(max-width: 350px){
     .viewer .shadow-main {
         height: 150px;
         margin-left: 10px;
@@ -765,6 +770,11 @@ span.right a {
     line-height: 70px;
     cursor: pointer;
     font-weight: bold;
+}
+@media(max-width: 690px){
+    .viewer#map .right {
+        display: none;
+    }
 }
 .viewer#map .mapbar a {
     width:80px;
@@ -845,6 +855,9 @@ span.small {
     width: 700px;
     transition: opacity .3s;
 }
+.viewer#map #mapbar {
+    margin-top: -5px;
+}
 .viewer#map .right {
     float: right;
     text-align: center;
@@ -879,7 +892,7 @@ span.small {
     overflow-x: hidden;
     max-height: 70%;
 }
-@media(max-width: 400px){
+@media(max-width: 320px){
     .panel-body {
         height: 150px;
         width: 150px;
