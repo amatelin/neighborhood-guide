@@ -569,6 +569,11 @@ nav {
     position: relative;
     text-align: center;
 }
+@media(max-width: 570px) {
+    .viewer .shadow-main h2 {
+        font-size: 20px;
+    }
+}
 #viewer-top {
     background-image: url('../img/mont3.jpg');
     background-size: cover;
@@ -606,7 +611,24 @@ nav {
     margin: 0 auto;
     margin-top: 25px;
     margin-left: 32px;
-    margin-right: 30px;
+}
+@media(max-width: 400px) {
+    .viewer .shadow {
+        width: 300px;
+        height: 150px;
+        margin-left: 10px;
+        margin-top: 5px; 
+    }
+    .viewer .shadow-main {
+        height: 150px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}
+@media(max-width: 690px){
+    .viewer .right {
+        display: none;
+    }
 }
 @media(max-width: 1140px) {
     .viewer .shadow h2 {
@@ -621,10 +643,24 @@ nav {
 }
 #presentation-menu {
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+.next-neighbourhood-name {
+    display: inline;
+    height: 60px;
+}
+@media(max-width: 892px) {
+    .next-neighbourhood-name {
+        display: none;
+    }
 }
 #presentation-menu h1 {
     margin: 0 auto;
-    text-align: center
+    text-align: center;
+}
+.fa-arrow-right {
+    margin-left: -10px;
 }
 span.right {
     display: block;
@@ -676,7 +712,7 @@ span.right a {
     float: left;
     background: rgba(35,49,64,.8);
     width: 60%;
-    min-width: 400px;
+    min-width: 300px;
     max-height: 80%;
     padding: 16px 32px;
     color: white;
@@ -691,6 +727,17 @@ span.right a {
     xwidth: 435px;
     margin: 0 auto;
     margin-top: 25px;
+    margin-left: 32px;
+}
+@media(max-width: 400px){
+    .viewer .shadow-main {
+        height: 150px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+}
+.viewer .shadow-main img {
+    max-width: 90%;
 }
 .viewer .shadow-column {
     width: 25%;
@@ -826,6 +873,17 @@ span.small {
 
 #showMap:hover {
     cursor: pointer;
+}
+.panel-body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 70%;
+}
+@media(max-width: 400px){
+    .panel-body {
+        height: 150px;
+        width: 150px;
+    }
 }
 
 .slideBottom {
