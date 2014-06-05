@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php $page == "splash" ?>
 <html lang="en">
 
 <head>
@@ -45,8 +45,48 @@
 </head>
 
 <body id="page-top" class="index">
- 
-    <header class="index">
+
+    <nav class="navbar my-navbar-default navbar-fixed-top">
+
+        <div class="container-navbar">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="logo"></span>
+
+                <a class="navbar-brand" href="index.php">NestFinder</a>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="hidden">
+                        <a href="index.php#page-top"></a>
+                    </li>
+
+                    <li class="page-scroll">
+                        <a href="index.php#about">About</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+        <section class="splash" id="splash">
+            
+            
+        <div id="splash">
         <div id="header-index"></div>
         <div class="container index">
             <div class="row">
@@ -55,17 +95,27 @@
                     
                     <div class="intro-text ">
                         <div class="center">
-                        <span class="logo"></span>
-                        <a class="navbar-brand" href="#page-top">NestFinder</a>
+                            <span class="logo"></span>
+                            <a class="navbar-brand" href="#page-top">NestFinder</a>
                         </div>
-                        </br>
-                        <img class="gps-image img-responsive" width="600px" src="img/map-welcome.png" alt="">
-                        <span class="name">Neighbourhood Guide</span>
+
+                        <div class="splash-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat massa, id lacinia elit 
+                            convallis vitae. Fusce semper mauris sed risus ornare tincidunt. Phasellus dictum libero ac aliquam consequat. 
+                            Cras quis egestas nibh, et facilisis justo. Sed venenatis auctor lorem, in placerat lorem sollicitudin vel. 
+                            Nam convallis a neque at dapibus. Nam ut arcu vitae nibh condimentum fermentum eu at elit. In ac eros varius, 
+                            varius metus ac, adipiscing sem. Suspendisse varius consequat faucibus. Praesent pulvinar nibh quis cursus 
+                            posuere. Phasellus ut dignissim erat. Vivamus quis felis massa. Duis vehicula, mi ultricies ornare placerat, 
+                            nisi ligula suscipit leo, sed rhoncus felis arcu eget dui. Nullam fermentum aliquam lobortis.
+
+                        </div>
+
                         <img src="img/white-star.png">
                         <div class="row">
                         <div class="span12">
+                            <h1>Newsletter</h1>
                                 <div class="thumbnail well well-small text-center">
-
+                                    
                                     <p>Subscribe to our Newsletter and stay tuned.</p>
 
                                     <form action="" method="post">
@@ -80,100 +130,15 @@
                         </div>
                       
                         <div class="page-scroll downarrow">
-                            <a href="#contribute" title="Discover the guide!" class="fa fa-arrow-down"></a>
+                            <a href="#about" title="Discover the guide!" class="fa fa-arrow-down"></a>
 
                 </div>
             </div>
             
         </div>
-    </header>   
-
-    <!-- Navigation -->
-    <nav class="navbar my-navbar-default navbar-fixed-top not-displayed">
- 
-        
-        <div class="container-navbar">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <span class="logo"></span>
-                <a class="navbar-brand" href="#page-top">NestFinder</a>
-
-                
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    <li class="page-scroll">
-                        <a href="#contribute">Contribute</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>            
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
- 
-    <section id="contribute">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contribute to the guide!</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <p class="white description">Looking for a way to improve the guide and help it grow? You can contribute your own knowledge to this open source repository of information strengthening your community
-                    by submitting information about your favorite places.</p>
-                    <p class="white description">If you have any questions, please contact us, we'd love to hear from you!</p>
-                    
-                <div class="col-lg-12 text-center">
-                    <h2>Conact Us!</h2>
-                    <hr class="star-light">
-                </div>
-                    <form role="form">
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="name">Name</label>
-                                <input class="form-control" type="text" name="name" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="email">Email Address</label>
-                                <input class="form-control" type="email" name="email" placeholder="Email Address">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-xs-12 floating-label-form-group">
-                                <label for="message">Message</label>
-                                <textarea placeholder="Message" class="form-control" rows="5"></textarea>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-lg btn-success">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div> 
+            
+        </section>
 
     <section class="success" id="about">
         <div class="container">
@@ -194,7 +159,7 @@
                     <p>
                         At Nestfinder, we recognize that a city's inhabitants are those best placed to help others discover their city.
                         This is why we wish to work in tandem to make this guide, your guide, written by Montrealers for Montrealers.
-                        Check out the contribute section for more information on you can make your experience part of this open source project.
+                        
                     </p>
                 </div>
             </div>
