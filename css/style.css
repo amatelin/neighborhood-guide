@@ -1,4 +1,3 @@
-
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 /*
 @font-face {
@@ -13,7 +12,6 @@ html {
   /* overflow: hidden; // Makes webpage freeze once the top navbar appears */
 }
 body {
-    overflow-x: hidden;
     /* text-align: center; // breaks portfolio hover */
     font-family: 'Montserrat';
     font-size: 1em;
@@ -51,9 +49,8 @@ a.active {
 .navbar a {
     color: white;
 }
-
 .navbar a:hover {
-    color: #18bc9c;
+    color: white;
 }
 
 .white {
@@ -132,7 +129,7 @@ header {
     z-index: -1;
     height: 100%;
     min-height: 900px;
-    background-image: url("../img/montreal9.jpg");
+    background-image: url("../img/montreal2.jpg");
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
@@ -149,7 +146,7 @@ header .control-group{
 }
 header img {
     display: block;
-    margin: 0 auto 0px;
+    margin: 0 auto 20px;
     border-radius: 30px;
     -moz-border-radius: 30px;
     -khtml-border-radius: 30px;
@@ -178,7 +175,7 @@ header .intro-text{
 }
 .container.middle {
     position: relative;
-    top: 50%;    
+    top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -227,7 +224,7 @@ header #submit{
     float: right;
 }
 header #submit:hover{
-    background-color:#18BC9C;
+    background-color:#233140;
     color:#fff;
 }
 header .form-control{
@@ -245,19 +242,13 @@ header .form-control:-moz-placeholder {
 header .form-control:-ms-input-placeholder {
     color:rgba(44,62,80,0.5);
 }
-.fa-arrow-down-white {
+.fa-arrow-down {
     font-size: 50px;
     color: white;
 }
-.fa-arrow-down-white:hover {
+.fa-arrow-down:hover {
     color:#18bc9c;
     text-decoration: none;
-}
-.fa-arrow-down-right {
-    position: relative;
-    float: right;
-    right: 10px;
-    top: 20px;
 }
 
 /**
@@ -355,7 +346,7 @@ span.title {
         color: #fff;
         z-index: -1;
         height: 100%;
-        background-image: url("../img/montreal9.jpg");
+        background-image: url("../img/montreal2.jpg");
         -webkit-background-size: cover; /* For WebKit*/
         -moz-background-size: cover;    /* Mozilla*/
         -o-background-size: cover;      /* Opera*/
@@ -414,7 +405,7 @@ span.title {
         z-index: -1;
         height: 100%;
 
-        background-image: url("../img/montreal9.jpg");
+        background-image: url("../img/montreal2.jpg");
         -webkit-background-size: cover; /* For WebKit*/
         -moz-background-size: cover;    /* Mozilla*/
         -o-background-size: cover;      /* Opera*/
@@ -459,44 +450,7 @@ span.title {
         padding:0;
     }
 }
-@media(max-width: 329px) {
-    .navbar-fixed-top .navbar-brand {
-        font-size: 20px;
-    }
-}
-@media (max-width: 991px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
-        display: block!important;
-    }
-    .collapsing {
-        overflow: hidden!important;
-    }
-}
+
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -566,6 +520,11 @@ nav {
 
 .container {
     top: 15px;
+    /*
+    position: relative;
+    top: 5%;
+    transform: translateY(-5%);
+    */
 }
 
 .navbar > .container .navbar-brand,
@@ -585,28 +544,13 @@ nav {
 .nav-profile-picture{
     height: 40px;
     width: 40px;
-    margin-top: -2px;
+    margin-top: -7px;
 }
 
 .fa-gear{
     background-color:#2C3E50;
-    margin-top: 7px;
-    padding-bottom: 10px;
 }
-.fa-gear:hover{
-    background-color:#233140;
-}
-#username{
-    font-size: 10px;
-}
-.xdropdown-toggle{
-    margin-top:-5px;
-}
-.xdropdown-toggle:hover{
-    background-color:#233140;
-    color:#fff;
-    border-radius:0;
-}
+
 /**
 * Neighbourhood Map Viewer (Quartier))
 **/
@@ -619,8 +563,6 @@ nav {
 }
 .viewer {
     width: 100%;
-    height: 100%;
-    min-height: 1000px;
     margin-top: -64px;
     margin: 0 auto;
     clear: both;
@@ -670,6 +612,11 @@ nav {
     margin-top: 25px;
     margin-left: 32px;
 }
+@media(max-width: 690px){
+    .viewer .mapbar .right {
+        display: none;
+    }
+}
 @media(max-width: 1140px) {
     .viewer .shadow h2 {
         font-size: 20px;
@@ -686,17 +633,6 @@ nav {
     margin-top: 5px;
     margin-bottom: -5px;
 }
-@media(max-width: 360px) {
-    #presentation-menu h1 {
-        font-size: 25px !important;
-    }
-    .fa-arrow-right {
-        font-size: 25px;
-    }
-    .fa-arrow-left {
-        font-size: 25px;
-    }
-}
 .next-neighbourhood-name {
     display: inline;
     height: 60px;
@@ -704,20 +640,6 @@ nav {
 @media(max-width: 892px) {
     .next-neighbourhood-name {
         display: none;
-    }
-}
-@media(max-width: 880px){
-    .viewer .shadow {
-        width: 90%;
-        height: 25%;
-        margin-left: 5%; 
-}
-@media(max-width: 360px) {
-    .viewer .shadow {
-        width: 99%;
-        height: 18%;
-        margin-left: 0.5%;
-        margin-top: 5px; 
     }
 }
 #presentation-menu h1 {
@@ -776,7 +698,7 @@ span.right a {
 .viewer .shadow-main {
     float: left;
     background: rgba(35,49,64,.8);
-    width: 70%;
+    width: 60%;
     min-width: 300px;
     max-height: 80%;
     padding: 16px 32px;
@@ -794,19 +716,33 @@ span.right a {
     margin-top: 25px;
     margin-left: 32px;
 }
-@media(max-width: 880px){
-    .viewer .shadow-main {
-        width: 90%;
-        height: 25%;
-        margin-left: 5%; 
+@media(max-width: 400px){
+    .navbar-fixed-top .navbar-brand {
+        font-size: 20px;
     }
-}
-@media(max-width: 360px){
-    .viewer .shadow-main {
-        height: 19%;
-        margin-left: 0.5%;
+    .viewer .shadow {
         width: 99%;
+        height: 39.5%;
+        margin-left: 0.5%;
+        margin-top: 5px; 
+    }
+    .viewer .shadow-main {
+        width: 99%;
+        height: 40%;
+        margin-left: 0.5%;
         margin-top: 5px;
+    }
+    #presentation-menu h1 {
+        font-size: 20px;
+    }
+    #presentation-menu .fa-arrow-left {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+    #presentation-menu .fa-arrow-right {
+        padding-left: 5px;
+        margin-top: 5px;
+        font-size: 20px;
     }
 }
 .viewer .shadow-main img {
@@ -822,7 +758,7 @@ span.right a {
 }
 .viewer#map {
     position: absolute;
-    top: 95%;
+    top: 96%;
     transition: top .3s;
 }
 .viewer#map .mapbar {
@@ -838,11 +774,6 @@ span.right a {
     line-height: 70px;
     cursor: pointer;
     font-weight: bold;
-}
-@media(max-width: 690px){
-    .viewer#map .mapbar .right {
-        display: none;
-    }
 }
 .viewer#map .mapbar a {
     width:80px;
@@ -874,18 +805,18 @@ span.small {
     top: 39px;
     left: 16px;
     width: 30%;
-    min-width: 300px;
-    max-height: 50%;
+    max-height: 75%;
     overflow-y: auto;
     overflow-x: hidden;
     text-align: left;
     font-size: 14px;
     display: none;
 }
-@media(max-width: 360px){
+@media(max-width: 400px){
     .viewer#map .panel {
-        width: 90%;
-        height: 20%;
+        left: 2.5%;
+        height: 35%;
+        width: 95%;
     }
 }
 .viewer#map .panel p {
@@ -929,9 +860,6 @@ span.small {
     opacity: 0;
     width: 700px;
     transition: opacity .3s;
-}
-.viewer#map #mapbar {
-    margin-top: -5px;
 }
 .viewer#map .right {
     float: right;
@@ -994,6 +922,41 @@ span.small {
     border-top-right-radius: 9px;
 
 }
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
 #portfolio * {
     z-index: 2;
 }
@@ -1395,25 +1358,15 @@ div.image.slideBottom span {
         margin-top: 0px;
     }
 }
-header .intro-text-team {
+header .intro-text-team{
     margin: 0 auto;
     margin-top: 10px;
     padding: 15px;
     color:#fff;
     background:rgba(35,49,64,.8);
     border-radius: 20px;
-    xmin-width: 120px;
-}
-header .intro-text-team .name {
-    text-align: center;
-    display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2em;
-    font-weight: 700;
-}
-header .intro-text-team {
-    font-size: 25px;
+    padding-bottom: 55px;
+    min-width: 120px;
 }
 
 .team {
@@ -1453,217 +1406,4 @@ header .intro-text-team {
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
-}
-
-@media(max-width: 767px) {
-    .team img {
-        float: left;
-        width: 61px;
-        padding: 5px;
-        margin-bottom: 0px;
-    }
-    header .intro-text-team {
-    font-size: 20px;
-}
-    .team h2 {
-        font-size: 20px;
-    }
-    
-    .team h3 {
-        font-size: 17px;
-        margin: 0;
-    }
-    
-    .team-profile {
-        width: 100%;
-    }
-}
-
-@media(max-width: 480px){
-    .team {
-        width: 300px;
-    }
-<<<<<<< HEAD
-}
-/**
-*ADMINISTRATION
-**/
-.intro-text-admin{
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 15px;
-    color:#fff;
-    background:rgba(35,49,64,.8);
-    border-radius: 20px;
-    padding-bottom: 55px;
-    min-width: 120px;
-}
-.intro-text-admin thead>tr>th{
-    font-size: 20px;
-}
-
-.intro-text-admin tbody>tr>td{
-    text-align:left;
-    font-size:15px;
-    text-decoration: none;
-}
-.intro-text-admin tbody>tr:hover{
-    color:#2C3E50;
-}
-.intro-text-admin tbody>tr:hover>td>a>i{
-}
-.intro-text-admin tbody>tr>td>a>i{
-    color:#fff;
-}
-
-@media(max-width:2500px){
-    #info>div>div{
-        padding-left: 0px;       
-    }
-    #info>div{
-        width:20%;
-    }
-}
-@media(max-width:960px){
-    #info>div{
-        width:100%;
-    }
-}
-
-.intro-text-admin-right{
-    margin-top: 10px;
-    color:#fff;
-    background:rgba(35,49,64,.8);
-    border-radius: 20px;
-    padding-bottom: 15px;
-    min-width: 120px;
-    padding-top:5px;
-}
-.sidebar{
-    margin-right: 10px;
-    padding-left:450px; 
-}
-.moderationqueue-wrapper{
-    padding-top: 150px;
-}
-.intro-text-admin-right>ul>li>a{
-    font-size:15px;
-    color:#fff;
-}
-.intro-text-admin-right>ul>li{
-    list-style: none;
-    text-align: left;
-}
-
-header .intro-text-team {
-    font-size: 15px;
-}
-
-
-/**
-*PROFILE
-**/
-#profile-wrapper{
-    width:100%;
-    height:650px;
-}
-.profile-pic>img{
-    width:400px;
-    height: 400px;
-}
-.profile-pic{
-    margin-left: 6%;
-    margin-top:  7%;
-}
-#profile-wrapper>div{
-    display:inline-block;
-    float:left;
-}
-#profile-wrapper fieldset{
-    margin-top:20%;
-}
-#profile-wrapper .log-form{
-    height:100%;
-    width:50%;
-    margin-left: 100px;
-    padding-left: 0px;
-    border-style:none none none solid;
-    border-color:#fff;
-    border-width: 1px;
-}
-#profile-intro{
-    width:100%;    
-}
-.fa-calendar{
-    font-size: 20px;
-    padding-top:2px;
-    background-color: #fff;
-}
-
-/*
-.profile-pic > img,
-.profile-pic > div {
-    display:block;
-}*/
-
-.well {
-     background-color:transparent;
-     border: 0px;   
-     margin: 0 auto;
-}
-.span12 {
-    margin: 0 auto;
-    width: 100%;
-    padding: 0;
-}
-#subscribe {
-    background-color: #233140;
-    color: white;
-}
-#subscribe:hover {
-    background-color: #18bc9c;
-}
-.email-length {
-    width: 300px;
-    height: 30px;
-    color: #233140;
-}
-.well input[type="text"]
-{
-    font-size:19px;
-}
-@media(max-width: 767px) {
-    .downarrow {
-        position: absolute;
-        bottom: 15px;
-        left: 15px;
-    }
-}
-
-@media(max-width: 480px) {
-    .well {
-        padding: 0px 15px 0px 15px;
-    }
-
-    .span12 h2 {
-        margin-top: 0;
-    }
-
-    .span12 p {
-        font-size: 17px;
-    }
-    .downarrow {
-        position: absolute;
-        left: 15px;
-        bottom: -30px;
-
-    }
-}
-
-#photocredit {
-    margin-top: -15px;
-    margin-left: 3px;
-    bottom: 0px;
-    right: 0px;
-    color: white;
 }

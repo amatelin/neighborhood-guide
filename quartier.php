@@ -182,12 +182,6 @@
                     </div>
                 </div>
             {{/each}}
-            <ul class="pagination">
-                {{#page this.nb this.page}}
-                    <li {{#ifEq page value}}class="active"{{/ifEq}}><a href="#">{{value}}</a></li>
-                {{/page}}
-            </ul>
-
         </script>
 
     <?php include './inc/footer.php'; ?>
