@@ -1156,7 +1156,7 @@ img {
     background-color: rgba(44,62,80,0.1);
     border-radius: 9px;
     padding: 0px 10px 10px 10px;
-    margin: -2px auto 0 auto;
+    margin: -3px auto 0 auto;
 
 }
 
@@ -1363,12 +1363,6 @@ header .intro-text-team {
 /**
 *ADMINISTRATION
 **/
-section{
-    width:0px;
-    height:0px;
-    margin: 0;
-    padding:0;
-}
 .intro-text-admin{
     margin: 0 auto;
     margin-top: 10px;
@@ -1622,5 +1616,5 @@ header .intro-text-team {
         bottom: -30px;
 
     }
-    
+
 }
