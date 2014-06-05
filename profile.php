@@ -68,7 +68,6 @@
                       <label class="col-md-4 control-label" for="homeTown">Home Town</label>  
                       <div class="col-md-6">
                         <input id="homeTown" name="homeTown" placeholder="Typer your home town" class="form-control input-md" type="text">
-
                       </div>
                     </div>
                     <!-- Button -->
