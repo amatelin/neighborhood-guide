@@ -13,10 +13,31 @@ var json_input = {
             type: "select",
             options: [0, 1, 2, 3, 4, 5]
         }
+    ],
+    "restaurant": [
+        {
+            name: "Tables",
+            type: "select",
+            options: [0, 1, 2, 3, 4, 5]
+        }
     ]
 }
 
 $(function() {
+
+    // Start JSTREE
+    $('#jstree')
+        // listen for event
+        .on('changed.jstree', function (e, data) {
+            console.log(data.node.a_attr.href)
+            updateForm()
+        })
+        .jstree({
+            core: {
+                themes: { icons: false },
+                multiple: false,
+            }
+        })
 
     var template = {
         text:     Handlebars.compile($('#input-text').html()),
@@ -25,7 +46,8 @@ $(function() {
     }
 
     function updateForm(obj) {
-        var elems = json_input[$('#selectbasic').val()]
+        //var elems = json_input[$('#selectbasic').val()]
+        var elems = json_input[$('.jstree-clicked').first().attr('href').substring(1)]
 
         var result = $('#input-before').html()
 
@@ -45,15 +67,16 @@ $(function() {
 
         // Fill form with query-value
         for (var x in obj) {
-            $('#box').find('[name=' + x + ']').val(obj[x])
+            $('#box').find('[name="' + x + '"]').val(obj[x])
         }
 
     }
 
-    $('#selectbasic').change(updateForm)
+    //$('#selectbasic').change(updateForm)
 
     if (window.location.hash) {
-        $('#selectbasic').val(window.location.hash.substring(1))
+        //$('#selectbasic').val(window.location.hash.substring(1))
+        $('a[href="' + window.location.hash + '"]').addClass('jstree-clicked')
 
         function queryObj() {
             var result = {}, keyValuePairs = location.search.slice(1).split('&')
