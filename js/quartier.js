@@ -106,32 +106,71 @@ $(function() {
         console.log('Undefined items ' + search)
     })
 
+    // Panel config
+	var top = false,
+		dist = '96px',
+        fromtop = '96%',
+        step = 2,
+        current_panel = ''
 
-    $('nav').css('display','displayed');
-    $('.navbar').css('opacity','1');
-})
+    // Default panel display
+	$('nav').css('display','displayed');
+	$('.navbar').css('opacity','1');
 
-// Display Map
-$(function() {
+    // Google Maps
+	var mapOptions = {
+		center: new google.maps.LatLng(45.521624,-73.575468),
+		zoom: 15,
+		disableDefaultUI: true
+	}
+	var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions)
+    var markers = []
 
-    var top = false,
-        dist = '96px'
+	// Handlerbar
+	Handlebars.registerHelper('times', function(n, block) {
+		var accum = ''
+		for(var i = 0 ; i < n ; ++i)
+			accum += block.fn(i)
+		return accum
+	})
+	Handlebars.registerHelper('page', function(n, p, block) {
+		if (n == 1)
+			return
+		var accum = '<ul class="pagination">'
+		for(var i = 0 ; i < n ; ++i)
+			accum += block.fn({page: p, value: (i + 1)})
+		return accum + '</ul>'
+	})
+	Handlebars.registerHelper('ifEq', function(v1, v2, block) {
+        if (v1 == (v2 - 1))
+		      return block.fn(this)
+	})
+	var source   = $('#item-template').html()
+	var template = Handlebars.compile(source)
 
-        function showMap() {
-            $('#map').css('top', top ? '96%' : dist)
-            $('#map').find('.right').css('opacity', top ? '0' : '1')
-            $('#map').find('.piti') .css('opacity', top ? '1' : '0')
-            window.setTimeout(function() {top = !top}, 300)
-            if(!top){
-                var source   = $('#item-template').html()
-                var template = Handlebars.compile(source)
-                var html = template(datas[0])
-                $('.panel').children('.panel-heading').children('span').html(datas[0].name)
-                $('.panel').children('.panel-body').html(html)
-                $('.panel').first().css('display', 'block')
-                attachInfo()
-            }
+    // Close all Google Maps' marker
+    function closeMarker() {
+        markers.forEach(function(elem) {
+            elem.setMap(null)
+        })
+        markers = []
+    }
+
+    function showMap() {
+        $('#map').css('top', top ? fromtop : dist)
+        $('#map').find('.right').css('opacity', top ? '0' : '1')
+        $('#map').find('.piti') .css('opacity', top ? '1' : '0')
+        window.setTimeout(function() {top = !top}, 300)
+        if(!top){
+            var source   = $('#item-template').html()
+            var template = Handlebars.compile(source)
+            var html = template(datas[0])
+            $('.panel').children('.panel-heading').children('span').html(datas[0].name)
+            $('.panel').children('.panel-body').html(html)
+            $('.panel').first().css('display', 'block')
+            attachInfo()
         }
+    }
 
     function checkWindowWidth() {
         if(!top && (window.innerWidth < 690)) {

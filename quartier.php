@@ -182,6 +182,9 @@
                     </div>
                 </div>
             {{/each}}
+            {{#page this.nb this.page}}
+                <li {{#ifEq page value}}class="active"{{/ifEq}}><a href="#">{{value}}</a></li>
+            {{/page}}
         </script>
 
     <?php include './inc/footer.php'; ?>

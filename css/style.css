@@ -578,7 +578,7 @@ nav {
     background-image: url('../img/mont3.jpg');
     background-size: cover;
     height: 84%;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 #map {
     height: 100%;
@@ -612,7 +612,7 @@ nav {
     margin-top: 25px;
     margin-left: 32px;
 }
-@media(max-width: 690px){
+@media(max-width: 710px){
     .viewer .mapbar .right {
         display: none;
     }
@@ -716,6 +716,24 @@ span.right a {
     margin-top: 25px;
     margin-left: 32px;
 }
+@media(max-width: 660px){
+    .viewer .shadow {
+        width: 90%;
+        height: 36%;
+        margin-left: 5%;
+        margin-top: 5px; 
+    }
+    .viewer .shadow-main {
+        width: 90%;
+        height: 37%;
+        margin-left: 5%;
+        margin-top: 5px;
+    }
+    .viewer#map .panel {
+        height: 50%;
+        width: 60%; 
+    }
+}
 @media(max-width: 400px){
     .navbar-fixed-top .navbar-brand {
         font-size: 20px;
@@ -805,7 +823,7 @@ span.small {
     top: 39px;
     left: 16px;
     width: 30%;
-    max-height: 75%;
+    max-height: 70%;
     overflow-y: auto;
     overflow-x: hidden;
     text-align: left;
@@ -835,8 +853,11 @@ span.small {
     cursor: pointer;
 }
 .viewer#map .panel .item {
-    margin-bottom: 32px;
+    margin-top: 32px;
     cursor: pointer;
+}
+.viewer#map .panel .item:first-child {
+    margin-top: 0;
 }
 .viewer#map .panel .item .stars {
     float: right;
@@ -1406,4 +1427,216 @@ header .intro-text-team{
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
+}
+
+@media(max-width: 767px) {
+    .team img {
+        float: left;
+        width: 61px;
+        padding: 5px;
+        margin-bottom: 0px;
+    }
+    header .intro-text-team {
+    font-size: 20px;
+}
+    .team h2 {
+        font-size: 20px;
+    }
+    
+    .team h3 {
+        font-size: 17px;
+        margin: 0;
+    }
+    
+    .team-profile {
+        width: 100%;
+    }
+}
+
+@media(max-width: 480px){
+    .team {
+        width: 300px;
+    }
+}
+/**
+*ADMINISTRATION
+**/
+.intro-text-admin{
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 15px;
+    color:#fff;
+    background:rgba(35,49,64,.8);
+    border-radius: 20px;
+    padding-bottom: 55px;
+    min-width: 120px;
+}
+.intro-text-admin thead>tr>th{
+    font-size: 20px;
+}
+
+.intro-text-admin tbody>tr>td{
+    text-align:left;
+    font-size:15px;
+    text-decoration: none;
+}
+.intro-text-admin tbody>tr:hover{
+    color:#2C3E50;
+}
+.intro-text-admin tbody>tr:hover>td>a>i{
+}
+.intro-text-admin tbody>tr>td>a>i{
+    color:#fff;
+}
+
+@media(max-width:2500px){
+    #info>div>div{
+        padding-left: 0px;       
+    }
+    #info>div{
+        width:20%;
+    }
+}
+@media(max-width:960px){
+    #info>div{
+        width:100%;
+    }
+}
+
+.intro-text-admin-right{
+    margin-top: 10px;
+    color:#fff;
+    background:rgba(35,49,64,.8);
+    border-radius: 20px;
+    padding-bottom: 15px;
+    min-width: 120px;
+    padding-top:5px;
+}
+.sidebar{
+    margin-right: 10px;
+    padding-left:450px; 
+}
+.moderationqueue-wrapper{
+    padding-top: 150px;
+}
+.intro-text-admin-right>ul>li>a{
+    font-size:15px;
+    color:#fff;
+}
+.intro-text-admin-right>ul>li{
+    list-style: none;
+    text-align: left;
+}
+
+header .intro-text-team {
+    font-size: 15px;
+}
+
+
+/**
+*PROFILE
+**/
+#profile-wrapper{
+    width:100%;
+    height:650px;
+}
+.profile-pic>img{
+    width:400px;
+    height: 400px;
+}
+.profile-pic{
+    margin-left: 6%;
+    margin-top:  7%;
+}
+#profile-wrapper>div{
+    display:inline-block;
+    float:left;
+}
+#profile-wrapper fieldset{
+    margin-top:20%;
+}
+#profile-wrapper .log-form{
+    height:100%;
+    width:50%;
+    margin-left: 100px;
+    padding-left: 0px;
+    border-style:none none none solid;
+    border-color:#fff;
+    border-width: 1px;
+}
+#profile-intro{
+    width:100%;    
+}
+.fa-calendar{
+    font-size: 20px;
+    padding-top:2px;
+    background-color: #fff;
+}
+
+/*
+.profile-pic > img,
+.profile-pic > div {
+    display:block;
+}*/
+
+.well {
+     background-color:transparent;
+     border: 0px;   
+     margin: 0 auto;
+}
+.span12 {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+#subscribe {
+    background-color: #233140;
+    color: white;
+}
+#subscribe:hover {
+    background-color: #18bc9c;
+}
+.email-length {
+    width: 300px;
+    height: 30px;
+    color: #233140;
+}
+.well input[type="text"]
+{
+    font-size:19px;
+}
+@media(max-width: 767px) {
+    .downarrow {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+}
+
+@media(max-width: 480px) {
+    .well {
+        padding: 0px 15px 0px 15px;
+    }
+
+    .span12 h2 {
+        margin-top: 0;
+    }
+
+    .span12 p {
+        font-size: 17px;
+    }
+    .downarrow {
+        position: absolute;
+        left: 15px;
+        bottom: -30px;
+
+    }
+}
+
+#photocredit {
+    margin-top: -15px;
+    margin-left: 3px;
+    bottom: 0px;
+    right: 0px;
+    color: white;
 }
