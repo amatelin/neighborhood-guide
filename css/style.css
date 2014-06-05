@@ -1230,6 +1230,7 @@ footer .footer-col {
 }
 
 footer .footer-below {
+    font-size: 15px;
     padding: 25px 0;
     background-color: #233140;
 }
@@ -1806,4 +1807,8 @@ header .intro-text-team {
     bottom: 0px;
     right: 0px;
     color: white;
+}
+
+.copyright {
+    font-size: 25px;
 }
