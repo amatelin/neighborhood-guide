@@ -134,13 +134,16 @@
                             <a href="#about" title="Discover the guide!" class="fa fa-arrow-down"></a>
 
                 </div>
+<div id="photocredit">
+        Photo Credit: <a href="https://www.flickr.com/photos/mricon/193910918/">Konstantin Ryabitsev</a>
+    </div>
             </div>
-            
+
         </div>
     </div> 
-            
-        </section>
 
+</section>
+                                        
     <section class="success about" id="about">
         <div class="container">
             <div class="row">
