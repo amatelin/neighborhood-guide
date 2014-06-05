@@ -44,7 +44,7 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top">
 
     <nav class="navbar my-navbar-default navbar-fixed-top">
 
@@ -59,7 +59,7 @@
                 </button>
                 <span class="logo"></span>
 
-                <a class="navbar-brand" href="index.php">NestFinder</a>
+                <a class="navbar-brand" href="#page-top">NestFinder</a>
 
             </div>
 
@@ -72,7 +72,7 @@
                     </li>
 
                     <li class="page-scroll">
-                        <a href="index.php#about">About</a>
+                        <a href="#about">About</a>
                     </li>
 
 
@@ -86,7 +86,7 @@
         <section class="splash" id="splash">
             
             
-        <div id="splash">
+        <div >
         <div id="header-index"></div>
         <div class="container index">
             <div class="row">
@@ -94,29 +94,30 @@
                     <!--<img class="img-responsive" src="img/GPS.png" alt="">-->
                     
                     <div class="intro-text ">
-                        <div class="center">
-                            <span class="logo"></span>
-                            <a class="navbar-brand" href="#page-top">NestFinder</a>
-                        </div>
+
 
                         <div class="splash-text">
+                            <p>
+                            orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat massa, id lacinia elit 
+                            convallis vitae. Fusce semper mauris sed risus ornare tincidunt. Phasellus dictum libero ac aliquam consequat. 
+                            Cras quis egestas nibh, et facilisis justo. Sed venenatis auctor lorem, in placerat lorem sollicitudin vel. 
+                            Nam convallis a neque at dapibus.
+                            </p>
+                            
+                            <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat massa, id lacinia elit 
                             convallis vitae. Fusce semper mauris sed risus ornare tincidunt. Phasellus dictum libero ac aliquam consequat. 
                             Cras quis egestas nibh, et facilisis justo. Sed venenatis auctor lorem, in placerat lorem sollicitudin vel. 
-                            Nam convallis a neque at dapibus. Nam ut arcu vitae nibh condimentum fermentum eu at elit. In ac eros varius, 
-                            varius metus ac, adipiscing sem. Suspendisse varius consequat faucibus. Praesent pulvinar nibh quis cursus 
-                            posuere. Phasellus ut dignissim erat. Vivamus quis felis massa. Duis vehicula, mi ultricies ornare placerat, 
-                            nisi ligula suscipit leo, sed rhoncus felis arcu eget dui. Nullam fermentum aliquam lobortis.
-
+                            Nam convallis a neque at dapibus.
+                            </p>
+                            
                         </div>
 
                         <img src="img/white-star.png">
                         <div class="row">
                         <div class="span12">
-                            <h1>Newsletter</h1>
+                            <h1>Subscribe to our Newsletter</h1>
                                 <div class="thumbnail well well-small text-center">
-                                    
-                                    <p>Subscribe to our Newsletter and stay tuned.</p>
 
                                     <form action="" method="post">
                                         <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
@@ -140,7 +141,7 @@
             
         </section>
 
-    <section class="success" id="about">
+    <section class="success about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -167,4 +168,67 @@
         
     </section>
 
- <?php include 'inc/footer.php' ?>
+   <?php if ($page != "quartier"): ?>
+    <footer class="text-center">
+        <div class="footer-above footer-spacer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Address</h3>
+                        <p>1009 rue de Bleury
+                            <br>Monteal, QC H1L1L1</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Social Networks</h3>
+                        <ul class="list-inline">
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About NestFinder</h3>
+                        <p>
+                            Nestfinder is a startup created by young Montreal entrepreneurs.
+                            Visit the <a href="team.php">team</a> page to learn more about us!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; 2014 - NestFinder
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <?php endif; ?>
+
+    <!-- Javascript -->  
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="./js/handlebars-v1.3.0.js"></script>
+    <script src="./js/fotorama.js"></script>
+     
+
+    <?php if ($page == "quartier"): ?>
+        <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
+        </script>
+        <script src="./js/quartier.js"></script>
+        <script src="./js/map.js"></script>  
+    <?php endif; ?>
+        
+    </body>
+</html>
