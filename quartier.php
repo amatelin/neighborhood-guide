@@ -4,13 +4,13 @@
 ?>
 
     <div id="presentation">
-        <div id="presentation-menu ">
+        <div id="presentation-menu">
             <span class="right">
-                <a class="next-neighbourhood" href="#next">Cote St-Luc</a>
+                <div class="next-neighbourhood-name"><a class="next-neighbourhood" href="#next">Cote St-Luc</a></div>
                 <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
                 <h1> LE PLATEAU </h1>
                 <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
-                <a class="next-neighbourhood" href="#next">Westmount</a>
+                <div class="next-neighbourhood-name"><a class="next-neighbourhood" href="#next">Westmount</a></div>
             </span>
 
         </div>
@@ -40,7 +40,6 @@
                     <br/>
                     <br/>
                 </div>
-
                 <div class="place">
                     <li>Restaurants <a href="addResto.php"> <i class="fa fa-plus"></i></a></li>
                     <ul>
@@ -124,7 +123,7 @@
     </div>
         <div id="map" class="viewer">
             <div class="mapbar shadow_map">
-                <i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>
+                <span id="mapbar-title"><i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span></span>
                 <span class="right">
                     <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
                      LE PLATEAU
@@ -183,6 +182,9 @@
                     </div>
                 </div>
             {{/each}}
+            {{#page this.nb this.page}}
+                <li {{#ifEq page value}}class="active"{{/ifEq}}><a href="#">{{value}}</a></li>
+            {{/page}}
         </script>
 
     <?php include './inc/footer.php'; ?>
