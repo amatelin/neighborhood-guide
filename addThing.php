@@ -13,25 +13,61 @@
                             <form class="form-horizontal">
                                 <fieldset>
 
+                                    <!-- Script and styles -->
                                     <script src="js/form.js"></script>
+                                    <script src="js/jstree.min.js"></script>
+                                    <link rel="stylesheet" href="./themes/default/style.min.css">
+                                    <style>
+                                        #jstree {
+                                            background: white;
+                                            border-radius: 3px;
+                                            margin-bottom: 32px;
+                                            padding: 8px;
+                                            text-align: left;
+                                        }
+                                        #jstree a {
+                                            padding-left: 4px;
+                                        }
+                                        .container.middle {
+                                            top: 10%;
+                                            transform: none;
+                                        }
+                                    </style>
 
                                     <!-- Choice Categories -->
+                                    <div id="jstree">
+                                        <ul>
+                                            <li class="jstree-open"><a href="#entertainement">Entertainement</a>
+                                                <ul>
+                                                    <li><a href="#cinema">Cinema</a></li>
+                                                    <li><a href="#theatre">Theatre</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="jstree-open"><a href="#restaurant">Restaurants</a>
+                                                <ul>
+                                                    <li><a href="#cafe">Cafe</a></li>
+                                                    <li><a href="#resto">Resto</a></li>
+                                                </ul>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                    <!--
                                     <div class="form-group">
                                         <label class="col-md-4 control-label" for="selectbasic">Select Categorie</label>
                                         <div class="col-md-4">
                                             <select id="selectbasic" name="selectbasic" class="form-control">
-                                                <option value="1" disabled selected>Label</option>
+                                                <option value="none" disabled selected>Label</option>
                                                 <optgroup label="Entertainement">
-                                                    <option value="2">Cinema</option>
-                                                    <option value="3">Theatre</option>
+                                                    <option value="cinema">Cinema</option>
+                                                    <option value="theatre">  Theatre</option>
                                                 </optgrounp>
                                                 <optgroup label="Restaurants">
-                                                    <option value="4">Cafe</option>
-                                                    <!--<option value="5">Resto</option>-->
+                                                    <option value="cafe">Cafe</option>
+                                                    <option value="resto">Resto</option>
                                                 </optgrounp>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div>-->
                                     <div id="box">
                                     </div>
 

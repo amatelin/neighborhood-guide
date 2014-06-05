@@ -11,3 +11,7 @@ body {
     height: 0;
     overflow: hidden;
 }
+
+.panel-body .pagination {
+    margin-bottom: 0;
+}

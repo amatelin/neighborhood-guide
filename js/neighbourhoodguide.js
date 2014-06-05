@@ -80,6 +80,5 @@ $(window).resize(function(){
 $(window).load(function(){
 
     navScroll();
-    tabNavigation(); 
-    $('.datepicker').datepicker();
+    tabNavigation();   
 });

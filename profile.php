@@ -1,12 +1,11 @@
 <?php include './inc/header.php' ?>
-
 <header>
   <div class="container middle">
     <div class="row">
       <div class="col-lg-12">                    
         <div class="intro-text" id="profile-intro">                       
           <span class="name">Profile</span>
-          <img src="img/white-star.png">
+          <img src="img/white-star.png">          
         </div>
         <div class="row">
           <div class="col-lg-6">
@@ -77,7 +76,6 @@
                         <button id="submit" name="submit" class="btn btn-inverse">Save</button>
                       </div>
                     </div>
-
                   </fieldset>
                 </form>
               </div> 
