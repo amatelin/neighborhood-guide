@@ -17,6 +17,8 @@
         <div id="viewer-top" class="viewer">
 <!--             <img src="./img/mont3.jpg"> -->
             <div class="shadow">
+                <i class="fa fa-plus valign iphone-toggle"></i>
+                <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>Overview</h2>
                     <img src="img/white-star.png">
@@ -34,6 +36,8 @@
             </div>
 
             <div class="shadow-main">
+                <i class="fa fa-plus valign iphone-toggle"></i>
+                <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>The Neighbourhood</h2>
                     <img src="img/white-star.png">
