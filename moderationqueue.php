@@ -6,7 +6,16 @@ include './inc/header.php'
 
      <header>
         <div class="moderationqueue-wrapper">
-            <div class="row">
+             <div class="row title">
+                <div class="col-lg-4 col-lg-offset-4">     <!--col-lg-offset-3-->
+
+                        <div class="intro-text ">                       
+                            <span class="name">Administration panel</span>
+                            <img src="img/white-star.png">
+                        </div>
+                </div>
+            </div>
+            <div class="row content">
                 <div class="col-lg-2" id="menu">
                     <div class="intro-text-admin-menu">
                         <ul>
@@ -25,11 +34,6 @@ include './inc/header.php'
                     </div>
                 </div>
                 <div class="col-lg-6" id="central">     <!--col-lg-offset-3-->
-
-                    <div class="intro-text ">                       
-                        <span class="name">Moderation</span>
-                        <img src="img/white-star.png">
-                    </div>
 
                     <div class="intro-text-admin table-responsive"> 
                         
@@ -157,7 +161,7 @@ include './inc/header.php'
                                     <li><a href="">Axel</a></li>
                                     <li><a href="">Philou</a></li>
                                     <br/>
-                                    <li><a href="">... More ...</a></li>
+                                    <li><a href="users.php">... More ...</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -184,5 +188,6 @@ include './inc/header.php'
             </div>            
         </div>
     </header>
-
+    <section class="adjustement">
+    </section>
  <?php include 'inc/footer.php' ?>
