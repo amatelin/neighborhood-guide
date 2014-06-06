@@ -70,9 +70,6 @@
                     <li class="hidden">
                         <a href="index.php#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        
-                    </li>
 
                     <li class="page-scroll">
                         <a href="#about">About</a>
