@@ -10,7 +10,7 @@ include './inc/header.php'
                 <div class="col-lg-4 col-lg-offset-4">     <!--col-lg-offset-3-->
 
                         <div class="intro-text">                       
-                            <span class="name">Users Management</span>
+                            <span class="name">New Users Management</span>
                             <img src="img/white-star.png">
                         </div>
                 </div>
@@ -22,13 +22,11 @@ include './inc/header.php'
                     include './inc/menu.php'           
                 ?>
 
-                <div class="col-lg-6 col-lg-offset-2" id="central"> 
-                    
-
-                    <div class="intro-text-admin table-responsive">
-                        <div class="col-lg-2" style="float:right;">
+                <div class="col-lg-6" id="central">                     
+                    <div class="intro-text-admin table-responsive">  
+                    <div class="col-lg-2" style="float:right;">
                             <input id="searchinput" name="searchinput" placeholder="Search" class="form-control input-md" type="search">
-                        </div>                        
+                    </div>                       
                         <table class="table table-hover">
                             <thead>
                                 <tr>

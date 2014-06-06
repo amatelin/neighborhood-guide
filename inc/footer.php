@@ -52,6 +52,9 @@
         </a>
     </div>
 
+
+    <?php endif; ?>
+
     <!-- Javascript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="./js/handlebars-v1.3.0.js"></script>
