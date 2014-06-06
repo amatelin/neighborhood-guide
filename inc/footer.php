@@ -37,9 +37,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="copyright">
                         Copyright &copy; 2014 - NestFinder
-                        </div>
                     </div>
                 </div>
             </div>
