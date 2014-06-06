@@ -130,7 +130,7 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
     color: #fff;
     z-index: -1;
     height: 100%;
-    xmin-height: 900px;
+    xmin-height: 1900px;
     background-image: url("../img/montreal9.jpg");
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
@@ -138,13 +138,14 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
     background-size: cover;         /* Generic*/
 
 }
+
 #splash p {
     text-align: left;
     margin: 25px 25px 0 25px;
 }
 #splash .container {
     padding-top: 0px;
-    xpadding-bottom: 50px;
+    padding-bottom: 50px;
     text-align: center;
     /*width: 800px;*/
 }
@@ -215,16 +216,66 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
 {
     font-size:19px;
 }
+.language-select {
+    margin-top: 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+.language-select:hover {
+    margin-top: 3px;
+    border-radius: 10px;
+    background-color: #18bc9c;
+}
+
+.language-select a {
+    color: #233140;
+}
+
+.language-select a:hover {
+    border-radius: 10px;
+    background-color: #18bc9c;  
+    color: white;
+}
+
 #photocredit {
-    font-size: 20px;
+    font-size: 18px;
     padding-right: 5px;
     text-align: right;
 
 }
-@media(max-width:480px) {
-.about {
-    margin-top: 250px;
-}
+@media(max-width:671px) {
+    #splash {
+        height: 1500px;
+        min-height: 1500px;
+    }
+    
+    #splash h1 {
+        padding: 55px;
+        font-size: 20px;
+        margin-bottom: 55px;
+        line-height: 50px;
+    }
+    
+    .email-length {
+        width: 300px;
+        color: #233140;
+        padding: 5px;
+    }
+    
+    .about {
+        margin-top: 250px;
+    }
+    #photocredit {
+        font-size: 15px;
+        padding-right: 5px;
+        text-align: right;
+        padding-top: 25px;
+
+    }
+    .downarrow {
+        bottom: 50px;
+        margin-left: 10px;
+    }
 }
 /**
 *HEADER
@@ -432,7 +483,7 @@ span.title {
         padding: 10px 0;
     }
 
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
+    .navbar-bar-fixed-top.navshrink .navbar-brand {
         font-size: 1.5em;
     }
 
@@ -1797,40 +1848,94 @@ header .intro-text-team {
 *PROFILE
 **/
 #profile-wrapper{
-    width:100%;
-    height:650px;
+    width:77%;
+    height:505px;
 }
+
+.profile-left{
+    float: right;
+}
+
+.profile-right{
+    float: left;
+}
+
 .profile-pic>img{
     width:400px;
     height: 400px;
 }
+
 .profile-pic{
-    margin-left: 6%;
-    margin-top:  7%;
+    margin-left: 1%;
+    margin-top:  -10px;
 }
 #profile-wrapper>div{
     display:inline-block;
-    float:left;
 }
+
 #profile-wrapper fieldset{
-    margin-top:20%;
+    margin-top:17%;
 }
+
 #profile-wrapper .log-form{
     height:100%;
-    width:50%;
-    margin-left: 100px;
+    width:80%;
     padding-left: 0px;
-    border-style:none none none solid;
-    border-color:#fff;
-    border-width: 1px;
 }
+
+#profile-wrapper .log-form h4{
+    color: #FFFFFF;
+}
+
 #profile-intro{
-    width:100%;    
+    width:79%;    
 }
 .fa-calendar{
     font-size: 20px;
     padding-top:2px;
     background-color: #fff;
+}
+
+@media(max-width: 1199px){
+    .profile-left{
+        float: none;
+    }
+
+    .profile-right{
+        float: none;
+    }
+
+    #profile-wrapper{
+        width:77%;
+        height:405px;
+    }
+    .profile-pic>img{
+        width:300px;
+        height: 300px;
+    }
+
+    #profile-wrapper fieldset{
+    margin-top:15px;
+    }
+}
+
+@media(max-width: 991px){
+
+
+    #profile-wrapper.profile-right{
+        height:550px;
+    }
+
+@media(max-width: 480px){
+
+    .profile-pic>img{
+    width:200px;
+    height: 200px;
+    }
+
+    #profile-wrapper.profile-left{
+        height:300px;
+    }
 }
 
 /*
@@ -1845,6 +1950,7 @@ header .intro-text-team {
         position: absolute;
         bottom: 15px;
         left: 15px;
+        margin-left: 10px;
     }
 }
 
@@ -1863,7 +1969,7 @@ header .intro-text-team {
     .downarrow {
         position: absolute;
         left: 15px;
-        bottom: -30px;
+        xbottom: -30px;
 
     }
 }
