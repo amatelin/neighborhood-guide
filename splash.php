@@ -74,7 +74,9 @@
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
-
+                    <li class="language-select page-scroll">
+                        <a href="#about">FR</a>
+                    </li>
 
                 </ul>
             </div>

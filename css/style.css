@@ -130,7 +130,7 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
     color: #fff;
     z-index: -1;
     height: 100%;
-    xmin-height: 900px;
+    xmin-height: 1900px;
     background-image: url("../img/montreal9.jpg");
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
@@ -138,13 +138,14 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
     background-size: cover;         /* Generic*/
 
 }
+
 #splash p {
     text-align: left;
     margin: 25px 25px 0 25px;
 }
 #splash .container {
     padding-top: 0px;
-    xpadding-bottom: 50px;
+    padding-bottom: 50px;
     text-align: center;
     /*width: 800px;*/
 }
@@ -215,16 +216,61 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
 {
     font-size:19px;
 }
+.language-select {
+    margin-top: 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+.language-select:hover {
+    margin-top: 3px;
+    border-radius: 10px;
+    background-color: #18bc9c;
+}
+
+.language-select a {
+    color: #233140;
+}
+
+.language-select a:hover {
+    border-radius: 10px;
+    background-color: #18bc9c;  
+    color: white;
+}
+
 #photocredit {
-    font-size: 20px;
+    font-size: 18px;
     padding-right: 5px;
     text-align: right;
 
 }
-@media(max-width:480px) {
-.about {
-    margin-top: 250px;
-}
+@media(max-width:671px) {
+    #splash {
+        height: 1500px;
+    }
+    
+    #splash h1 {
+        padding: 55px;
+        font-size: 20px;
+        margin-bottom: 55px;
+        line-height: 50px;
+    }
+    
+    .email-length {
+        width: 300px;
+        color: #233140;
+        padding: 5px;
+    }
+    
+    .about {
+        margin-top: 250px;
+    }
+    #photocredit {
+        font-size: 15px;
+        padding-right: 5px;
+        text-align: right;
+        padding-top: 25px;
+
+    }
 }
 /**
 *HEADER
