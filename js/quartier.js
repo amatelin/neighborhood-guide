@@ -87,6 +87,8 @@ $(function() {
         fromtop = '97%',
         step = 2,
         current_panel = ''
+        shadow_main_expanded = false
+        shadow_expanded = false    
 
     // Default panel display
 	$('nav').css('display','displayed');
@@ -248,6 +250,86 @@ $(function() {
     	})
     }
 
+    function checkWindowWidth() {
+        if(!top && (window.innerWidth < 690)) {
+            $('#mapbar-title').html('LE PLATEAU <i class="fa fa-arrow-down fa-arrow-down-quartier"></i>')
+        }
+        if(top && (window.innerWidth < 690)) {
+            $('#mapbar-title').html('<i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>')
+        }
+    }
+
+    $('#showMap').click(function() {
+        showMap()
+        checkWindowWidth()
+    })
+
+    $('#map').find('.mapbar').click(function() {
+        showMap()
+        checkWindowWidth()
+    })
+
+    //480 x 320 support
+    $('.shadow').click(function (){
+        var min_shadow = '10%'
+            max_shadow = '70%'
+        if((window.innerWidth < 361) && (window.innerHeight < 641)){
+            if((window.innerWidth < 321) && (window.innerHeight < 481)){
+                min_shadow = '15%'
+                max_shadow = '47%'
+            }
+            $('.shadow').css('height', max_shadow)
+            $('.shadow').css('overflow-y', 'auto')
+            $('.viewer .shadow .fa-plus').css('display', 'none')
+            $('.viewer .shadow .fa-minus').css('display', 'block')
+            $('.shadow-main').css('height', min_shadow)
+            $('.shadow-main').css('overflow-y', 'hidden')
+            $('.viewer .shadow-main .fa-plus').css('display', 'block')
+            $('.viewer .shadow-main .fa-minus').css('display', 'none') 
+            if(shadow_expanded){
+                $('.shadow').css('height', min_shadow)
+                $('.shadow').css('overflow-y', 'hidden')
+                $('.viewer .shadow .fa-plus').css('display', 'block')
+                $('.viewer .shadow .fa-minus').css('display', 'none') 
+            }
+            shadow_expanded = !shadow_expanded   
+        }
+    })
+
+    $('.shadow-main').click(function (){
+        var min_shadow = '10%'
+            max_shadow = '70%'
+        if((window.innerWidth < 361) && (window.innerHeight < 641)){
+            if((window.innerWidth < 321) && (window.innerHeight < 481)){
+                min_shadow = '15%'
+                max_shadow = '47%'
+            }
+            $('.shadow').css('height', min_shadow)
+            $('.shadow').css('overflow-y', 'hidden')
+            $('.shadow-main').css('height', max_shadow)
+            $('.viewer .shadow .fa-plus').css('display', 'block')
+            $('.viewer .shadow .fa-minus').css('display', 'none')
+            $('.shadow-main').css('overflow-y', 'auto')
+            $('.viewer .shadow-main .fa-plus').css('display', 'none')
+            $('.viewer .shadow-main .fa-minus').css('display', 'block')
+            if(shadow_main_expanded){
+                $('.shadow-main').css('height', min_shadow)
+                $('.shadow-main').css('overflow-y', 'hidden')
+                $('.viewer .shadow-main .fa-plus').css('display', 'block')
+                $('.viewer .shadow-main .fa-minus').css('display', 'none')  
+            }
+            shadow_main_expanded = !shadow_main_expanded 
+        }
+    })
+
+    /* Display Map on hover
+    $('#map').mouseenter(function() {
+        if (top) {
+            return
+        }
+        showMap()
+    })//*/
+
     // Change DOM panel
     function renderPanel(brut, page) {
             current_panel = brut
@@ -301,13 +383,6 @@ $(function() {
 		console.log('Undefined items ' + search)
 	})
 
-	/* Display Map on hover
-	$('#map').mouseenter(function() {
-		if (top) {
-			return
-		}
-		showMap()
-	})//*/
 })
 
 // Masonry
