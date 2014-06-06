@@ -87,6 +87,5 @@ $(window).resize(function(){
 $(window).load(function(){
     addModal();
     navScroll();
-    tabNavigation(); 
-    $('.datepicker').datepicker();
+    tabNavigation();   
 });
