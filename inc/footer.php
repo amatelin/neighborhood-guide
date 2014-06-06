@@ -1,8 +1,10 @@
-   <?php if ($page != "quartier"): ?>
+
     <footer class="text-center">
         <div class="footer-above footer-spacer">
             <div class="container">
                 <div class="row">
+                    <br>
+                    <br>
                     <div class="footer-col col-md-4">
                         <h3>Address</h3>
                         <p>1009 rue de Bleury
@@ -50,21 +52,20 @@
         </a>
     </div>
 
-    <?php endif; ?>
-
-    <!-- Javascript -->  
+    <!-- Javascript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="./js/handlebars-v1.3.0.js"></script>
     <script src="./js/fotorama.js"></script>
-     
+
 
     <?php if ($page == "quartier"): ?>
+
         <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
         </script>
         <script src="./js/quartier.js"></script>
-        <script src="./js/map.js"></script>  
+
     <?php endif; ?>
-        
+
     </body>
 </html>
