@@ -12,6 +12,7 @@ include './inc/header.php'
                         <div class="intro-text ">                       
                             <span class="name">Administration panel</span>
                             <img src="img/white-star.png">
+                            <?php include './inc/breadcrumb.php' ?>
                         </div>
                 </div>
             </div>
