@@ -186,6 +186,23 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
     margin-bottom: 30px;
 
 }
+
+.styled-select select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+}
+
+
+.selectbasic {
+    size: 33px;
+}
 .well {
      background-color:transparent;
      border: 0px;   
@@ -243,40 +260,7 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
     text-align: right;
 
 }
-@media(max-width:671px) {
-    #splash {
-        height: 1500px;
-        min-height: 1500px;
-    }
-    
-    #splash h1 {
-        padding: 55px;
-        font-size: 20px;
-        margin-bottom: 55px;
-        line-height: 50px;
-    }
-    
-    .email-length {
-        width: 300px;
-        color: #233140;
-        padding: 5px;
-    }
-    
-    .about {
-        margin-top: 250px;
-    }
-    #photocredit {
-        font-size: 15px;
-        padding-right: 5px;
-        text-align: right;
-        padding-top: 25px;
 
-    }
-    .downarrow {
-        bottom: 50px;
-        margin-left: 10px;
-    }
-}
 /**
 *HEADER
 **/
@@ -1906,10 +1890,45 @@ header .intro-text-team {
     }
 }
 
+/*
 #photocredit {
     margin-top: -15px;
     margin-left: 3px;
     bottom: 0px;
     right: 0px;
     color: white;
+}
+
+*/
+
+@media(max-width:671px) {
+    #splash {        
+        min-height: 1500px;
+    }   
+    #splash h1 {
+        padding: 55px;
+        font-size: 20px;
+        margin-bottom: 55px;
+        line-height: 50px;
+    }
+    .email-length {
+        width: 300px;
+        color: #233140;
+        padding: 5px;
+    }
+    .about {
+        margin-top: 250px;
+    }
+    #photocredit {
+        font-size: 15px;
+        padding-right: 5px;
+        text-align: right;
+        padding-top: 25px;
+
+    }
+    .downarrow {
+        bottom: 50px;
+        margin-left: 10px;
+    }
+}
 }
