@@ -160,11 +160,15 @@ $(function() {
 
 			google.maps.event.addListener(marker, 'click', function() {
 				var elem = $('.item').find('[name="' + this.title + '"]')
+				elem.height('auto')
+				/*
 				if (elem.height() == '0') {
 					elem.height('auto')
 				} else {
 					elem.height('0')
-				}
+				}//*/
+				var latLng = this.getPosition() // returns LatLng object
+				map.setCenter(latLng) // setCenter takes a LatLng object
 			})
 
 		})
@@ -175,7 +179,14 @@ $(function() {
     	$('.item').click(function() {
     		var elem = $(this).children('.mask').first()
     		if (elem.height() == '0') {
+				$('.item').children('.mask').height('0')
     			elem.height('auto')
+				markers.forEach(function(marker) {
+					if (marker.title == elem.attr('name')) {
+						var latLng = marker.getPosition()
+						map.setCenter(latLng)
+					}
+				})
     		} else {
     			elem.height('0')
     		}
