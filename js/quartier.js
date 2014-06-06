@@ -1,6 +1,7 @@
 var datas = [
 	{
 		name:'Bons Plans',
+		color: 'FE6256',
 		infos: [
 			{
 				name: 'La Distillerie',
@@ -23,6 +24,7 @@ var datas = [
 	},
 	{
 		name:'Restaurant',
+		color: '56FE62',
 		infos: [
 			{
 				name: 'Au Petit Bigorneau',
@@ -130,7 +132,7 @@ $(function() {
     }
 
     // Display marker for some places
-	function showMarker(places, page) {
+	function showMarker(places, page, color) {
         closeMarker()
 		var i = page * step
 		places.forEach(function(place) {
@@ -140,7 +142,7 @@ $(function() {
 				position: (new google.maps.LatLng(place.lat, place.lng)),
 				map: map,
 				title: place.name,
-				icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + i + '|FE6256|000000'
+				icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + i + '|' + color + '|000000'
 			})
 
             markers.push(marker)
@@ -265,7 +267,7 @@ $(function() {
 			$('.panel').children('.panel-body').html(html)
 			$('.panel').first().css('display', 'block')
 			attachInfo()
-			showMarker(category.infos, page)
+			showMarker(category.infos, page, brut.color)
     }
 
     // Let's the map appear
