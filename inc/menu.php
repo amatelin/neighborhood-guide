@@ -1,7 +1,9 @@
 <div class="col-lg-2 col-lg-offset-1" id="menu">
     <div class="intro-text-admin-menu">
+        <a href="administration.php"><h2 class="menu-header">Admin</h2></a>
         <ul>
             <li>
+                
                 <a href="">New</a>
                 <ul>
                     <li><a href="newplaces.php">Places&nbsp;/&nbsp;Submissions</a></li>

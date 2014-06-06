@@ -2034,3 +2034,7 @@ header .intro-text-team {
     }
 }
 }
+.menu-header {
+    text-align: center;
+    padding-top: 15px;
+}
