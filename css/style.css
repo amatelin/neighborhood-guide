@@ -186,7 +186,7 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
     margin-bottom: 30px;
 
 }
-
+/*
 .styled-select select {
    background: transparent;
    width: 268px;
@@ -198,7 +198,7 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
    height: 34px;
    -webkit-appearance: none;
 }
-
+*/
 
 .selectbasic {
     size: 33px;
@@ -255,7 +255,7 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
 }
 
 #photocredit {
-    font-size: 18px;
+    font-size: 12px;
     padding-right: 5px;
     text-align: right;
 
@@ -2038,3 +2038,17 @@ header .intro-text-team {
     text-align: center;
     padding-top: 15px;
 }
+
+.styled-select select {
+   background: white;
+   color: black;
+   width: 268px;
+   padding: 5px;
+   margin-top: 10px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   //-webkit-appearance: none;
+   }

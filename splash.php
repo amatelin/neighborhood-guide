@@ -62,11 +62,9 @@
                     </li>
 
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#">Français</a>
                     </li>
-                    <li class="language-select page-scroll">
-                        <a href="#about">FR</a>
-                    </li>
+
 
                 </ul>
             </div>
@@ -117,8 +115,7 @@
                                         </div>
                                         <!-- Select Basic -->
                                         <div class="control-group">
-                                          <label class="control-label" for="selectbasic">Select Basic</label>
-                                          <div class="controls">
+                                          <div class="controls styled-select">
                                             <select id="selectbasic" name="selectbasic" class="input-xlarge">
                                                 <optgroup label="Test"></optgroup>
                                               <option>Option one</option>
