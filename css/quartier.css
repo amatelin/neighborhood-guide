@@ -15,3 +15,7 @@ body {
 .panel-body .pagination {
     margin-bottom: 0;
 }
+
+footer {
+    display: none;
+}
