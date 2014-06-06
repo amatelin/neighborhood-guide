@@ -15,22 +15,12 @@
 
     <!-- NestFinder CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/fotorama.css">
-
-    <!-- CSS body { overflow: hidden } hack -->
-    <?php if ($page == "quartier"): ?>
-        <link rel="stylesheet" href="./css/quartier.css">';
-    <?php endif; ?>
-    <link rel="stylesheet" href="./css/datepicker.css">
-    
     
         <!-- Javascript -->  
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/neighbourhoodguide.js"></script>
-    <script src="./js/bootstrap-datepicker.js"></script>
-
-        
+    
     <!-- Fonts -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
