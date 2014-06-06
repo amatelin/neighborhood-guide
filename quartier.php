@@ -122,9 +122,10 @@
                         <li>Train Stations</li>
                         <li>Airports</li>
                     </ul>
+                </div>
+                <div id="padding_shadow_main">&nbsp;</div>
             </div>
         </div>
-    </div>
         <div id="map" class="viewer">
             <div class="mapbar shadow_map">
                 <span id="mapbar-title"><i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span></span>
