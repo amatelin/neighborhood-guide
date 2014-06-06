@@ -41,10 +41,10 @@
                     <br/>
                 </div>
                 <div class="place">
-                    <li>Restaurants <a href="addResto.php"> <i class="fa fa-plus"></i></a></li>
+                    <li><a name="Restaurant" href="#">Restaurants <a href="addResto.php"><i class="fa fa-plus"></i></a></a></li>
                     <ul>
-                        <li>test</li>
-                        <li>test</li>
+                        <li><a name="Au Petit Bigorneau" href="#">Au Petit Bigorneau</a></li>
+                        <li><a name="Satisfaction" href="#">Satisfaction</a></li>
                         <li>test</li>
                         <li>test</li>
                     </ul>
@@ -172,7 +172,7 @@
                 <div class="item">
                     <img class="mini" src="./img/{{this.url}}.jpg">
                     <span class="stars">{{#times this.stars}} <i class="fa fa-star"></i>{{/times}}</span>
-                    <h3>{{this.name}}</h3>
+                    <h3>{{this.number}}. {{this.name}}</h3>
                     <p>{{this.desc}}</p>
                     <div class="mask" name="{{this.name}}">
                         <p>Nb place : 3</p>
