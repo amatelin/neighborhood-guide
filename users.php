@@ -22,7 +22,7 @@ include './inc/header.php'
                     include './inc/menu.php'           
                 ?>
 
-                <div class="col-lg-6 col-lg-offset-2" id="central"> 
+                <div class="col-lg-6" id="central"> 
                     
 
                     <div class="intro-text-admin table-responsive">
