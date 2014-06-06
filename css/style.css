@@ -483,7 +483,7 @@ span.title {
         padding: 10px 0;
     }
 
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
+    .navbar-bar-fixed-top.navshrink .navbar-brand {
         font-size: 1.5em;
     }
 
@@ -1780,40 +1780,94 @@ header .intro-text-team {
 *PROFILE
 **/
 #profile-wrapper{
-    width:100%;
-    height:650px;
+    width:77%;
+    height:505px;
 }
+
+.profile-left{
+    float: right;
+}
+
+.profile-right{
+    float: left;
+}
+
 .profile-pic>img{
     width:400px;
     height: 400px;
 }
+
 .profile-pic{
-    margin-left: 6%;
-    margin-top:  7%;
+    margin-left: 1%;
+    margin-top:  -10px;
 }
 #profile-wrapper>div{
     display:inline-block;
-    float:left;
 }
+
 #profile-wrapper fieldset{
-    margin-top:20%;
+    margin-top:17%;
 }
+
 #profile-wrapper .log-form{
     height:100%;
-    width:50%;
-    margin-left: 100px;
+    width:80%;
     padding-left: 0px;
-    border-style:none none none solid;
-    border-color:#fff;
-    border-width: 1px;
 }
+
+#profile-wrapper .log-form h4{
+    color: #FFFFFF;
+}
+
 #profile-intro{
-    width:100%;    
+    width:79%;    
 }
 .fa-calendar{
     font-size: 20px;
     padding-top:2px;
     background-color: #fff;
+}
+
+@media(max-width: 1199px){
+    .profile-left{
+        float: none;
+    }
+
+    .profile-right{
+        float: none;
+    }
+
+    #profile-wrapper{
+        width:77%;
+        height:405px;
+    }
+    .profile-pic>img{
+        width:300px;
+        height: 300px;
+    }
+
+    #profile-wrapper fieldset{
+    margin-top:15px;
+    }
+}
+
+@media(max-width: 991px){
+
+
+    #profile-wrapper.profile-right{
+        height:550px;
+    }
+
+@media(max-width: 480px){
+
+    .profile-pic>img{
+    width:200px;
+    height: 200px;
+    }
+
+    #profile-wrapper.profile-left{
+        height:300px;
+    }
 }
 
 /*
