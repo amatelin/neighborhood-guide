@@ -767,6 +767,8 @@ nav {
     font-size: 14px;
 }
 .viewer .shadow img {
+    padding-top: 15px;
+    padding-bottom: 15px;
     max-width: 90%;
 }
 #presentation-menu {
@@ -857,6 +859,10 @@ span.right a {
     margin-top: 25px;
     margin-left: 32px;
 }
+#padding_shadow_main {
+    height: 100px;
+    width: 100%;
+}
 @media(max-width: 660px){
     .viewer .shadow {
         width: 90%;
@@ -881,15 +887,19 @@ span.right a {
     }
     .viewer .shadow {
         width: 99%;
-        height: 39.5%;
+        height: 10%;
         margin-left: 0.5%;
-        margin-top: 5px; 
+        margin-top: 5px;
+        overflow: hidden;
+        padding: 0px 32px; 
     }
     .viewer .shadow-main {
         width: 99%;
-        height: 40%;
+        height: 10%;
         margin-left: 0.5%;
         margin-top: 5px;
+        overflow: hidden;
+        padding: 0px 32px;
     }
     #presentation-menu h1 {
         font-size: 20px;
@@ -903,6 +913,48 @@ span.right a {
         margin-top: 5px;
         font-size: 20px;
     }
+    .viewer .shadow h2 {
+        font-size: 17px;
+    }
+    .viewer .shadow-main h2 {
+        font-size: 17px;
+    }
+    .viewer .shadow-main .fa-plus {
+        display: block;
+    }
+    .viewer .shadow .fa-plus {
+        display: block;
+    }
+}
+@media(max-height: 480px) and (max-width: 320px){
+    .viewer .shadow {
+        width: 99%;
+        height: 15%;
+        margin-left: 0.5%;
+        margin-top: 5px;
+        overflow: hidden;
+        padding: 0px 32px; 
+    }
+    .viewer .shadow-main {
+        width: 99%;
+        height: 15%;
+        margin-left: 0.5%;
+        margin-top: 5px;
+        overflow: hidden;
+        padding: 0px 32px;
+    }
+    .viewer .shadow h2 {
+        font-size: 17px;
+    }
+    .viewer .shadow-main h2 {
+        font-size: 17px;
+    }
+    .viewer .shadow-main .fa-plus {
+        display: block;
+    }
+    .viewer .shadow .fa-plus {
+        display: block;
+    }
 }
 .viewer .shadow-main img {
     max-width: 90%;
@@ -912,8 +964,24 @@ span.right a {
     float: left;
     padding: 0 33px;
 }
+.viewer .iphone-toggle {
+    position: relative;
+    float: right;
+    top: 22px;
+    right: -10px;
+    font-size: 15px;
+    display: none;
+}
 .place {
     min-height: 110px;
+}
+.fa-arrow-down-quartier {
+    position: absolute;
+    float: right;
+    top: 15px;
+    right: 10px;
+    color: #2c3e50;
+    font-size: 40px;
 }
 .viewer#map {
     position: absolute;
