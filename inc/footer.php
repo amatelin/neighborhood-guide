@@ -3,6 +3,8 @@
         <div class="footer-above footer-spacer">
             <div class="container">
                 <div class="row">
+                    <br>
+                    <br>
                     <div class="footer-col col-md-4">
                         <h3>Address</h3>
                         <p>1009 rue de Bleury
