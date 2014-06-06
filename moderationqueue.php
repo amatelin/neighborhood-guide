@@ -249,4 +249,4 @@ include './inc/header.php'
         </div>
     </div>
 </section>
- <?php include 'inc/footer.php' ?>
+ <?php include './inc/footer.php' ?>

@@ -1,4 +1,4 @@
-
+<?php if( $page != ''): ?>
     <footer class="text-center">
         <div class="footer-above footer-spacer">
             <div class="container">
