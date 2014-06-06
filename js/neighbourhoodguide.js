@@ -73,12 +73,19 @@ function tabNavigation(){
     });
 }
 
+function addModal(){
+    var allRows = $('.intro-text-admin tbody tr');
+    allRows.attr('data-toggle','modal');
+    allRows.attr('data-target','#myModal');
+    console.log(allRows);
+}
+
 
 $(window).resize(function(){
     navScroll();
 });
 $(window).load(function(){
-
+    addModal();
     navScroll();
     tabNavigation(); 
     $('.datepicker').datepicker();

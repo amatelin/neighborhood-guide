@@ -143,6 +143,7 @@
                           <ul class="dropdown-menu white">
                                 <li><a href="profile.php">Profile</a></li>
                                 <li><a href="settings.php">Settings</a></li>
+                                <li><a href="moderationqueue.php">Administration</a></li>
                                 <li><a href="index.php">Log out</a></li>
                           </ul>
                         </div>
@@ -181,7 +182,8 @@
                           </div>
                           <ul class="dropdown-menu">
                             <li><a href="profile.php">Profile</a></li>
-                                <li><a href="settings.php">Settings</a></li>
+                                <li><a href="settings.php">Settings</a></li>                                
+                                <li><a href="moderationqueue.php">Administration</a></li>
                                 <li><a href="index.php">Log out</a></li>
                           </ul>
                         </div>
