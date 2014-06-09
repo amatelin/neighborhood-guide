@@ -46,6 +46,42 @@ a.active {
     outline: 0;
     color: #18bc9c;
 }
+
+.btn-header {
+    color: white;
+    background-color: #233140;
+}
+
+.btn-header:hover {
+    color: #233140;
+    background-color: white;
+}
+
+#drop1 {
+    background-color: transparent;
+    float: right;
+    
+}
+#drop1:hover {
+    float: right;
+    background-color: transparent;
+}
+
+#drop1 > li > a:hover {
+    float: right;
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    width: 200px;
+    float: right;
+    top: 60px;
+    right: 10px;
+    left: auto;
+
+}
+
+
 .navbar a {
     color: white;
 }
@@ -601,6 +637,7 @@ span.title {
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
+    margin-bottom: 0px;
 }
 .navbar-collapse {
     border-top: 0px solid transparent;

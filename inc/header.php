@@ -59,8 +59,39 @@
                         <div class="center">
                         <span class="logo"></span>
                         <a class="navbar-brand" href="#page-top">NestFinder</a>
+   
+
+
+
+
                         </div>
+                           <div id="navbar-example" class="navbar navbar-static">
+              <div class="navbar-inner">
+                <div class="xcontainer">
+                  
+                  <ul class="nav" role="navigation">
+                    <li class="dropdown">
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><button type="button" class="btn btn-default btn-lg btn-header">
+                        <span class="glyphicon glyphicon-list"></span>
+                      </button></a>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                <li><a href="register.php">Register</a></li>
+                                <li><a href="login.php">Login</a></li> 
+                                <li><a href="addThing.php">Add Place</li>   
+                                <li class="divider"></li>
+                                <li><a href="profile.php">Profile</a></li>
+                                <li><a href="settings.php">Settings</a></li>
+                                <li><a href="administration.php">Administration</a></li>
+                                <li><a href="index.php">Log out</a></li>
+ 
+                      </ul>
+                    </li>                    
+                  </ul>                 
+                </div>
+              </div>
+            </div> <!-- /navbar-example -->
                         </br>
+                        
                         <img class="gps-image img-responsive" width="600px" src="img/map-welcome.png" alt="">
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
@@ -196,4 +227,6 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-        
+       
+                               
+ 
