@@ -15,22 +15,12 @@
 
     <!-- NestFinder CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/fotorama.css">
-
-    <!-- CSS body { overflow: hidden } hack -->
-    <?php if ($page == "quartier"): ?>
-        <link rel="stylesheet" href="./css/quartier.css">';
-    <?php endif; ?>
-    <link rel="stylesheet" href="./css/datepicker.css">
-    
     
         <!-- Javascript -->  
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/neighbourhoodguide.js"></script>
-    <script src="./js/bootstrap-datepicker.js"></script>
-
-        
+    
     <!-- Fonts -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -72,11 +62,9 @@
                     </li>
 
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="#">Français</a>
                     </li>
-                    <li class="language-select page-scroll">
-                        <a href="#about">FR</a>
-                    </li>
+
 
                 </ul>
             </div>
@@ -124,6 +112,16 @@
                                     <form action="" method="post">
                                         <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
                                             <input class="input-xlarge email-length" type="text" id="" name="" placeholder="your@email.com">
+                                        </div>
+                                        <!-- Select Basic -->
+                                        <div class="control-group">
+                                          <div class="controls styled-select">
+                                            <select id="selectbasic" name="selectbasic" class="input-xlarge">
+                                                <optgroup label="Test"></optgroup>
+                                              <option>Option one</option>
+                                              <option>Option two</option>
+                                            </select>
+                                          </div>
                                         </div>
                                         <br />
                                         <input id="subscribe" type="submit" value="Subscribe Now!" class="btn btn-large" />
@@ -222,18 +220,9 @@
     <?php endif; ?>
 
     <!-- Javascript -->  
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="./js/handlebars-v1.3.0.js"></script>
-    <script src="./js/fotorama.js"></script>
      
-
-    <?php if ($page == "quartier"): ?>
-        <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsp30dcLedKh-rLy6H_QNGvs1RYPiLb4s&sensor=TRUE">
-        </script>
-        <script src="./js/quartier.js"></script>
-        <script src="./js/map.js"></script>  
-    <?php endif; ?>
         
     </body>
 </html>
