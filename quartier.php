@@ -41,6 +41,7 @@
                 <div class="col-lg-12 text-center">
                     <h2>The Neighbourhood</h2>
                     <img src="img/white-star.png">
+                    <?php include './inc/breadcrumb.php' ?>
                     <br/>
                     <br/>
                 </div>

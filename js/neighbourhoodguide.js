@@ -89,3 +89,9 @@ $(window).load(function(){
     navScroll();
     tabNavigation();   
 });
+
+function deleteAcctount(){
+    $('.save').click(function() {
+        console.log('Hello');
+});
+}

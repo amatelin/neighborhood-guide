@@ -11,6 +11,7 @@ include './inc/header.php'
                     <div class="intro-text ">                       
                         <span class="name">Meet the Team</span>
                         <img src="img/white-star.png">
+                        <?php include './inc/breadcrumb.php' ?>
                     </div>
                     <div class="col-lg-12 intro-text-team"> 
                         <div class="team">

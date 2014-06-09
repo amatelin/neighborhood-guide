@@ -317,6 +317,7 @@ header .intro-text{
 .container.middle {
     position: relative;
     top: 50%;
+    overflow-x: hidden;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -390,6 +391,10 @@ header .form-control:-ms-input-placeholder {
 .fa-arrow-down:hover {
     color:#18bc9c;
     text-decoration: none;
+}
+
+.breadcrumb{
+    background: none repeat scroll 0% 0% rgba(35, 49, 64, 0.0);;
 }
 
 /**
@@ -1938,10 +1943,10 @@ header .intro-text-team {
 
 @media(max-width: 991px){
 
-
     #profile-wrapper.profile-right{
         height:550px;
     }
+}
 
 @media(max-width: 480px){
 
@@ -1953,14 +1958,9 @@ header .intro-text-team {
     #profile-wrapper.profile-left{
         height:300px;
     }
+
+
 }
-
-/*
-.profile-pic > img,
-.profile-pic > div {
-    display:block;
-}*/
-
 
 @media(max-width: 767px) {
     .downarrow {
