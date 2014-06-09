@@ -72,7 +72,7 @@ a.active {
     background-color: transparent;
 }
 
-.dropdown-menu-home {
+.dropdown-home {
     width: 200px;
     float: right;
     top: 60px;
@@ -349,27 +349,18 @@ header .gps-image {
     -webkit-border-radius: 30px;
 }
 header .intro-text{
-    margin-top: 150px;
+    margin-top: 32px;
     padding: 15px;
     color:#fff;
     background:rgba(35,49,64,.8);
     border-radius: 20px;
-    width: 650px;
-    margin: 0 auto;
-}
-.container.middle {
-    position: relative;
-    top: 50%;
-    overflow-x: hidden;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    width: 625px;
+    margin-right: auto;
+    margin-left: auto;
 }
 header .intro-text-form{
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 15px;
     color:#fff;
     background:rgba(35,49,64,.8);

@@ -1,14 +1,18 @@
 <?php include './inc/header.php' ?>
 
     <header>
-        <div class="container middle">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="intro-text ">
+                    <div class="intro-text">
                         <span class="name">Add Place</span>
                         <img src="img/white-star.png">
                         <?php include './inc/breadcrumb.php' ?>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
                     <div class="intro-text-form">
                         <div class="log-form">
                             <form class="form-horizontal">
@@ -31,7 +35,6 @@
                                         }
                                         .container.middle {
                                             top: 10%;
-                                            transform: none;
                                         }
                                     </style>
 
