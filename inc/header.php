@@ -74,10 +74,10 @@
                       <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><button type="button" class="btn btn-default btn-lg btn-header">
                         <span class="glyphicon glyphicon-list"></span>
                       </button></a>
-                      <ul class="dropdown-menu-home" role="menu" aria-labelledby="dLabel">
+                      <ul class="dropdown-menu dropdown-home" role="menu" aria-labelledby="dLabel">
                                 <li><a href="register.php">Register</a></li>
                                 <li><a href="login.php">Login</a></li>
-                                <li><a href="addThing.php">Add Place</li>
+                                <li><a href="addThing.php">Add Place</a></li>
                                 <li class="divider"></li>
                                 <li><a href="profile.php">Profile</a></li>
                                 <li><a href="settings.php">Settings</a></li>
