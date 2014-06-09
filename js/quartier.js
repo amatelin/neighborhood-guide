@@ -117,8 +117,8 @@ $(function() {
 
     // Panel config
 	var top = false,
-		dist = '107px',
-        fromtop = '97%',
+		dist = '88px',
+        fromtop = '96%',
         step = 2,
         current_panel = ''
         shadow_main_expanded = false
@@ -417,10 +417,12 @@ $(function() {
 	// Update on anchor
 	$('.goto.prev').click(function(e) {
 		e.preventDefault()
+		e.stopPropagation()
 		document.location.hash = $(this).attr('href')
 	})
 	$('.goto.next').click(function(e) {
 		e.preventDefault()
+		e.stopPropagation()
 		document.location.hash = $(this).attr('href')
 	})
 	function getFromAnchor() {
