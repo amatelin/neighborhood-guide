@@ -194,7 +194,7 @@
                     </li>
                     <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
-                          <div class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                          <div class="btn" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>
                                 <span class="caret"></span>
                           </div>
