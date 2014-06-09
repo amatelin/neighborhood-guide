@@ -81,6 +81,26 @@ var datas = [
 // Display Map
 $(function() {
 
+    $('body').on('touchmove', function(e) {
+
+        target = e.target;
+
+        parent = $(e.target).closest('div');
+
+        // check if the parent is a scroll window by class //
+        if ($(parent).hasClass('scroll')){
+            // ignore as we want the scroll to happen
+        } else {
+            e.preventDefault();
+        }
+    });
+
+$(document).on('touchmove', function(e) {
+    if (!$(e.target).parents('.scroll')[0]) {
+        e.preventDefault();
+    }
+});
+
     // Panel config
 	var top = false,
 		dist = '107px',
@@ -259,16 +279,6 @@ $(function() {
         }
     }
 
-    $('#showMap').click(function() {
-        showMap()
-        checkWindowWidth()
-    })
-
-    $('#map').find('.mapbar').click(function() {
-        showMap()
-        checkWindowWidth()
-    })
-
     //480 x 320 support
     $('.shadow').click(function (){
         var min_shadow = '10%'
@@ -288,6 +298,7 @@ $(function() {
             $('.viewer .shadow-main .fa-minus').css('display', 'none') 
             if(shadow_expanded){
                 $('.shadow').css('height', min_shadow)
+                $('.shadow').scrollTop(0)
                 $('.shadow').css('overflow-y', 'hidden')
                 $('.viewer .shadow .fa-plus').css('display', 'block')
                 $('.viewer .shadow .fa-minus').css('display', 'none') 
@@ -314,6 +325,7 @@ $(function() {
             $('.viewer .shadow-main .fa-minus').css('display', 'block')
             if(shadow_main_expanded){
                 $('.shadow-main').css('height', min_shadow)
+                $('.shadow-main').scrollTop(0)
                 $('.shadow-main').css('overflow-y', 'hidden')
                 $('.viewer .shadow-main .fa-plus').css('display', 'block')
                 $('.viewer .shadow-main .fa-minus').css('display', 'none')  
@@ -358,12 +370,19 @@ $(function() {
 		$('#map').find('.right').css('opacity', top ? '0' : '1')
 		$('#map').find('.piti') .css('opacity', top ? '1' : '0')
 		window.setTimeout(function() {top = !top}, 300)
+        checkWindowWidth()
 		if(!top) {
             renderPanel(datas[0], 1)
 		}
 	}
-	$('#showMap').click(function() { showMap() })
-	$('#map').find('.mapbar').click(function() { showMap() })
+	
+    $('#showMap').click(function() {
+        showMap()
+    })
+
+    $('.mapbar').click(function() {
+        showMap()
+    })
 
 	// Hide Panel
 	$('.panel-heading').first().children('i').click(function() {
