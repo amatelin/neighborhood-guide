@@ -1,82 +1,116 @@
-var datas = [
-	{
-		name:'Bons Plans',
-		color: 'FE6256',
-		infos: [
+var datas = {
+	'LE PLATEAU': {
+		coord: {
+			lat: 45.521624,
+			lng: -73.575468
+		},
+		places: [
 			{
-				name: 'La Distillerie',
-				stars: 0,
-				desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-				url: 'resto',
-				lat: 45.514738,
-				lng: -73.565611
-			},
-			{
-				name: 'Le Rouge',
-				stars: 3,
-				desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-				url: 'resto',
-				lat: 45.414738,
-				lng: -73.465611
-			},
-		]
+				name:'Bons Plans',
+				color: 'FE6256',
+				infos: [
+					{
+						name: 'La Distillerie',
+						stars: 0,
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+						url: 'resto',
+						lat: 45.514738,
+						lng: -73.565611
+					},
+					{
+						name: 'Le Rouge',
+						stars: 3,
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+						url: 'resto',
+						lat: 45.414738,
+						lng: -73.465611
+					},
+				]
 
-	},
-	{
-		name:'Restaurant',
-		color: '56FE62',
-		infos: [
-			{
-				name: 'Au Petit Bigorneau',
-				stars: 3,
-				desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-				url: 'resto',
-				lat: 45.514738,
-				lng: -73.565611
 			},
 			{
-				name: 'Plaisir de Moules',
-				stars: 1,
-				desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-				url: 'resto',
-				lat: 45.533838,
-				lng: -73.565611
-			},
-			{
-				name: 'Satisfaction',
-				stars: 1,
-				desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-				url: 'resto',
-				lat: 45.495738,
-				lng: -73.565511
-			},
-		]
+				name:'Restaurant',
+				color: '56FE62',
+				infos: [
+					{
+						name: 'Au Petit Bigorneau',
+						stars: 3,
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+						url: 'resto',
+						lat: 45.514738,
+						lng: -73.565611
+					},
+					{
+						name: 'Plaisir de Moules',
+						stars: 1,
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+						url: 'resto',
+						lat: 45.533838,
+						lng: -73.565611
+					},
+					{
+						name: 'Satisfaction',
+						stars: 1,
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+						url: 'resto',
+						lat: 45.495738,
+						lng: -73.565511
+					},
+				]
 
+			},
+			{
+				name:'Café',
+				infos: [
+					{
+						name: 'Café Salé',
+						stars: 4,
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+						url: 'resto'
+					},
+					{
+						name: 'Patisserie Laurent Foutrey',
+						stars: 3,
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+						url: 'resto'
+					},
+					{
+						name: 'Guimauve & Chocolat',
+						stars: 4,
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+						url: 'resto'
+					},
+				]
+			}
+
+		]
 	},
-	{
-		name:'Café',
-		infos: [
+	'WESTMOUNT': {
+		coord: {
+			lat: 46.521624,
+			lng: -74.575468
+		},
+		places: [
 			{
-				name: 'Café Salé',
-				stars: 4,
-				desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-				url: 'resto'
-			},
-			{
-				name: 'Patisserie Laurent Foutrey',
-				stars: 3,
-				desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-				url: 'resto'
-			},
-			{
-				name: 'Guimauve & Chocolat',
-				stars: 4,
-				desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-				url: 'resto'
-			},
+				name:'Bons Plans',
+				color: 'FE6256',
+				infos: [
+					{
+						name: 'L\'Alchimie',
+						stars: 0,
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+						url: 'resto',
+						lat: 46.514738,
+						lng: -74.566611
+					}
+				]
+			}
 		]
 	}
-]
+}
+
+//var current_place = 'LE PLATEAU'
+var current_place = document.location.hash.substring(1)
 
 // Display Map
 $(function() {
@@ -103,12 +137,12 @@ $(document).on('touchmove', function(e) {
 
     // Panel config
 	var top = false,
-		dist = '107px',
-        fromtop = '97%',
+		dist = '88px',
+        fromtop = '96%',
         step = 2,
         current_panel = ''
         shadow_main_expanded = false
-        shadow_expanded = false    
+        shadow_expanded = false
 
     // Default panel display
 	$('nav').css('display','displayed');
@@ -116,7 +150,7 @@ $(document).on('touchmove', function(e) {
 
     // Google Maps
 	var mapOptions = {
-		center: new google.maps.LatLng(45.521624,-73.575468),
+		center: new google.maps.LatLng(datas[current_place].coord.lat, datas[current_place].coord.lng),
 		zoom: 15,
 		disableDefaultUI: true
 	}
@@ -208,17 +242,17 @@ $(document).on('touchmove', function(e) {
 			showMap()
 			var page = 1
 			// Show the good panel
-			for (var x in datas) {
-				if (datas[x].name == parentname) {
-					for (var i = 0 ; i < datas[x].infos.length ; ++i) {
-						if (datas[x].infos[i].name == name) {
+			for (var x in datas[current_place].places) {
+				if (datas[current_place].places[x].name == parentname) {
+					for (var i = 0 ; i < datas[current_place].places[x].infos.length ; ++i) {
+						if (datas[current_place].places[x].infos[i].name == name) {
 							page = Math.floor(i / step) + 1
 						}
 					}
 					break
 				}
 			}
-			renderPanel(datas[x], page)
+			renderPanel(datas[current_place].places[x], page)
 			// Center to marker
 			markers.forEach(function(marker) {
 				if (marker.title == name) {
@@ -237,12 +271,12 @@ $(document).on('touchmove', function(e) {
 			var name = $(this).children('a').first().attr('name')
 			showMap()
 			// Show the good panel
-			for (var x in datas) {
-				if (datas[x].name == name) {
+			for (var x in datas[current_place].places) {
+				if (datas[current_place].places[x].name == name) {
 					break
 				}
 			}
-			renderPanel(datas[x], 1)
+			renderPanel(datas[current_place].places[x], 1)
 		})
 
 	}
@@ -278,7 +312,6 @@ $(document).on('touchmove', function(e) {
             $('#mapbar-title').html('<i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>')
         }
     }
-
     //480 x 320 support
     $('.shadow').click(function (){
         var min_shadow = '10%'
@@ -295,15 +328,15 @@ $(document).on('touchmove', function(e) {
             $('.shadow-main').css('height', min_shadow)
             $('.shadow-main').css('overflow-y', 'hidden')
             $('.viewer .shadow-main .fa-plus').css('display', 'block')
-            $('.viewer .shadow-main .fa-minus').css('display', 'none') 
+            $('.viewer .shadow-main .fa-minus').css('display', 'none')
             if(shadow_expanded){
                 $('.shadow').css('height', min_shadow)
                 $('.shadow').scrollTop(0)
                 $('.shadow').css('overflow-y', 'hidden')
                 $('.viewer .shadow .fa-plus').css('display', 'block')
-                $('.viewer .shadow .fa-minus').css('display', 'none') 
+                $('.viewer .shadow .fa-minus').css('display', 'none')
             }
-            shadow_expanded = !shadow_expanded   
+            shadow_expanded = !shadow_expanded
         }
     })
 
@@ -328,9 +361,9 @@ $(document).on('touchmove', function(e) {
                 $('.shadow-main').scrollTop(0)
                 $('.shadow-main').css('overflow-y', 'hidden')
                 $('.viewer .shadow-main .fa-plus').css('display', 'block')
-                $('.viewer .shadow-main .fa-minus').css('display', 'none')  
+                $('.viewer .shadow-main .fa-minus').css('display', 'none')
             }
-            shadow_main_expanded = !shadow_main_expanded 
+            shadow_main_expanded = !shadow_main_expanded
         }
     })
 
@@ -348,7 +381,7 @@ $(document).on('touchmove', function(e) {
             --page
             var category = {}
             category.name = brut.name
-            category.nb = brut.infos.length / step
+            category.nb = Math.floor(brut.infos.length / step)
             category.page = page
             category.infos = []
             for (var i = 0 ; (i + page * step) < brut.infos.length && i < step ; ++i) {
@@ -372,7 +405,7 @@ $(document).on('touchmove', function(e) {
 		window.setTimeout(function() {top = !top}, 300)
         checkWindowWidth()
 		if(!top) {
-            renderPanel(datas[0], 1)
+            renderPanel(datas[current_place].places[0], 1)
 		}
 	}
 	
@@ -393,14 +426,38 @@ $(document).on('touchmove', function(e) {
 	// Show Panel with info
 	$('.dropdown-menu').children('li').click(function() {
 		var search = $(this).children('a').html()
-		for (var x in datas) {
-			if (datas[x].name == search) {
-                renderPanel(datas[x], 1)
+		for (var x in datas[current_place].places) {
+			if (datas[current_place].places[x].name == search) {
+                renderPanel(datas[current_place].places[x], 1)
 				return
 			}
 		}
 		console.log('Undefined items ' + search)
 	})
+
+	// Update on anchor
+	$('.goto.prev').click(function(e) {
+		e.preventDefault()
+		e.stopPropagation()
+		document.location.hash = $(this).attr('href')
+	})
+	$('.goto.next').click(function(e) {
+		e.preventDefault()
+		e.stopPropagation()
+		document.location.hash = $(this).attr('href')
+	})
+	function getFromAnchor() {
+		current_place = document.location.hash.substring(1)
+		map.setCenter(new google.maps.LatLng(datas[current_place].coord.lat, datas[current_place].coord.lng))
+		renderPanel(datas[current_place].places[0], 1)
+		var names = Object.keys(datas)
+		var i = names.indexOf(current_place) + names.length
+		$('.goto.prev').attr('href', '#' + names[(i - 1) % names.length])
+		$('.goto.next').attr('href', '#' + names[(i + 1) % names.length])
+		$('.goto.name').html(current_place)
+	}
+	window.onhashchange = getFromAnchor
+	getFromAnchor()
 
 })
 

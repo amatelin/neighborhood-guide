@@ -5,7 +5,8 @@
       <div class="col-lg-12">                    
         <div class="intro-text" id="profile-intro">                       
           <span class="name">Profile</span>
-          <img src="img/white-star.png">          
+          <img src="img/white-star.png">
+          <?php include './inc/breadcrumb.php' ?>          
         </div>
         <div class="row">
           <div class="col-lg-6">
