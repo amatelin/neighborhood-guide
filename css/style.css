@@ -733,6 +733,10 @@ nav {
     background-color:#2C3E50;
 }
 
+.caret:hover {
+    color: #18bc9c;
+}
+
 /**
 * Neighbourhood Map Viewer (Quartier))
 **/
@@ -1323,6 +1327,13 @@ form .row:first-child .floating-label-form-group {
 #contribute h2{
     color:#fff;
 }
+.page-scroll a:hover {
+    color: #18bc9c;
+}
+.btn:hover {
+    color: #18bc9c;
+}
+
 .btn-success{
     background-color:#fff;
     border-color:#fff;
