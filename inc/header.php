@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="Alexis Matelin">
-           
+
     <title>NestFinder Neigborhood Guide</title>
 
     <!-- Bootstrap Core CSS -->
@@ -22,15 +22,15 @@
         <link rel="stylesheet" href="./css/quartier.css">';
     <?php endif; ?>
     <link rel="stylesheet" href="./css/datepicker.css">
-    
-    
-        <!-- Javascript -->  
+
+
+        <!-- Javascript -->
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/neighbourhoodguide.js"></script>
     <script src="./js/bootstrap-datepicker.js"></script>
 
-        
+
     <!-- Fonts -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -45,16 +45,16 @@
 </head>
 
 <body id="page-top" class="index">
-    
 
-    <?php if ($page == "index"): ?>    
+
+    <?php if ($page == "index"): ?>
     <header class="index">
         <div id="header-index"></div>
         <div class="container index">
             <div class="row">
                 <div class="col-lg-12">
                     <!--<img class="img-responsive" src="img/GPS.png" alt="">-->
-                    
+
                     <div class="intro-text ">
                         <div class="center">
                         <span class="logo"></span>
@@ -65,7 +65,7 @@
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
                         <span class="skills">
-                            The open source neighbourhood guide created by the community for the community.                           
+                            The open source neighbourhood guide created by the community for the community.
                         </span>
                         <br/>
                         <br/>
@@ -75,16 +75,16 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
-    </header>   
+    </header>
 
     <!-- Navigation -->
     <nav class="navbar my-navbar-default navbar-fixed-top not-displayed">
     <?php else: ?>
     <nav class="navbar my-navbar-default navbar-fixed-top">
-    <?php endif; ?>    
-        
+    <?php endif; ?>
+
         <div class="container-navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -100,7 +100,7 @@
                 <?php else: ?>
                 <a class="navbar-brand" href="index.php">NestFinder</a>
                 <?php endif; ?>
-                
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -129,7 +129,7 @@
                           <ul class="dropdown-menu white">
                                 <li><a href="addThing.php">Add Place</li>
                                 <li><a href="register.php">Register</a></li>
-                                <li><a href="login.php">Login</a></li>    
+                                <li><a href="login.php">Login</a></li>
                           </ul>
                         </div>
                     </li>
@@ -143,7 +143,7 @@
                           <ul class="dropdown-menu white">
                                 <li><a href="profile.php">Profile</a></li>
                                 <li><a href="settings.php">Settings</a></li>
-                                <li><a href="moderationqueue.php">Administration</a></li>
+                                <li><a href="administration.php">Administration</a></li>
                                 <li><a href="index.php">Log out</a></li>
                           </ul>
                         </div>
@@ -182,18 +182,17 @@
                           </div>
                           <ul class="dropdown-menu">
                             <li><a href="profile.php">Profile</a></li>
-                                <li><a href="settings.php">Settings</a></li>                                
-                                <li><a href="moderationqueue.php">Administration</a></li>
+                                <li><a href="settings.php">Settings</a></li>
+                                <li><a href="administration.php">Administration</a></li>
                                 <li><a href="index.php">Log out</a></li>
                           </ul>
                         </div>
                     </li>
                 <?php endif; ?>
-               
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-        

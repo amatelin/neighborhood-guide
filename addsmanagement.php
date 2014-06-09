@@ -1,27 +1,27 @@
 
-<?php 
+<?php
 $page = "team";
-include './inc/header.php' 
+include './inc/header.php'
 ?>
 
      <header>
-        <div class="moderationqueue-wrapper">
+        <div class="admin-wrapper">
              <div class="row title">
-                <div class="col-lg-4 col-lg-offset-4">     <!--col-lg-offset-3-->
+                <div class="col-lg-12">
 
-                        <div class="intro-text ">                       
+                        <div class="intro-text ">
                             <span class="name">Add</span>
                             <img src="img/white-star.png">
                         </div>
                 </div>
             </div>
             <div class="row content">
-                <?php 
-                    include './inc/menu.php'           
+                <?php
+                    include './inc/menu.php'
                 ?>
-                <div class="col-lg-6" id="central">     <!--col-lg-offset-3-->
+                <div class="col-lg-6" id="central">
 
-                    <div class="intro-text-admin table-responsive"> 
+                    <div class="intro-text-admin table-responsive">
                         <div class="subtitle">Added</div>
                         <table class="table table-hover">
                             <thead>
@@ -44,7 +44,7 @@ include './inc/header.php'
                                     <td><a href="addThing.php">Scar-Jo</a></td>
                                     <td><a><i class="fa fa-check"></i></a></td>
                                     <td><a><i class="fa fa-times"></i></a></td>
-                                    
+
                                 </tr>
                                 <tr>
                                     <td>Est End</td>
@@ -81,7 +81,7 @@ include './inc/header.php'
                                     <td><a href="addThing.php">Scar-Jo</a></td>
                                     <td><a><i class="fa fa-check"></i></a></td>
                                     <td><a><i class="fa fa-times"></i></a></td>
-                                    
+
                                 </tr>
                                 <tr>
                                     <td>Est End</td>
@@ -118,7 +118,7 @@ include './inc/header.php'
                                     <td><a href="addThing.php">Scar-Jo</a></td>
                                     <td><a><i class="fa fa-check"></i></a></td>
                                     <td><a><i class="fa fa-times"></i></a></td>
-                                    
+
                                 </tr>
                                 <tr>
                                     <td>Est End</td>
@@ -155,7 +155,7 @@ include './inc/header.php'
                                     <td><a href="addThing.php">Scar-Jo</a></td>
                                     <td><a><i class="fa fa-check"></i></a></td>
                                     <td><a><i class="fa fa-times"></i></a></td>
-                                    
+
                                 </tr>
                                 <tr>
                                     <td>Est End</td>
@@ -186,14 +186,14 @@ include './inc/header.php'
                                 </tr>
                             </tbody>
                         </table>
-                    </div> 
+                    </div>
                 </div>
-                <?php 
-                    include './inc/sidebar.php'           
+                <?php
+                    include './inc/sidebar.php'
                 ?>
-           </div>            
+           </div>
         </div>
-    </header>   
+    </header>
     <section class="adjustement">
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
