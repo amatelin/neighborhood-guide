@@ -110,7 +110,7 @@ var datas = {
 }
 
 //var current_place = 'LE PLATEAU'
-var current_place = document.location.hash.substring(1)
+var current_place = document.location.hash.substring(1) || 'LE PLATEAU'
 
 // Display Map
 $(function() {
