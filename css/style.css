@@ -60,7 +60,7 @@ a.active {
 #drop1 {
     background-color: transparent;
     float: right;
-    
+
 }
 #drop1:hover {
     float: right;
@@ -72,13 +72,12 @@ a.active {
     background-color: transparent;
 }
 
-.dropdown-menu {
+.dropdown-menu-home {
     width: 200px;
     float: right;
     top: 60px;
     right: 10px;
     left: auto;
-
 }
 
 @media(max-width: 480px) {
