@@ -92,7 +92,13 @@
             </div> <!-- /navbar-example -->
                         </br>
 
-                        <img class="gps-image img-responsive" width="600px" src="img/map-welcome.png" alt="">
+                        <div class="gps-image img-responsive">
+                            <img width="100%" src="img/map-welcome-copie.png" alt="">
+                            <button type="button" class="btn btn-default bclose">Mouse hover icons <i class="fa fa-times"></i></button>
+                            <button type="button" class="btn btn-primary bplane" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-plane"></i></button>
+                            <button type="button" class="btn btn-info bhome" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-home"></i></button>
+                            <button type="button" class="btn btn-warning bcutlery" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-cutlery"></i></button>
+                        </div>
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
                         <span class="skills">
@@ -112,6 +118,15 @@
 
     <!-- Navigation -->
     <nav class="navbar my-navbar-default navbar-fixed-top not-displayed">
+
+    <script>
+    ;(function() {
+        window.onload = function(){
+            $('.gps-image').find('button').popover()
+            $('.bclose').click(function() { $(this).css('display', 'none') })
+        }
+    })()
+    </script>
     <?php else: ?>
     <nav class="navbar my-navbar-default navbar-fixed-top">
     <?php endif; ?>

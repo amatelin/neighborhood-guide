@@ -337,6 +337,7 @@ header img {
     -webkit-border-radius: 30px;
 }
 header .gps-image {
+    position: relative;
     width: 600px;
     display: block;
     border-color: rgba(42,68,80,1);
@@ -347,6 +348,36 @@ header .gps-image {
     -moz-border-radius: 30px;
     -khtml-border-radius: 30px;
     -webkit-border-radius: 30px;
+}
+header .gps-image img {
+    margin: 0;
+}
+header .gps-image button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+header .gps-image .bclose {
+    top: 16px;
+    right: 16px;
+    width: auto;
+    height: auto;
+}
+header .gps-image .bplane {
+    top: 72%;
+    left: 20%;
+}
+header .gps-image .bhome {
+    top: 27%;
+    left: 62%;
+}
+header .gps-image .bcutlery {
+    top: 80%;
+    left: 54%;
+}
+body .popover {
+    font-size: 16px;
+    width: 175px;
 }
 header .intro-text{
     margin-top: 32px;
@@ -549,6 +580,14 @@ span.title {
         -webkit-border-radius: 30px;
     }
 
+    header .gps-image button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        padding: 0
+    }
+
     header .intro-text{
         padding: 15px;
         color:#fff;
@@ -606,6 +645,14 @@ span.title {
         -moz-border-radius: 30px;
         -khtml-border-radius: 30px;
         -webkit-border-radius: 30px;
+    }
+
+    header .gps-image button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        padding: 0
     }
 
     header .intro-text {
@@ -2111,7 +2158,7 @@ header .intro-text-team {
         padding-bottom: 10px;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in {
         display: block!important;
     }
     .collapsing {
