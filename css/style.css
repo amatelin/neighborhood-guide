@@ -81,6 +81,14 @@ a.active {
 
 }
 
+@media(max-width: 480px) {
+    #drop1 {
+        position: absolute;
+        top: 5px;
+        right: -5px;
+        padding: 0px;
+    }
+}
 
 .navbar a {
     color: white;
@@ -2068,7 +2076,7 @@ header .intro-text-team {
         margin-left: 10px;
     }
 }
-}
+
 .menu-header {
     text-align: center;
     padding-top: 15px;
