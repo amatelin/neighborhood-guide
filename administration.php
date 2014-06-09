@@ -9,6 +9,7 @@ include './inc/header.php'
              <div class="title">
                 <span class="name">Administration</span>
                 <img src="img/white-star.png">
+                <?php include './inc/breadcrumb.php' ?>
             </div>
             <div class="content">
                 <?php

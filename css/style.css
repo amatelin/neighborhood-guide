@@ -46,6 +46,49 @@ a.active {
     outline: 0;
     color: #18bc9c;
 }
+
+.btn-header {
+    color: white;
+    background-color: #233140;
+}
+
+.btn-header:hover {
+    color: #233140;
+    background-color: white;
+}
+
+#drop1 {
+    background-color: transparent;
+    float: right;
+
+}
+#drop1:hover {
+    float: right;
+    background-color: transparent;
+}
+
+#drop1 > li > a:hover {
+    float: right;
+    background-color: transparent;
+}
+
+.dropdown-home {
+    width: 200px;
+    float: right;
+    top: 60px;
+    right: 10px;
+    left: auto;
+}
+
+@media(max-width: 480px) {
+    #drop1 {
+        position: absolute;
+        top: 5px;
+        right: -5px;
+        padding: 0px;
+    }
+}
+
 .navbar a {
     color: white;
 }
@@ -294,6 +337,7 @@ header img {
     -webkit-border-radius: 30px;
 }
 header .gps-image {
+    position: relative;
     width: 600px;
     display: block;
     border-color: rgba(42,68,80,1);
@@ -305,27 +349,49 @@ header .gps-image {
     -khtml-border-radius: 30px;
     -webkit-border-radius: 30px;
 }
+header .gps-image img {
+    margin: 0;
+}
+header .gps-image button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+}
+header .gps-image .bclose {
+    top: 16px;
+    right: 16px;
+    width: auto;
+    height: auto;
+}
+header .gps-image .bplane {
+    top: 72%;
+    left: 20%;
+}
+header .gps-image .bhome {
+    top: 27%;
+    left: 62%;
+}
+header .gps-image .bcutlery {
+    top: 80%;
+    left: 54%;
+}
+body .popover {
+    font-size: 16px;
+    width: 175px;
+}
 header .intro-text{
-    margin-top: 150px;
+    margin-top: 32px;
     padding: 15px;
     color:#fff;
     background:rgba(35,49,64,.8);
     border-radius: 20px;
-    width: 650px;
-    margin: 0 auto;
-}
-.container.middle {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    width: 625px;
+    margin-right: auto;
+    margin-left: auto;
 }
 header .intro-text-form{
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 15px;
     color:#fff;
     background:rgba(35,49,64,.8);
@@ -392,6 +458,10 @@ header .form-control:-ms-input-placeholder {
     text-decoration: none;
 }
 
+.breadcrumb{
+    background: none repeat scroll 0% 0% rgba(35, 49, 64, 0.0);;
+}
+
 /**
 * Portfolio Hover Over
 */
@@ -450,6 +520,7 @@ span.title {
 /**
 *NAVBAR
 **/
+
 @media (min-width: 768px) {
     .navbar-fixed-top {
         -webkit-transition: padding .3s;
@@ -508,6 +579,14 @@ span.title {
         -moz-border-radius: 30px;
         -khtml-border-radius: 30px;
         -webkit-border-radius: 30px;
+    }
+
+    header .gps-image button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        padding: 0
     }
 
     header .intro-text{
@@ -569,6 +648,14 @@ span.title {
         -webkit-border-radius: 30px;
     }
 
+    header .gps-image button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        padding: 0
+    }
+
     header .intro-text {
         padding: 0 15px 0 15px;
         color:#fff;
@@ -596,6 +683,7 @@ span.title {
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
+    margin-bottom: 0px;
 }
 .navbar-collapse {
     border-top: 0px solid transparent;
@@ -692,6 +780,10 @@ nav {
     background-color:#2C3E50;
 }
 
+.caret:hover {
+    color: #18bc9c;
+}
+
 /**
 * Neighbourhood Map Viewer (Quartier))
 **/
@@ -773,8 +865,6 @@ nav {
 }
 #presentation-menu {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: -5px;
 }
 .next-neighbourhood-name {
     display: inline;
@@ -991,6 +1081,7 @@ span.right a {
 .viewer#map .mapbar {
     width: 100%;
     height: 64px;
+    line-height: 64px;
     top: -96px;
     position: absolute;
     z-index: 50;
@@ -1283,6 +1374,13 @@ form .row:first-child .floating-label-form-group {
 #contribute h2{
     color:#fff;
 }
+.page-scroll a:hover {
+    color: #18bc9c;
+}
+.btn:hover {
+    color: #18bc9c;
+}
+
 .btn-success{
     background-color:#fff;
     border-color:#fff;
@@ -1346,7 +1444,6 @@ footer .footer-below {
     text-align: center;
     font-size: 20px;
     line-height: 45px;
-    padding-top: 15px;
 }
 
 .btn:focus,
@@ -1732,6 +1829,7 @@ header .intro-text-team{
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
+
 #admin-wrapper{
     padding-top: 150px;
     margin: 0 auto;
@@ -1790,7 +1888,6 @@ header .intro-text-team{
 .intro-text-admin-menu a{
     color:#fff;
 }
-
 .menu-header {
     text-align: center;
     padding-top: 15px;
@@ -1914,8 +2011,10 @@ header .intro-text-team{
 }
 
 #profile-intro{
-    width:79%;
+    width: 79%;
 }
+
+
 .fa-calendar{
     font-size: 20px;
     padding-top:2px;
@@ -1947,10 +2046,10 @@ header .intro-text-team{
 
 @media(max-width: 991px){
 
-
     #profile-wrapper.profile-right{
         height:550px;
     }
+}
 
 @media(max-width: 480px){
 
@@ -1962,14 +2061,9 @@ header .intro-text-team{
     #profile-wrapper.profile-left{
         height:300px;
     }
+
+
 }
-
-/*
-.profile-pic > img,
-.profile-pic > div {
-    display:block;
-}*/
-
 
 @media(max-width: 767px) {
     .downarrow {
@@ -1977,6 +2071,10 @@ header .intro-text-team{
         bottom: 15px;
         left: 15px;
         margin-left: 10px;
+    }
+
+    #profile-intro{
+        margin-top: 75px;
     }
 }
 
@@ -1997,6 +2095,14 @@ header .intro-text-team{
         left: 15px;
         xbottom: -30px;
 
+    }
+
+    #profile-intro{
+        width: 325px;
+    }
+
+    #profile-wrapper{
+        width:325px;
     }
 }
 
@@ -2041,7 +2147,6 @@ header .intro-text-team{
         margin-left: 10px;
     }
 }
-}
 
 .styled-select select {
    background: white;
@@ -2056,3 +2161,37 @@ header .intro-text-team{
    height: 34px;
    //-webkit-appearance: none;
    }
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}

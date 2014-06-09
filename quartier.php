@@ -16,7 +16,7 @@
         </div>
         <div id="viewer-top" class="viewer">
 <!--             <img src="./img/mont3.jpg"> -->
-            <div class="shadow">
+            <div class="shadow scroll">
                 <i class="fa fa-plus valign iphone-toggle"></i>
                 <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
@@ -35,66 +35,67 @@
                 </p>
             </div>
 
-            <div class="shadow-main">
+            <div class="shadow-main scroll">
                 <i class="fa fa-plus valign iphone-toggle"></i>
                 <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>The Neighbourhood</h2>
                     <img src="img/white-star.png">
+                    <?php include './inc/breadcrumb.php' ?>
                     <br/>
                     <br/>
                 </div>
-                <div class="place">
+                <div class="place scroll">
                     <li><a name="Restaurant" href="#">Restaurants <a href="addResto.php"><i class="fa fa-plus"></i></a></a></li>
-                    <ul>
+                    <ul class="scroll">
                         <li><a name="Au Petit Bigorneau" href="#">Au Petit Bigorneau</a></li>
                         <li><a name="Satisfaction" href="#">Satisfaction</a></li>
                         <li>test</li>
                         <li>test</li>
                     </ul>
                 </div>
-                <div class="place">
+                <div class="place scroll">
                     <li>Cafes</li>
-                    <ul>
+                    <ul class="scroll">
                         <li>test</li>
                         <li>test</li>
                         <li>test</li>
                         <li>test</li>
                     </ul>
                 </div>
-                <div class="place">
+                <div class="place scroll">
                     <li>Shopping</li>
-                    <ul>
+                    <ul class="scroll">
                         <li>Stores</li>
                     </ul>
                 </div>
-                <div class="place">
+                <div class="place scroll">
                     <li>Sports</li>
-                    <ul>
+                    <ul class="scroll">
                         <li>Gyms</li>
                         <li>Soccer Fields</li>
                         <li>Baseball Fields</li>
                         <li>Swimming Pools</li>
                     </ul>
                 </div>
-                <div class="place">
+                <div class="place scroll">
                     <li>Events</li>
-                    <ul>
+                    <ul class="scroll">
                         <li>Shows</li>
                         <li>Festivals</li>
                         <li>Races</li>
                     </ul>
                 </div>
-                <div class="place">
+                <div class="place scroll">
                     <li>Financial</li>
-                    <ul>
+                    <ul class="scroll">
                         <li>Banks</li>
                         <li>ATMs</li>
                     </ul>
                 </div>
-                <div class="place">
+                <div class="place scroll">
                     <li>Accommodations</li>
-                    <ul>
+                    <ul class="scroll">
                         <li>Hotels</li>
                         <li>Motels</li>
                         <li>Camping</li>
@@ -102,9 +103,9 @@
                         <li>Hostels</li>
                     </ul>
                 </div>
-                <div class="place">
+                <div class="place scroll">
                     <li>Public Services</li>
-                    <ul>
+                    <ul class="scroll">
                         <li>Police Stations</li>
                         <li>Fire Stations</li>
                         <li>Hospitals</li>
@@ -113,9 +114,9 @@
                         <li>Library</li>
                     </ul>
                 </div>
-                <div class="place">
+                <div class="place scroll">
                     <li>Transportation</li>
-                    <ul>
+                    <ul class="scroll">
                         <li>Metro Stations</li>
                         <li>Bus Stations</li>
                         <li>Intercity Bus Station</li>
@@ -130,9 +131,9 @@
             <div class="mapbar shadow_map">
                 <span id="mapbar-title"><i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span></span>
                 <span class="right">
-                    <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
-                     LE PLATEAU
-                    <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
+                    <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-left valign"></i></a>
+                    <span class="goto name">LE PLATEAU</span>
+                    <a class="goto next"href="#WESTMOUNT"><i class="fa fa-arrow-right valign"></i></a>
                 </span>
             </div>
             <div id="map_canvas"></div>
@@ -152,7 +153,7 @@
             </div>
             <div class="panel panel-default shadow_map">
                 <div class="panel-heading"><span>Bons plans</span><i class="fa fa-times right"></i></div>
-                <div class="panel-body">
+                <div class="panel-body scroll">
                     <!--
                     <div class="item">
                         <img class="mini" src="./img/resto.jpg">
@@ -174,12 +175,12 @@
 
         <script id="item-template" type="text/x-handlebars-template">
             {{#each infos}}
-                <div class="item">
+                <div class="item scroll">
                     <img class="mini" src="./img/{{this.url}}.jpg">
                     <span class="stars">{{#times this.stars}} <i class="fa fa-star"></i>{{/times}}</span>
                     <h3>{{this.number}}. {{this.name}}</h3>
                     <p>{{this.desc}}</p>
-                    <div class="mask" name="{{this.name}}">
+                    <div class="mask scroll" name="{{this.name}}">
                         <p>Nb place : 3</p>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
