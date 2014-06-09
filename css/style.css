@@ -241,7 +241,7 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
 }
 .well {
      background-color:transparent;
-     border: 0px;   
+     border: 0px;
      margin: 0 auto;
 }
 .span12 {
@@ -286,7 +286,7 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
 
 .language-select a:hover {
     border-radius: 10px;
-    background-color: #18bc9c;  
+    background-color: #18bc9c;
     color: white;
 }
 
@@ -815,8 +815,6 @@ nav {
 }
 #presentation-menu {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: -5px;
 }
 .next-neighbourhood-name {
     display: inline;
@@ -910,7 +908,7 @@ span.right a {
         width: 90%;
         height: 36%;
         margin-left: 5%;
-        margin-top: 5px; 
+        margin-top: 5px;
     }
     .viewer .shadow-main {
         width: 90%;
@@ -920,7 +918,7 @@ span.right a {
     }
     .viewer#map .panel {
         height: 50%;
-        width: 60%; 
+        width: 60%;
     }
 }
 @media(max-width: 400px){
@@ -933,7 +931,7 @@ span.right a {
         margin-left: 0.5%;
         margin-top: 5px;
         overflow: hidden;
-        padding: 0px 32px; 
+        padding: 0px 32px;
     }
     .viewer .shadow-main {
         width: 99%;
@@ -975,7 +973,7 @@ span.right a {
         margin-left: 0.5%;
         margin-top: 5px;
         overflow: hidden;
-        padding: 0px 32px; 
+        padding: 0px 32px;
     }
     .viewer .shadow-main {
         width: 99%;
@@ -1033,6 +1031,7 @@ span.right a {
 .viewer#map .mapbar {
     width: 100%;
     height: 64px;
+    line-height: 64px;
     top: -96px;
     position: absolute;
     z-index: 50;
@@ -1692,12 +1691,12 @@ header .intro-text-team{
     .team h2 {
         font-size: 20px;
     }
-    
+
     .team h3 {
         font-size: 17px;
         margin: 0;
     }
-    
+
     .team-profile {
         width: 100%;
     }
@@ -1739,7 +1738,7 @@ header .intro-text-team{
 }
 @media(max-width:2500px){
     #info>div>div{
-        padding-left: 0px;       
+        padding-left: 0px;
     }
     #info>div{
         width:20%;
@@ -1771,7 +1770,7 @@ header .intro-text-team{
     }
 }
 @media(max-width:1200px){
-    
+
     #info>div{
         width:100%;
         margin-left: 0;
@@ -1787,7 +1786,7 @@ header .intro-text-team{
     }
     .adjustement{
         height:700px;
-        width:100%;        
+        width:100%;
         background-color: #2c3e50;
     }
     #central{
@@ -1803,7 +1802,7 @@ header .intro-text-team{
     .moderationqueue-wrapper>.title{
         margin-top:-70px;
     }
-}   
+}
 
 
 .intro-text-admin-right{
@@ -1819,7 +1818,7 @@ header .intro-text-team{
 }
 .sidebar{
     margin-right: 10px;
-    margin-left:40px; 
+    margin-left:40px;
 }
 .moderationqueue-wrapper{
     padding-top: 150px;
@@ -1837,8 +1836,8 @@ header .intro-text-team {
     font-size: 15px;
 }
 
-.intro-text-admin-menu{  
-    height:100%;  
+.intro-text-admin-menu{
+    height:100%;
     list-style: none;
     margin-left:5px;
     margin-top: 10px;
@@ -1862,9 +1861,9 @@ header .intro-text-team {
     font-size:15px;
 }
 .intro-text-admin-menu a{
-    color:#fff;    
+    color:#fff;
 }
-#menu{    
+#menu{
     padding-right: 50px;
 }
 .intro-text-admin >table>tbody>tr>td>a{
@@ -1891,7 +1890,7 @@ header .intro-text-team {
 .redirection>a>i{
     color:#fff;
 }
-.adjustement .form-control{    
+.adjustement .form-control{
     color:#2c3e50;
 }
 .adjustement button{
@@ -1947,7 +1946,7 @@ header .intro-text-team {
 }
 
 #profile-intro{
-    width:79%;    
+    width:79%;
 }
 .fa-calendar{
     font-size: 20px;
@@ -2040,9 +2039,9 @@ header .intro-text-team {
 */
 
 @media(max-width:671px) {
-    #splash {        
+    #splash {
         min-height: 1500px;
-    }   
+    }
     #splash h1 {
         padding: 55px;
         font-size: 20px;
