@@ -1,6 +1,7 @@
 var datas = [
 	{
 		name:'Bons Plans',
+		color: 'FE6256',
 		infos: [
 			{
 				name: 'La Distillerie',
@@ -23,6 +24,7 @@ var datas = [
 	},
 	{
 		name:'Restaurant',
+		color: '56FE62',
 		infos: [
 			{
 				name: 'Au Petit Bigorneau',
@@ -73,7 +75,6 @@ var datas = [
 				url: 'resto'
 			},
 		]
-
 	}
 ]
 
@@ -86,6 +87,8 @@ $(function() {
         fromtop = '97%',
         step = 2,
         current_panel = ''
+        shadow_main_expanded = false
+        shadow_expanded = false    
 
     // Default panel display
 	$('nav').css('display','displayed');
@@ -131,15 +134,17 @@ $(function() {
     }
 
     // Display marker for some places
-	function showMarker(places) {
+	function showMarker(places, page, color) {
         closeMarker()
-
+		var i = page * step
 		places.forEach(function(place) {
+			++i
 			//Add Marker
 			var marker = new google.maps.Marker({
 				position: (new google.maps.LatLng(place.lat, place.lng)),
 				map: map,
-				title: place.name
+				title: place.name,
+				icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=' + i + '|' + color + '|000000'
 			})
 
             markers.push(marker)
@@ -174,6 +179,55 @@ $(function() {
 		})
 	}
 
+	// Attach marker to li
+	function attachMarker() {
+		// Li inner place
+		$('.place').children('ul').children('li').click(function() {
+			var name = $(this).children('a').first().attr('name')
+			var parentname = $(this).parent().parent().children('li').first().children('a').first().attr('name')
+			showMap()
+			var page = 1
+			// Show the good panel
+			for (var x in datas) {
+				if (datas[x].name == parentname) {
+					for (var i = 0 ; i < datas[x].infos.length ; ++i) {
+						if (datas[x].infos[i].name == name) {
+							page = Math.floor(i / step) + 1
+						}
+					}
+					break
+				}
+			}
+			renderPanel(datas[x], page)
+			// Center to marker
+			markers.forEach(function(marker) {
+				if (marker.title == name) {
+					var latLng = marker.getPosition()
+					map.setCenter(latLng)
+				}
+			})
+
+			// Open infos
+			var elem = $('.item').children('.mask[name="' + name + '"]').first()
+    		elem.height('auto')
+		})
+
+		// Li outer
+		$('.place').children('li').click(function() {
+			var name = $(this).children('a').first().attr('name')
+			showMap()
+			// Show the good panel
+			for (var x in datas) {
+				if (datas[x].name == name) {
+					break
+				}
+			}
+			renderPanel(datas[x], 1)
+		})
+
+	}
+	attachMarker()
+
     // Attach info to item
     function attachInfo() {
     	$('.item').click(function() {
@@ -196,6 +250,86 @@ $(function() {
     	})
     }
 
+    function checkWindowWidth() {
+        if(!top && (window.innerWidth < 690)) {
+            $('#mapbar-title').html('LE PLATEAU <i class="fa fa-arrow-down fa-arrow-down-quartier"></i>')
+        }
+        if(top && (window.innerWidth < 690)) {
+            $('#mapbar-title').html('<i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>')
+        }
+    }
+
+    $('#showMap').click(function() {
+        showMap()
+        checkWindowWidth()
+    })
+
+    $('#map').find('.mapbar').click(function() {
+        showMap()
+        checkWindowWidth()
+    })
+
+    //480 x 320 support
+    $('.shadow').click(function (){
+        var min_shadow = '10%'
+            max_shadow = '70%'
+        if((window.innerWidth < 361) && (window.innerHeight < 641)){
+            if((window.innerWidth < 321) && (window.innerHeight < 481)){
+                min_shadow = '15%'
+                max_shadow = '47%'
+            }
+            $('.shadow').css('height', max_shadow)
+            $('.shadow').css('overflow-y', 'auto')
+            $('.viewer .shadow .fa-plus').css('display', 'none')
+            $('.viewer .shadow .fa-minus').css('display', 'block')
+            $('.shadow-main').css('height', min_shadow)
+            $('.shadow-main').css('overflow-y', 'hidden')
+            $('.viewer .shadow-main .fa-plus').css('display', 'block')
+            $('.viewer .shadow-main .fa-minus').css('display', 'none') 
+            if(shadow_expanded){
+                $('.shadow').css('height', min_shadow)
+                $('.shadow').css('overflow-y', 'hidden')
+                $('.viewer .shadow .fa-plus').css('display', 'block')
+                $('.viewer .shadow .fa-minus').css('display', 'none') 
+            }
+            shadow_expanded = !shadow_expanded   
+        }
+    })
+
+    $('.shadow-main').click(function (){
+        var min_shadow = '10%'
+            max_shadow = '70%'
+        if((window.innerWidth < 361) && (window.innerHeight < 641)){
+            if((window.innerWidth < 321) && (window.innerHeight < 481)){
+                min_shadow = '15%'
+                max_shadow = '47%'
+            }
+            $('.shadow').css('height', min_shadow)
+            $('.shadow').css('overflow-y', 'hidden')
+            $('.shadow-main').css('height', max_shadow)
+            $('.viewer .shadow .fa-plus').css('display', 'block')
+            $('.viewer .shadow .fa-minus').css('display', 'none')
+            $('.shadow-main').css('overflow-y', 'auto')
+            $('.viewer .shadow-main .fa-plus').css('display', 'none')
+            $('.viewer .shadow-main .fa-minus').css('display', 'block')
+            if(shadow_main_expanded){
+                $('.shadow-main').css('height', min_shadow)
+                $('.shadow-main').css('overflow-y', 'hidden')
+                $('.viewer .shadow-main .fa-plus').css('display', 'block')
+                $('.viewer .shadow-main .fa-minus').css('display', 'none')  
+            }
+            shadow_main_expanded = !shadow_main_expanded 
+        }
+    })
+
+    /* Display Map on hover
+    $('#map').mouseenter(function() {
+        if (top) {
+            return
+        }
+        showMap()
+    })//*/
+
     // Change DOM panel
     function renderPanel(brut, page) {
             current_panel = brut
@@ -206,14 +340,16 @@ $(function() {
             category.page = page
             category.infos = []
             for (var i = 0 ; (i + page * step) < brut.infos.length && i < step ; ++i) {
-                category.infos.push(brut.infos[i + page * step])
+				var obj = brut.infos[i + page * step]
+				obj.number = i + page * step + 1
+                category.infos.push(obj)
             }
 			var html = template(category)
 			$('.panel').children('.panel-heading').children('span').html(category.name)
 			$('.panel').children('.panel-body').html(html)
 			$('.panel').first().css('display', 'block')
 			attachInfo()
-			showMarker(category.infos)
+			showMarker(category.infos, page, brut.color)
     }
 
     // Let's the map appear
@@ -247,13 +383,6 @@ $(function() {
 		console.log('Undefined items ' + search)
 	})
 
-	/* Display Map on hover
-	$('#map').mouseenter(function() {
-		if (top) {
-			return
-		}
-		showMap()
-	})//*/
 })
 
 // Masonry

@@ -17,6 +17,8 @@
         <div id="viewer-top" class="viewer">
 <!--             <img src="./img/mont3.jpg"> -->
             <div class="shadow">
+                <i class="fa fa-plus valign iphone-toggle"></i>
+                <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>Overview</h2>
                     <img src="img/white-star.png">
@@ -34,6 +36,8 @@
             </div>
 
             <div class="shadow-main">
+                <i class="fa fa-plus valign iphone-toggle"></i>
+                <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>The Neighbourhood</h2>
                     <img src="img/white-star.png">
@@ -42,10 +46,10 @@
                     <br/>
                 </div>
                 <div class="place">
-                    <li>Restaurants <a href="addResto.php"> <i class="fa fa-plus"></i></a></li>
+                    <li><a name="Restaurant" href="#">Restaurants <a href="addResto.php"><i class="fa fa-plus"></i></a></a></li>
                     <ul>
-                        <li>test</li>
-                        <li>test</li>
+                        <li><a name="Au Petit Bigorneau" href="#">Au Petit Bigorneau</a></li>
+                        <li><a name="Satisfaction" href="#">Satisfaction</a></li>
                         <li>test</li>
                         <li>test</li>
                     </ul>
@@ -119,9 +123,10 @@
                         <li>Train Stations</li>
                         <li>Airports</li>
                     </ul>
+                </div>
+                <div id="padding_shadow_main">&nbsp;</div>
             </div>
         </div>
-    </div>
         <div id="map" class="viewer">
             <div class="mapbar shadow_map">
                 <span id="mapbar-title"><i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span></span>
@@ -173,7 +178,7 @@
                 <div class="item">
                     <img class="mini" src="./img/{{this.url}}.jpg">
                     <span class="stars">{{#times this.stars}} <i class="fa fa-star"></i>{{/times}}</span>
-                    <h3>{{this.name}}</h3>
+                    <h3>{{this.number}}. {{this.name}}</h3>
                     <p>{{this.desc}}</p>
                     <div class="mask" name="{{this.name}}">
                         <p>Nb place : 3</p>
