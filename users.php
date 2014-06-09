@@ -18,10 +18,7 @@ include './inc/header.php'
 
 
             <div class="row">
-                <?php 
-                    include './inc/menu.php'           
-                ?>
-
+                <?php include './inc/menu.php' ?>
                     <div class="intro-text ">                       
                         <span class="name">Users Management</span>
                         <img src="img/white-star.png">
@@ -29,9 +26,7 @@ include './inc/header.php'
                     </div>
 
                 <div class="col-lg-6" id="central"> 
-                    
-
-                    <div class="intro-text-admin table-responsive">
+                   <div class="intro-text-admin table-responsive">
                         <div class="col-lg-2" style="float:right;">
                             <input id="searchinput" name="searchinput" placeholder="Search" class="form-control input-md" type="search">
                         </div>                        

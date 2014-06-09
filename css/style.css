@@ -520,6 +520,7 @@ span.title {
 /**
 *NAVBAR
 **/
+
 @media (min-width: 768px) {
     .navbar-fixed-top {
         -webkit-transition: padding .3s;
@@ -777,6 +778,10 @@ nav {
 
 .fa-gear{
     background-color:#2C3E50;
+}
+
+.caret:hover {
+    color: #18bc9c;
 }
 
 /**
@@ -1369,6 +1374,13 @@ form .row:first-child .floating-label-form-group {
 #contribute h2{
     color:#fff;
 }
+.page-scroll a:hover {
+    color: #18bc9c;
+}
+.btn:hover {
+    color: #18bc9c;
+}
+
 .btn-success{
     background-color:#fff;
     border-color:#fff;
@@ -1991,8 +2003,10 @@ header .intro-text-team {
 }
 
 #profile-intro{
-    width:79%;
+    width: 79%;
 }
+
+
 .fa-calendar{
     font-size: 20px;
     padding-top:2px;
@@ -2050,6 +2064,10 @@ header .intro-text-team {
         left: 15px;
         margin-left: 10px;
     }
+
+    #profile-intro{
+        margin-top: 75px;
+    }
 }
 
 @media(max-width: 480px) {
@@ -2069,6 +2087,14 @@ header .intro-text-team {
         left: 15px;
         xbottom: -30px;
 
+    }
+
+    #profile-intro{
+        width: 325px;
+    }
+
+    #profile-wrapper{
+        width:325px;
     }
 }
 
