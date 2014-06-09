@@ -130,9 +130,9 @@
             <div class="mapbar shadow_map">
                 <span id="mapbar-title"><i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span></span>
                 <span class="right">
-                    <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
-                     LE PLATEAU
-                    <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
+                    <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-left valign"></i></a>
+                    <span class="goto name">LE PLATEAU</span>
+                    <a class="goto next"href="#WESTMOUNT"><i class="fa fa-arrow-right valign"></i></a>
                 </span>
             </div>
             <div id="map_canvas"></div>
