@@ -293,15 +293,6 @@ $(function() {
         }
     }
 
-    $('#showMap').click(function() {
-        showMap()
-        checkWindowWidth()
-    })
-
-    $('#map').find('.mapbar').click(function() {
-        showMap()
-        checkWindowWidth()
-    })
 
     //480 x 320 support
     $('.shadow').click(function (){
@@ -396,8 +387,14 @@ $(function() {
             renderPanel(datas[current_place].places[0], 1)
 		}
 	}
-	$('#showMap').click(function() { showMap() })
-	$('#map').find('.mapbar').click(function() { showMap() })
+    $('#showMap').click(function() {
+        showMap()
+        checkWindowWidth()
+    })
+    $('#map').find('.mapbar').click(function() {
+        showMap()
+        checkWindowWidth()
+    })
 
 	// Hide Panel
 	$('.panel-heading').first().children('i').click(function() {
