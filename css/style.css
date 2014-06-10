@@ -791,7 +791,7 @@ nav {
 #presentation {
     position: relative;
     height: 100%;
-    top: 45px;
+    top: 56px;
     box-shadow: 0 8px 10px -10px rgba(64, 64, 64, .8);
 }
 .viewer {
