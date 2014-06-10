@@ -19,7 +19,7 @@
 
     <!-- CSS body { overflow: hidden } hack -->
     <?php if ($page == "quartier"): ?>
-        <link rel="stylesheet" href="./css/quartier.css">';
+        <link rel="stylesheet" href="./css/quartier.css">
     <?php endif; ?>
     <link rel="stylesheet" href="./css/datepicker.css">
 
@@ -74,10 +74,10 @@
                       <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><button type="button" class="btn btn-default btn-lg btn-header">
                         <span class="glyphicon glyphicon-list"></span>
                       </button></a>
-                      <ul class="dropdown-menu-home" role="menu" aria-labelledby="dLabel">
+                      <ul class="dropdown-menu dropdown-home" role="menu" aria-labelledby="dLabel">
                                 <li><a href="register.php">Register</a></li>
                                 <li><a href="login.php">Login</a></li>
-                                <li><a href="addThing.php">Add Place</li>
+                                <li><a href="addThing.php">Add Place</a></li>
                                 <li class="divider"></li>
                                 <li><a href="profile.php">Profile</a></li>
                                 <li><a href="settings.php">Settings</a></li>
@@ -92,7 +92,13 @@
             </div> <!-- /navbar-example -->
                         </br>
 
-                        <img class="gps-image img-responsive" width="600px" src="img/map-welcome.png" alt="">
+                        <div class="gps-image img-responsive">
+                            <img width="100%" src="img/map-welcome-copie.png" alt="">
+                            <button type="button" class="btn btn-default bclose">Mouse hover icons <i class="fa fa-times"></i></button>
+                            <button type="button" class="btn btn-primary bplane" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-plane"></i></button>
+                            <button type="button" class="btn btn-info bhome" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-home"></i></button>
+                            <button type="button" class="btn btn-warning bcutlery" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-cutlery"></i></button>
+                        </div>
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
                         <span class="skills">
@@ -112,6 +118,15 @@
 
     <!-- Navigation -->
     <nav class="navbar my-navbar-default navbar-fixed-top not-displayed">
+
+    <script>
+    ;(function() {
+        window.onload = function(){
+            $('.gps-image').find('button').popover()
+            $('.bclose').click(function() { $(this).css('display', 'none') })
+        }
+    })()
+    </script>
     <?php else: ?>
     <nav class="navbar my-navbar-default navbar-fixed-top">
     <?php endif; ?>
@@ -194,7 +209,7 @@
                     </li>
                     <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
-                          <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
+                          <div class="btn" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>
                                 <span class="caret"></span>
                           </div>

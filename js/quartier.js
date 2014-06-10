@@ -115,6 +115,26 @@ var current_place = document.location.hash.substring(1) || 'LE PLATEAU'
 // Display Map
 $(function() {
 
+    $('body').on('touchmove', function(e) {
+
+        target = e.target;
+
+        parent = $(e.target).closest('div');
+
+        // check if the parent is a scroll window by class //
+        if ($(parent).hasClass('scroll')){
+            // ignore as we want the scroll to happen
+        } else {
+            e.preventDefault();
+        }
+    });
+
+$(document).on('touchmove', function(e) {
+    if (!$(e.target).parents('.scroll')[0]) {
+        e.preventDefault();
+    }
+});
+
     // Panel config
 	var top = false,
 		dist = '88px',
@@ -198,7 +218,9 @@ $(function() {
 			})
 
 			google.maps.event.addListener(marker, 'click', function() {
+				$('.item').children('.mask').height('0')
 				var elem = $('.item').find('[name="' + this.title + '"]')
+				$('.panel').first().css('display', 'block')
 				elem.height('auto')
 				/*
 				if (elem.height() == '0') {
@@ -207,7 +229,7 @@ $(function() {
 					elem.height('0')
 				}//*/
 				var latLng = this.getPosition() // returns LatLng object
-				map.setCenter(latLng) // setCenter takes a LatLng object
+				map.setCenter({lat:latLng.lat() + 0.002, lng:latLng.lng()}) // setCenter takes a LatLng object
 			})
 
 		})
@@ -272,7 +294,7 @@ $(function() {
 				markers.forEach(function(marker) {
 					if (marker.title == elem.attr('name')) {
 						var latLng = marker.getPosition()
-						map.setCenter(latLng)
+						map.setCenter({lat:latLng.lat() + 0.002, lng:latLng.lng()})
 					}
 				})
     		} else {
@@ -292,8 +314,6 @@ $(function() {
             $('#mapbar-title').html('<i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>')
         }
     }
-
-
     //480 x 320 support
     $('.shadow').click(function (){
         var min_shadow = '10%'
@@ -313,6 +333,7 @@ $(function() {
             $('.viewer .shadow-main .fa-minus').css('display', 'none')
             if(shadow_expanded){
                 $('.shadow').css('height', min_shadow)
+                $('.shadow').scrollTop(0)
                 $('.shadow').css('overflow-y', 'hidden')
                 $('.viewer .shadow .fa-plus').css('display', 'block')
                 $('.viewer .shadow .fa-minus').css('display', 'none')
@@ -339,6 +360,7 @@ $(function() {
             $('.viewer .shadow-main .fa-minus').css('display', 'block')
             if(shadow_main_expanded){
                 $('.shadow-main').css('height', min_shadow)
+                $('.shadow-main').scrollTop(0)
                 $('.shadow-main').css('overflow-y', 'hidden')
                 $('.viewer .shadow-main .fa-plus').css('display', 'block')
                 $('.viewer .shadow-main .fa-minus').css('display', 'none')
@@ -383,23 +405,24 @@ $(function() {
 		$('#map').find('.right').css('opacity', top ? '0' : '1')
 		$('#map').find('.piti') .css('opacity', top ? '1' : '0')
 		window.setTimeout(function() {top = !top}, 300)
+        checkWindowWidth()
 		if(!top) {
             renderPanel(datas[current_place].places[0], 1)
 		}
 	}
+
     $('#showMap').click(function() {
         showMap()
-        checkWindowWidth()
     })
-    $('#map').find('.mapbar').click(function() {
+
+    $('.mapbar').click(function() {
         showMap()
-        checkWindowWidth()
     })
 
 	// Hide Panel
 	$('.panel-heading').first().children('i').click(function() {
 		$('.panel').first().css('display', 'none')
-        closeMarker()
+        //closeMarker()
 	})
 
 	// Show Panel with info
@@ -426,7 +449,7 @@ $(function() {
 		document.location.hash = $(this).attr('href')
 	})
 	function getFromAnchor() {
-		current_place = document.location.hash.substring(1)
+		current_place = document.location.hash.substring(1) || 'LE PLATEAU'
 		map.setCenter(new google.maps.LatLng(datas[current_place].coord.lat, datas[current_place].coord.lng))
 		renderPanel(datas[current_place].places[0], 1)
 		var names = Object.keys(datas)
