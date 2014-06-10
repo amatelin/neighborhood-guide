@@ -46,7 +46,7 @@
                     <br/>
                 </div>
                 <div class="place scroll">
-                    <li><a name="Restaurant" href="#">Restaurants <a href="addResto.php"><i class="fa fa-plus"></i></a></a></li>
+                    <li><a name="Restaurant" href="#">Restaurants <a href="addThing.php#restaurant"><i class="fa fa-plus"></i></a></a></li>
                     <ul class="scroll">
                         <li><a name="Au Petit Bigorneau" href="#">Au Petit Bigorneau</a></li>
                         <li><a name="Satisfaction" href="#">Satisfaction</a></li>
