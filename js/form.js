@@ -11,14 +11,14 @@ var json_input = {
         {
             name: "Etoile",
             type: "select",
-            options: [0, 1, 2, 3, 4, 5]
+            options: [1, 2, 3, 4, 5]
         }
     ],
     "restaurant": [
         {
             name: "Tables",
             type: "select",
-            options: [0, 1, 2, 3, 4, 5]
+            options: [1, 2, 3, 4, 5]
         }
     ]
 }
