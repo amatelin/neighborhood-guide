@@ -396,7 +396,7 @@ header .form-control:-ms-input-placeholder {
 * Portfolio Hover Over
 */
 
-span.title {
+div.desc {
     width: 100%;
     max-width: 100%;
     height: 100%;
@@ -405,7 +405,9 @@ span.title {
     text-align: center;
     padding: 5px 0 4px;
     font-size: 14px;
+    font-variant: small-caps;
     color: white;
+    font-weight: bold;
     font-family: "Lucida Sans", "Trebuchet MS", Arial, sans-serif;
 
     -webkit-transition: all .3s ease-out;
@@ -413,6 +415,12 @@ span.title {
     -ms-transition: all .3s ease-out;
     -o-transition: all .3s ease-out;
     transition: all .3s ease-out;
+}
+div.desc>p{
+    font-size: 14px;
+    font-variant: normal;
+    font-weight:normal;
+    padding-top: 15px;
 }
 
 
@@ -1520,7 +1528,7 @@ img {
     background-color: rgba(44,62,80,0.1);
     color:#2C3E50;
 }
-div.image.slideBottom:hover span {
+div.image.slideBottom:hover div {
     bottom: 0px;
 
     -webkit-border-top-left-radius: 9px;
@@ -1554,7 +1562,7 @@ div.image.slideBottom:hover span {
     width: 300px;
     margin: 0 auto;
 }
-div.image.slideBottom span {
+div.image.slideBottom div {
     height: 200px;
     max-width: 400px;
     bottom: -175px;

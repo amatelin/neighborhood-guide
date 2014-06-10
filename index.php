@@ -29,7 +29,10 @@ include './inc/header.php'
                             <a href="quartier.php" class="portfolio-link">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/downtown.jpg" class="img-responsive" alt="" />
-                                    <span class="title">DownTown</span>
+                                    <div class="desc">
+                                        DownTown                                       
+                                        <p>Downtown Montreal is the central business district of Montreal, Quebec, Canada</p>
+                                    </div>                                    
                                 </div>
                             </a>
                         </div>
@@ -37,7 +40,10 @@ include './inc/header.php'
                             <a href="quartier.php" class="portfolio-link">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/oldmontreal.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Old Montreal</span>
+                                    <div class="desc">
+                                        Old Montreal
+                                        <p>Old Montreal is the oldest area in the city of Montreal, Quebec, Canada, with few remains dating back to New France.</p>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -45,7 +51,10 @@ include './inc/header.php'
                             <a href="quartier.php" class="portfolio-link">
                                <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/quartierlatinlevillage.png" class="img-responsive" alt="" />
-                                    <span class="title">Quartier Latin</span>
+                                    <div class="desc">
+                                        Quartier Latin
+                                        <p>The Quartier Latin is an area in the Ville-Marie borough of Montreal, surrounding UQAM and lower Saint-Denis Street, between downtown and the Gay Village. It is known for its theatres, artistic atmosphere, cafés, and boutiques.</p>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -53,7 +62,10 @@ include './inc/header.php'
                             <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/parcjeandrapeau.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Parc Jean-Drapeau</span>
+                                    <div class="desc">
+                                        Parc Jean-Drapeau
+                                        <p></p>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -61,7 +73,7 @@ include './inc/header.php'
                             <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/plateau.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Plateau</span>
+                                    <div class="desc">Plateau</div>
                                 </div>
                             </a>
                         </div>
@@ -69,7 +81,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/rosemont.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Rosemont</span>
+                                    <div class="desc">Rosemont</div>
                                 </div>
                             </a>
                         </div>
@@ -77,7 +89,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/westmount.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Westmount</span>
+                                    <div class="desc">Westmount</div>
                                 </div>
                             </a>
                         </div>
@@ -85,7 +97,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/maisonneuve.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Hochelaga-Maisonneuve</span>
+                                    <div class="desc">Hochelaga-Maisonneuve</div>
                                 </div>
                             </a>
                         </div>
@@ -93,7 +105,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/cotedesneiges.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Côte-des-neiges</span>
+                                    <div class="desc">Côte-des-neiges</div>
                                 </div>
                             </a>
                         </div>
@@ -101,7 +113,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/outremont.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Outremont</span>
+                                    <div class="desc">Outremont</div>
                                 </div>
                             </a>
                         </div>
@@ -109,7 +121,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/southwest.jpg" class="img-responsive" alt="" />
-                                    <span class="title">South West</span>
+                                    <div class="desc">South West</div>
                                 </div>
                             </a>
                         </div>
@@ -117,7 +129,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/milend.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Mile&nbsp;End</span>
+                                    <div class="desc">Mile&nbsp;End</div>
                                 </div>
                             </a>
                         </div>
@@ -125,7 +137,39 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/villeray.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Villeray</span>
+                                    <div class="desc">Villeray</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                <div class="image slideBottom">
+                                    <img src="img/neighborhoods/neighborhoods/montroyal.jpg" class="img-responsive" alt="" />
+                                    <div class="desc">Mont-Royal</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                <div class="image slideBottom">
+                                    <img src="img/neighborhoods/neighborhoods/cotesaintluc.jpg" class="img-responsive" alt="" />
+                                    <div class="desc">Côte-Saint-Luc</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                <div class="image slideBottom">
+                                    <img src="img/neighborhoods/neighborhoods/montrealouest.jpg" class="img-responsive" alt="" />
+                                    <div class="desc">Montréal-Ouest</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                <div class="image slideBottom">
+                                    <img src="img/neighborhoods/neighborhoods/hampstead.jpg" class="img-responsive" alt="" />
+                                    <div class="desc">Hampstead</div>
                                 </div>
                             </a>
                         </div>
@@ -135,7 +179,7 @@ include './inc/header.php'
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/lachine.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Lachine</span>
+                                    <div class="desc">Lachine</div>
                                 </div>
                             </a>
                         </div>
@@ -143,7 +187,7 @@ include './inc/header.php'
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/dorval.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Dorval</span>
+                                    <div class="desc">Dorval</div>
                                 </div>
                             </a>
                         </div>
@@ -151,7 +195,7 @@ include './inc/header.php'
                             <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                                <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/pointeclaire.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Pointe-Claire</span>
+                                    <div class="desc">Pointe-Claire</div>
                                 </div>
                             </a>
                         </div>
@@ -159,7 +203,7 @@ include './inc/header.php'
                             <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/kirkland.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Kirkland</span>
+                                    <div class="desc">Kirkland</div>
                                 </div>
                             </a>
                         </div>
@@ -167,7 +211,7 @@ include './inc/header.php'
                             <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/beaconsfield.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Beaconsfield</span>
+                                    <div class="desc">Beaconsfield</div>
                                 </div>
                             </a>
                         </div>
@@ -175,7 +219,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/baiedurfe.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Baie d'Urfé</span>
+                                    <div class="desc">Baie d'Urfé</div>
                                 </div>
                             </a>
                         </div>
@@ -183,7 +227,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/anne.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Sainte-Anne-de-Bellevue</span>
+                                    <div class="desc">Sainte-Anne-de-Bellevue</div>
                                 </div>
                             </a>
                         </div>
@@ -191,7 +235,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/senneville.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Senneville</span>
+                                    <div class="desc">Senneville</div>
                                 </div>
                             </a>
                         </div>
@@ -199,7 +243,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/dollard.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Dollard-des-Ormeaux</span>
+                                    <div class="desc">Dollard-des-Ormeaux</div>
                                 </div>
                             </a>
                         </div>
@@ -207,7 +251,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/pierrefonds.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Pierrefonds</span>
+                                    <div class="desc">Pierrefonds</div>
                                 </div>
                             </a>
                         </div>
@@ -215,7 +259,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/roxboro.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Roxboro</span>
+                                    <div class="desc">Roxboro</div>
                                 </div>
                             </a>
                         </div>
@@ -223,7 +267,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/geneve.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Sainte-Geneviève</span>
+                                    <div class="desc">Sainte-Geneviève</div>
                                 </div>
                             </a>
                         </div>
@@ -231,7 +275,7 @@ include './inc/header.php'
                             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/bazard.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Île-Bizard</span>
+                                    <div class="desc">Île-Bizard</div>
                                 </div>
                             </a>
                         </div>
@@ -241,7 +285,7 @@ include './inc/header.php'
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/laurent.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Saint-Laurent</span>
+                                    <div class="desc">Saint-Laurent</div>
                                 </div>
                             </a>
                         </div>
@@ -250,7 +294,7 @@ include './inc/header.php'
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/leonard.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Saint-Léonard</span>
+                                    <div class="desc">Saint-Léonard</div>
                                 </div>
                             </a>
                         </div>
@@ -258,7 +302,7 @@ include './inc/header.php'
                             <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                                <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/mnorth.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Montreal&nbsp;North</span>
+                                    <div class="desc">Montreal&nbsp;North</div>
                                 </div>
                             </a>
                         </div>
@@ -266,7 +310,7 @@ include './inc/header.php'
                             <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                                <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/ahuntsic.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Ahuntsic-Cartierville</span>
+                                    <div class="desc">Ahuntsic-Cartierville</div>
                                 </div>
                             </a>
                         </div>
@@ -276,16 +320,23 @@ include './inc/header.php'
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/anjou.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Anjou</span>
+                                    <div class="desc">Anjou</div>
                                 </div>
                             </a>
                         </div>
-
                         <div class="col-sm-4 portfolio-item">
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                 <div class="image slideBottom">
                                     <img src="img/neighborhoods/neighborhoods/rivprairie.jpg" class="img-responsive" alt="" />
-                                    <span class="title">Rivière-des-Prairies - Pointe-aux-Trembles</span>
+                                    <div class="desc">Rivière-des-Prairies - Pointe-aux-Trembles</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                <div class="image slideBottom">
+                                    <img src="img/neighborhoods/neighborhoods/montrealest.jpg" class="img-responsive" alt="" />
+                                    <div class="desc">Montréal-Est<span>
                                 </div>
                             </a>
                         </div>
