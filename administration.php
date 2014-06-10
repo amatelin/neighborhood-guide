@@ -17,7 +17,7 @@ include './inc/header.php'
                     <li>Sub option 4</li>
                 </ul>
             </li>
-            <li>is</li>
+            <li class="current">is</li>
             <li>just</li>
             <li>a</li>
             <li>lot</li>
@@ -67,6 +67,55 @@ include './inc/header.php'
         </ul>
         <div id="admin-content">
             <?php include './inc/breadcrumb.php' ?>
+            <div class="table-wrapper">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Categorie</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Author</th>
+                            <th>Review</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jo's coffee</td>
+                            <td>Restaurant</td>
+                            <td>This is a new coffee which just opened his doors</td>
+                            <td>03/06/2014 - 13:52:35</td>
+                            <td><a href="addThing.php">Scar-Jo</a></td>
+                            <td><a href="#" class="fa fa-lg fa-search"></a></td>
+
+                        </tr>
+                        <tr>
+                            <td>Est End</td>
+                            <td>Place</td>
+                            <td>Just added a new neighborhood which was not there</td>
+                            <td>31/01/2018 - 09:34:02</td>
+                            <td><a href="addThing.php">Bibi</a></td>
+                            <td><a href="#" class="fa fa-lg fa-search"></a></td>
+                        </tr>
+                        <tr>
+                            <td>Jo's coffee</td>
+                            <td>Restaurant</td>
+                            <td>This is a new coffee which just opened his doors</td>
+                            <td>03/06/2014 - 13:52:35</td>
+                            <td><a href="addThing.php">Scar-Jo</a></td>
+                            <td><a href="#" class="fa fa-lg fa-search"></a></td>
+                        </tr>
+                        <tr>
+                            <td>Est End</td>
+                            <td>Place</td>
+                            <td>Just added a new neighborhood which was not there</td>
+                            <td>31/01/2018 - 09:34:02</td>
+                            <td><a href="addThing.php">Bibi</a></td>
+                            <td><a href="#" class="fa fa-lg fa-search"></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 

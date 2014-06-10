@@ -5,7 +5,7 @@ $(function() {
         });
     });
 
-    $('#admin-menu').on('click', '.item-group a', function(e) {
+    $('#admin-menu').on('click', '.item-group > a', function(e) {
         $parent = $(this).parent();
         $('ul', $parent.siblings('.item-group')).collapse('hide');
         $('ul', $parent).collapse('toggle');

@@ -47,6 +47,10 @@ a.active {
     color: #18bc9c;
 }
 
+a.fa {
+    text-decoration: none;
+}
+
 .btn-header {
     color: white;
     background-color: #233140;
@@ -449,13 +453,12 @@ header .form-control:-moz-placeholder {
 header .form-control:-ms-input-placeholder {
     color:rgba(44,62,80,0.5);
 }
-.fa-arrow-down {
+.page-scroll a {
     font-size: 50px;
     color: white;
 }
-.fa-arrow-down:hover {
+.page-scroll a:hover {
     color:#18bc9c;
-    text-decoration: none;
 }
 
 .breadcrumb{
@@ -1777,7 +1780,8 @@ header .intro-text-team{
 }
 
 #admin-menu {
-    width: 300px;
+    width: 200px;
+    margin-right: 25px;
     font-size: 20px;
     line-height: 1.75em;
     list-style: none;
@@ -1790,7 +1794,23 @@ header .intro-text-team{
     list-style: none;
     margin-left: 20px;
     padding-left: 20px;
-    border-left: 5px solid currentColor;
+    border-left: 3px solid currentColor;
+}
+
+#admin-menu li.current:after {
+    display: inline-block;
+    font-family: FontAwesome;
+    float: right;
+    font-size: .75em;
+    content: "\f054";
+}
+
+#admin-content {
+    font-size: 14px;
+}
+
+#admin-content .table-wrapper {
+    overflow: auto;
 }
 
 /**
