@@ -792,7 +792,7 @@ nav {
 #presentation {
     position: relative;
     height: 100%;
-    top: 45px;
+    top: 56px;
     box-shadow: 0 8px 10px -10px rgba(64, 64, 64, .8);
 }
 .viewer {
@@ -2194,4 +2194,20 @@ header .intro-text-team {
     .collapsing {
         overflow: hidden!important;
     }
+}
+
+#jstree {
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 32px;
+    padding: 8px;
+    text-align: left;
+}
+#jstree a {
+    padding-left: 4px;
+}
+
+.container.middle {
+    top: 10%;
+    transform: none;
 }
