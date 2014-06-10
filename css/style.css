@@ -969,6 +969,7 @@ span.right a {
     .viewer#map .panel {
         height: 50%;
         width: 60%;
+        min-width: 378px;
     }
 }
 @media(max-width: 400px){
@@ -1122,6 +1123,7 @@ span.small {
     position: absolute;
     top: 39px;
     left: 16px;
+    min-width: 378px;
     width: 30%;
     max-height: 70%;
     overflow-y: auto;
@@ -1135,6 +1137,7 @@ span.small {
         left: 2.5%;
         height: 35%;
         width: 95%;
+        min-width: 0;
     }
 }
 .viewer#map .panel p {

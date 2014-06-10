@@ -19,7 +19,7 @@
 
     <!-- CSS body { overflow: hidden } hack -->
     <?php if ($page == "quartier"): ?>
-        <link rel="stylesheet" href="./css/quartier.css">';
+        <link rel="stylesheet" href="./css/quartier.css">
     <?php endif; ?>
     <link rel="stylesheet" href="./css/datepicker.css">
 
