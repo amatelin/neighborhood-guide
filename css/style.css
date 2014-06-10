@@ -105,8 +105,15 @@ a.active {
     text-align: center;
 }
 
-#bs-example-navbar-collapse-1 > ul > li > div > ul {
-    background-color: white;
+@media (max-width: 991px){
+    #bs-example-navbar-collapse-1 > ul > li > div > ul {
+    font-size: 10px;
+    margin-left: 10px;
+    }
+
+    .navbar-nav .open .dropdown-menu > li > a{
+        color: #FFF;
+    }
 }
 h1,
 h2,
@@ -450,6 +457,23 @@ header .form-control:-moz-placeholder {
 header .form-control:-ms-input-placeholder {
     color:rgba(44,62,80,0.5);
 }
+
+.page-scroll:hover{
+    background-color: 233140;
+}
+
+#username{
+    font-size: 1em;
+}
+
+#username:hover{
+    text-decoration: none;
+}
+
+.btn-group-na{
+    background-color: #2C3E50;
+}
+
 .fa-arrow-down {
     font-size: 50px;
     color: white;
@@ -776,6 +800,7 @@ nav {
     width: 40px;
     margin-top: -7px;
 }
+
 
 .fa-gear{
     background-color:#2C3E50;
@@ -2042,9 +2067,32 @@ header .intro-text-team {
 
 @media(max-width: 991px){
 
+    #profile-wrapper{
+        width: 67%;
+    }
+
     #profile-wrapper.profile-right{
         height:550px;
     }
+
+    #profile-wrapper.profile-left{
+        height:300px;
+    }
+
+    #profile-intro{
+        height: 130px;
+        width: 67%;
+    }
+
+    #profile-intro span{
+        font-size: 2em;
+    }
+
+    .profile-pic>img{
+    width:200px;
+    height: 200px;
+    }
+
 }
 
 @media(max-width: 480px){
@@ -2162,6 +2210,7 @@ header .intro-text-team {
    height: 34px;
    //-webkit-appearance: none;
    }
+
 @media (max-width: 991px) {
     .navbar-header {
         float: none;
