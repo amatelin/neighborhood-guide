@@ -1767,19 +1767,27 @@ header .intro-text-team{
 /**
 *ADMINISTRATION
 **/
-#admin-wrapper .section-title {
-    text-align: center;
-    color: #fff;
-    margin: 20px auto;
-    background:rgba(35,49,64,.8);
-    border-radius: 20px;
-    min-width: 550px;
-    width: 33.33333333%;
+#admin-wrapper {
+    padding-top: 56px;
+    min-height: 100%;
+    overflow: hidden;
 }
 
-#admin-wrapper .section-title .name {
-    font-size: 4.4em;
-    font-weight: 700;
+#admin-menu {
+    width: 300px;
+    font-size: 20px;
+    line-height: 1.75em;
+    list-style: none;
+    float: left;
+}
+
+#admin-menu .item-group ul {
+    font-size: .75em;
+    line-height: 1.5em;
+    list-style: none;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 5px solid currentColor;
 }
 
 /**
