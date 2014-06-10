@@ -22,6 +22,24 @@
                                     <script src="js/form.js"></script>
                                     <script src="js/jstree.min.js"></script>
                                     <link rel="stylesheet" href="./themes/default/style.min.css">
+                                    <style>
+                                        #jstree {
+                                            background: white;
+                                            border-radius: 3px;
+                                            margin-bottom: 32px;
+                                            padding: 8px;
+                                            text-align: left;
+                                        }
+                                        #jstree a {
+                                            padding-left: 4px;
+                                        }
+                                        .container.middle {
+                                            top: 10%;
+                                        }
+                                        .control-label {
+                                            text-align: center!important;
+                                        }
+                                    </style>
 
                                     <!-- Choice Categories -->
                                     <div id="jstree">
