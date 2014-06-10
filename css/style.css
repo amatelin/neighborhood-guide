@@ -458,10 +458,6 @@ header .form-control:-ms-input-placeholder {
     color:rgba(44,62,80,0.5);
 }
 
-.page-scroll:hover{
-    background-color: 233140;
-}
-
 #username{
     font-size: 1em;
 }
@@ -474,11 +470,12 @@ header .form-control:-ms-input-placeholder {
     background-color: #2C3E50;
 }
 
-.fa-arrow-down {
+.page-scroll a {
     font-size: 50px;
     color: white;
 }
-.fa-arrow-down:hover {
+
+.page-scroll a:hover {
     color:#18bc9c;
     text-decoration: none;
 }
