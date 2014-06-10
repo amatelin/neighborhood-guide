@@ -218,6 +218,7 @@ $(document).on('touchmove', function(e) {
 			})
 
 			google.maps.event.addListener(marker, 'click', function() {
+				$('.item').children('.mask').height('0')
 				var elem = $('.item').find('[name="' + this.title + '"]')
 				$('.panel').first().css('display', 'block')
 				elem.height('auto')

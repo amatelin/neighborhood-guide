@@ -109,8 +109,15 @@ a.fa {
     text-align: center;
 }
 
-#bs-example-navbar-collapse-1 > ul > li > div > ul {
-    background-color: white;
+@media (max-width: 991px){
+    #bs-example-navbar-collapse-1 > ul > li > div > ul {
+    font-size: 10px;
+    margin-left: 10px;
+    }
+
+    .navbar-nav .open .dropdown-menu > li > a{
+        color: #FFF;
+    }
 }
 h1,
 h2,
@@ -433,9 +440,10 @@ header .checkbox{
 }
 header #submit{
     float: right;
+    margin-bottom: 20px;
 }
 header #submit:hover{
-    background-color:#233140;
+    background-color:#18BC9C;
     color:#fff;
 }
 header .form-control{
@@ -453,10 +461,24 @@ header .form-control:-moz-placeholder {
 header .form-control:-ms-input-placeholder {
     color:rgba(44,62,80,0.5);
 }
+
+#username{
+    font-size: 1em;
+}
+
+#username:hover{
+    text-decoration: none;
+}
+
+.btn-group-na{
+    background-color: #2C3E50;
+}
+
 .page-scroll a {
     font-size: 50px;
     color: white;
 }
+
 .page-scroll a:hover {
     color:#18bc9c;
 }
@@ -779,6 +801,7 @@ nav {
     margin-top: -7px;
 }
 
+
 .fa-gear{
     background-color:#2C3E50;
 }
@@ -794,7 +817,7 @@ nav {
 #presentation {
     position: relative;
     height: 100%;
-    top: 45px;
+    top: 56px;
     box-shadow: 0 8px 10px -10px rgba(64, 64, 64, .8);
 }
 .viewer {
@@ -1892,9 +1915,32 @@ header .intro-text-team{
 
 @media(max-width: 991px){
 
+    #profile-wrapper{
+        width: 67%;
+    }
+
     #profile-wrapper.profile-right{
         height:550px;
     }
+
+    #profile-wrapper.profile-left{
+        height:300px;
+    }
+
+    #profile-intro{
+        height: 130px;
+        width: 67%;
+    }
+
+    #profile-intro span{
+        font-size: 2em;
+    }
+
+    .profile-pic>img{
+    width:200px;
+    height: 200px;
+    }
+
 }
 
 @media(max-width: 480px){
@@ -2040,4 +2086,20 @@ header .intro-text-team{
     .collapsing {
         overflow: hidden!important;
     }
+}
+
+#jstree {
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 32px;
+    padding: 8px;
+    text-align: left;
+}
+#jstree a {
+    padding-left: 4px;
+}
+
+.container.middle {
+    top: 10%;
+    transform: none;
 }
