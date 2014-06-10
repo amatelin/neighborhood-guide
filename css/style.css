@@ -2194,3 +2194,19 @@ header .intro-text-team {
         overflow: hidden!important;
     }
 }
+
+#jstree {
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 32px;
+    padding: 8px;
+    text-align: left;
+}
+#jstree a {
+    padding-left: 4px;
+}
+
+.container.middle {
+    top: 10%;
+    transform: none;
+}
