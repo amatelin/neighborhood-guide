@@ -7,9 +7,9 @@
         <div id="presentation-menu">
             <span class="right">
                 <div class="next-neighbourhood-name"><a class="next-neighbourhood" href="#next">Cote St-Luc</a></div>
-                <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
-                <h1> LE PLATEAU </h1>
-                <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
+                <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-left valign"></i></a>
+                <h1 class="goto name"> LE PLATEAU </h1>
+                <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-right valign"></i></a>
                 <div class="next-neighbourhood-name"><a class="next-neighbourhood" href="#next">Westmount</a></div>
             </span>
 

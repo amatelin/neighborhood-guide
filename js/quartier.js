@@ -218,7 +218,9 @@ $(document).on('touchmove', function(e) {
 			})
 
 			google.maps.event.addListener(marker, 'click', function() {
+				$('.item').children('.mask').height('0')
 				var elem = $('.item').find('[name="' + this.title + '"]')
+				$('.panel').first().css('display', 'block')
 				elem.height('auto')
 				/*
 				if (elem.height() == '0') {
@@ -227,7 +229,7 @@ $(document).on('touchmove', function(e) {
 					elem.height('0')
 				}//*/
 				var latLng = this.getPosition() // returns LatLng object
-				map.setCenter(latLng) // setCenter takes a LatLng object
+				map.setCenter({lat:latLng.lat() + 0.002, lng:latLng.lng()}) // setCenter takes a LatLng object
 			})
 
 		})
@@ -292,7 +294,7 @@ $(document).on('touchmove', function(e) {
 				markers.forEach(function(marker) {
 					if (marker.title == elem.attr('name')) {
 						var latLng = marker.getPosition()
-						map.setCenter(latLng)
+						map.setCenter({lat:latLng.lat() + 0.002, lng:latLng.lng()})
 					}
 				})
     		} else {
@@ -408,7 +410,7 @@ $(document).on('touchmove', function(e) {
             renderPanel(datas[current_place].places[0], 1)
 		}
 	}
-	
+
     $('#showMap').click(function() {
         showMap()
     })
@@ -420,7 +422,7 @@ $(document).on('touchmove', function(e) {
 	// Hide Panel
 	$('.panel-heading').first().children('i').click(function() {
 		$('.panel').first().css('display', 'none')
-        closeMarker()
+        //closeMarker()
 	})
 
 	// Show Panel with info
