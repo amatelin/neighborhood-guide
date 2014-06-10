@@ -1768,12 +1768,16 @@ header .intro-text-team{
 *ADMINISTRATION
 **/
 .intro-text-admin{
-    margin-top: 20px;
-    padding: 15px;
+    margin: 20px 0;
+    padding: 15px 15px 50px;
     color:#fff;
     background:rgba(35,49,64,.8);
     border-radius: 20px;
-    padding-bottom: 55px;
+}
+
+.intro-text-admin h2 {
+    margin-top: 5px;
+    text-align: center;
 }
 
 .intro-text-admin .table-wrapper {
@@ -1822,37 +1826,52 @@ header .intro-text-team{
 
 .intro-text-admin-right{
     margin-top: 20px;
+    margin-bottom: 20px;
     color:#fff;
     background:rgba(35,49,64,.8);
     border-radius: 20px;
     padding-top:5px;
     padding-bottom: 10px;
-    margin-bottom: 10px;
 }
 
 #admin-wrapper{
-    padding-top: 150px;
     margin: 0 auto;
     min-width: 1200px;
     width: 90%;
+    padding: 100px 0 25px;
+    overflow: hidden;
 }
 
-#admin-wrapper .title {
-    margin: 0 auto;
+#admin-wrapper .section-title {
+    text-align: center;
+    color: #fff;
+    margin: 20px auto;
     background:rgba(35,49,64,.8);
     border-radius: 20px;
-    padding-bottom: 15px;
     min-width: 550px;
     width: 33.33333333%;
 }
 
-#admin-wrapper .title .name {
-    text-align: center;
-    display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+#admin-wrapper .section-title .name {
     font-size: 4.4em;
     font-weight: 700;
+}
+
+#admin-wrapper ~ .background {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 900px;
+    background-image: url("../img/montreal9.jpg");
+    -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;         /* Generic*/
+}
+
+.intro-text-admin-right h3 {
+    text-align: center;
 }
 
 .intro-text-admin-right>ul>li>a{
@@ -1865,18 +1884,19 @@ header .intro-text-team{
 }
 
 .intro-text-admin-menu{
-    margin-top: 20px;
+    margin: 20px 0;
     list-style: none;
     color:#fff;
     background: rgba(35,49,64,.8);
     border-radius: 20px;
     text-align: left;
+    padding-bottom: 15px;
 }
+
 .intro-text-admin-menu>ul{
     list-style: none;
     font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 20px;
 }
 .intro-text-admin-menu>ul>li{
     margin-top:5px;

@@ -3,148 +3,135 @@
 $page = "team";
 include './inc/header.php'
 ?>
+    <div id="admin-wrapper">
+        <div class="section-title">
+            <h1 class="name">Administration</h1>
+            <img src="img/white-star.png">
+            <?php include './inc/breadcrumb.php' ?>
+        </div>
+        <div class="content">
+            <?php
+                include './inc/menu.php';
+                include './inc/sidebar.php';
+            ?>
+            <div id="central">
 
-     <header>
-        <div id="admin-wrapper">
-             <div class="title">
-                <span class="name">Administration</span>
-                <img src="img/white-star.png">
-                <?php include './inc/breadcrumb.php' ?>
-            </div>
-            <div class="content">
-                <?php
-                    include './inc/menu.php';
-                    include './inc/sidebar.php';
-                ?>
-                <div id="central">
+                <div class="intro-text-admin">
+                    <h2>Added</h2>
+                    <div class="table-wrapper">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Categorie</th>
+                                    <th>Description</th>
+                                    <th>Date</th>
+                                    <th>Author</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jo's coffee</td>
+                                    <td>Restaurant</td>
+                                    <td>This is a new coffee which just opened his doors</td>
+                                    <td>03/06/2014 - 13:52:35</td>
+                                    <td><a href="addThing.php">Scar-Jo</a></td>
+                                    <td><a>Review</a></td>
 
-                    <div class="intro-text-admin">
-                        <div class="subtitle">Added</div>
-                        <div class="table-wrapper">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Categorie</th>
-                                        <th>Description</th>
-                                        <th>Date</th>
-                                        <th>Author</th>
-                                        <th>Accept</th>
-                                        <th>Refuse</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Jo's coffee</td>
-                                        <td>Restaurant</td>
-                                        <td>This is a new coffee which just opened his doors</td>
-                                        <td>03/06/2014 - 13:52:35</td>
-                                        <td><a href="addThing.php">Scar-Jo</a></td>
-                                        <td><a><i class="fa fa-check"></i></a></td>
-                                        <td><a><i class="fa fa-times"></i></a></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>Est End</td>
-                                        <td>Place</td>
-                                        <td>Just added a new neighborhood which was not there</td>
-                                        <td>31/01/2018 - 09:34:02</td>
-                                        <td><a href="addThing.php">Bibi</a></td>
-                                        <td><a><i class="fa fa-check"></i></a></td>
-                                        <td><a><i class="fa fa-times"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jo's coffee</td>
-                                        <td>Restaurant</td>
-                                        <td>This is a new coffee which just opened his doors</td>
-                                        <td>03/06/2014 - 13:52:35</td>
-                                        <td><a href="addThing.php">Scar-Jo</a></td>
-                                        <td><a><i class="fa fa-check"></i></a></td>
-                                        <td><a><i class="fa fa-times"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Est End</td>
-                                        <td>Place</td>
-                                        <td>Just added a new neighborhood which was not there</td>
-                                        <td>31/01/2018 - 09:34:02</td>
-                                        <td><a href="addThing.php">Bibi</a></td>
-                                        <td><a><i class="fa fa-check"></i></a></td>
-                                        <td><a><i class="fa fa-times"></i></a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="redirection">
-                            <a href="addsmanagement.php">
-                                <i class="fa fa-plus"></i>
-                            </a>
-                        </div>
+                                </tr>
+                                <tr>
+                                    <td>Est End</td>
+                                    <td>Place</td>
+                                    <td>Just added a new neighborhood which was not there</td>
+                                    <td>31/01/2018 - 09:34:02</td>
+                                    <td><a href="addThing.php">Bibi</a></td>
+                                    <td><a>Review</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jo's coffee</td>
+                                    <td>Restaurant</td>
+                                    <td>This is a new coffee which just opened his doors</td>
+                                    <td>03/06/2014 - 13:52:35</td>
+                                    <td><a href="addThing.php">Scar-Jo</a></td>
+                                    <td><a>Review</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Est End</td>
+                                    <td>Place</td>
+                                    <td>Just added a new neighborhood which was not there</td>
+                                    <td>31/01/2018 - 09:34:02</td>
+                                    <td><a href="addThing.php">Bibi</a></td>
+                                    <td><a>Review</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="intro-text-admin">
-                        <div class="subtitle">Modifications</div>
-                        <div class="table-wrapper">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Categorie</th>
-                                        <th>Explanations</th>
-                                        <th>Date</th>
-                                        <th>Author</th>
-                                        <th>Accept</th>
-                                        <th>Refuse</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Jo's coffee supression</td>
-                                        <td>Restaurant</td>
-                                        <td>This coffee just moved away</td>
-                                        <td>03/06/2014 - 13:52:35</td>
-                                        <td><a href="addThing.php">Scar-Jo</a></td>
-                                        <td><a><i class="fa fa-check"></i></a></td>
-                                        <td><a><i class="fa fa-times"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Eat End picture disappeared</td>
-                                        <td>Places</td>
-                                        <td>It also moved away !</td>
-                                        <td>31/01/2018 - 09:34:02</td>
-                                        <td><a href="addThing.php">Bibi</a></td>
-                                        <td><a><i class="fa fa-check"></i></a></td>
-                                        <td><a><i class="fa fa-times"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jo's coffee supression</td>
-                                        <td>Restaurant</td>
-                                        <td>This coffee just moved away</td>
-                                        <td>03/06/2014 - 13:52:35</td>
-                                        <td><a href="addThing.php">Scar-Jo</a></td>
-                                        <td><a><i class="fa fa-check"></i></a></td>
-                                        <td><a><i class="fa fa-times"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="addThing.php">Eat End picture disappeared</td>
-                                        <td>Places</td>
-                                        <td>It also moved away !</td>
-                                        <td>31/01/2018 - 09:34:02</td>
-                                        <td><a href="addThing.php">Bibi</a></td>
-                                        <td><a><i class="fa fa-check"></i></a></td>
-                                        <td><a><i class="fa fa-times"></i></a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="redirection">
-                            <a href="modificationsmanagement.php">
-                                <i class="fa fa-plus"></i>
-                            </a>
-                        </div>
+                    <div class="redirection">
+                        <a href="addsmanagement.php">
+                            <i class="fa fa-plus"></i>
+                        </a>
                     </div>
                 </div>
-           </div>
-        </div>
-    </header>
+                <div class="intro-text-admin">
+                    <h2>Modifications</h2>
+                    <div class="table-wrapper">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Categorie</th>
+                                    <th>Explanations</th>
+                                    <th>Date</th>
+                                    <th>Author</th>
+                                    <th>Review</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jo's coffee supression</td>
+                                    <td>Restaurant</td>
+                                    <td>This coffee just moved away</td>
+                                    <td>03/06/2014 - 13:52:35</td>
+                                    <td><a href="addThing.php">Scar-Jo</a></td>
+                                    <td><a>Review</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Eat End picture disappeared</td>
+                                    <td>Places</td>
+                                    <td>It also moved away !</td>
+                                    <td>31/01/2018 - 09:34:02</td>
+                                    <td><a href="addThing.php">Bibi</a></td>
+                                    <td><a>Review</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Jo's coffee supression</td>
+                                    <td>Restaurant</td>
+                                    <td>This coffee just moved away</td>
+                                    <td>03/06/2014 - 13:52:35</td>
+                                    <td><a href="addThing.php">Scar-Jo</a></td>
+                                    <td><a>Review</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="addThing.php">Eat End picture disappeared</td>
+                                    <td>Places</td>
+                                    <td>It also moved away !</td>
+                                    <td>31/01/2018 - 09:34:02</td>
+                                    <td><a href="addThing.php">Bibi</a></td>
+                                    <td><a>Review</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="redirection">
+                        <a href="modificationsmanagement.php">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
     <section class="adjustement">
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">

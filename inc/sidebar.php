@@ -1,6 +1,6 @@
 <div id="info">
     <div class="intro-text-admin-right">
-        <span class="name"><h3>New Members</h3></span>
+        <h3>New Members</h3>
         <hr>
         <ul>
             <li><a href="">Yann Hardouin</a></li>
@@ -13,7 +13,7 @@
         </ul>
     </div>
     <div class="intro-text-admin-right">
-        <span class="name"><h3>Users</h3></span>
+        <h3>Users</h3>
         <hr>
         <ul>
             <li><a href="">Yann Hardouin</a></li>
@@ -26,7 +26,7 @@
         </ul>
     </div>
     <div class="intro-text-admin-right">
-        <span class="name"><h3>Notifications</h3></span>
+        <h3>Notifications</h3>
         <hr>
         <ul>
             <li><a href="">Scar-Jo </a></li>
