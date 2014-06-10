@@ -432,7 +432,7 @@ header #submit{
     margin-bottom: 20px;
 }
 header #submit:hover{
-    /*background-color:#233140;*/
+    background-color:#18BC9C;
     color:#fff;
 }
 header .form-control{

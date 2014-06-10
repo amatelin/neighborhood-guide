@@ -96,7 +96,7 @@
 
                                     <!-- Default form after -->
                                     <script type="text/template" id="input-after">
-                                    <button type="submit" id="submit" name="submit" class="btn btn-warning">Send</button>
+                                    <button type="submit" id="submit" name="submit" class="btn btn-inverse">Send</button>
                                     </script>
 
                                     <!-- Text input-->
@@ -125,8 +125,7 @@
                                             <label class="col-md-12 control-label" for="{{name}}">{{name}}</label>
                                             <div class="col-md-12">
                                                 <select id="{{name}}" name="{{name}}" class="form-control">
-
-                                                    <option value="" disabled selected>Choice here</option>
+                                                    <option value="" disabled selected>Select an option</option>
                                                     {{#each options}}
                                                         <option value="{{this}}">{{this}}</option>
                                                     {{/each}}
