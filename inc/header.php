@@ -29,6 +29,7 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/neighbourhoodguide.js"></script>
     <script src="./js/bootstrap-datepicker.js"></script>
+    <script src="./js/administration.js"></script>
 
 
     <!-- Fonts -->
