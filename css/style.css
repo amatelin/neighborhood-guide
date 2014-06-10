@@ -2210,4 +2210,5 @@ header .intro-text-team {
 .container.middle {
     top: 10%;
     transform: none;
+    -webkit-transform: none;
 }
