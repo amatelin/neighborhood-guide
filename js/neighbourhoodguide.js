@@ -1,7 +1,7 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('.page-scroll a').bind('click', function(event) {
+    $('.page-scroll a').click(function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -73,13 +73,6 @@ function tabNavigation(){
     });
 }
 
-function addModal(){
-    var allRows = $('.intro-text-admin tbody tr');
-    allRows.attr('data-toggle','modal');
-    allRows.attr('data-target','#myModal');
-    console.log(allRows);
-}
-
 function mailIcon(messages){
     var nbMessages = messages;
     var mail = $('#mail');
@@ -91,7 +84,7 @@ function mailIcon(messages){
             mail.removeClass('no-msg');
         }
     }
-    mail.parents().eq(1).click(function(){
+    mail.parents().eq(1).click(function(event){
         var el = mail;
 
         if(el.hasClass('fa-envelope-o')){
@@ -106,7 +99,7 @@ function mailIcon(messages){
             el.addClass('fa-envelope-o');
             el.addClass('no-msg');
         }
-        $(this).die();
+        event.stopPropagation();
     });
 }
 
@@ -117,7 +110,6 @@ $(window).resize(function(){
 });
 $(window).load(function(){
     mailIcon(1);
-    addModal();
     navScroll();
     tabNavigation();   
 });
