@@ -428,7 +428,8 @@ header .form-control:-ms-input-placeholder {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 4px 15px 25px;
+    padding: 4px 15px 2
+    5px;
     font-size: 14px;
     color: white;
     font-weight: bold;
@@ -1246,7 +1247,7 @@ span.small {
 }
 
 .floating-label-form-group {
-    color:white !important;
+    color:white;
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
@@ -2060,4 +2061,10 @@ header .intro-text-team {
         margin-left: 10px;
     }
 }
+
+.contact .form-control{
+    color:black;
+}
+#contact{
+    color:#2C3E50;
 }
