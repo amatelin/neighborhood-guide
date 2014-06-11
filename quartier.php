@@ -45,87 +45,89 @@
                     <br/>
                     <br/>
                 </div>
-                <div class="place scroll">
-                    <a name="Restaurant" href="#">Restaurants</a>
-                    <a class="square" href="addThing.php#restaurant">
-                        <i class="fa fa-plus"></i>
-                    </a>
-                    <ul class="scroll">
-                        <li><a name="Au Petit Bigorneau" href="#">Au Petit Bigorneau</a></li>
-                        <li><a name="Satisfaction" href="#">Satisfaction</a></li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <a name="Restaurant" href="#">Café</a>
-                    <a class="square" href="addThing.php#restaurant">
-                        <i class="fa fa-plus"></i>
-                    </a>
-                    <ul class="scroll">
-                        <li><a name="Au Petit Bigorneau" href="#">Café 1</a></li>
-                        <li><a name="Satisfaction" href="#">Café 2</a></li>
-                        <li><a name="Satisfaction" href="#">Café 3</a></li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Shopping</li>
-                    <ul class="scroll">
-                        <li>Stores</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Sports</li>
-                    <ul class="scroll">
-                        <li>Gyms</li>
-                        <li>Soccer Fields</li>
-                        <li>Baseball Fields</li>
-                        <li>Swimming Pools</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Events</li>
-                    <ul class="scroll">
-                        <li>Shows</li>
-                        <li>Festivals</li>
-                        <li>Races</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Financial</li>
-                    <ul class="scroll">
-                        <li>Banks</li>
-                        <li>ATMs</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Accommodations</li>
-                    <ul class="scroll">
-                        <li>Hotels</li>
-                        <li>Motels</li>
-                        <li>Camping</li>
-                        <li>Bed Breakfast</li>
-                        <li>Hostels</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Public Services</li>
-                    <ul class="scroll">
-                        <li>Police Stations</li>
-                        <li>Fire Stations</li>
-                        <li>Hospitals</li>
-                        <li>Schools</li>
-                        <li>CLSC</li>
-                        <li>Library</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Transportation</li>
-                    <ul class="scroll">
-                        <li>Metro Stations</li>
-                        <li>Bus Stations</li>
-                        <li>Intercity Bus Station</li>
-                        <li>Train Stations</li>
-                        <li>Airports</li>
-                    </ul>
+                <div id="listing">
+                    <div class="place scroll">
+                        <a name="Restaurant" href="#">Restaurants</a>
+                        <a class="square" href="addThing.php#restaurant">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <ul class="scroll">
+                            <li><a name="Au Petit Bigorneau" href="#">Au Petit Bigorneau</a></li>
+                            <li><a name="Satisfaction" href="#">Satisfaction</a></li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <a name="Restaurant" href="#">Café</a>
+                        <a class="square" href="addThing.php#restaurant">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <ul class="scroll">
+                            <li><a name="Au Petit Bigorneau" href="#">Café 1</a></li>
+                            <li><a name="Satisfaction" href="#">Café 2</a></li>
+                            <li><a name="Satisfaction" href="#">Café 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Shopping</li>
+                        <ul class="scroll">
+                            <li>Stores</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Sports</li>
+                        <ul class="scroll">
+                            <li>Gyms</li>
+                            <li>Soccer Fields</li>
+                            <li>Baseball Fields</li>
+                            <li>Swimming Pools</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Events</li>
+                        <ul class="scroll">
+                            <li>Shows</li>
+                            <li>Festivals</li>
+                            <li>Races</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Financial</li>
+                        <ul class="scroll">
+                            <li>Banks</li>
+                            <li>ATMs</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Accommodations</li>
+                        <ul class="scroll">
+                            <li>Hotels</li>
+                            <li>Motels</li>
+                            <li>Camping</li>
+                            <li>Bed Breakfast</li>
+                            <li>Hostels</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Public Services</li>
+                        <ul class="scroll">
+                            <li>Police Stations</li>
+                            <li>Fire Stations</li>
+                            <li>Hospitals</li>
+                            <li>Schools</li>
+                            <li>CLSC</li>
+                            <li>Library</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Transportation</li>
+                        <ul class="scroll">
+                            <li>Metro Stations</li>
+                            <li>Bus Stations</li>
+                            <li>Intercity Bus Station</li>
+                            <li>Train Stations</li>
+                            <li>Airports</li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="padding_shadow_main">&nbsp;</div>
             </div>
@@ -174,7 +176,21 @@
             </div>
         </div>
 
-
+        <script id="place-template" type="text/x-handlebars-template">
+            {{#each places }}
+                <div class="place scroll">
+                    <a name="{{this.name}}" href="#">{{this.name}}</a>
+                    <a class="square" href="addThing.php#{{this.name}}">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                    <ul class="scroll">
+                        {{#each this.infos }}
+                        <li><a name="{{this.name}}" href="#">{{this.name}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/each}}
+        </script>
 
         <script id="item-template" type="text/x-handlebars-template">
             {{#each infos}}

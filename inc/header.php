@@ -225,20 +225,20 @@
                         <a href="#about">About</a>
                     </li>
 
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
-                          <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
+                          <div class="btn" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>
-                                <span class="caret"></span>
+                                <span class="caret white-caret"></span>
                           </div>
                           <ul class="dropdown-menu">
-                                <li><a href="addThing.php">Add Place</li>
-                                <li><a href="register.php">Register</a></li>
-                                <li><a href="login.php">Login</a></li>
+                            <li><a href="addThing.php">Add Place</a></li>
+                            <li><a href="register.php">Register</a></li>
+                            <li><a href="login.php">Login</a></li>
                           </ul>
                         </div>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
                              <a href="profile.php">
@@ -246,7 +246,7 @@
                              <span id="username">Scar-Jo</span>
                           </div>
                           <ul class="dropdown-menu">
-                                <li><a href="profile.php">Profile</a></li>
+                            <li><a href="profile.php">Profile</a></li>
                                 <li><a href="settings.php">Settings</a></li>
                                 <li><a href="administration.php">Administration</a></li>
                                 <li><a href="index.php">Log out</a></li>
@@ -266,11 +266,11 @@
                     <li class="page-scroll">
                         <a href="index.php#about">About</a>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
                           <div class="btn" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>
-                                <span class="caret"></span>
+                                <span class="caret white-caret"></span>
                           </div>
                           <ul class="dropdown-menu">
                             <li><a href="addThing.php">Add Place</a></li>
@@ -279,7 +279,7 @@
                           </ul>
                         </div>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
                               <a href="profile.php"><img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "cedric.wident@gmail.com" ) ) ); ?>?s=40" class="nav-profile-picture"></a>

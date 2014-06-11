@@ -309,7 +309,7 @@ include './inc/header.php'
                     <p class="white description">If you have any questions, please contact us, we'd love to hear from you!</p>
 
                 <div class="col-lg-12 text-center">
-                    <h2>Conact Us!</h2>
+                    <h2>Contact Us!</h2>
                     <hr class="star-light">
                 </div>
                     <form role="form">

@@ -479,7 +479,7 @@ header .log-form{
     color:#233140;
     max-width: 80%;
 }
-header fieldset{
+header fieldpro{
     margin-top: 50px;
 }
 header .log-form label,
@@ -511,12 +511,24 @@ header .form-control:-ms-input-placeholder {
     color:rgba(44,62,80,0.5);
 }
 
+.page-scroll.menu:hover{
+    background-color: #233140;
+}
+
+.page-scroll .a:hover{
+
+}
+
 #username{
     font-size: 1em;
 }
 
 #username:hover{
     text-decoration: none;
+}
+
+.caret{
+    color: white;
 }
 
 .btn-group-na{
@@ -533,6 +545,7 @@ header .form-control:-ms-input-placeholder {
 }
 
 .breadcrumb{
+    font-size: 15px;
     background: none repeat scroll 0% 0% rgba(35, 49, 64, 0.0);;
 }
 
@@ -786,7 +799,7 @@ span.title {
 }
 .navbar .navbar-nav ul a:hover{
     font-size: 1em;
-    color: white;
+    color: #18BC9C;
 }
 .navbar .navbar-nav li a:hover {
     outline: 0;
@@ -846,11 +859,6 @@ nav {
 
 .nav-profile-picture{
     margin-top: -7px;
-}
-
-
-.fa-gear{
-    background-color:#2C3E50;
 }
 
 .caret:hover {
@@ -1450,9 +1458,7 @@ form .row:first-child .floating-label-form-group {
 #contribute h2{
     color:#fff;
 }
-.page-scroll a:hover {
-    color: #18bc9c;
-}
+
 .btn:hover {
     color: #18bc9c;
 }
@@ -1937,6 +1943,11 @@ header .intro-text-team{
     background-color: #fff;
 }
 
+.choices{
+    text-align: left;
+    font-size: 12px;
+}
+
 @media(max-width: 1199px){
     .profile-left{
         float: none;
@@ -2150,4 +2161,8 @@ header .intro-text-team{
     top: 10%;
     transform: none;
     -webkit-transform: none;
+}
+
+.copyright {
+    font-size: 15px;
 }
