@@ -1919,7 +1919,7 @@ header .intro-text-team{
 }
 
 #profile-wrapper fieldset{
-    margin-top:17%;
+    margin-bottom:5%;
 }
 
 #profile-wrapper .log-form{
@@ -1946,6 +1946,29 @@ header .intro-text-team{
 .choices{
     text-align: left;
     font-size: 12px;
+}
+
+.legends{
+    border: 1px solid #666665;
+}
+
+legend{
+    width: auto;
+    border-width: 0px 0px 0px;
+    margin: 0px 0px 0px 20px;
+    padding: 0px 5px 0px 5px;
+    color: #FFFFFF;
+}
+
+.control-label{
+    text-align: left;
+}
+
+@media(min-width: 768px){
+    .form-horizontal .control-label {
+    text-align: left;
+    margin-left: 15px;
+}
 }
 
 @media(max-width: 1199px){

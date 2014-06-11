@@ -25,51 +25,56 @@
             <div class="col-lg-6">
              <div class="intro-text-form profile-right" id="profile-wrapper">
               <div class="log-form">
-                <h4>Informations</h4>
                 <form class="form-horizontal">
-                  <fieldset>
                     <!-- Text input-->
+                    <fieldset class="legends">
+                    <legend><h4>Informations</h4></legend>
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="name">Name</label>  
-                      <div class="col-md-6">
+                      <div class="col-md-7">
                         <input id="name" name="name" placeholder="Type your name" class="form-control input-md" type="text">
                       </div>
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="nickname">Nickname</label>  
-                      <div class="col-md-6">
+                      <div class="col-md-7">
                         <input id="nickname" name="nickname" placeholder="Type your nickname" class="form-control input-md" type="text">
-                      </div>
-                    </div>
-                    <!-- Text input-->
-                    <div class="form-group">
-                      <label class="col-md-4 control-label" for="email">Email</label>  
-                      <div class="col-md-6">
-                        <input id="email" name="email" placeholder="Typer your adress mail" class="form-control input-md" type="text">
-                      </div>
-                    </div>
-                    <!-- Password input-->
-                    <div class="form-group">
-                      <label class="col-md-4 control-label" for="password">Password</label>
-                      <div class="col-md-6">
-                        <input id="password" name="password" placeholder="Typer your password" class="form-control input-md" type="password">
                       </div>
                     </div>
                     <!-- Datebirth input-->
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="datebirth">Date of Birth</label>
-                      <div class="col-md-6">
+                      <div class="col-md-7">
                         <input id="datebirth" name="datebirth" placeholder="DD-MM-YYYY" class="datepicker form-control input-md">
                       </div>
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="homeTown">Home Town</label>  
-                      <div class="col-md-6">
+                      <div class="col-md-7">
                         <input id="homeTown" name="homeTown" placeholder="Typer your home town" class="form-control input-md" type="text">
                       </div>
                     </div>
+                  </fieldset>
+                    <!-- Text input-->
+                    <fieldset class="legends">
+                    <legend><h4>Login</h4></legend>
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="email">Email</label>  
+                      <div class="col-md-7">
+                        <input id="email" name="email" placeholder="Typer your adress mail" class="form-control input-md" type="text">
+                      </div>
+                    </div>
+                    <!-- Password input-->
+                    <div class="form-group">
+                      <label class="col-md-4 control-label" for="password">Password</label>
+                      <div class="col-md-7">
+                        <input id="password" name="password" placeholder="Typer your password" class="form-control input-md" type="password">
+                      </div>
+                    </div>
+                    </fieldset>
+                    
                     <!-- Button -->
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="submit"></label>
@@ -77,7 +82,7 @@
                         <button id="submit" name="submit" class="btn btn-inverse">Save</button>
                       </div>
                     </div>
-                  </fieldset>
+                  
                 </form>
               </div> 
             </div>

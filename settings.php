@@ -12,7 +12,8 @@
         <div class="intro-text-form"> 
           <div class="log-form">
             <form class="form-horizontal">
-              <fieldset class="choices">
+              <fieldset class="legends choices">
+                <legend><h4>Informations</h4></legend>
                 <!-- Text input-->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="name">Profile</label>  
