@@ -1057,25 +1057,6 @@ span.right a {
     width: 100%;
 }
 @media(max-width: 660px){
-    .viewer .shadow {
-        width: 90%;
-        height: 36%;
-        margin-left: 5%;
-        margin-top: 5px;
-    }
-    .viewer .shadow-main {
-        width: 90%;
-        height: 37%;
-        margin-left: 5%;
-        margin-top: 5px;
-    }
-    .viewer#map .panel {
-        height: 50%;
-        width: 60%;
-        min-width: 378px;
-    }
-}
-@media(max-width: 400px){
     .navbar-fixed-top .navbar-brand {
         font-size: 20px;
     }
