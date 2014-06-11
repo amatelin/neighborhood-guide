@@ -391,6 +391,10 @@ header .form-control:-ms-input-placeholder {
     color:#18bc9c;
     text-decoration: none;
 }
+header .fa-arrow-down:focus {
+    color:#fff;
+    text-decoration: none;
+}
 
 /**
 * Portfolio Hover Over

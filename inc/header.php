@@ -119,6 +119,12 @@
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
+                    <li class="page-scroll" class="new=msg">
+                        <a href="#"><i class="fa fa-envelope"></i></a>
+                    </li>
+                    <li class="page-scroll" class="no-msg">
+                        <a href="#"><i class="fa fa-envelope-o"></i></a>
+                    </li>
 
                     <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
