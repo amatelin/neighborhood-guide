@@ -1247,7 +1247,7 @@ span.small {
 }
 
 .floating-label-form-group {
-    color:white;
+    color:black;
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
@@ -1293,13 +1293,12 @@ span.small {
 
 .floating-label-form-group-with-value label {
     top: 0;
-    color:#13987E;
-    opacity: 1;
+    color:#2C3E50;
+    opacity: 0.8;
 }
 
 .floating-label-form-group-with-focus label {
-    color: #fff;
-    color:#13987E;
+    color: #2C3E50;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -1312,32 +1311,39 @@ form .row:first-child .floating-label-form-group {
     color:#fff;
 }
 .btn-success{
-    background-color:#fff;
+    background-color:#18BC9C;
     border-color:#fff;
-    color:#18bc9c;
-}
-.btn-success:hover{
-    background-color:#128F76;
-    border-color:#128F76;
-}
-.form-control{
     color:#fff;
 }
+.btn-success:hover{
+    background-color:#118770;
+    border-color:#18BC9C;
+}
+.form-control{
+    color:#2C3E50;
+}
 .form-control::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #fff;
+    color:   rgba(44,62,80,0.7);
 }
 .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #fff;
-    opacity:  1;
+    color:   rgba(44,62,80,0.7);
 }
 .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #fff;
-    opacity:  1;
+   color:   rgba(44,62,80,0.7);
 }
 .form-control:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #fff;
+    color:   rgba(44,62,80,0.7);
 }
 
+
+/**
+*ABOUT
+**/
+
+#about{
+    background-color: #18BC9C;
+    color:#fff;
+}
 
 /**
 *FOOTER
@@ -2062,9 +2068,3 @@ header .intro-text-team {
     }
 }
 
-.contact .form-control{
-    color:black;
-}
-#contact{
-    color:#2C3E50;
-}

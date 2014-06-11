@@ -476,7 +476,7 @@ include './inc/header.php'
         <div class="container">                    
             <div class="row">    
                 <div class="col-lg-12 text-center">
-                    <h2>Conact Us!</h2>
+                    <h2>Contact Us!</h2>
                     <hr class="star-primary">
                 </div> 
                 <form role="form" class="contact">
@@ -514,7 +514,7 @@ include './inc/header.php'
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About Us</h2>
-                    <hr class="star-primary">
+                    <hr class="star-light">
                 </div>
             </div>
             <div class="row">
