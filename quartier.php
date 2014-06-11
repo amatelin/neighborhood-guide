@@ -46,21 +46,24 @@
                     <br/>
                 </div>
                 <div class="place scroll">
-                    <li><a name="Restaurant" href="#">Restaurants <a href="addThing.php#restaurant"><i class="fa fa-plus"></i></a></a></li>
+                    <a name="Restaurant" href="#">Restaurants</a>
+                    <a class="square" href="addThing.php#restaurant">
+                        <i class="fa fa-plus"></i>
+                    </a>
                     <ul class="scroll">
                         <li><a name="Au Petit Bigorneau" href="#">Au Petit Bigorneau</a></li>
                         <li><a name="Satisfaction" href="#">Satisfaction</a></li>
-                        <li>test</li>
-                        <li>test</li>
                     </ul>
                 </div>
                 <div class="place scroll">
-                    <li>Cafes</li>
+                    <a name="Restaurant" href="#">Café</a>
+                    <a class="square" href="addThing.php#restaurant">
+                        <i class="fa fa-plus"></i>
+                    </a>
                     <ul class="scroll">
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
-                        <li>test</li>
+                        <li><a name="Au Petit Bigorneau" href="#">Café 1</a></li>
+                        <li><a name="Satisfaction" href="#">Café 2</a></li>
+                        <li><a name="Satisfaction" href="#">Café 3</a></li>
                     </ul>
                 </div>
                 <div class="place scroll">
