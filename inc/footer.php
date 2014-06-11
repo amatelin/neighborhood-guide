@@ -38,7 +38,7 @@
         <div class="footer-below">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 copyright">
                         Copyright &copy; 2014 - NestFinder
                     </div>
                 </div>

@@ -153,10 +153,10 @@
 
                         <div class="gps-image img-responsive">
                             <img width="100%" src="img/map-welcome-copie.png" alt="">
-                            <button type="button" class="btn btn-default bclose">Mouse hover icons <i class="fa fa-times"></i></button>
-                            <button type="button" class="btn btn-primary bplane" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-plane"></i></button>
-                            <button type="button" class="btn btn-info bhome" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-home"></i></button>
-                            <button type="button" class="btn btn-warning bcutlery" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-cutlery"></i></button>
+                            <button type="button" class="btn btn-default bclose">Mouse over each icons to learn more about the Neighbourhood Guide <i class="fa fa-times"></i></button>
+                            <button type="button" class="btn btn-primary bplane" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Want to learn more about how to get around in your neighbourhood? Look no further!"><i class="fa fa-plane"></i></button>
+                            <button type="button" class="btn btn-info bhome" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Learn about your neighboorhood, long time resident or not there's always more to discover."><i class="fa fa-home"></i></button>
+                            <button type="button" class="btn btn-warning bcutlery" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find restaurants near you or submit your favorites to share them with your community!"><i class="fa fa-cutlery"></i></button>
                         </div>
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
@@ -225,28 +225,28 @@
                         <a href="#about">About</a>
                     </li>
 
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
-                          <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
+                          <div class="btn" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>
-                                <span class="caret"></span>
+                                <span class="caret white-caret"></span>
                           </div>
                           <ul class="dropdown-menu">
-                                <li><a href="addThing.php">Add Place</li>
-                                <li><a href="register.php">Register</a></li>
-                                <li><a href="login.php">Login</a></li>
+                            <li><a href="addThing.php">Add Place</a></li>
+                            <li><a href="register.php">Register</a></li>
+                            <li><a href="login.php">Login</a></li>
                           </ul>
                         </div>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
                              <a href="profile.php">
-                             <a href="profile.php"><img src="img/neighborhoods/neighborhoods/joscar.jpg" class="nav-profile-picture"></a>
+                             <a href="profile.php"><img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "cedric.wident@gmail.com" ) ) ); ?>?s=40" class="nav-profile-picture"></a>
                              <span id="username">Scar-Jo</span>
                           </div>
                           <ul class="dropdown-menu">
-                                <li><a href="profile.php">Profile</a></li>
+                            <li><a href="profile.php">Profile</a></li>
                                 <li><a href="settings.php">Settings</a></li>
                                 <li><a href="administration.php">Administration</a></li>
                                 <li><a href="index.php">Log out</a></li>
@@ -266,11 +266,11 @@
                     <li class="page-scroll">
                         <a href="index.php#about">About</a>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
                           <div class="btn" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>
-                                <span class="caret"></span>
+                                <span class="caret white-caret"></span>
                           </div>
                           <ul class="dropdown-menu">
                             <li><a href="addThing.php">Add Place</a></li>
@@ -279,10 +279,10 @@
                           </ul>
                         </div>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
-                              <a href="profile.php"><img src="img/neighborhoods/neighborhoods/joscar.jpg" class="nav-profile-picture"></a>
+                              <a href="profile.php"><img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "cedric.wident@gmail.com" ) ) ); ?>?s=40" class="nav-profile-picture"></a>
                               <a id="username">Scar-Joo</a>
                           </div>
                           <ul class="dropdown-menu">

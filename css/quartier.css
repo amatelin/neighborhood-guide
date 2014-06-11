@@ -8,20 +8,35 @@ body {
 }
 
 .place.scroll > a {
-    background: #18BC9C;
-    color: white;
-    padding: 4px;
-    border-radius: 3px;
+    color: #18BC9C;
     display: inline-block;
     height: 26px;
     line-height: 20px;
-    margin-bottom: 8px;
+    font-size: 1.2em;
 }
 
 .place.scroll > .square {
-    width: 26px;
-    height: 26px;
+    color: white;
     text-align: center;
+}
+
+.place.scroll ul {
+    padding: 0;
+}
+
+.place.scroll ul li {
+    list-style-type: none;
+    color: white;
+}
+
+.place.scroll ul li a {
+    color: white;
+}
+
+.place.scroll ul  li:before {
+    content: "\25B8"; /* on affiche une chaîne de caractère */
+    color: #18BC9C;
+    margin: 0 8px;
 }
 
 .mask {

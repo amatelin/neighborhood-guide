@@ -1,5 +1,6 @@
 var datas = {
 	'LE PLATEAU': {
+		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		coord: {
 			lat: 45.521624,
 			lng: -73.575468
@@ -61,24 +62,31 @@ var datas = {
 			},
 			{
 				name:'Café',
+				color: '56FE62',
 				infos: [
 					{
 						name: 'Café Salé',
 						stars: 4,
 						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-						url: 'resto'
+						url: 'resto',
+						lat: 45.514748,
+						lng: -73.575611
 					},
 					{
 						name: 'Patisserie Laurent Foutrey',
 						stars: 3,
 						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-						url: 'resto'
+						url: 'resto',
+						lat: 45.514230,
+						lng: -73.165671
 					},
 					{
 						name: 'Guimauve & Chocolat',
 						stars: 4,
 						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-						url: 'resto'
+						url: 'resto',
+						lat: 45.514638,
+						lng: -73.164661
 					},
 				]
 			}
@@ -86,6 +94,7 @@ var datas = {
 		]
 	},
 	'WESTMOUNT': {
+		desc: 'Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		coord: {
 			lat: 46.521624,
 			lng: -74.575468
@@ -104,10 +113,18 @@ var datas = {
 						lng: -74.566611
 					}
 				]
+			},
+			{
+				name: 'Shop',
+				color: 'FE6256',
+				infos: [
+
+				]
 			}
 		]
 	},
 	'COTE ST-LUC': {
+		desc: 'Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		coord: {
 			lat: 42.521624,
 			lng: -72.575468
@@ -198,8 +215,11 @@ $(function() {
         if (v1 == (v2 - 1))
 		      return block.fn(this)
 	})
+	// TODO: Refactor and prefix by item_
 	var source   = $('#item-template').html()
 	var template = Handlebars.compile(source)
+
+	var place_template = Handlebars.compile($('#place-template').html())
 
     // Close all Google Maps' marker
     function closeMarker() {
@@ -257,7 +277,14 @@ $(function() {
 		})
 	}
 
-	// Attach marker to li
+	// Show the list of places for the current quartier
+	function showCurrentListing() {
+		var html = place_template(datas[current_place])
+		$('#listing').html(html)
+		attachMarker()
+	}
+
+	// Attach marker to li in #listing
 	function attachMarker() {
 		// Li inner place
 		$('.place').children('ul').children('li').click(function() {
@@ -291,8 +318,8 @@ $(function() {
 		})
 
 		// Li outer
-		$('.place').children('li').click(function() {
-			var name = $(this).children('a').first().attr('name')
+		$('.place').children('a[name]').click(function() {
+			var name = $(this).attr('name')
 			showMap()
 			// Show the good panel
 			for (var x in datas[current_place].places) {
@@ -490,9 +517,11 @@ $(function() {
 		document.location.hash = $(this).attr('href')
 	})
 	function getFromAnchor() {
-		current_place = document.location.hash.substring(1) || 'LE PLATEAU'
+		current_place = document.location.hash.substring(1) || current_place || 'LE PLATEAU'
 		map.setCenter(new google.maps.LatLng(datas[current_place].coord.lat, datas[current_place].coord.lng))
 		renderPanel(datas[current_place].places[0], 1)
+		showCurrentListing()
+		$('#overview').html(datas[current_place].desc)
 		var names = Object.keys(datas)
 		var i = names.indexOf(current_place) + names.length
 		var next = names[(i + 1) % names.length]

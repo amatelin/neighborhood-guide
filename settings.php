@@ -12,11 +12,11 @@
         <div class="intro-text-form"> 
           <div class="log-form">
             <form class="form-horizontal">
-              <fieldset>
+              <fieldset class="choices">
                 <!-- Text input-->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="name">Profile</label>  
-                  <div class="col-md-6">
+                  <div class="col-md-7">
                     <!-- <input class="" type="checkbox"><span>Public (allow anyone to see your profile)</span>
                     <input class="" type="checkbox"> Private (only users can to see your profile) -->
                     <div class="radio">
@@ -38,7 +38,7 @@
                 <!-- Text input-->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="nickname">Hide my</label>  
-                  <div class="col-md-3">
+                  <div class="col-md-7">
                     <div class="checkbox">
                       <label>
                         <input type="checkbox" value="">Name
@@ -66,7 +66,7 @@
                 <!-- Text input-->
                 <div class="form-group">
                   <label class="col-md-4 control-label" for="email">Other search engines can link to my profile</label>  
-                  <div class="col-md-2">
+                  <div class="col-md-7">
                     <div class="radio">
                       <label>
                         <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -85,7 +85,7 @@
 
                  <div class="form-group">
                   <label class="col-md-4 control-label" for="nickname">Account</label>  
-                  <div class="col-md-4">
+                  <div class="col-md-7">
                     <div class="checkbox">
                       <label>
                         <input type="checkbox" value="">Delete my account
