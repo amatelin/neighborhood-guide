@@ -858,8 +858,6 @@ nav {
 }
 
 .nav-profile-picture{
-    height: 40px;
-    width: 40px;
     margin-top: -7px;
 }
 
@@ -1947,7 +1945,7 @@ header .intro-text-team{
 
 .choices{
     text-align: left;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 @media(max-width: 1199px){
