@@ -21,11 +21,16 @@
     <?php if ($page == "quartier"): ?>
         <link rel="stylesheet" href="./css/quartier.css">
     <?php endif; ?>
+    <link rel="stylesheet" href="./css/datepicker.css">
 
-    <!-- Javascript -->
+
+        <!-- Javascript -->
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/neighbourhoodguide.js"></script>
+    <script src="./js/bootstrap-datepicker.js"></script>
+    <script src="./js/administration.js"></script>
+
 
     <!-- Fonts -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
@@ -55,9 +60,104 @@
                         <div class="center">
                         <span class="logo"></span>
                         <a class="navbar-brand" href="#page-top">NestFinder</a>
+
+
+
+
+
                         </div>
+                           <div id="navbar-example" class="navbar navbar-static">
+              <div class="navbar-inner">
+                <div class="xcontainer">
+
+                  <ul class="nav" role="navigation">
+                    <li class="dropdown">
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><button type="button" class="btn btn-default btn-lg btn-header">
+                        <span class="glyphicon glyphicon-list"></span>
+                      </button></a>
+                      <ul class="dropdown-menu dropdown-home" role="menu" aria-labelledby="dLabel">
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">Neibourhoods</a>
+                                    <ul class="dropdown-menu">
+                                      <li class="dropdown-submenu">
+                                        <a href="#">Central Montreal</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./quartier.php">Downtown</a></li>
+                                            <li><a href="./quartier.php">Old Montreal</a></li>
+                                            <li><a href="./quartier.php">Quartier Latin</a></li>
+                                            <li><a href="#">Parc Jean-Drapeau</a></li>
+                                            <li><a href="#">Plateau</a></li>
+                                            <li><a href="#">Rosemont</a></li>
+                                            <li><a href="#">Westmount</a></li>
+                                            <li><a href="#">Hochelaga-Maisonneuve</a></li>
+                                            <li><a href="#">Côte-des-Neiges</a></li>
+                                            <li><a href="#">Outremont</a></li>
+                                            <li><a href="#">South West</a></li>
+                                            <li><a href="#">Mile End</a></li>
+                                            <li><a href="#">villeray</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="dropdown-submenu">
+                                        <a href="#">West Island</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Lachine</a></li>
+                                            <li><a href="#">Dorval</a></li>
+                                            <li><a href="#">Pointe-Claire</a></li>
+                                            <li><a href="#">Kirkland</a></li>
+                                            <li><a href="#">Beaconsfield</a></li>
+                                            <li><a href="#">Baie d-Urfé</a></li>
+                                            <li><a href="#">Sainte-Anne-de-Bellevue</a></li>
+                                            <li><a href="#">Senneville</a></li>
+                                            <li><a href="#">Dollard-des-Ormeaux</a></li>
+                                            <li><a href="#">Pierrefonds</a></li>
+                                            <li><a href="#">Roxboro</a></li>
+                                            <li><a href="#">Sainte-Geneviève</a></li>
+                                            <li><a href="#">Île-Bizard</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="dropdown-submenu">
+                                        <a href="#">Montreal North</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Saint-Laurent</a></li>
+                                            <li><a href="#">Saint-Léonard</a></li>
+                                            <li><a href="#">Montreal North</a></li>
+                                            <li><a href="#">Ahuntsic-Cartierville</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="dropdown-submenu">
+                                        <a href="#">East End</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Anjou</a></li>
+                                            <li><a href="#">Rivière-des-Prairies - Pointe-aux-Trembles</a></li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="register.php">Register</a></li>
+                                <li><a href="login.php">Login</a></li>
+                                <li><a href="addThing.php">Add Place</a></li>
+                                <li class="divider"></li>
+                                <li><a href="profile.php">Profile</a></li>
+                                <li><a href="settings.php">Settings</a></li>
+                                <li><a href="administration.php">Administration</a></li>
+                                <li><a href="index.php">Log out</a></li>
+
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> <!-- /navbar-example -->
                         </br>
-                        <img class="gps-image img-responsive" width="600px" src="img/map-welcome.png" alt="">
+
+                        <div class="gps-image img-responsive">
+                            <img width="100%" src="img/map-welcome-copie.png" alt="">
+                            <button type="button" class="btn btn-default bclose">Mouse hover icons <i class="fa fa-times"></i></button>
+                            <button type="button" class="btn btn-primary bplane" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-plane"></i></button>
+                            <button type="button" class="btn btn-info bhome" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-home"></i></button>
+                            <button type="button" class="btn btn-warning bcutlery" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."><i class="fa fa-cutlery"></i></button>
+                        </div>
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
                         <span class="skills">
@@ -77,6 +177,15 @@
 
     <!-- Navigation -->
     <nav class="navbar my-navbar-default navbar-fixed-top not-displayed">
+
+    <script>
+    ;(function() {
+        window.onload = function(){
+            $('.gps-image').find('button').popover()
+            $('.bclose').click(function() { $(this).css('display', 'none') })
+        }
+    })()
+    </script>
     <?php else: ?>
     <nav class="navbar my-navbar-default navbar-fixed-top">
     <?php endif; ?>
@@ -96,6 +205,7 @@
                 <?php else: ?>
                 <a class="navbar-brand" href="index.php">NestFinder</a>
                 <?php endif; ?>
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -118,15 +228,28 @@
                     <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
-                              <a href="profile.php"><i class="fa fa-gear"></i></a>
-                            <span class="caret"></span>
+                                <a href="profile.php"><i class="fa fa-gear"></i></a>
+                                <span class="caret"></span>
                           </div>
-                          <ul class="dropdown-menu white">
-                              <li><a href="register.php">Register</a></li>
-                            <li><a href="login.php">Login</a></li>
-                            <li><a href="addThing.php">Add Place</li>
-                            <li><a href="profile.php">Profile</a></li>
-                            <li><a href="#">Logout</a></li>
+                          <ul class="dropdown-menu">
+                                <li><a href="addThing.php">Add Place</li>
+                                <li><a href="register.php">Register</a></li>
+                                <li><a href="login.php">Login</a></li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li class="page-scroll">
+                        <div class="btn-group btn-group-nav">
+                          <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
+                             <a href="profile.php">
+                             <a href="profile.php"><img src="img/neighborhoods/neighborhoods/joscar.jpg" class="nav-profile-picture"></a>
+                             <span id="username">Scar-Jo</span>
+                          </div>
+                          <ul class="dropdown-menu">
+                                <li><a href="profile.php">Profile</a></li>
+                                <li><a href="settings.php">Settings</a></li>
+                                <li><a href="administration.php">Administration</a></li>
+                                <li><a href="index.php">Log out</a></li>
                           </ul>
                         </div>
                     </li>
@@ -145,20 +268,33 @@
                     </li>
                     <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
-                          <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
-                              <a href="profile.php"><i class="fa fa-gear"></i></a>
-                            <span class="caret"></span>
+                          <div class="btn" data-toggle="dropdown">
+                                <a href="profile.php"><i class="fa fa-gear"></i></a>
+                                <span class="caret"></span>
                           </div>
                           <ul class="dropdown-menu">
+                            <li><a href="addThing.php">Add Place</a></li>
                             <li><a href="register.php">Register</a></li>
                             <li><a href="login.php">Login</a></li>
-                            <li><a href="addThing.php">Add Place</li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li class="page-scroll">
+                        <div class="btn-group btn-group-nav">
+                          <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
+                              <a href="profile.php"><img src="img/neighborhoods/neighborhoods/joscar.jpg" class="nav-profile-picture"></a>
+                              <a id="username">Scar-Joo</a>
+                          </div>
+                          <ul class="dropdown-menu">
                             <li><a href="profile.php">Profile</a></li>
-                            <li><a href="#">Logout</a></li>
+                                <li><a href="settings.php">Settings</a></li>
+                                <li><a href="administration.php">Administration</a></li>
+                                <li><a href="index.php">Log out</a></li>
                           </ul>
                         </div>
                     </li>
                 <?php endif; ?>
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

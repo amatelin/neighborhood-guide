@@ -1,7 +1,7 @@
 
-<?php 
+<?php
 $page = "index";
-include './inc/header.php' 
+include './inc/header.php'
 ?>
 
     <section id="neighborhoods-list">
@@ -18,9 +18,9 @@ include './inc/header.php'
                             <li class="tab active"><h4>Central&nbsp;Montreal</h4></li>
                             <li class="tab"><h4>West&nbsp;Island</h4></li>
                             <li class="tab"><h4>Montreal&nbsp;North</h4></li>
-                            <li class="tab"><h4>East&nbsp;End</h4></li>                            
+                            <li class="tab"><h4>East&nbsp;End</h4></li>
                         </ul>
-                    </div>                    
+                    </div>
 
                 </div>
 
@@ -129,7 +129,7 @@ include './inc/header.php'
                                 </div>
                             </a>
                         </div>
-                </div> 
+                </div>
                 <div class="row neigh not-displayed">
                         <div class="col-sm-4 portfolio-item">
                             <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
@@ -290,9 +290,9 @@ include './inc/header.php'
                             </a>
                         </div>
                 </div>
-            </div>                        
+            </div>
         </div>
-    </section>    
+    </section>
 
     <section id="contribute">
         <div class="container">
@@ -307,7 +307,7 @@ include './inc/header.php'
                     <p class="white description">Looking for a way to improve the guide and help it grow? You can contribute your own knowledge to this open source repository of information strengthening your community
                     by submitting information about your favorite places.</p>
                     <p class="white description">If you have any questions, please contact us, we'd love to hear from you!</p>
-                    
+
                 <div class="col-lg-12 text-center">
                     <h2>Conact Us!</h2>
                     <hr class="star-light">
@@ -367,7 +367,7 @@ include './inc/header.php'
                 </div>
             </div>
         </div>
-        
+
     </section>
 
- <?php include 'inc/footer.php' ?>
+ <?php include './inc/footer.php' ?>

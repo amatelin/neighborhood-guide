@@ -1,4 +1,4 @@
-
+<?php if( $page != ''): ?>
     <footer class="text-center">
         <div class="footer-above footer-spacer">
             <div class="container">
@@ -51,6 +51,9 @@
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
+
+
+    <?php endif; ?>
 
     <!-- Javascript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
