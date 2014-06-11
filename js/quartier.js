@@ -315,8 +315,8 @@ $(function() {
 		})
 
 		// Li outer
-		$('.place').children('li').click(function() {
-			var name = $(this).children('a').first().attr('name')
+		$('.place').children('a[name]').click(function() {
+			var name = $(this).attr('name')
 			showMap()
 			// Show the good panel
 			for (var x in datas[current_place].places) {
