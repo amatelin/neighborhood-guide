@@ -259,21 +259,11 @@ $(function() {
         }
     }
 
-    $('#showMap').click(function() {
-        showMap()
-        checkWindowWidth()
-    })
-
-    $('#map').find('.mapbar').click(function() {
-        showMap()
-        checkWindowWidth()
-    })
-
     //480 x 320 support
     $('.shadow').click(function (){
         var min_shadow = '10%'
             max_shadow = '70%'
-        if((window.innerWidth < 361) && (window.innerHeight < 641)){
+        if((window.innerWidth < 401) && (window.innerHeight < 641)){
             if((window.innerWidth < 321) && (window.innerHeight < 481)){
                 min_shadow = '15%'
                 max_shadow = '47%'
@@ -288,6 +278,7 @@ $(function() {
             $('.viewer .shadow-main .fa-minus').css('display', 'none') 
             if(shadow_expanded){
                 $('.shadow').css('height', min_shadow)
+                $('.shadow').scrollTop(0)
                 $('.shadow').css('overflow-y', 'hidden')
                 $('.viewer .shadow .fa-plus').css('display', 'block')
                 $('.viewer .shadow .fa-minus').css('display', 'none') 
@@ -299,7 +290,7 @@ $(function() {
     $('.shadow-main').click(function (){
         var min_shadow = '10%'
             max_shadow = '70%'
-        if((window.innerWidth < 361) && (window.innerHeight < 641)){
+        if((window.innerWidth < 401) && (window.innerHeight < 641)){
             if((window.innerWidth < 321) && (window.innerHeight < 481)){
                 min_shadow = '15%'
                 max_shadow = '47%'
@@ -314,6 +305,7 @@ $(function() {
             $('.viewer .shadow-main .fa-minus').css('display', 'block')
             if(shadow_main_expanded){
                 $('.shadow-main').css('height', min_shadow)
+                $('.shadow-main').scrollTop(0)
                 $('.shadow-main').css('overflow-y', 'hidden')
                 $('.viewer .shadow-main .fa-plus').css('display', 'block')
                 $('.viewer .shadow-main .fa-minus').css('display', 'none')  
@@ -362,8 +354,16 @@ $(function() {
             renderPanel(datas[0], 1)
 		}
 	}
-	$('#showMap').click(function() { showMap() })
-	$('#map').find('.mapbar').click(function() { showMap() })
+
+  $('#showMap').click(function() {
+      showMap()
+      checkWindowWidth()
+  })
+
+  $('#map').find('.mapbar').click(function() {
+      showMap()
+      checkWindowWidth()
+  })
 
 	// Hide Panel
 	$('.panel-heading').first().children('i').click(function() {
