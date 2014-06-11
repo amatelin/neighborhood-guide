@@ -341,8 +341,8 @@ $(function() {
     $('.shadow').click(function (){
         var min_shadow = '10%'
             max_shadow = '70%'
-        if((window.innerWidth < 401) && (window.innerHeight < 641)){
-            if((window.innerWidth < 321) && (window.innerHeight < 481)){
+        if((window.innerWidth < 401)){
+            if((window.innerWidth < 321)){
                 min_shadow = '15%'
                 max_shadow = '47%'
             }
@@ -368,17 +368,17 @@ $(function() {
     $('.shadow-main').click(function (){
         var min_shadow = '10%'
             max_shadow = '70%'
-        if((window.innerWidth < 401) && (window.innerHeight < 641)){
-            if((window.innerWidth < 321) && (window.innerHeight < 481)){
+        if((window.innerWidth < 401)){
+            if((window.innerWidth < 321)){
                 min_shadow = '15%'
                 max_shadow = '47%'
             }
             $('.shadow').css('height', min_shadow)
             $('.shadow').css('overflow-y', 'hidden')
             $('.shadow-main').css('height', max_shadow)
+            $('.shadow-main').css('overflow-y', 'auto')
             $('.viewer .shadow .fa-plus').css('display', 'block')
             $('.viewer .shadow .fa-minus').css('display', 'none')
-            $('.shadow-main').css('overflow-y', 'auto')
             $('.viewer .shadow-main .fa-plus').css('display', 'none')
             $('.viewer .shadow-main .fa-minus').css('display', 'block')
             if(shadow_main_expanded){
@@ -391,6 +391,22 @@ $(function() {
             shadow_main_expanded = !shadow_main_expanded
         }
     })
+
+		$(window).resize(function () {
+			if((window.matchMedia("(min-height: 640px)").matches) && (window.matchMedia("(min-width: 400px)").matches)){
+				$('.iphone-toggle').css('display', 'none')
+				$('.shadow, .shadow-main').css({"height": "auto", "overflow": "auto"})
+			}
+			if(window.matchMedia("(max-width: 660px)").matches) {
+				$('.shadow-main').css('height', '37%')
+				$('.shadow').css('height', '36%')
+			}
+			if((window.matchMedia("(max-height: 640px)").matches) && (window.matchMedia("(max-width: 400px)").matches)) {
+				$('.viewer .shadow .fa-plus, .viewer .shadow-main .fa-plus').css('display', 'block')
+				$('.shadow-main').css('height', '10%')
+				$('.shadow').css('height', '10%')
+			}
+		})
 
     /* Display Map on hover
     $('#map').mouseenter(function() {
