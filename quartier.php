@@ -6,11 +6,11 @@
     <div id="presentation">
         <div id="presentation-menu">
             <span class="right">
-                <div class="next-neighbourhood-name"><a class="next-neighbourhood" href="#next">Cote St-Luc</a></div>
+                <div class="next-neighbourhood-name"><a class="next-neighbourhood goto prev name" href="#COTE ST-LUC">COTE ST-LUC</a></div>
                 <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-left valign"></i></a>
                 <h1 class="goto name"> LE PLATEAU </h1>
-                <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-right valign"></i></a>
-                <div class="next-neighbourhood-name"><a class="next-neighbourhood" href="#next">Westmount</a></div>
+                <a class="goto next" href="#WESTMOUNT"><i class="fa fa-arrow-right valign"></i></a>
+                <div class="next-neighbourhood-name"><a class="next-neighbourhood goto next name" href="#WESTMOUNT">WESTMOUNT</a></div>
             </span>
 
         </div>
