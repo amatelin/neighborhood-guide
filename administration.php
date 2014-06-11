@@ -4,54 +4,59 @@ $page = "team";
 include './inc/header.php'
 ?>
     <div id="admin-wrapper">
-        <div class="col-lg-12 text-center">
-            <h2>Administration</h2>
+        <div class="col-lg-12">
+            <h2 class="text-center">Administration</h2>
             <hr class="star-primary">
-        </div>
-        <ul id="admin-menu">
-            <li class="item-group current"><span><a href="#">This</a></span>
-                <ul>
-                    <li><span><a href="#">Sub option 1</a></span></li>
-                    <li class="current"><span><a href="#">Sub option 2</a></span></li>
-                    <li>Sub option 3</li>
-                    <li>Sub option 4</li>
-                </ul>
-            </li>
-            <li>is</li>
-            <li>just</li>
-            <li>a</li>
-            <li>lot</li>
-            <li>of</li>
-            <li>useless</li>
-            <li class="item-group"><span><a href="#">lines</a></span>
-                <ul>
-                    <li><span><a href="#">Sub option 1</a></span></li>
-                    <li><span><a href="#">Sub option 2</a></span></li>
-                    <li>Sub option 3</li>
-                    <li>Sub option 4</li>
-                </ul>
-            </li>
-            <li>to</li>
-            <li>simulate</li>
-            <li>a</li>
-            <li>menu</li>
-            <li>with</li>
-            <li>a</li>
-            <li>whole</li>
-            <li class="item-group"><span><a href="#">bunch</a></span>
-                <ul>
-                    <li><span><a href="#">Sub option 1</a></span></li>
-                    <li><span><a href="#">Sub option 2</a></span></li>
-                    <li>Sub option 3</li>
-                    <li>Sub option 4</li>
-                </ul>
-            </li>
-            <li>of</li>
-            <li>various</li>
-            <li>options.</li>
-        </ul>
-        <div id="admin-content">
             <?php include './inc/breadcrumb.php' ?>
+        </div>
+        <div id="admin-menu">
+            <ul class="compact">
+                <li class="item-group current"><span><a href="#">This</a></span>
+                    <ul>
+                        <li><span><a href="#">Sub option 1</a></span></li>
+                        <li class="current"><span><a href="#">Sub option of doom</a></span></li>
+                        <li><span>Sub option 3</span></li>
+                        <li><span>Sub option 4</span></li>
+                    </ul>
+                </li>
+                <li><span>is</span></li>
+                <li><span>just</span></li>
+                <li><span>a</span></li>
+                <li><span>lot</span></li>
+                <li><span>of</span></li>
+                <li><span>useless</span></li>
+                <li class="item-group"><span><a href="#">lines</a></span>
+                    <ul>
+                        <li><span><a href="#">Sub option 1</a></span></li>
+                        <li><span><a href="#">Sub option 2</a></span></li>
+                        <li><span>Sub option 3</span></li>
+                        <li><span>Sub option 4</span></li>
+                    </ul>
+                </li>
+                <li><span>to</span></li>
+                <li><span>simulate</span></li>
+                <li><span>a</span></li>
+                <li><span>menu</span></li>
+                <li><span>with</span></li>
+                <li><span>a</span></li>
+                <li><span>whole</span></li>
+                <li class="item-group"><span><a href="#">bunch</a></span>
+                    <ul>
+                        <li><span><a href="#">Sub option 1</a></span></li>
+                        <li><span><a href="#">Sub option 2</a></span></li>
+                        <li><span>Sub option 3</span></li>
+                        <li><span>Sub option 4</span></li>
+                    </ul>
+                </li>
+                <li><span>of</span></li>
+                <li><span>various</span></li>
+                <li><span>options.</span></li>
+            </ul>
+            <div class="btn-wrapper">
+                <button type="button" class="btn visible-xs"><i class="fa"></i></button>
+            </div>
+        </div>
+        <div id="admin-content">
             <div class="table-wrapper">
                 <table class="table table-striped table-hover">
                     <thead>
@@ -66,7 +71,7 @@ include './inc/header.php'
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Jo's coffee</td>
+                            <th>Jo's coffee</th>
                             <td>Restaurant</td>
                             <td>This is a new coffee which just opened his doors</td>
                             <td>03/06/2014 - 13:52:35</td>
@@ -75,7 +80,7 @@ include './inc/header.php'
 
                         </tr>
                         <tr>
-                            <td>Est End</td>
+                            <th>Est End</th>
                             <td>Place</td>
                             <td>Just added a new neighborhood which was not there</td>
                             <td>31/01/2018 - 09:34:02</td>
@@ -83,7 +88,7 @@ include './inc/header.php'
                             <td><a href="#" class="fa fa-lg fa-search"></a></td>
                         </tr>
                         <tr>
-                            <td>Jo's coffee</td>
+                            <th>Jo's coffee</th>
                             <td>Restaurant</td>
                             <td>This is a new coffee which just opened his doors</td>
                             <td>03/06/2014 - 13:52:35</td>
@@ -91,7 +96,7 @@ include './inc/header.php'
                             <td><a href="#" class="fa fa-lg fa-search"></a></td>
                         </tr>
                         <tr>
-                            <td>Est End</td>
+                            <th>Est End</th>
                             <td>Place</td>
                             <td>Just added a new neighborhood which was not there</td>
                             <td>31/01/2018 - 09:34:02</td>

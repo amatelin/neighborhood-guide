@@ -12,4 +12,8 @@ $(function() {
 
         e.preventDefault();
     });
+
+    $('#admin-menu button').click(function() {
+        $('#admin-menu ul').toggleClass('compact');
+    });
 });
