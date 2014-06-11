@@ -663,7 +663,6 @@ header .fa-arrow-down:focus {
 .navbar .navbar-nav li a:focus,
 .navbar .navbar-nav li a:visited
 {
-    font-size: 1em;
     background-color: #2C3E50;
 }
 .navbar .navbar-nav li a:hover {

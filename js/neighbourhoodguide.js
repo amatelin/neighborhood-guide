@@ -109,7 +109,7 @@ $(window).resize(function(){
     navScroll();
 });
 $(window).load(function(){
-    mailIcon(1);
+    mailIcon(0);
     navScroll();
     tabNavigation();   
 });
