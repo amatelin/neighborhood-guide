@@ -416,6 +416,12 @@ header .gps-image button {
     width: 32px;
     height: 32px;
 }
+header .gps-image button:hover {
+    color: white;
+}
+header .gps-image .bclose:hover {
+    color: #18BC9C;
+}
 header .gps-image .bclose {
     top: 16px;
     right: 16px;
@@ -433,6 +439,22 @@ header .gps-image .bhome {
 header .gps-image .bcutlery {
     top: 80%;
     left: 54%;
+}
+header .gps-image .bcar {
+    top: 72%;
+    left: 83%;
+}
+header .gps-image .btree {
+    color: #FFF;
+    background-color: #5CB85C;
+    border-color: #4CAE4C;
+    top: 45%;
+    left: 36%;
+}
+header .gps-image .btree:hover {
+    color: #FFF;
+    background-color: #47A447;
+    border-color: #398439;
 }
 body .popover {
     font-size: 16px;

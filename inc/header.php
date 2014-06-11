@@ -157,6 +157,8 @@
                             <button type="button" class="btn btn-primary bplane" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Want to learn more about how to get around in your neighbourhood? Look no further!"><i class="fa fa-plane"></i></button>
                             <button type="button" class="btn btn-info bhome" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Learn about your neighboorhood, long time resident or not there's always more to discover."><i class="fa fa-home"></i></button>
                             <button type="button" class="btn btn-warning bcutlery" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find restaurants near you or submit your favorites to share them with your community!"><i class="fa fa-cutlery"></i></button>
+                            <button type="button" class="btn btn-success btree" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find restaurants near you or submit your favorites to share them with your community!"><i class="fa fa-tree"></i></button>
+                            <button type="button" class="btn btn-danger bcar" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find restaurants near you or submit your favorites to share them with your community!"><i class="fa fa-car"></i></button>
                         </div>
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
