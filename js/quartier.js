@@ -106,6 +106,28 @@ var datas = {
 				]
 			}
 		]
+	},
+	'COTE ST-LUC': {
+		coord: {
+			lat: 42.521624,
+			lng: -72.575468
+		},
+		places: [
+			{
+				name:'Bons Plans',
+				color: 'FE6256',
+				infos: [
+					{
+						name: 'Dralaga',
+						stars: 0,
+						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
+						url: 'resto',
+						lat: 42.514738,
+						lng: -72.566611
+					}
+				]
+			}
+		]
 	}
 }
 
@@ -457,9 +479,13 @@ $(function() {
 		renderPanel(datas[current_place].places[0], 1)
 		var names = Object.keys(datas)
 		var i = names.indexOf(current_place) + names.length
-		$('.goto.prev').attr('href', '#' + names[(i - 1) % names.length])
-		$('.goto.next').attr('href', '#' + names[(i + 1) % names.length])
+		var next = names[(i + 1) % names.length]
+		var prev = names[(i - 1) % names.length]
+		$('.goto.prev').attr('href', '#' + prev)
+		$('.goto.next').attr('href', '#' + next)
 		$('.goto.name').html(current_place)
+		$('.goto.prev.name').html(prev)
+		$('.goto.next.name').html(next)
 	}
 	window.onhashchange = getFromAnchor
 	getFromAnchor()
