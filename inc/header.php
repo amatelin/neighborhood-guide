@@ -75,6 +75,64 @@
                         <span class="glyphicon glyphicon-list"></span>
                       </button></a>
                       <ul class="dropdown-menu dropdown-home" role="menu" aria-labelledby="dLabel">
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">Neibourhoods</a>
+                                    <ul class="dropdown-menu">
+                                      <li class="dropdown-submenu">
+                                        <a href="#">Central Montreal</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="./quartier.php">Downtown</a></li>
+                                            <li><a href="./quartier.php">Old Montreal</a></li>
+                                            <li><a href="./quartier.php">Quartier Latin</a></li>
+                                            <li><a href="#">Parc Jean-Drapeau</a></li>
+                                            <li><a href="#">Plateau</a></li>
+                                            <li><a href="#">Rosemont</a></li>
+                                            <li><a href="#">Westmount</a></li>
+                                            <li><a href="#">Hochelaga-Maisonneuve</a></li>
+                                            <li><a href="#">Côte-des-Neiges</a></li>
+                                            <li><a href="#">Outremont</a></li>
+                                            <li><a href="#">South West</a></li>
+                                            <li><a href="#">Mile End</a></li>
+                                            <li><a href="#">villeray</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="dropdown-submenu">
+                                        <a href="#">West Island</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Lachine</a></li>
+                                            <li><a href="#">Dorval</a></li>
+                                            <li><a href="#">Pointe-Claire</a></li>
+                                            <li><a href="#">Kirkland</a></li>
+                                            <li><a href="#">Beaconsfield</a></li>
+                                            <li><a href="#">Baie d-Urfé</a></li>
+                                            <li><a href="#">Sainte-Anne-de-Bellevue</a></li>
+                                            <li><a href="#">Senneville</a></li>
+                                            <li><a href="#">Dollard-des-Ormeaux</a></li>
+                                            <li><a href="#">Pierrefonds</a></li>
+                                            <li><a href="#">Roxboro</a></li>
+                                            <li><a href="#">Sainte-Geneviève</a></li>
+                                            <li><a href="#">Île-Bizard</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="dropdown-submenu">
+                                        <a href="#">Montreal North</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Saint-Laurent</a></li>
+                                            <li><a href="#">Saint-Léonard</a></li>
+                                            <li><a href="#">Montreal North</a></li>
+                                            <li><a href="#">Ahuntsic-Cartierville</a></li>
+                                        </ul>
+                                      </li>
+                                      <li class="dropdown-submenu">
+                                        <a href="#">East End</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Anjou</a></li>
+                                            <li><a href="#">Rivière-des-Prairies - Pointe-aux-Trembles</a></li>
+                                        </ul>
+                                      </li>
+                                    </ul>
+                                </li>
+                                <li class="divider"></li>
                                 <li><a href="register.php">Register</a></li>
                                 <li><a href="login.php">Login</a></li>
                                 <li><a href="addThing.php">Add Place</a></li>
