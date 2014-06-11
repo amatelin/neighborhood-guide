@@ -7,9 +7,9 @@
         <div id="presentation-menu">
             <span class="right">
                 <div class="next-neighbourhood-name"><a class="next-neighbourhood" href="#next">Cote St-Luc</a></div>
-                <a href="#next"><i class="fa fa-arrow-left valign"></i></a>
-                <h1> LE PLATEAU </h1>
-                <a href="#next"><i class="fa fa-arrow-right valign"></i></a>
+                <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-left valign"></i></a>
+                <h1 class="goto name"> LE PLATEAU </h1>
+                <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-right valign"></i></a>
                 <div class="next-neighbourhood-name"><a class="next-neighbourhood" href="#next">Westmount</a></div>
             </span>
 
@@ -46,7 +46,7 @@
                     <br/>
                 </div>
                 <div class="place scroll">
-                    <li><a name="Restaurant" href="#">Restaurants <a href="addResto.php"><i class="fa fa-plus"></i></a></a></li>
+                    <li><a name="Restaurant" href="#">Restaurants <a href="addThing.php#restaurant"><i class="fa fa-plus"></i></a></a></li>
                     <ul class="scroll">
                         <li><a name="Au Petit Bigorneau" href="#">Au Petit Bigorneau</a></li>
                         <li><a name="Satisfaction" href="#">Satisfaction</a></li>

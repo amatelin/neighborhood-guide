@@ -1,7 +1,7 @@
 <?php include './inc/header.php' ?>
 
     <header>
-        <div class="container">
+        <div class="container middle">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text">
@@ -35,6 +35,9 @@
                                         }
                                         .container.middle {
                                             top: 10%;
+                                        }
+                                        .control-label {
+                                            text-align: center!important;
                                         }
                                     </style>
 
@@ -78,14 +81,14 @@
                                     <!-- Default form before -->
                                     <script type="text/template" id="input-before">
                                         <div class="form-group">
-                                          <label class="col-md-4 control-label" for="name">Name</label>
-                                          <div class="col-md-8">
+                                          <label class="col-md-12 control-label" for="name">Name</label>
+                                          <div class="col-md-12">
                                               <input id="name" name="name" placeholder="Enter the name" class="form-control input-md" type="text">
                                           </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-md-4 control-label" for="desc">Description</label>
-                                            <div class="col-md-8">
+                                            <label class="col-md-12 control-label" for="desc">Description</label>
+                                            <div class="col-md-12">
                                                 <textarea class="form-control" id="desc" name="desc" placeholder="Enter the description"></textarea>
                                             </div>
                                         </div>
@@ -93,14 +96,14 @@
 
                                     <!-- Default form after -->
                                     <script type="text/template" id="input-after">
-                                    <button type="submit" id="submit" name="submit" class="btn btn-primary">Send</button>
+                                    <button type="submit" id="submit" name="submit" class="btn btn-inverse">Send</button>
                                     </script>
 
                                     <!-- Text input-->
                                     <script type="text/template" id="input-text">
                                         <div class="form-group">
-                                          <label class="col-md-4 control-label" for="{{name}}">{{name}}</label>
-                                          <div class="col-md-8">
+                                          <label class="col-md-12 control-label" for="{{name}}">{{name}}</label>
+                                          <div class="col-md-12">
                                               <input id="{{name}}" name="{{name}}" placeholder="{{placeholder}}" class="form-control input-md" type="text">
                                           </div>
                                         </div>
@@ -109,8 +112,8 @@
                                     <!-- Textarea -->
                                     <script type="text/template" id="input-textarea">
                                         <div class="form-group">
-                                            <label class="col-md-4 control-label" for="{{name}}">{{name}}</label>
-                                            <div class="col-md-8">
+                                            <label class="col-md-12 control-label" for="{{name}}">{{name}}</label>
+                                            <div class="col-md-12">
                                                 <textarea class="form-control" id="{{name}}" name="{{name}}" placeholder="{{placeholder}}"></textarea>
                                             </div>
                                         </div>
@@ -119,9 +122,10 @@
                                     <!-- Select -->
                                     <script type="text/template" id="input-select">
                                         <div class="form-group">
-                                            <label class="col-md-4 control-label" for="{{name}}">{{name}}</label>
-                                            <div class="col-md-4">
+                                            <label class="col-md-12 control-label" for="{{name}}">{{name}}</label>
+                                            <div class="col-md-12">
                                                 <select id="{{name}}" name="{{name}}" class="form-control">
+                                                    <option value="" disabled selected>Select an option</option>
                                                     {{#each options}}
                                                         <option value="{{this}}">{{this}}</option>
                                                     {{/each}}
