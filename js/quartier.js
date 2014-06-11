@@ -129,11 +129,11 @@ $(function() {
         }
     });
 
-$(document).on('touchmove', function(e) {
-    if (!$(e.target).parents('.scroll')[0]) {
-        e.preventDefault();
-    }
-});
+	$(document).on('touchmove', function(e) {
+	    if (!$(e.target).parents('.scroll')[0]) {
+	        e.preventDefault();
+	    }
+	});
 
     // Panel config
 	var top = false,
@@ -240,7 +240,7 @@ $(document).on('touchmove', function(e) {
 		// Li inner place
 		$('.place').children('ul').children('li').click(function() {
 			var name = $(this).children('a').first().attr('name')
-			var parentname = $(this).parent().parent().children('li').first().children('a').first().attr('name')
+			var parentname = $(this).parent().parent().children('a').first().attr('name')
 			showMap()
 			var page = 1
 			// Show the good panel
@@ -383,7 +383,7 @@ $(document).on('touchmove', function(e) {
             --page
             var category = {}
             category.name = brut.name
-            category.nb = Math.floor(brut.infos.length / step)
+            category.nb = Math.ceil(brut.infos.length / step)
             category.page = page
             category.infos = []
             for (var i = 0 ; (i + page * step) < brut.infos.length && i < step ; ++i) {
