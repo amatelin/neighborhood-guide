@@ -38,7 +38,7 @@
         <div class="footer-below">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 copyright">
                         Copyright &copy; 2014 - NestFinder
                     </div>
                 </div>
@@ -46,14 +46,17 @@
         </div>
     </footer>
 
+    <?php if( $page != "quartier"): ?>
+
     <div class="scroll-top page-scroll visible-xs visble-sm">
         <a class="btn btn-primary" href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
 
-
     <?php endif; ?>
+
+<?php endif; ?>
 
     <!-- Javascript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
