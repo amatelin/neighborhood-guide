@@ -1863,48 +1863,71 @@ header .intro-text-team{
     overflow: hidden;
 }
 
-#admin-menu > ul {
+#admin-menu {
+    float: left;
     width: 210px;
+    margin-bottom: 20px;
+}
+
+#admin-menu .menu-wrapper > ul {
+    width: 100%;
     padding-left: 25px;
     font-size: 20px;
     line-height: 1.75em;
     list-style: none;
-    float: left;
 }
 
-#admin-menu > ul .item-group ul {
-    font-size: .75em;
-    line-height: 1.5em;
-    list-style: none;
-    margin-left: 20px;
-    padding-left: 20px;
-    border-left: 3px solid currentColor;
-}
-
-#admin-menu > ul li {
+#admin-menu .menu-wrapper li {
     overflow: hidden;
 }
 
-#admin-menu > ul span {
-    margin-right: 25px;
+#admin-menu .menu-wrapper li.item-group > span::after {
+    font-family: FontAwesome;
+    font-size: .85em;
+    content : "\f0d7";
+    display: inline-block;
+    color: #d3d3d3;
+    margin-left: .25em;
+    width: 1em;
+    text-align: center;
+}
+
+#admin-menu .menu-wrapper li.item-group.compact > span::after {
+    content: "\f0da";
+}
+
+#admin-menu .menu-wrapper li.item-group > ul {
+    font-size: .8em;
+    line-height: 1.7em;
+    list-style: none;
+    margin-left: 10px;
+    padding-left: 15px;
+    border-left: 3px solid currentColor;
+}
+
+#admin-menu .menu-wrapper span {
+    margin-right: 1em;
     position: relative;
     display: block;
 }
 
-#admin-menu > ul li.current > span::before {
+#admin-menu .menu-wrapper li.current > span::before {
     font-family: FontAwesome;
     font-size: .75em;
     content: "\f054";
     display: inline-block;
     line-height: 0;
     position: absolute;
-    right: -20px;
+    right: -1em;
     top: 50%;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 #admin-menu .btn-wrapper {
     width: 100%;
     padding: 0 25px;
+    display: none;
 }
 
 #admin-menu .btn-wrapper button {
@@ -1933,7 +1956,7 @@ header .intro-text-team{
     content: "\f0d8";
 }
 
-#admin-menu ul.compact ~ .btn-wrapper .fa::before {
+#admin-menu .menu-wrapper.compact ~ .btn-wrapper .fa::before {
     content: "\f0d7";
 }
 
@@ -1967,13 +1990,16 @@ header .intro-text-team{
 
 #admin-content .pagination a, #admin-content .pagination span {
     padding: 0;
-    width: 38px;
+    min-width: 38px;
     line-height: 33px;
 }
 
 @media(max-width: 991px) {
-    #admin-menu > ul {
+    #admin-menu {
         width: 180px;
+    }
+
+    #admin-menu .menu-wrapper > ul {
         padding-left: 15px;
         font-size: 18px;
     }
@@ -1987,27 +2013,45 @@ header .intro-text-team{
 }
 
 @media(max-width: 767px) {
-    #admin-menu > ul {
-        float: none;
+    #admin-menu {
         width: 100%;
+        float: none;
     }
 
-    #admin-menu > ul span {
-        display: inline-block;
+    #admin-menu .menu-wrapper {
+        padding: 0 35px;
     }
 
-    #admin-menu > ul.compact li:not(.current) {
-        max-height: 0;
-        opacity: 0;
+    #admin-menu .menu-wrapper > ul {
+        padding: 10px 15px 15px 15px;
+        border: 1px solid #f4f4f4;
+        border-radius: 5px;
     }
 
-    #admin-menu > ul li:not(.current) {
+    #admin-menu .menu-wrapper li {
         max-height: 40px;
         transition: .5s;
     }
 
-    #admin-menu > ul .item-group:not(.current) {
+    #admin-menu .menu-wrapper li.item-group:not(.compact) {
         max-height: 300px;
+    }
+
+    #admin-menu .menu-wrapper span {
+        display: inline-block;
+    }
+
+    #admin-menu .menu-wrapper.compact li.current span::before {
+        opacity: 0;
+    }
+
+    #admin-menu .menu-wrapper.compact li:not(.current) {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    #admin-menu .btn-wrapper {
+        display: block;
     }
 }
 

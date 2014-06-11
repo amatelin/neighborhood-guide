@@ -1,5 +1,9 @@
 $(function() {
     $('#admin-menu .item-group').each( function() {
+        if (!$(this).hasClass('current')) {
+            $(this).addClass('compact');
+        }
+
         $('ul', this).addClass('collapse' + ($(this).hasClass('current') ? ' in' : '')).collapse({
             toggle: false
         });
@@ -7,13 +11,15 @@ $(function() {
 
     $('#admin-menu').on('click', '.item-group > span a', function(e) {
         $parent = $(this).parents().eq(1);
-        $('ul', $parent.siblings('.item-group')).collapse('hide');
-        $('ul', $parent).collapse('toggle');
+        $siblings = $parent.siblings('.item-group');
+
+        $siblings.addClass('compact').children('ul').collapse('hide');
+        $parent.toggleClass('compact').children('ul').collapse('toggle');
 
         e.preventDefault();
     });
 
     $('#admin-menu button').click(function() {
-        $('#admin-menu ul').toggleClass('compact');
+        $('#admin-menu .menu-wrapper').toggleClass('compact');
     });
 });
