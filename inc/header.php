@@ -196,7 +196,7 @@
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>
-                                <span class="caret"></span>
+                                <span class="caret white-caret"></span>
                           </div>
                           <ul class="dropdown-menu">
                             <li><a href="addThing.php">Add Place</a></li>

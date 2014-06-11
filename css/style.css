@@ -436,7 +436,7 @@ header .form-control:-ms-input-placeholder {
 }
 
 .page-scroll:hover{
-    background-color: 233140;
+    background-color: #233140;
 }
 
 #username{
@@ -445,6 +445,16 @@ header .form-control:-ms-input-placeholder {
 
 #username:hover{
     text-decoration: none;
+}
+
+.caret{
+    color: white;
+}
+
+@media (max-width: 991px){
+    .page-scroll{
+    background-color: none;
+}
 }
 
 .btn-group-na{
