@@ -9,24 +9,24 @@ include './inc/header.php'
             <hr class="star-primary">
         </div>
         <ul id="admin-menu">
-            <li class="item-group"><a href="#">This</a>
+            <li class="item-group current"><span><a href="#">This</a></span>
                 <ul>
-                    <li><a href="#">Sub option 1</a></li>
-                    <li><a href="#">Sub option 2</a></li>
+                    <li><span><a href="#">Sub option 1</a></span></li>
+                    <li class="current"><span><a href="#">Sub option 2</a></span></li>
                     <li>Sub option 3</li>
                     <li>Sub option 4</li>
                 </ul>
             </li>
-            <li class="current">is</li>
+            <li>is</li>
             <li>just</li>
             <li>a</li>
             <li>lot</li>
             <li>of</li>
             <li>useless</li>
-            <li class="item-group"><a href="#">lines</a>
+            <li class="item-group"><span><a href="#">lines</a></span>
                 <ul>
-                    <li><a href="#">Sub option 1</a></li>
-                    <li><a href="#">Sub option 2</a></li>
+                    <li><span><a href="#">Sub option 1</a></span></li>
+                    <li><span><a href="#">Sub option 2</a></span></li>
                     <li>Sub option 3</li>
                     <li>Sub option 4</li>
                 </ul>
@@ -38,32 +38,17 @@ include './inc/header.php'
             <li>with</li>
             <li>a</li>
             <li>whole</li>
-            <li class="item-group"><a href="#">bunch</a>
+            <li class="item-group"><span><a href="#">bunch</a></span>
                 <ul>
-                    <li><a href="#">Sub option 1</a></li>
-                    <li><a href="#">Sub option 2</a></li>
+                    <li><span><a href="#">Sub option 1</a></span></li>
+                    <li><span><a href="#">Sub option 2</a></span></li>
                     <li>Sub option 3</li>
                     <li>Sub option 4</li>
                 </ul>
             </li>
             <li>of</li>
             <li>various</li>
-            <li>options</li>
-            <li>that</li>
-            <li>I</li>
-            <li>still</li>
-            <li>had</li>
-            <li>to</li>
-            <li>make</li>
-            <li>bigger</li>
-            <li>so</li>
-            <li>it</li>
-            <li>took</li>
-            <li>enough</li>
-            <li>space</li>
-            <li>for</li>
-            <li>my</li>
-            <li>liking.</li>
+            <li>options.</li>
         </ul>
         <div id="admin-content">
             <?php include './inc/breadcrumb.php' ?>
@@ -85,7 +70,7 @@ include './inc/header.php'
                             <td>Restaurant</td>
                             <td>This is a new coffee which just opened his doors</td>
                             <td>03/06/2014 - 13:52:35</td>
-                            <td><a href="addThing.php">Scar-Jo</a></td>
+                            <td><a href="profile.php">Scar-Jo</a></td>
                             <td><a href="#" class="fa fa-lg fa-search"></a></td>
 
                         </tr>
@@ -94,7 +79,7 @@ include './inc/header.php'
                             <td>Place</td>
                             <td>Just added a new neighborhood which was not there</td>
                             <td>31/01/2018 - 09:34:02</td>
-                            <td><a href="addThing.php">Bibi</a></td>
+                            <td><a href="profile.php">Bibi</a></td>
                             <td><a href="#" class="fa fa-lg fa-search"></a></td>
                         </tr>
                         <tr>
@@ -102,7 +87,7 @@ include './inc/header.php'
                             <td>Restaurant</td>
                             <td>This is a new coffee which just opened his doors</td>
                             <td>03/06/2014 - 13:52:35</td>
-                            <td><a href="addThing.php">Scar-Jo</a></td>
+                            <td><a href="profile.php">Scar-Jo</a></td>
                             <td><a href="#" class="fa fa-lg fa-search"></a></td>
                         </tr>
                         <tr>
@@ -110,7 +95,7 @@ include './inc/header.php'
                             <td>Place</td>
                             <td>Just added a new neighborhood which was not there</td>
                             <td>31/01/2018 - 09:34:02</td>
-                            <td><a href="addThing.php">Bibi</a></td>
+                            <td><a href="profile.php">Bibi</a></td>
                             <td><a href="#" class="fa fa-lg fa-search"></a></td>
                         </tr>
                     </tbody>
@@ -120,13 +105,13 @@ include './inc/header.php'
                 <ul class="pagination">
                     <li><a href="#" class="fa fa-angle-double-left"></a></li>
                     <li><a href="#">1</a></li>
-                    <li class="disabled"><a>...</a></li>
+                    <li class="disabled"><span>&hellip;</span></li>
                     <li><a href="#">4</a></li>
                     <li><a href="#">5</a></li>
                     <li><a href="#">6</a></li>
                     <li><a href="#">7</a></li>
                     <li><a href="#">8</a></li>
-                    <li class="disabled"><a href="#">...</a></li>
+                    <li class="disabled"><a href="#">&hellip;</a></li>
                     <li><a href="#">10</a></li>
                     <li><a href="#" class="fa fa-angle-double-right"></a></li>
                 </ul>

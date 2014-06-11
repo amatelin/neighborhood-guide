@@ -222,7 +222,7 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
     margin: 0 auto;
 }
 
-*.disabled > a {
+*.disabled > a, .disabled span {
     cursor: default !important;
 }
 
@@ -1863,8 +1863,8 @@ header .intro-text-team{
 }
 
 #admin-menu {
-    width: 200px;
-    margin-right: 25px;
+    width: 225px;
+    padding-right: 25px;
     font-size: 20px;
     line-height: 1.75em;
     list-style: none;
@@ -1880,16 +1880,19 @@ header .intro-text-team{
     border-left: 3px solid currentColor;
 }
 
-#admin-menu li.current:after {
+#admin-menu li.current > span:after {
     display: inline-block;
     font-family: FontAwesome;
     float: right;
     font-size: .75em;
     content: "\f054";
+    margin-right: -20px;
 }
 
 #admin-content {
     font-size: 14px;
+    overflow: hidden;
+    padding: 0 25px;
 }
 
 #admin-content .table-wrapper {
@@ -1903,6 +1906,12 @@ header .intro-text-team{
 
 #admin-content .pagination li:not(.disabled) a {
     color: #18bc9c;
+}
+
+#admin-content .pagination a, #admin-content .pagination span {
+    padding: 0;
+    width: 38px;
+    line-height: 33px;
 }
 
 /**

@@ -1,12 +1,12 @@
 $(function() {
-    $('#admin-menu .item-group ul').each( function() {
-        $(this).addClass('collapse').collapse({
+    $('#admin-menu .item-group').each( function() {
+        $('ul', this).addClass('collapse' + ($(this).hasClass('current') ? ' in' : '')).collapse({
             toggle: false
         });
     });
 
-    $('#admin-menu').on('click', '.item-group > a', function(e) {
-        $parent = $(this).parent();
+    $('#admin-menu').on('click', '.item-group > span a', function(e) {
+        $parent = $(this).parents().eq(1);
         $('ul', $parent.siblings('.item-group')).collapse('hide');
         $('ul', $parent).collapse('toggle');
 
