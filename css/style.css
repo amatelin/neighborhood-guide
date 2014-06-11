@@ -479,7 +479,7 @@ header .log-form{
     color:#233140;
     max-width: 80%;
 }
-header fieldset{
+header fieldpro{
     margin-top: 50px;
 }
 header .log-form label,
@@ -1943,6 +1943,11 @@ header .intro-text-team{
     font-size: 20px;
     padding-top:2px;
     background-color: #fff;
+}
+
+.choices{
+    text-align: left;
+    font-size: 12px;
 }
 
 @media(max-width: 1199px){
