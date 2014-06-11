@@ -683,7 +683,13 @@ nav {
     margin-bottom: -20px;
     padding-right: 25px;
 }
-
+.new-msg{
+    color: #18BC9C;
+    font-size: 20px;
+}
+.no-msg{
+    font-size: 15px;
+}
 .displayed {
     display: inline;
 }

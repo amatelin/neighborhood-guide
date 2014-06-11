@@ -80,11 +80,43 @@ function addModal(){
     console.log(allRows);
 }
 
+function mailIcon(messages){
+    var nbMessages = messages;
+    var mail = $('#mail');
+    if(nbMessages>0){
+        if(mail.hasClass('fa-envelope-o')){
+            mail.removeClass('fa-envelope-o');
+            mail.addClass('fa-envelope');
+            mail.addClass('new-msg');
+            mail.removeClass('no-msg');
+        }
+    }
+    mail.parents().eq(1).click(function(){
+        var el = mail;
+
+        if(el.hasClass('fa-envelope-o')){
+            el.removeClass('fa-envelope-o');
+            el.removeClass('no-msg');
+            el.addClass('fa-envelope');
+            el.addClass('new-msg');
+        }
+        else if(el.hasClass('fa-envelope')){
+            el.removeClass('fa-envelope');            
+            el.removeClass('new-msg');
+            el.addClass('fa-envelope-o');
+            el.addClass('no-msg');
+        }
+        $(this).die();
+    });
+}
+
+
 
 $(window).resize(function(){
     navScroll();
 });
 $(window).load(function(){
+    mailIcon(1);
     addModal();
     navScroll();
     tabNavigation();   

@@ -119,13 +119,9 @@
                     <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
-                    <li class="page-scroll" class="new=msg">
-                        <a href="#"><i class="fa fa-envelope"></i></a>
+                    <li class="page-scroll">
+                        <a href="#"><i  id="mail" class="fa fa-envelope-o no-msg"></i></a>
                     </li>
-                    <li class="page-scroll" class="no-msg">
-                        <a href="#"><i class="fa fa-envelope-o"></i></a>
-                    </li>
-
                     <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
@@ -166,6 +162,9 @@
                     </li>
                     <li class="page-scroll">
                         <a href="index.php#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#"><i  id="mail" class="fa fa-envelope-o"></i></a>
                     </li>
                     <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
