@@ -489,6 +489,7 @@ header .checkbox{
 header #submit{
     float: right;
     margin-bottom: 20px;
+    background-color: white;
 }
 header #submit:hover{
     background-color:#18BC9C;
