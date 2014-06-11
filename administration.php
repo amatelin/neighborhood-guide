@@ -116,6 +116,21 @@ include './inc/header.php'
                     </tbody>
                 </table>
             </div>
+            <div class="pagination-wrapper">
+                <ul class="pagination">
+                    <li><a href="#" class="fa fa-angle-double-left"></a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="disabled"><a>...</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li class="disabled"><a href="#">...</a></li>
+                    <li><a href="#">10</a></li>
+                    <li><a href="#" class="fa fa-angle-double-right"></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 

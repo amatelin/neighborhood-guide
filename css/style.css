@@ -222,6 +222,10 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
     margin: 0 auto;
 }
 
+*.disabled > a {
+    cursor: default !important;
+}
+
 /*
 * Splash Page
 */
@@ -1890,6 +1894,15 @@ header .intro-text-team{
 
 #admin-content .table-wrapper {
     overflow: auto;
+}
+
+#admin-content .pagination-wrapper {
+    overflow: hidden;
+    text-align: center;
+}
+
+#admin-content .pagination li:not(.disabled) a {
+    color: #18bc9c;
 }
 
 /**
