@@ -61,24 +61,31 @@ var datas = {
 			},
 			{
 				name:'Café',
+				color: '56FE62',
 				infos: [
 					{
 						name: 'Café Salé',
 						stars: 4,
 						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-						url: 'resto'
+						url: 'resto',
+						lat: 45.514748,
+						lng: -73.575611
 					},
 					{
 						name: 'Patisserie Laurent Foutrey',
 						stars: 3,
 						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-						url: 'resto'
+						url: 'resto',
+						lat: 45.514230,
+						lng: -73.165671
 					},
 					{
 						name: 'Guimauve & Chocolat',
 						stars: 4,
 						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-						url: 'resto'
+						url: 'resto',
+						lat: 45.514638,
+						lng: -73.164661
 					},
 				]
 			}
@@ -103,6 +110,13 @@ var datas = {
 						lat: 46.514738,
 						lng: -74.566611
 					}
+				]
+			},
+			{
+				name: 'Shop',
+				color: 'FE6256',
+				infos: [
+
 				]
 			}
 		]
@@ -198,8 +212,11 @@ $(function() {
         if (v1 == (v2 - 1))
 		      return block.fn(this)
 	})
+	// TODO: Refactor and prefix by item_
 	var source   = $('#item-template').html()
 	var template = Handlebars.compile(source)
+
+	var place_template = Handlebars.compile($('#place-template').html())
 
     // Close all Google Maps' marker
     function closeMarker() {
@@ -257,7 +274,14 @@ $(function() {
 		})
 	}
 
-	// Attach marker to li
+	// Show the list of places for the current quartier
+	function showCurrentListing() {
+		var html = place_template(datas[current_place])
+		$('#listing').html(html)
+		attachMarker()
+	}
+
+	// Attach marker to li in #listing
 	function attachMarker() {
 		// Li inner place
 		$('.place').children('ul').children('li').click(function() {
@@ -474,9 +498,10 @@ $(function() {
 		document.location.hash = $(this).attr('href')
 	})
 	function getFromAnchor() {
-		current_place = document.location.hash.substring(1) || 'LE PLATEAU'
+		current_place = document.location.hash.substring(1) || current_place || 'LE PLATEAU'
 		map.setCenter(new google.maps.LatLng(datas[current_place].coord.lat, datas[current_place].coord.lng))
 		renderPanel(datas[current_place].places[0], 1)
+		showCurrentListing()
 		var names = Object.keys(datas)
 		var i = names.indexOf(current_place) + names.length
 		var next = names[(i + 1) % names.length]
