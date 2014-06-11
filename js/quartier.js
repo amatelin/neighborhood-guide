@@ -336,11 +336,12 @@ $(function() {
             $('#mapbar-title').html('<i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>')
         }
     }
+
     //480 x 320 support
     $('.shadow').click(function (){
         var min_shadow = '10%'
             max_shadow = '70%'
-        if((window.innerWidth < 361) && (window.innerHeight < 641)){
+        if((window.innerWidth < 401) && (window.innerHeight < 641)){
             if((window.innerWidth < 321) && (window.innerHeight < 481)){
                 min_shadow = '15%'
                 max_shadow = '47%'
@@ -367,7 +368,7 @@ $(function() {
     $('.shadow-main').click(function (){
         var min_shadow = '10%'
             max_shadow = '70%'
-        if((window.innerWidth < 361) && (window.innerHeight < 641)){
+        if((window.innerWidth < 401) && (window.innerHeight < 641)){
             if((window.innerWidth < 321) && (window.innerHeight < 481)){
                 min_shadow = '15%'
                 max_shadow = '47%'
@@ -433,13 +434,15 @@ $(function() {
 		}
 	}
 
-    $('#showMap').click(function() {
-        showMap()
-    })
+  $('#showMap').click(function() {
+      showMap()
+      checkWindowWidth()
+  })
 
-    $('.mapbar').click(function() {
-        showMap()
-    })
+  $('#map').find('.mapbar').click(function() {
+      showMap()
+      checkWindowWidth()
+  })
 
 	// Hide Panel
 	$('.panel-heading').first().children('i').click(function() {
