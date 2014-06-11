@@ -1,5 +1,6 @@
 var datas = {
 	'LE PLATEAU': {
+		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		coord: {
 			lat: 45.521624,
 			lng: -73.575468
@@ -93,6 +94,7 @@ var datas = {
 		]
 	},
 	'WESTMOUNT': {
+		desc: 'Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		coord: {
 			lat: 46.521624,
 			lng: -74.575468
@@ -122,6 +124,7 @@ var datas = {
 		]
 	},
 	'COTE ST-LUC': {
+		desc: 'Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		coord: {
 			lat: 42.521624,
 			lng: -72.575468
@@ -502,6 +505,7 @@ $(function() {
 		map.setCenter(new google.maps.LatLng(datas[current_place].coord.lat, datas[current_place].coord.lng))
 		renderPanel(datas[current_place].places[0], 1)
 		showCurrentListing()
+		$('#overview').html(datas[current_place].desc)
 		var names = Object.keys(datas)
 		var i = names.indexOf(current_place) + names.length
 		var next = names[(i + 1) % names.length]
