@@ -225,28 +225,27 @@
                         <a href="#about">About</a>
                     </li>
 
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
-                          <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
+                          <div class="btn" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>
-                                <span class="caret"></span>
+                                <span class="caret white-caret"></span>
                           </div>
                           <ul class="dropdown-menu">
-                                <li><a href="addThing.php">Add Place</li>
-                                <li><a href="register.php">Register</a></li>
-                                <li><a href="login.php">Login</a></li>
+                            <li><a href="addThing.php">Add Place</a></li>
+                            <li><a href="register.php">Register</a></li>
+                            <li><a href="login.php">Login</a></li>
                           </ul>
                         </div>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
-                             <a href="profile.php">
-                             <a href="profile.php"><img src="img/neighborhoods/neighborhoods/joscar.jpg" class="nav-profile-picture"></a>
-                             <span id="username">Scar-Jo</span>
+                              <a href="profile.php"><img src="img/neighborhoods/neighborhoods/joscar.jpg" class="nav-profile-picture"></a>
+                              <a id="username">Scar-Joo</a>
                           </div>
                           <ul class="dropdown-menu">
-                                <li><a href="profile.php">Profile</a></li>
+                            <li><a href="profile.php">Profile</a></li>
                                 <li><a href="settings.php">Settings</a></li>
                                 <li><a href="administration.php">Administration</a></li>
                                 <li><a href="index.php">Log out</a></li>
@@ -266,11 +265,11 @@
                     <li class="page-scroll">
                         <a href="index.php#about">About</a>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
                           <div class="btn" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>
-                                <span class="caret"></span>
+                                <span class="caret white-caret"></span>
                           </div>
                           <ul class="dropdown-menu">
                             <li><a href="addThing.php">Add Place</a></li>
@@ -279,7 +278,7 @@
                           </ul>
                         </div>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll menu">
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
                               <a href="profile.php"><img src="img/neighborhoods/neighborhoods/joscar.jpg" class="nav-profile-picture"></a>

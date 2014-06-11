@@ -511,12 +511,24 @@ header .form-control:-ms-input-placeholder {
     color:rgba(44,62,80,0.5);
 }
 
+.page-scroll.menu:hover{
+    background-color: #233140;
+}
+
+.page-scroll .a:hover{
+
+}
+
 #username{
     font-size: 1em;
 }
 
 #username:hover{
     text-decoration: none;
+}
+
+.caret{
+    color: white;
 }
 
 .btn-group-na{
@@ -787,7 +799,7 @@ span.title {
 }
 .navbar .navbar-nav ul a:hover{
     font-size: 1em;
-    color: white;
+    color: #18BC9C;
 }
 .navbar .navbar-nav li a:hover {
     outline: 0;
@@ -849,11 +861,6 @@ nav {
     height: 40px;
     width: 40px;
     margin-top: -7px;
-}
-
-
-.fa-gear{
-    background-color:#2C3E50;
 }
 
 .caret:hover {
@@ -1453,9 +1460,7 @@ form .row:first-child .floating-label-form-group {
 #contribute h2{
     color:#fff;
 }
-.page-scroll a:hover {
-    color: #18bc9c;
-}
+
 .btn:hover {
     color: #18bc9c;
 }
