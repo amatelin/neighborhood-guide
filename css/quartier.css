@@ -7,6 +7,23 @@ body {
     float: left;
 }
 
+.place.scroll > a {
+    background: #18BC9C;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+    display: inline-block;
+    height: 26px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.place.scroll > .square {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+}
+
 .mask {
     height: 0;
     overflow: hidden;
