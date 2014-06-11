@@ -242,7 +242,7 @@
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
                              <a href="profile.php">
-                             <a href="profile.php"><img src="img/neighborhoods/neighborhoods/joscar.jpg" class="nav-profile-picture"></a>
+                             <a href="profile.php"><img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "cedric.wident@gmail.com" ) ) ); ?>?s=40" class="nav-profile-picture"></a>
                              <span id="username">Scar-Jo</span>
                           </div>
                           <ul class="dropdown-menu">
@@ -282,7 +282,7 @@
                     <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
                           <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
-                              <a href="profile.php"><img src="img/neighborhoods/neighborhoods/joscar.jpg" class="nav-profile-picture"></a>
+                              <a href="profile.php"><img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "cedric.wident@gmail.com" ) ) ); ?>?s=40" class="nav-profile-picture"></a>
                               <a id="username">Scar-Joo</a>
                           </div>
                           <ul class="dropdown-menu">
