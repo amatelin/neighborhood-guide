@@ -10,9 +10,9 @@ include './inc/header.php'
             <hr class="star-primary">
             <?php include './inc/breadcrumb.php' ?>
         </div>
-        <div id="admin-menu">
-            <div class="menu-wrapper compact">
-                <ul>
+        <div id="admin-menu" class="compact">
+            <div class="menu">
+                <!--<ul>
                     <li class="item-group current"><span><a href="#">This</a></span>
                         <ul>
                             <li><span><a href="#">Sub option 1</a></span></li>
@@ -37,7 +37,8 @@ include './inc/header.php'
                             <li><span>Sub option 4</span></li>
                         </ul>
                     </li>
-                </ul>
+                </ul>-->
+
             </div>
             <div class="btn-wrapper">
                 <button type="button" class="btn visible-xs"><i class="fa"></i></button>

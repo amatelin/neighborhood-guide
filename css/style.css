@@ -1885,7 +1885,7 @@ header .intro-text-team{
     margin-bottom: 20px;
 }
 
-#admin-menu .menu-wrapper > ul {
+#admin-menu .menu > ul {
     width: 100%;
     padding-left: 25px;
     font-size: 20px;
@@ -1893,11 +1893,11 @@ header .intro-text-team{
     list-style: none;
 }
 
-#admin-menu .menu-wrapper li {
+#admin-menu .menu li {
     overflow: hidden;
 }
 
-#admin-menu .menu-wrapper li.item-group > span::after {
+#admin-menu .menu li.item-group > span::after {
     font-family: FontAwesome;
     font-size: .85em;
     content : "\f0d7";
@@ -1908,11 +1908,11 @@ header .intro-text-team{
     text-align: center;
 }
 
-#admin-menu .menu-wrapper li.item-group.compact > span::after {
+#admin-menu .menu li.item-group.compact > span::after {
     content: "\f0da";
 }
 
-#admin-menu .menu-wrapper li.item-group > ul {
+#admin-menu .menu li.item-group > ul {
     font-size: .8em;
     line-height: 1.7em;
     list-style: none;
@@ -1921,13 +1921,13 @@ header .intro-text-team{
     border-left: 3px solid currentColor;
 }
 
-#admin-menu .menu-wrapper span {
+#admin-menu .menu span {
     margin-right: 1em;
     position: relative;
     display: block;
 }
 
-#admin-menu .menu-wrapper li.current > span::before {
+#admin-menu .menu li.current > span::before {
     font-family: FontAwesome;
     font-size: .75em;
     content: "\f054";
@@ -1940,7 +1940,7 @@ header .intro-text-team{
     transition: opacity 0.5s;
 }
 
-#admin-menu .menu-wrapper li.current.item-group:not(.compact) > span::before {
+#admin-menu .menu li.current.item-group:not(.compact) > span::before {
     opacity: 0;
 }
 
@@ -1970,7 +1970,7 @@ header .intro-text-team{
     content: "\f0d8";
 }
 
-#admin-menu .menu-wrapper.compact ~ .btn-wrapper .fa::before {
+#admin-menu.compact .btn-wrapper .fa::before {
     content: "\f0d7";
 }
 
@@ -2030,7 +2030,7 @@ header .intro-text-team{
         width: 180px;
     }
 
-    #admin-menu .menu-wrapper > ul {
+    #admin-menu .menu > ul {
         padding-left: 15px;
         font-size: 18px;
     }
@@ -2049,34 +2049,34 @@ header .intro-text-team{
         float: none;
     }
 
-    #admin-menu .menu-wrapper {
+    #admin-menu .menu {
         padding: 0 35px;
     }
 
-    #admin-menu .menu-wrapper > ul {
+    #admin-menu .menu > ul {
         padding: 10px 15px 15px 15px;
         border: 1px solid #f4f4f4;
         border-radius: 5px;
     }
 
-    #admin-menu .menu-wrapper li {
+    #admin-menu .menu li {
         max-height: 40px;
         transition: .5s;
     }
 
-    #admin-menu .menu-wrapper li.item-group:not(.compact) {
+    #admin-menu .menu li.item-group:not(.compact) {
         max-height: 300px;
     }
 
-    #admin-menu .menu-wrapper span {
+    #admin-menu .menu span {
         display: inline-block;
     }
 
-    #admin-menu .menu-wrapper.compact li.current span::before {
+    #admin-menu.compact .menu li.current span::before {
         opacity: 0;
     }
 
-    #admin-menu .menu-wrapper.compact li:not(.current) {
+    #admin-menu.compact .menu li:not(.current) {
         max-height: 0;
         opacity: 0;
     }

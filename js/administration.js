@@ -20,6 +20,6 @@ $(function() {
     });
 
     $('#admin-menu button').click(function() {
-        $('#admin-menu .menu-wrapper').toggleClass('compact');
+        $('#admin-menu').toggleClass('compact');
     });
 });
