@@ -1940,6 +1940,10 @@ header .intro-text-team{
     transition: opacity 0.5s;
 }
 
+#admin-menu .menu-wrapper li.current.item-group:not(.compact) > span::before {
+    opacity: 0;
+}
+
 #admin-menu .btn-wrapper {
     width: 100%;
     padding: 0 25px;
@@ -1954,18 +1958,12 @@ header .intro-text-team{
     border-radius: 3px;
     border-color: #e3e3e3;
     background-color: #f4f4f4;
-    color: #ccc;
+    color: #b7b7b7;
 }
 
-#admin-menu .btn-wrapper button {
-    height: 16px;
-    width: 100%;
-    padding: 0;
-    line-height: 0;
-    border-radius: 3px;
-    border-color: #e3e3e3;
-    background-color: #f4f4f4;
-    color: #ccc;
+#admin-menu .btn-wrapper button:hover {
+    color: #18bc9c;
+    border-color: #18bc9c;
 }
 
 #admin-menu .btn-wrapper .fa::before {
