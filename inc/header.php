@@ -158,8 +158,8 @@
                             <button type="button" class="btn btn-primary bplane" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Want to learn more about how to get around in your neighbourhood? Look no further!"><i class="fa fa-plane"></i></button>
                             <button type="button" class="btn btn-info bhome" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Learn about your neighboorhood, long time resident or not there's always more to discover."><i class="fa fa-home"></i></button>
                             <button type="button" class="btn btn-warning bcutlery" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find restaurants near you or submit your favorites to share them with your community!"><i class="fa fa-cutlery"></i></button>
-                            <button type="button" class="btn btn-success btree" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find restaurants near you or submit your favorites to share them with your community!"><i class="fa fa-tree"></i></button>
-                            <button type="button" class="btn btn-danger bcar" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find restaurants near you or submit your favorites to share them with your community!"><i class="fa fa-car"></i></button>
+                            <button type="button" class="btn btn-success btree" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Looking for a greenspace to relax in? Let the guide lead the way."><i class="fa fa-tree"></i></button>
+                            <button type="button" class="btn btn-danger bcar" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find a reputable shop, whether it's to fix your car or to fix you a cake the guide can help."><i class="fa fa-car"></i></button>
                         </div>
                         <span class="name">Neighbourhood Guide</span>
                         <img src="img/white-star.png">
@@ -225,10 +225,15 @@
                         <a href="#contribute">Contribute</a>
                     </li>
                     <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
-
-                    <li class="page-scroll menu">
+                    <li class="page-scroll">
+                        <a href="#"><i  id="mail" class="fa fa-envelope-o no-msg"></i></a>
+                    </li>
+                    <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
                           <div class="btn" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>
@@ -269,7 +274,10 @@
                     <li class="page-scroll">
                         <a href="index.php#about">About</a>
                     </li>
-                    <li class="page-scroll menu">
+                    <li class="page-scroll">
+                        <a href="#"><i  id="mail" class="fa fa-envelope-o"></i></a>
+                    </li>
+                    <li class="page-scroll">
                         <div class="btn-group btn-group-nav">
                           <div class="btn" data-toggle="dropdown">
                                 <a href="profile.php"><i class="fa fa-gear"></i></a>

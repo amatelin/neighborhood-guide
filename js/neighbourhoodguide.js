@@ -1,7 +1,7 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('.page-scroll a').bind('click', function(event) {
+    $('.page-scroll a').click(function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
@@ -87,19 +87,43 @@ function tabNavigation(){
     });
 }
 
-function addModal(){
-    var allRows = $('.intro-text-admin tbody tr');
-    allRows.attr('data-toggle','modal');
-    allRows.attr('data-target','#myModal');
-    console.log(allRows);
+function mailIcon(messages){
+    var nbMessages = messages;
+    var mail = $('#mail');
+    if(nbMessages>0){
+        if(mail.hasClass('fa-envelope-o')){
+            mail.removeClass('fa-envelope-o');
+            mail.addClass('fa-envelope');
+            mail.addClass('new-msg');
+            mail.removeClass('no-msg');
+        }
+    }
+    mail.parents().eq(1).click(function(event){
+        var el = mail;
+
+        if(el.hasClass('fa-envelope-o')){
+            el.removeClass('fa-envelope-o');
+            el.removeClass('no-msg');
+            el.addClass('fa-envelope');
+            el.addClass('new-msg');
+        }
+        else if(el.hasClass('fa-envelope')){
+            el.removeClass('fa-envelope');            
+            el.removeClass('new-msg');
+            el.addClass('fa-envelope-o');
+            el.addClass('no-msg');
+        }
+        event.stopPropagation();
+    });
 }
+
 
 
 $(window).resize(function(){
     navScroll();
 });
 $(window).load(function(){
-    addModal();
+    mailIcon(0);
     navScroll();
     tabNavigation();
 });
