@@ -1,7 +1,7 @@
 
-<?php 
+<?php
 $page = "index";
-include './inc/header.php' 
+include './inc/header.php'
 ?>
 
     <section id="neighborhoods-list">
@@ -18,9 +18,9 @@ include './inc/header.php'
                             <li class="tab active"><h4>Central&nbsp;Montreal</h4></li>
                             <li class="tab"><h4>West&nbsp;Island</h4></li>
                             <li class="tab"><h4>Montreal&nbsp;North</h4></li>
-                            <li class="tab"><h4>East&nbsp;End</h4></li>                            
+                            <li class="tab"><h4>East&nbsp;End</h4></li>
                         </ul>
-                    </div>                    
+                    </div>
 
                 </div>
 
@@ -217,7 +217,7 @@ include './inc/header.php'
                                     </div>
                                 </div>
                         </div>
-                </div> 
+                </div>
                 <div class="row neigh not-displayed">
                         <div class="col-sm-4 portfolio-item">
                                 <div class="image slideBottom">
@@ -453,9 +453,9 @@ include './inc/header.php'
                                 </div>
                         </div>
                 </div>
-            </div>                        
+            </div>
         </div>
-    </section>    
+    </section>
 
     <section id="contribute">
         <div class="container">
@@ -533,7 +533,7 @@ include './inc/header.php'
                 </div>
             </div>
         </div>
-        
+
     </section>
 
  <?php include './inc/footer.php' ?>

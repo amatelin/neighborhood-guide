@@ -5,14 +5,15 @@
       <div class="col-lg-12">                    
         <div class="intro-text" id="profile-intro">                       
           <span class="name">Profile</span>
-          <img src="img/white-star.png">          
+          <img src="img/white-star.png">
+          <?php include './inc/breadcrumb.php' ?>          
         </div>
         <div class="row">
           <div class="col-lg-6">
             <div class="intro-text-form profile-left" id="profile-wrapper">
               <div class="profile-pic" >
                 <h4>Picture</h4>
-                <img src="img/neighborhoods/neighborhoods/joscar.jpg" class="img-responsive">
+                <img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "cedric.wident@gmail.com" ) ) ); ?>?s=1000" class="img-responsive">
                 <!-- File Button --> 
                 <div class="form-group">
                   <input type="file" id="exampleInputFile">
