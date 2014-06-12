@@ -15,6 +15,7 @@
                 <div class="col-lg-12">
                     <div class="intro-text-form">
                         <div class="log-form">
+                            
                             <form class="form-horizontal">
                                 <fieldset>
 
@@ -42,6 +43,7 @@
                                     </style>
 
                                     <!-- Choice Categories -->
+                                    <span class="white">Choose a Category</span>
                                     <div id="jstree">
                                         <ul>
                                             <li class="jstree-open"><a href="#entertainement">Entertainement</a>
