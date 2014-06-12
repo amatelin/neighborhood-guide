@@ -356,67 +356,61 @@ $(function() {
     }
 
     function checkWindowWidth() {
-        if(!top && (window.innerWidth < 690)) {
-            $('#mapbar-title').html('LE PLATEAU <i class="fa fa-arrow-down fa-arrow-down-quartier"></i>')
-        }
         if(top && (window.innerWidth < 690)) {
-            $('#mapbar-title').html('<i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>')
+            $('#mapbar-title').html('LE PLATEAU <i class="fa fa-arrow-down fa-arrow-down-quartier"></i>')
+            return
         }
+        $('#mapbar-title').html('<i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>')
     }
 
     //480 x 320 support
-    $('.shadow').click(function (){
-        var min_shadow = '10%'
-            max_shadow = '70%'
-        if((window.innerWidth < 661)){
-            if((window.innerWidth < 321)){
-                min_shadow = '15%'
-                max_shadow = '47%'
-            }
-            $('.shadow').css('height', max_shadow)
-            $('.shadow').css('overflow-y', 'auto')
-            $('.viewer .shadow .fa-plus').css('display', 'none')
-            $('.viewer .shadow .fa-minus').css('display', 'block')
-            $('.shadow-main').css('height', min_shadow)
-            $('.shadow-main').css('overflow-y', 'hidden')
+    $('.shadow, .shadow-main').click(function () {
+    	if((window.innerWidth < 661)){
+    		var clicked = ''
+    			not_clicked = ''
+    			min_shadow = '10%'
+    			max_shadow = '69%'
+        if((window.innerWidth < 321)){
+          min_shadow = '15%'
+          max_shadow = '47%'
+        }
+        if($(this).attr("class").indexOf('shadow-main') != -1) {
+        	clicked = '.shadow-main'
+        	not_clicked = '.shadow'
+        }
+        else {
+        	clicked = '.shadow'
+        	not_clicked = '.shadow-main'
+        }
+
+        $(clicked).css({"height": max_shadow, "overflow": "auto"})
+        $('.viewer ' + clicked + ' .fa-plus').css('display', 'none')
+        $('.viewer ' + clicked + ' .fa-minus').css('display', 'block')
+        $(not_clicked).css({"height": min_shadow, "overflow-y": "hidden"})
+        $(not_clicked).scrollTop(0)
+        $('.viewer ' + not_clicked + ' .fa-plus').css('display', 'block')
+        $('.viewer ' + not_clicked + ' .fa-minus').css('display', 'none')
+        if(shadow_main_expanded){
+            $('.shadow-main').css({"height": min_shadow, "overflow-y": "hidden"})
+            $('.shadow-main').scrollTop(0)
             $('.viewer .shadow-main .fa-plus').css('display', 'block')
             $('.viewer .shadow-main .fa-minus').css('display', 'none')
-            if(shadow_expanded){
-                $('.shadow').css('height', min_shadow)
-                $('.shadow').scrollTop(0)
-                $('.shadow').css('overflow-y', 'hidden')
-                $('.viewer .shadow .fa-plus').css('display', 'block')
-                $('.viewer .shadow .fa-minus').css('display', 'none')
-            }
-            shadow_expanded = !shadow_expanded
+            // shadow_main_expanded = !shadow_main_expanded
         }
-    })
-
-    $('.shadow-main').click(function (){
-        var min_shadow = '10%'
-            max_shadow = '70%'
-        if((window.innerWidth < 661)){
-            if((window.innerWidth < 321)){
-                min_shadow = '15%'
-                max_shadow = '47%'
-            }
-            $('.shadow').css('height', min_shadow)
-            $('.shadow').css('overflow-y', 'hidden')
-            $('.shadow-main').css('height', max_shadow)
-            $('.shadow-main').css('overflow-y', 'auto')
-            $('.viewer .shadow .fa-plus').css('display', 'block')
-            $('.viewer .shadow .fa-minus').css('display', 'none')
-            $('.viewer .shadow-main .fa-plus').css('display', 'none')
-            $('.viewer .shadow-main .fa-minus').css('display', 'block')
-            if(shadow_main_expanded){
-                $('.shadow-main').css('height', min_shadow)
-                $('.shadow-main').scrollTop(0)
-                $('.shadow-main').css('overflow-y', 'hidden')
-                $('.viewer .shadow-main .fa-plus').css('display', 'block')
-                $('.viewer .shadow-main .fa-minus').css('display', 'none')
-            }
-            shadow_main_expanded = !shadow_main_expanded
+        if(shadow_expanded){
+          $('.shadow').css({"height": min_shadow, "overflow-y": "hidden"})
+          $('.shadow').scrollTop(0)
+          $('.viewer .shadow .fa-plus').css('display', 'block')
+          $('.viewer .shadow .fa-minus').css('display', 'none')
+        	// shadow_expanded = !shadow_expanded
         }
+        if (clicked == ".shadow-main") {
+        	shadow_main_expanded = !shadow_main_expanded
+        }
+        else {
+        	shadow_expanded = !shadow_expanded
+        }
+      }
     })
 
 		$(window).resize(function () {
@@ -428,6 +422,9 @@ $(function() {
 				$('.viewer .shadow .fa-plus, .viewer .shadow-main .fa-plus').css('display', 'block')
 				$('.shadow-main, .shadow').css({"height": "10%", "overflow": "hidden"})
 			}
+			checkWindowWidth()
+			shadow_expanded = false
+			shadow_main_expanded = false
 		})
 
     /* Display Map on hover
@@ -465,7 +462,7 @@ $(function() {
 		$('#map').css('top', top ? fromtop : dist)
 		$('#map').find('.right').css('opacity', top ? '0' : '1')
 		$('#map').find('.piti') .css('opacity', top ? '1' : '0')
-		window.setTimeout(function() {top = !top}, 300)
+		top = !top
         checkWindowWidth()
 		if(!top) {
             renderPanel(datas[current_place].places[0], 1)
@@ -474,12 +471,10 @@ $(function() {
 
   $('#showMap').click(function() {
       showMap()
-      checkWindowWidth()
   })
 
   $('#map').find('.mapbar').click(function() {
       showMap()
-      checkWindowWidth()
   })
 
 	// Hide Panel

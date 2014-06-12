@@ -10,6 +10,21 @@ $(function() {
     });
 });
 
+$(function() {
+    if(window.matchMedia("(max-width: 768px)").matches){
+        $(".btn.btn-default.bclose").each(function() {
+            var html = $(this).html().split(" ");
+            html = html.slice(0,7).join(" ") + "<br />" + html.slice(7).join(" ");
+            $(this).html(html);
+            $(".btn.btn-default.bclose i").css('margin-left', '5px')
+            $(this).css({"margin-top": "-10px", "margin-right": "16.5%"});
+            if(window.matchMedia("(max-width: 480px)").matches){
+                $(this).css({"margin-top": "-10px", "margin-right": "5%"});
+            }
+        })
+    }
+})
+
 // Floating label headings for the contact form
 $(function() {
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
