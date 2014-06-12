@@ -169,7 +169,7 @@
                         <br/>
                         <br/>
                         <div class="page-scroll">
-                            <a href="#neighborhoods-list" title="Discover the guide!" class="fa fa-arrow-down"></a>
+                            <a href="#neighborhoods_list" title="Discover the guide!" class="fa fa-arrow-down"></a>
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                         <a href="index.php#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.php#neighborhoods-list">Visit Neighbourhoods</a>
+                        <a href="index.php#neighborhoods_list">Visit Neighbourhoods</a>
                     </li>
                     <li class="page-scroll">
                         <a href="index.php#contribute">Contribute</a>
