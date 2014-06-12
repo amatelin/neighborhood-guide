@@ -169,7 +169,7 @@
                         <br/>
                         <br/>
                         <div class="page-scroll">
-                            <a href="#neighborhoods_list" title="Discover the guide!" class="fa fa-arrow-down"></a>
+                            <a id="arrow" href="#neighborhoods_list" title="Discover the guide!" class="fa fa-arrow-down"></a>
                         </div>
                     </div>
                 </div>

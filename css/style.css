@@ -866,6 +866,16 @@ header .fa-arrow-down:focus {
     background-color: #233140;
     color: #18BC9C !important;
 }
+
+#arrow {
+    background: none;
+    color: white !important;
+}
+
+#arrow:hover {
+    color: #18BC9C !important;
+}
+
 .navbar-default,
 .navbar-inverse {
     border: 0;
