@@ -7,14 +7,14 @@ var json_input = {
             options: ["0 - 50", "50 - 75", "75 - 100", "100+"]
         }
     ],
-    "cafe": [
+    "Café": [
         {
             name: "Etoile",
             type: "select",
             options: [1, 2, 3, 4, 5]
         }
     ],
-    "restaurant": [
+    "Restaurant": [
         {
             name: "Tables",
             type: "select",
