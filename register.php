@@ -3,40 +3,40 @@
     <header>
         <div class="container middle">
             <div class="row">
-                <div class="col-lg-12">                    
-                    <div class="intro-text ">                       
+                <div class="col-lg-12">
+                    <div class="intro-text ">
                         <span class="name">Register</span>
-                        <img class="intro-star" src="img/white-star.png">
+                        <hr class="star-white" />
                         <?php include './inc/breadcrumb.php' ?>
                     </div>
-                    <div class="intro-text-form"> 
+                    <div class="intro-text-form">
                         <div class="log-form">
                             <form class="form-horizontal">
                                 <fieldset>
                                     <!-- Text input-->
                                     <div class="form-group">
-                                      <label class="col-md-4 control-label" for="name">Name</label>  
+                                      <label class="col-md-4 control-label" for="name">Name</label>
                                       <div class="col-md-6">
                                       <input id="name" name="name" placeholder="Type your name" class="form-control input-md" type="text">
-                                        
+
                                       </div>
                                     </div>
 
                                     <!-- Text input-->
                                     <div class="form-group">
-                                      <label class="col-md-4 control-label" for="nickname">Nickname</label>  
+                                      <label class="col-md-4 control-label" for="nickname">Nickname</label>
                                       <div class="col-md-6">
                                       <input id="nickname" name="nickname" placeholder="Type your nickname" class="form-control input-md" type="text">
-                                        
+
                                       </div>
                                     </div>
 
                                     <!-- Text input-->
                                     <div class="form-group">
-                                      <label class="col-md-4 control-label" for="email">Email</label>  
+                                      <label class="col-md-4 control-label" for="email">Email</label>
                                       <div class="col-md-6">
                                       <input id="email" name="email" placeholder="Type your adress mail" class="form-control input-md" type="text">
-                                        
+
                                       </div>
                                     </div>
 
@@ -48,14 +48,14 @@
                                         <input type="password" data-toggle="validator" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
                                         <span class="help-block white">Minimum of 6 characters</span>
                                       </div>
-                                      
+
                                       <label for="inputPassword" class="control-label col-md-4">Confirm Password</label>
                                       <div class="col-md-6">
                                         <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
                                         <div class="help-block with-errors"></div>
                                       </div>
-                                    </div>                            
-                                    
+                                    </div>
+
                                     <!-- Multiple Checkboxes (inline) -->
                                     <div class="form-group">
                                       <label class="col-md-2 control-label" for="checkboxes"></label>
@@ -78,9 +78,9 @@
                             </form>
 
                         </div>
-                    </div>                    
+                    </div>
                 </div>
-            </div>            
+            </div>
         </div>
     </header>
  <?php include './inc/footer.php' ?>

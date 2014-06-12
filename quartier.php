@@ -21,7 +21,7 @@
                 <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>Overview</h2>
-                    <img src="img/white-star.png">
+                    <hr class="star-white" />
                     <br/>
                     <br>
                 </div>
@@ -39,7 +39,7 @@
                 <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>The Neighbourhood</h2>
-                    <img src="img/white-star.png">
+                    <hr class="star-white" />
                     <?php include './inc/breadcrumb.php' ?>
                     <br/>
                     <br/>

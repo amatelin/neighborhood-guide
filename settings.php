@@ -3,20 +3,20 @@
  <header>
   <div class="container middle">
     <div class="row">
-      <div class="col-lg-12">                    
-        <div class="intro-text ">                       
+      <div class="col-lg-12">
+        <div class="intro-text ">
           <span class="name">Settings</span>
-          <img class="intro-star" src="img/white-star.png">
+          <hr class="star-white" />
           <?php include './inc/breadcrumb.php' ?>
         </div>
-        <div class="intro-text-form"> 
+        <div class="intro-text-form">
           <div class="log-form">
             <form class="form-horizontal">
               <fieldset class="legends choices">
                 <legend><h4>Informations</h4></legend>
                 <!-- Text input-->
                 <div class="form-group">
-                  <label class="col-md-4 control-label" for="name">Profile</label>  
+                  <label class="col-md-4 control-label" for="name">Profile</label>
                   <div class="col-md-7">
                     <!-- <input class="" type="checkbox"><span>Public (allow anyone to see your profile)</span>
                     <input class="" type="checkbox"> Private (only users can to see your profile) -->
@@ -38,7 +38,7 @@
 
                 <!-- Text input-->
                 <div class="form-group">
-                  <label class="col-md-4 control-label" for="nickname">Hide my</label>  
+                  <label class="col-md-4 control-label" for="nickname">Hide my</label>
                   <div class="col-md-7">
                     <div class="checkbox">
                       <label>
@@ -66,7 +66,7 @@
 
                 <!-- Text input-->
                 <div class="form-group">
-                  <label class="col-md-4 control-label" for="email">Other search engines can link to my profile</label>  
+                  <label class="col-md-4 control-label" for="email">Other search engines can link to my profile</label>
                   <div class="col-md-7">
                     <div class="radio">
                       <label>
@@ -85,7 +85,7 @@
                 </div>
 
                  <div class="form-group">
-                  <label class="col-md-4 control-label" for="nickname">Account</label>  
+                  <label class="col-md-4 control-label" for="nickname">Account</label>
                   <div class="col-md-7">
                     <div class="checkbox">
                       <label>
@@ -106,9 +106,9 @@
             </form>
 
           </div>
-        </div>                    
+        </div>
       </div>
-    </div>            
+    </div>
   </div>
   </header>
   <?php include './inc/footer.php' ?>

@@ -163,7 +163,7 @@
                             <button type="button" class="btn btn-danger bcar" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find a reputable shop, whether it's to fix your car or to fix you a cake the guide can help."><i class="fa fa-car"></i></button>
                         </div>
                         <span class="name">Neighbourhood Guide</span>
-                        <img src="img/white-star.png">
+                        <hr class="star-white" />
                         <span class="skills">
                             The open source neighbourhood guide created by the community for the community.
                         </span>

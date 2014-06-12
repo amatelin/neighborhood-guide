@@ -11,7 +11,7 @@ include './inc/header.php'
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2>The Neighbourhoods</h2>
-                        <hr class="star-primary">
+                        <hr class="star-blue">
                     </div>
                     <div class="tab">
                         <ul class="col-lg-12 text-center">
@@ -462,7 +462,7 @@ include './inc/header.php'
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Contribute to the guide!</h2>
-                    <hr class="star-light">
+                    <hr class="star-white">
                     <div class="col-lg-8 col-lg-offset-2">
                         <p class="white description">Looking for a way to improve the guide and help it grow? You can contribute your own knowledge to this open source repository of information strengthening your community
                         by submitting information about your favorite places.</p>
@@ -477,7 +477,7 @@ include './inc/header.php'
             <div class="row">    
                 <div class="col-lg-12 text-center">
                     <h2>Contact Us!</h2>
-                    <hr class="star-primary">
+                    <hr class="star-blue">
                 </div> 
                 <form role="form" class="contact">
                     <div class="row">
@@ -514,7 +514,7 @@ include './inc/header.php'
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About Us</h2>
-                    <hr class="star-light">
+                    <hr class="star-white">
                 </div>
             </div>
             <div class="row">

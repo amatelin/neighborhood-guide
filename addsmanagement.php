@@ -11,7 +11,7 @@ include './inc/header.php'
 
                         <div class="intro-text ">
                             <span class="name">Add</span>
-                            <img src="img/white-star.png">
+                        <hr class="star-white" />
                         </div>
                 </div>
             </div>
