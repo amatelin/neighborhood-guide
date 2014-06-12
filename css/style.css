@@ -2421,3 +2421,22 @@ header .intro-text-team{
 .copyright {
     font-size: 15px;
 }
+
+.gear {
+    cursor: pointer;
+}
+
+.gear:hover {
+    background: #233140;
+}
+
+.gear .btn:active {
+    box-shadow: none;
+}
+
+.gear:hover .btn a,
+.gear:hover .btn a i,
+.gear:hover .btn a span {
+    background: #233140;
+    color: #18BC9C;
+}
