@@ -1,0 +1,53 @@
+body {
+    overflow: hidden;
+}
+
+.place {
+    width: 200px;
+    float: left;
+}
+
+.place.scroll > a {
+    color: #18BC9C;
+    display: inline-block;
+    height: 26px;
+    line-height: 20px;
+    font-size: 1.2em;
+}
+
+.place.scroll > .square {
+    color: white;
+    text-align: center;
+}
+
+.place.scroll ul {
+    padding: 0;
+}
+
+.place.scroll ul li {
+    list-style-type: none;
+    color: white;
+}
+
+.place.scroll ul li a {
+    color: white;
+}
+
+.place.scroll ul  li:before {
+    content: "\25B8"; /* on affiche une chaîne de caractère */
+    color: #18BC9C;
+    margin: 0 8px;
+}
+
+.mask {
+    height: 0;
+    overflow: hidden;
+}
+
+.panel-body .pagination {
+    margin-bottom: 0;
+}
+
+footer {
+    display: none;
+}
