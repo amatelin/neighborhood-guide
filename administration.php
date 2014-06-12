@@ -5,128 +5,129 @@ include './inc/header.php'
 ?>
     <div class="background"></div>
     <div id="admin-wrapper">
-        <div class="col-lg-12">
-            <h2 class="text-center">Administration</h2>
-            <hr class="star-primary">
-            <?php include './inc/breadcrumb.php' ?>
-        </div>
-        <div id="admin-menu">
-            <div class="menu-wrapper compact">
-                <ul>
-                    <li class="item-group current"><span><a href="#">This</a></span>
-                        <ul>
-                            <li><span><a href="#">Sub option 1</a></span></li>
-                            <li class="item-group current"><span><a href="#">Sub option of doom</a></span>
-                                <ul>
-                                    <li><span><a href="#">Sub option 1</a></span></li>
-                                    <li><span><a href="#">Sub option 2</a></span></li>
-                                    <li><span>Sub option 3</span></li>
-                                    <li class="current"><span>Sub option 4</span></li>
-                                </ul>
-                            </li>
-                            <li><span>Sub option 3</span></li>
-                            <li><span>Sub option 4</span></li>
-                        </ul>
-                    </li>
-                    <li><span><a href="#">lines</a></span></li>
-                    <li class="item-group"><span><a href="#">bunch</a></span>
-                        <ul>
-                            <li><span><a href="#">Sub option 1</a></span></li>
-                            <li><span><a href="#">Sub option 2</a></span></li>
-                            <li><span>Sub option 3</span></li>
-                            <li><span>Sub option 4</span></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="btn-wrapper">
-                <button type="button" class="btn visible-xs"><i class="fa"></i></button>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center">Administration</h2>
+                <hr class="star-primary">
+                <?php include './inc/breadcrumb.php' ?>
             </div>
         </div>
-        <div id="admin-content">
-            <div class="table-wrapper">
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Categorie</th>
-                            <th>Description</th>
-                            <th>Date</th>
-                            <th>Author</th>
-                            <th>Review</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Jo's coffee</th>
-                            <td>Restaurant</td>
-                            <td>This is a new coffee which just opened his doors</td>
-                            <td>03/06/2014 - 13:52:35</td>
-                            <td><a href="profile.php">Scar-Jo</a></td>
-                            <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
+        <div class="row">
+            <div id="admin-menu" class="compact">
+                <div class="menu">
+                    <ul>
+                        <li class="item-group current"><span><a href="#new">New</a></span>
+                            <ul>
+                                <li class="item-group current"><span><a href="#submissions">Submissions</a></span>
+                                    <ul>
+                                        <li><span><a href="newsubmissions.php">A submission type</a></span></li>
+                                        <li class="current"><span><a href="newsubmissions.php">Another submission type</a></span></li>
+                                    </ul>
+                                </li>
+                                <li><span><a href="newcategories.php">Categories</a></span></li>
+                                <li><span><a href="newusers.php">Users</a></li>
+                            </ul>
+                        </li>
+                        <li><span><a href="modificationsmanagement.php">Modified</a></span></li>
+                        <li><span><a href="notifications.php">Notifications</a></span></li>
+                        <li class="item-group"><span><a href="#manage">Manage</a></span>
+                            <ul>
+                                <li><span><a href="manageplaces.php">Places</a></span></li>
+                                <li><span><a href="managecategories.php">Categories</a></span></li>
+                                <li><span><a href="manageusers.php">Users</a></span></li>
+                            </ul>
+                        </li>
+                        <li><span><a href="dashboardmanagement.php">Dashboard management</a></span></li>
+                    </ul>
 
-                        </tr>
-                        <tr>
-                            <th>Est End</th>
-                            <td>Place</td>
-                            <td>Just added a new neighborhood which was not there</td>
-                            <td>31/01/2018 - 09:34:02</td>
-                            <td><a href="profile.php">Bibi</a></td>
-                            <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
-                        </tr>
-                        <tr>
-                            <th>Jo's coffee</th>
-                            <td>Restaurant</td>
-                            <td>This is a new coffee which just opened his doors</td>
-                            <td>03/06/2014 - 13:52:35</td>
-                            <td><a href="profile.php">Scar-Jo</a></td>
-                            <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
-                        </tr>
-                        <tr>
-                            <th>Est End</th>
-                            <td>Place</td>
-                            <td>Just added a new neighborhood which was not there</td>
-                            <td>31/01/2018 - 09:34:02</td>
-                            <td><a href="profile.php">Bibi</a></td>
-                            <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
-                        </tr>
-                        <tr>
-                            <th>Jo's coffee</th>
-                            <td>Restaurant</td>
-                            <td>This is a new coffee which just opened his doors</td>
-                            <td>03/06/2014 - 13:52:35</td>
-                            <td><a href="profile.php">Scar-Jo</a></td>
-                            <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
-
-                        </tr>
-                        <tr>
-                            <th>Est End</th>
-                            <td>Place</td>
-                            <td>Just added a new neighborhood which was not there</td>
-                            <td>31/01/2018 - 09:34:02</td>
-                            <td><a href="profile.php">Bibi</a></td>
-                            <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
-                        </tr>
-                        <tr>
-                            <th>Jo's coffee</th>
-                            <td>Restaurant</td>
-                            <td>This is a new coffee which just opened his doors</td>
-                            <td>03/06/2014 - 13:52:35</td>
-                            <td><a href="profile.php">Scar-Jo</a></td>
-                            <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
-                        </tr>
-                        <tr>
-                            <th>Est End</th>
-                            <td>Place</td>
-                            <td>Just added a new neighborhood which was not there</td>
-                            <td>31/01/2018 - 09:34:02</td>
-                            <td><a href="profile.php">Bibi</a></td>
-                            <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
-                        </tr>
-                    </tbody>
-                </table>
+                </div>
+                <div class="btn-wrapper">
+                    <button type="button" class="btn visible-xs"><i class="fa"></i></button>
+                </div>
             </div>
-            <div class="pagination-wrapper">
+            <div id="admin-content">
+                <div class="table-wrapper">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Categorie</th>
+                                <th>Description</th>
+                                <th>Date</th>
+                                <th>Author</th>
+                                <th>Review</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Jo's coffee</th>
+                                <td>Restaurant</td>
+                                <td>This is a new coffee which just opened his doors</td>
+                                <td>03/06/2014 - 13:52:35</td>
+                                <td><a href="profile.php">Scar-Jo</a></td>
+                                <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
+
+                            </tr>
+                            <tr>
+                                <th>Est End</th>
+                                <td>Place</td>
+                                <td>Just added a new neighborhood which was not there</td>
+                                <td>31/01/2018 - 09:34:02</td>
+                                <td><a href="profile.php">Bibi</a></td>
+                                <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
+                            </tr>
+                            <tr>
+                                <th>Jo's coffee</th>
+                                <td>Restaurant</td>
+                                <td>This is a new coffee which just opened his doors</td>
+                                <td>03/06/2014 - 13:52:35</td>
+                                <td><a href="profile.php">Scar-Jo</a></td>
+                                <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
+                            </tr>
+                            <tr>
+                                <th>Est End</th>
+                                <td>Place</td>
+                                <td>Just added a new neighborhood which was not there</td>
+                                <td>31/01/2018 - 09:34:02</td>
+                                <td><a href="profile.php">Bibi</a></td>
+                                <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
+                            </tr>
+                            <tr>
+                                <th>Jo's coffee</th>
+                                <td>Restaurant</td>
+                                <td>This is a new coffee which just opened his doors</td>
+                                <td>03/06/2014 - 13:52:35</td>
+                                <td><a href="profile.php">Scar-Jo</a></td>
+                                <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
+
+                            </tr>
+                            <tr>
+                                <th>Est End</th>
+                                <td>Place</td>
+                                <td>Just added a new neighborhood which was not there</td>
+                                <td>31/01/2018 - 09:34:02</td>
+                                <td><a href="profile.php">Bibi</a></td>
+                                <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
+                            </tr>
+                            <tr>
+                                <th>Jo's coffee</th>
+                                <td>Restaurant</td>
+                                <td>This is a new coffee which just opened his doors</td>
+                                <td>03/06/2014 - 13:52:35</td>
+                                <td><a href="profile.php">Scar-Jo</a></td>
+                                <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
+                            </tr>
+                            <tr>
+                                <th>Est End</th>
+                                <td>Place</td>
+                                <td>Just added a new neighborhood which was not there</td>
+                                <td>31/01/2018 - 09:34:02</td>
+                                <td><a href="profile.php">Bibi</a></td>
+                                <td><a href="#review" data-toggle="modal" class="fa fa-lg fa-search"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <ul class="pagination">
                     <li><a href="#" class="fa fa-angle-double-left"></a></li>
                     <li><a href="#">1</a></li>
@@ -136,7 +137,7 @@ include './inc/header.php'
                     <li><a href="#" class="current">6</a></li>
                     <li><a href="#">7</a></li>
                     <li><a href="#">8</a></li>
-                    <li class="disabled"><span>&hellip;</span></li>
+                    <li><a href="#">9</a></li>
                     <li><a href="#">10</a></li>
                     <li><a href="#" class="fa fa-angle-double-right"></a></li>
                 </ul>
