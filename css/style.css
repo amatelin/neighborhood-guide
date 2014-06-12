@@ -222,6 +222,10 @@ nav .navbar .navbar-default .navbar-fixed-top > .container{
     margin: 0 auto;
 }
 
+*.disabled > a, .disabled span {
+    cursor: default !important;
+}
+
 /*
 * Splash Page
 */
@@ -1590,8 +1594,9 @@ footer .footer-below {
 
 .btn:focus,
 .btn:active,
-.btn.active {
-    outline: 0;
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
 }
 
 .scroll-top {
@@ -1909,44 +1914,235 @@ header .intro-text-team{
 /**
 *ADMINISTRATION
 **/
+/* Temporary */
+.background {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/montreal9.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 #admin-wrapper {
-    padding-top: 56px;
+    margin: 86px 50px 50px 50px;
     min-height: 100%;
     overflow: hidden;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 50px;
+    padding: 25px;
 }
 
 #admin-menu {
-    width: 200px;
-    margin-right: 25px;
+    float: left;
+    width: 210px;
+    margin-bottom: 20px;
+}
+
+#admin-menu .menu-wrapper > ul {
+    width: 100%;
+    padding-left: 25px;
     font-size: 20px;
     line-height: 1.75em;
     list-style: none;
-    float: left;
 }
 
-#admin-menu .item-group ul {
-    font-size: .75em;
-    line-height: 1.5em;
+#admin-menu .menu-wrapper li {
+    overflow: hidden;
+}
+
+#admin-menu .menu-wrapper li.item-group > span::after {
+    font-family: FontAwesome;
+    font-size: .85em;
+    content : "\f0d7";
+    display: inline-block;
+    color: #d3d3d3;
+    margin-left: .25em;
+    width: 1em;
+    text-align: center;
+}
+
+#admin-menu .menu-wrapper li.item-group.compact > span::after {
+    content: "\f0da";
+}
+
+#admin-menu .menu-wrapper li.item-group > ul {
+    font-size: .8em;
+    line-height: 1.7em;
     list-style: none;
-    margin-left: 20px;
-    padding-left: 20px;
+    margin-left: 10px;
+    padding-left: 15px;
     border-left: 3px solid currentColor;
 }
 
-#admin-menu li.current:after {
-    display: inline-block;
+#admin-menu .menu-wrapper span {
+    margin-right: 1em;
+    position: relative;
+    display: block;
+}
+
+#admin-menu .menu-wrapper li.current > span::before {
     font-family: FontAwesome;
-    float: right;
     font-size: .75em;
     content: "\f054";
+    display: inline-block;
+    line-height: 0;
+    position: absolute;
+    right: -1em;
+    top: 50%;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#admin-menu .btn-wrapper {
+    width: 100%;
+    padding: 0 25px;
+    display: none;
+}
+
+#admin-menu .btn-wrapper button {
+    height: 16px;
+    width: 100%;
+    padding: 0;
+    line-height: 0;
+    border-radius: 3px;
+    border-color: #e3e3e3;
+    background-color: #f4f4f4;
+    color: #ccc;
+}
+
+#admin-menu .btn-wrapper button {
+    height: 16px;
+    width: 100%;
+    padding: 0;
+    line-height: 0;
+    border-radius: 3px;
+    border-color: #e3e3e3;
+    background-color: #f4f4f4;
+    color: #ccc;
+}
+
+#admin-menu .btn-wrapper .fa::before {
+    content: "\f0d8";
+}
+
+#admin-menu .menu-wrapper.compact ~ .btn-wrapper .fa::before {
+    content: "\f0d7";
 }
 
 #admin-content {
     font-size: 14px;
+    overflow: hidden;
+    padding: 0 25px;
 }
 
 #admin-content .table-wrapper {
     overflow: auto;
+}
+
+#admin-content table {
+    min-width: 525px;
+}
+
+#admin-content table > tbody > tr > th,
+#admin-content table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+#admin-content table.table-striped > tbody > tr:nth-child(2n+1) > th,
+#admin-content table.table-striped > tbody > tr:nth-child(2n+1) > td {
+    background-color: rgba(249, 249, 249, 0.5);
+}
+
+#admin-content .pagination-wrapper {
+    overflow: hidden;
+    text-align: center;
+}
+
+#admin-content .pagination a, #admin-content .pagination span {
+    padding: 0;
+    min-width: 38px;
+    line-height: 33px;
+    border-color: transparent;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+#admin-content .pagination .current {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#admin-content .pagination li:not(.disabled) a {
+    color: #18bc9c;
+}
+
+#admin-content .pagination li:not(.disabled) a:hover {
+    border-color: #ddd;
+}
+
+@media(max-width: 991px) {
+    #admin-menu {
+        width: 180px;
+    }
+
+    #admin-menu .menu-wrapper > ul {
+        padding-left: 15px;
+        font-size: 18px;
+    }
+
+    #admin-content table > thead > tr > th,
+    #admin-content table > tbody > tr > th,
+    #admin-content table > thead > tr > td,
+    #admin-content table > tbody > tr > td {
+        padding: 4px;
+    }
+}
+
+@media(max-width: 767px) {
+    #admin-menu {
+        width: 100%;
+        float: none;
+    }
+
+    #admin-menu .menu-wrapper {
+        padding: 0 35px;
+    }
+
+    #admin-menu .menu-wrapper > ul {
+        padding: 10px 15px 15px 15px;
+        border: 1px solid #f4f4f4;
+        border-radius: 5px;
+    }
+
+    #admin-menu .menu-wrapper li {
+        max-height: 40px;
+        transition: .5s;
+    }
+
+    #admin-menu .menu-wrapper li.item-group:not(.compact) {
+        max-height: 300px;
+    }
+
+    #admin-menu .menu-wrapper span {
+        display: inline-block;
+    }
+
+    #admin-menu .menu-wrapper.compact li.current span::before {
+        opacity: 0;
+    }
+
+    #admin-menu .menu-wrapper.compact li:not(.current) {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    #admin-menu .btn-wrapper {
+        display: block;
+    }
 }
 
 /**
@@ -2224,4 +2420,23 @@ header .intro-text-team{
 
 .copyright {
     font-size: 15px;
+}
+
+.gear {
+    cursor: pointer;
+}
+
+.gear:hover {
+    background: #233140;
+}
+
+.gear .btn:active {
+    box-shadow: none;
+}
+
+.gear:hover .btn a,
+.gear:hover .btn a i,
+.gear:hover .btn a span {
+    background: #233140;
+    color: #18BC9C;
 }

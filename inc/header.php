@@ -233,11 +233,10 @@
                     <li class="page-scroll">
                         <a href="#"><i  id="mail" class="fa fa-envelope-o no-msg"></i></a>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll gear">
                         <div class="btn-group btn-group-nav">
                           <div class="btn" data-toggle="dropdown">
-                                <a href="profile.php"><i class="fa fa-gear"></i></a>
-                                <span class="caret white-caret"></span>
+                                <a href="profile.php"><i class="fa fa-gear"></i><span class="caret white-caret"></span></a>
                           </div>
                           <ul class="dropdown-menu">
                             <li><a href="addThing.php">Add Place</a></li>
