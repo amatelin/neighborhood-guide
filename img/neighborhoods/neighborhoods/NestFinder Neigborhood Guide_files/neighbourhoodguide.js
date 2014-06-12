@@ -139,10 +139,8 @@ function filterDate(){
         var rowMonth = parseInt(rowDate.split('/')[1]);
         var rowYear = parseInt(rowDate.split('/')[2].split(' ')[0]);
 
-        console.log('RowDay : ' + rowDay + ' - dayFirstDate : '+ dayFirstDate + ' - daySecondDate : '+daySecondDate);
-        if(!(rowYear>=yearFirstDate && rowYear<=yearSecondDate) || ((rowYear>=yearFirstDate && rowYear<=yearSecondDate) && !(rowMonth>=monthFirstDate && rowMonth<=monthSecondDate)) || ((rowYear>=yearFirstDate && rowYear<=yearSecondDate) && (rowMonth>=monthFirstDate && rowMonth<=monthSecondDate)) && !(rowDay>=dayFirstDate && rowDay<=daySecondDate)  ){
-            el.remove(); 
-            console.log('removed');       
+        if(rowDay<daySecondDate && rowDay>dayFirstDate){
+            console.log(el);
         }
     });
 
