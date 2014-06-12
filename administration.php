@@ -136,7 +136,7 @@ include './inc/header.php'
                     <li><a href="#" class="current">6</a></li>
                     <li><a href="#">7</a></li>
                     <li><a href="#">8</a></li>
-                    <li class="disabled"><span>&hellip;</span></li>
+                    <li><a href="#">9</a></li>
                     <li><a href="#">10</a></li>
                     <li><a href="#" class="fa fa-angle-double-right"></a></li>
                 </ul>
