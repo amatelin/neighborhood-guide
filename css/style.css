@@ -2003,6 +2003,10 @@ header .intro-text-team{
 }
 
 #admin-content .pagination {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     text-align: center;
