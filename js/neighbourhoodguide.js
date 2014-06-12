@@ -28,7 +28,7 @@ $(function() {
 $(function() {
     $('section').on('scrollSpy:enter', function() {
         $('.page-scroll a').removeClass('page-scroll-hover')
-        $('.page-scroll a[href="#' + $(this).attr('id') + '"]').first().addClass('page-scroll-hover')
+        $('.page-scroll a[href="#' + $(this).attr('id') + '"]').addClass('page-scroll-hover')
         //console.log('enter:', $(this).attr('id'));
     });
 
@@ -108,7 +108,7 @@ function mailIcon(messages){
             el.addClass('new-msg');
         }
         else if(el.hasClass('fa-envelope')){
-            el.removeClass('fa-envelope');            
+            el.removeClass('fa-envelope');
             el.removeClass('new-msg');
             el.addClass('fa-envelope-o');
             el.addClass('no-msg');
