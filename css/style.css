@@ -1857,10 +1857,26 @@ header .intro-text-team{
 /**
 *ADMINISTRATION
 **/
+/* Temporary */
+.background {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/montreal9.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 #admin-wrapper {
-    padding-top: 56px;
+    margin: 86px 50px 50px 50px;
     min-height: 100%;
     overflow: hidden;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 50px;
+    padding: 25px;
 }
 
 #admin-menu {
@@ -1979,19 +1995,36 @@ header .intro-text-team{
     vertical-align: middle;
 }
 
+#admin-content table.table-striped > tbody > tr:nth-child(2n+1) > th,
+#admin-content table.table-striped > tbody > tr:nth-child(2n+1) > td {
+    background-color: rgba(249, 249, 249, 0.5);
+}
+
 #admin-content .pagination-wrapper {
     overflow: hidden;
     text-align: center;
-}
-
-#admin-content .pagination li:not(.disabled) a {
-    color: #18bc9c;
 }
 
 #admin-content .pagination a, #admin-content .pagination span {
     padding: 0;
     min-width: 38px;
     line-height: 33px;
+    border-color: transparent;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+#admin-content .pagination .current {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+#admin-content .pagination li:not(.disabled) a {
+    color: #18bc9c;
+}
+
+#admin-content .pagination li:not(.disabled) a:hover {
+    border-color: #ddd;
 }
 
 @media(max-width: 991px) {

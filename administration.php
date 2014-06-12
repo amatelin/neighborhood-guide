@@ -3,6 +3,7 @@
 $page = "team";
 include './inc/header.php'
 ?>
+    <div class="background"></div>
     <div id="admin-wrapper">
         <div class="col-lg-12">
             <h2 class="text-center">Administration</h2>
@@ -132,10 +133,10 @@ include './inc/header.php'
                     <li class="disabled"><span>&hellip;</span></li>
                     <li><a href="#">4</a></li>
                     <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
+                    <li><a href="#" class="current">6</a></li>
                     <li><a href="#">7</a></li>
                     <li><a href="#">8</a></li>
-                    <li class="disabled"><a href="#">&hellip;</a></li>
+                    <li class="disabled"><span>&hellip;</span></li>
                     <li><a href="#">10</a></li>
                     <li><a href="#" class="fa fa-angle-double-right"></a></li>
                 </ul>
