@@ -72,8 +72,8 @@ function tabNavigation(){
     $.each($('.tab ul li h4'),function(){
         monTab.push($(this).text().replace(' ','_'));
         $(this).click(function(){
-            $('#'+$('#neighborhoods-list .active h4').text().replace(' ','_')).addClass('not-displayed');
-            $('#neighborhoods-list .active').removeClass('active');
+            $('#'+$('#neighborhoods_list .active h4').text().replace(' ','_')).addClass('not-displayed');
+            $('#neighborhoods_list .active').removeClass('active');
             $($(this).parent()).addClass('active');
 
             $('#'+$(this).text().replace(' ','_')).removeClass('not-displayed');
