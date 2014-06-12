@@ -1,7 +1,7 @@
 
-<?php 
+<?php
 $page = "team";
-include './inc/header.php' 
+include './inc/header.php'
 ?>
 
      <header>
@@ -9,24 +9,24 @@ include './inc/header.php'
             <div class="row title">
                 <div class="col-lg-4 col-lg-offset-4">     <!--col-lg-offset-3-->
 
-                        <div class="intro-text">                       
+                        <div class="intro-text">
                             <span class="name">New Users Management</span>
-                            <img src="img/white-star.png">
+                            <hr class="star-white" />
                         </div>
                 </div>
             </div>
 
 
             <div class="row">
-                <?php 
-                    include './inc/menu.php'           
+                <?php
+                    include './inc/menu.php'
                 ?>
 
-                <div class="col-lg-6" id="central">                     
-                    <div class="intro-text-admin table-responsive">  
+                <div class="col-lg-6" id="central">
+                    <div class="intro-text-admin table-responsive">
                     <div class="col-lg-2" style="float:right;">
                             <input id="searchinput" name="searchinput" placeholder="Search" class="form-control input-md" type="search">
-                    </div>                       
+                    </div>
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -219,10 +219,10 @@ include './inc/header.php'
                             </tbody>
                         </table>
                         <button id="validUser" name="singlebutton" class="btn btn-primary">Validate</button>
-                    </div> 
+                    </div>
 
                 </div>
-            </div>            
+            </div>
         </div>
     </header>
  <?php include 'inc/footer.php' ?>

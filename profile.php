@@ -2,11 +2,11 @@
 <header>
   <div class="container middle">
     <div class="row">
-      <div class="col-lg-12">                    
-        <div class="intro-text" id="profile-intro">                       
+      <div class="col-lg-12">
+        <div class="intro-text" id="profile-intro">
           <span class="name">Profile</span>
-          <img class="intro-star" src="img/white-star.png">
-          <?php include './inc/breadcrumb.php' ?>          
+          <hr class="star-white" />
+          <?php include './inc/breadcrumb.php' ?>
         </div>
         <div class="row">
           <div class="col-lg-6">
@@ -14,7 +14,7 @@
               <div class="profile-pic" >
                 <h4>Picture</h4>
                 <img src="http://www.gravatar.com/avatar/<?php echo md5( strtolower( trim( "cedric.wident@gmail.com" ) ) ); ?>?s=1000" class="img-responsive">
-                <!-- File Button --> 
+                <!-- File Button -->
                 <div class="form-group">
                   <input type="file" id="exampleInputFile">
                 </div>
@@ -30,21 +30,21 @@
                   <fieldset>
                     <!-- Text input-->
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="name">Name</label>  
+                      <label class="col-md-4 control-label" for="name">Name</label>
                       <div class="col-md-6">
                         <input id="name" name="name" placeholder="Type your name" class="form-control input-md" type="text">
                       </div>
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="nickname">Nickname</label>  
+                      <label class="col-md-4 control-label" for="nickname">Nickname</label>
                       <div class="col-md-6">
                         <input id="nickname" name="nickname" placeholder="Type your nickname" class="form-control input-md" type="text">
                       </div>
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="email">Email</label>  
+                      <label class="col-md-4 control-label" for="email">Email</label>
                       <div class="col-md-6">
                         <input id="email" name="email" placeholder="Typer your adress mail" class="form-control input-md" type="text">
                       </div>
@@ -65,7 +65,7 @@
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="homeTown">Home Town</label>  
+                      <label class="col-md-4 control-label" for="homeTown">Home Town</label>
                       <div class="col-md-6">
                         <input id="homeTown" name="homeTown" placeholder="Typer your home town" class="form-control input-md" type="text">
                       </div>
@@ -79,13 +79,13 @@
                     </div>
                   </fieldset>
                 </form>
-              </div> 
+              </div>
             </div>
-          </div>  
-        </div> 
-      </div>                    
+          </div>
+        </div>
+      </div>
     </div>
-  </div>            
+  </div>
 </div>
 </header>
 <?php include './inc/footer.php'; ?>

@@ -1,7 +1,7 @@
 
-<?php 
+<?php
 $page = "team";
-include './inc/header.php' 
+include './inc/header.php'
 ?>
 
      <header>
@@ -9,19 +9,19 @@ include './inc/header.php'
              <div class="row title">
                 <div class="col-lg-4 col-lg-offset-4">     <!--col-lg-offset-3-->
 
-                        <div class="intro-text ">                       
+                        <div class="intro-text ">
                             <span class="name">Modifications</span>
-                            <img src="img/white-star.png">
+                            <hr class="star-white" />
                         </div>
                 </div>
             </div>
             <div class="row content">
-                <?php 
-                    include './inc/menu.php'           
+                <?php
+                    include './inc/menu.php'
                 ?>
                 <div class="col-lg-6" id="central">     <!--col-lg-offset-3-->
 
-                    <div class="intro-text-admin table-responsive"> 
+                    <div class="intro-text-admin table-responsive">
                         <div class="subtitle">Modifications</div>
                         <table class="table table-hover">
                             <thead>
@@ -29,7 +29,7 @@ include './inc/header.php'
                                     <th>Name</th>
                                     <th>Categorie</th>
                                     <th>Explanations</th>
-                                    <th>Date</th>                                    
+                                    <th>Date</th>
                                     <th>Author</th>
                                     <th>Accept</th>
                                     <th>Refuse</th>
@@ -220,12 +220,12 @@ include './inc/header.php'
                         </table>
                     </div>
                 </div>
-                <?php 
-                    include './inc/sidebar.php'           
+                <?php
+                    include './inc/sidebar.php'
                 ?>
-           </div>            
+           </div>
         </div>
-    </header>   
+    </header>
     <section class="adjustement">
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">

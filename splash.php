@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="Alexis Matelin">
-           
+
     <title>NestFinder Neigborhood Guide</title>
 
     <!-- Bootstrap Core CSS -->
@@ -15,12 +15,12 @@
 
     <!-- NestFinder CSS -->
     <link rel="stylesheet" href="./css/style.css">
-    
-        <!-- Javascript -->  
+
+        <!-- Javascript -->
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/neighbourhoodguide.js"></script>
-    
+
     <!-- Fonts -->
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -74,36 +74,36 @@
     </nav>
 
         <section class="splash" id="splash">
-            
-            
+
+
         <div >
         <div id="header-index"></div>
         <div class="container index">
             <div class="row">
                 <div class="col-lg-12">
                     <!--<img class="img-responsive" src="img/GPS.png" alt="">-->
-                    
+
                     <div class="intro-text ">
 
 
                         <div class="splash-text">
                             <p>
-                            orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat massa, id lacinia elit 
-                            convallis vitae. Fusce semper mauris sed risus ornare tincidunt. Phasellus dictum libero ac aliquam consequat. 
-                            Cras quis egestas nibh, et facilisis justo. Sed venenatis auctor lorem, in placerat lorem sollicitudin vel. 
+                            orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat massa, id lacinia elit
+                            convallis vitae. Fusce semper mauris sed risus ornare tincidunt. Phasellus dictum libero ac aliquam consequat.
+                            Cras quis egestas nibh, et facilisis justo. Sed venenatis auctor lorem, in placerat lorem sollicitudin vel.
                             Nam convallis a neque at dapibus.
                             </p>
-                            
+
                             <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat massa, id lacinia elit 
-                            convallis vitae. Fusce semper mauris sed risus ornare tincidunt. Phasellus dictum libero ac aliquam consequat. 
-                            Cras quis egestas nibh, et facilisis justo. Sed venenatis auctor lorem, in placerat lorem sollicitudin vel. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pellentesque volutpat massa, id lacinia elit
+                            convallis vitae. Fusce semper mauris sed risus ornare tincidunt. Phasellus dictum libero ac aliquam consequat.
+                            Cras quis egestas nibh, et facilisis justo. Sed venenatis auctor lorem, in placerat lorem sollicitudin vel.
                             Nam convallis a neque at dapibus.
                             </p>
-                            
+
                         </div>
 
-                        <img src="img/white-star.png">
+                        <hr class="star-white" />
                         <div class="row">
                         <div class="span12">
                             <h1>Subscribe to our Newsletter</h1>
@@ -126,10 +126,10 @@
                                         <br />
                                         <input id="subscribe" type="submit" value="Subscribe Now!" class="btn btn-large" />
                                   </form>
-                                </div>    
+                                </div>
                             </div>
                         </div>
-                      
+
                         <div class="page-scroll downarrow">
                             <a href="#about" title="Discover the guide!" class="fa fa-arrow-down"></a>
 
@@ -140,16 +140,16 @@
             </div>
 
         </div>
-    </div> 
+    </div>
 
 </section>
-                                        
+
     <section class="success about" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About Us</h2>
-                    <hr class="star-primary">
+                    <hr class="star-blue">
                 </div>
             </div>
             <div class="row">
@@ -163,12 +163,12 @@
                     <p>
                         At Nestfinder, we recognize that a city's inhabitants are those best placed to help others discover their city.
                         This is why we wish to work in tandem to make this guide, your guide, written by Montrealers for Montrealers.
-                        
+
                     </p>
                 </div>
             </div>
         </div>
-        
+
     </section>
 
    <?php if ($page != "quartier"): ?>
@@ -219,10 +219,10 @@
 
     <?php endif; ?>
 
-    <!-- Javascript -->  
+    <!-- Javascript -->
    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="./js/handlebars-v1.3.0.js"></script>
-     
-        
+
+
     </body>
 </html>

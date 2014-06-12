@@ -8,7 +8,7 @@ include './inc/header.php'
         <div class="row">
             <div class="col-lg-12">
                 <h2 class="text-center">Administration</h2>
-                <hr class="star-primary">
+                <hr class="star-blue">
                 <?php include './inc/breadcrumb.php' ?>
             </div>
         </div>
