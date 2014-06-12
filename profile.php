@@ -25,7 +25,7 @@
             <div class="col-lg-6">
              <div class="intro-text-form profile-right" id="profile-wrapper">
               <div class="log-form">
-                <form class="form-horizontal">
+                <form class="form-inline">
                     <!-- Text input-->
                     <fieldset class="legends">
                     <legend><h4>Informations</h4></legend>
