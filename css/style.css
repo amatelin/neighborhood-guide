@@ -615,8 +615,7 @@ header .fa-arrow-down:focus {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 4px 15px 2
-    5px;
+    padding: 4px 15px 25px;
     font-size: 14px;
     color: white;
     font-weight: bold;
