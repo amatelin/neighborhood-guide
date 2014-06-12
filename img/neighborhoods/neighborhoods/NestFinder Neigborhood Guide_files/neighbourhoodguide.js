@@ -22,27 +22,13 @@ $(function() {
 });
 
 // Highlight the top nav as scrolling occurs
-//$('body').scrollspy({
-//    target: '.navbar-fixed-top'
-//})
-$(function() {
-    $('section').on('scrollSpy:enter', function() {
-        $('.page-scroll a').removeClass('page-scroll-hover')
-        $('.page-scroll a[href="#' + $(this).attr('id') + '"]').addClass('page-scroll-hover')
-        //console.log('enter:', $(this).attr('id'));
-    });
-
-    $('.nav.navbar-nav.navbar-right').hover(function() {
-        $('.page-scroll a').removeClass('page-scroll-hover')
-    })
-
-    $('section').scrollSpy();
-
-});
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})
 
 
-function navScroll(){
-    if ($('#header-index').length > 0) {
+function navScroll(){    
+    if ($('#header-index').length > 0) { 
         var shiftWindow = function() { scrollBy(0, 0) };
         if (location.hash) shiftWindow();
         window.addEventListener("hashchange", shiftWindow);
@@ -51,13 +37,13 @@ function navScroll(){
         var nav = $('nav');
         var actualPosition = $(window).scrollTop();
 
-        if(actualPosition >= headerPictureSize){
-                nav.removeClass('not-displayed');
-                nav.fadeIn("fast");
+        if(actualPosition >= headerPictureSize){ 
+                nav.removeClass('not-displayed');       
+                nav.fadeIn("fast");       
         }
 
         $(window).scroll(function(e){
-            if($(window).scrollTop() >= headerPictureSize){
+            if($(window).scrollTop() >= headerPictureSize){         
                 nav.fadeIn("fast");
             }
             else if($(window).scrollTop() <= headerPictureSize){
@@ -70,10 +56,10 @@ function navScroll(){
 function tabNavigation(){
     var monTab = [];
     $.each($('.tab ul li h4'),function(){
-        monTab.push($(this).text().replace(' ','_'));
+        monTab.push($(this).text().replace(' ','_'));        
         $(this).click(function(){
-            $('#'+$('#neighborhoods_list .active h4').text().replace(' ','_')).addClass('not-displayed');
-            $('#neighborhoods_list .active').removeClass('active');
+            $('#'+$('#neighborhoods-list .active h4').text().replace(' ','_')).addClass('not-displayed');
+            $('#neighborhoods-list .active').removeClass('active');
             $($(this).parent()).addClass('active');
 
             $('#'+$(this).text().replace(' ','_')).removeClass('not-displayed');
@@ -108,7 +94,7 @@ function mailIcon(messages){
             el.addClass('new-msg');
         }
         else if(el.hasClass('fa-envelope')){
-            el.removeClass('fa-envelope');
+            el.removeClass('fa-envelope');            
             el.removeClass('new-msg');
             el.addClass('fa-envelope-o');
             el.addClass('no-msg');
@@ -153,10 +139,8 @@ function filterDate(){
         var rowMonth = parseInt(rowDate.split('/')[1]);
         var rowYear = parseInt(rowDate.split('/')[2].split(' ')[0]);
 
-        console.log('RowDay : ' + rowDay + ' - dayFirstDate : '+ dayFirstDate + ' - daySecondDate : '+daySecondDate);
-        if(!(rowYear>=yearFirstDate && rowYear<=yearSecondDate) || ((rowYear>=yearFirstDate && rowYear<=yearSecondDate) && !(rowMonth>=monthFirstDate && rowMonth<=monthSecondDate)) || ((rowYear>=yearFirstDate && rowYear<=yearSecondDate) && (rowMonth>=monthFirstDate && rowMonth<=monthSecondDate)) && !(rowDay>=dayFirstDate && rowDay<=daySecondDate)  ){
-            el.remove(); 
-            console.log('removed');       
+        if(rowDay<daySecondDate && rowDay>dayFirstDate){
+            console.log(el);
         }
     });
 
@@ -173,6 +157,8 @@ $(window).load(function(){
     navScroll();
     tabNavigation();
     filterDate();
+    $('.datepicker').datepicker();
+
 });
 
 function deleteAcctount(){

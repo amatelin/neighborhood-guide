@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="Alexis Matelin">
+
+    <title>NestFinder Neigborhood Guide</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="NestFinder%20Neigborhood%20Guide_files/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <!-- NestFinder CSS -->
+    <link rel="stylesheet" href="NestFinder%20Neigborhood%20Guide_files/style.css">
+    <link rel="stylesheet" href="NestFinder%20Neigborhood%20Guide_files/fotorama.css">
+
+    <!-- CSS body { overflow: hidden } hack -->
+        <link rel="stylesheet" href="NestFinder%20Neigborhood%20Guide_files/datepicker.css">
+
+
+        <!-- Javascript -->
+    <script src="NestFinder%20Neigborhood%20Guide_files/jquery-2.js"></script>
+    <script src="NestFinder%20Neigborhood%20Guide_files/bootstrap.js"></script>
+    <script src="NestFinder%20Neigborhood%20Guide_files/neighbourhoodguide.js"></script>
+    <script src="NestFinder%20Neigborhood%20Guide_files/bootstrap-datepicker.js"></script>
+    <script src="NestFinder%20Neigborhood%20Guide_files/administration.js"></script>
+    <script type="text/javascript" src="NestFinder%20Neigborhood%20Guide_files/jquery_002.js"></script>
+
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="NestFinder%20Neigborhood%20Guide_files/font-awesome.css">
+    <link href="NestFinder%20Neigborhood%20Guide_files/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="NestFinder%20Neigborhood%20Guide_files/css.css" rel="stylesheet" type="text/css">
+
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css"></style></head>
+
+<body id="page-top" class="index">
+
+
+        <nav class="navbar my-navbar-default navbar-fixed-top">
+    
+        <div class="container-navbar">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="logo"></span>
+                                <a class="navbar-brand" href="http://localhost:8888/neighborhood-guide/index.php">NestFinder</a>
+                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                                    <li class="hidden">
+                        <a href="http://localhost:8888/neighborhood-guide/index.php#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="http://localhost:8888/neighborhood-guide/index.php#neighborhoods-list">Visit Neighbourhoods</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="http://localhost:8888/neighborhood-guide/index.php#contribute">Contribute</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="http://localhost:8888/neighborhood-guide/index.php#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#"><i id="mail" class="fa fa-envelope-o"></i></a>
+                    </li>
+                    <li class="page-scroll">
+                        <div class="btn-group btn-group-nav">
+                          <div class="btn" data-toggle="dropdown">
+                                <a href="http://localhost:8888/neighborhood-guide/profile.php"><i class="fa fa-gear"></i></a>
+                                <span class="caret white-caret"></span>
+                          </div>
+                          <ul class="dropdown-menu">
+                            <li><a href="http://localhost:8888/neighborhood-guide/addThing.php">Add Place</a></li>
+                            <li><a href="http://localhost:8888/neighborhood-guide/register.php">Register</a></li>
+                            <li><a href="http://localhost:8888/neighborhood-guide/login.php">Login</a></li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li class="page-scroll menu">
+                        <div class="btn-group btn-group-nav">
+                          <div class="btn xbtn-default xdropdown-toggle" data-toggle="dropdown">
+                              <a href="http://localhost:8888/neighborhood-guide/profile.php"><img src="NestFinder%20Neigborhood%20Guide_files/2c72ea8db092f7ef2746d5eb4f8ee645.jpg" class="nav-profile-picture"></a>
+                              <a id="username">Scar-Joo</a>
+                          </div>
+                          <ul class="dropdown-menu">
+                            <li><a href="http://localhost:8888/neighborhood-guide/profile.php">Profile</a></li>
+                                <li><a href="http://localhost:8888/neighborhood-guide/settings.php">Settings</a></li>
+                                <li><a href="http://localhost:8888/neighborhood-guide/administration.php">Administration</a></li>
+                                <li><a href="http://localhost:8888/neighborhood-guide/index.php">Log out</a></li>
+                          </ul>
+                        </div>
+                    </li>
+                
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+  <header>
+
+    <div class="container middle">
+      <div class="row">
+        <div class="col-lg-12 controlpanel">
+
+          <div class="intro-text">
+            <span class="name">Control Panel</span>
+            <img src="NestFinder%20Neigborhood%20Guide_files/white-star.png">
+            <ol class="breadcrumb">
+    <li>
+
+            
+     <a href="http://localhost:8888/">Home</a> » <a href="http://localhost:8888/neighborhood-guide">Neighborhood-guide</a> » Controlpanel    </li>
+</ol>          </div>
+
+          <div class="intro-text  table-responsive">
+            <div class="menulist">
+              <ul>
+                <li><a href="">Notifications</a></li>
+                <li><a href="">Edit Profile</a></li>
+                <li><a href="">Settings</a></li>
+              </ul>
+            </div>
+            <div class="log-form">
+              <form class="form-horizontal">
+                <fieldset class="legends choices">
+                  <legend><h4>Notifications</h4></legend>
+                  <div class="col-lg-2" style="float:right; left:0;">
+                    <input id="searchinput" name="searchinput" placeholder="Search" class="form-control input-md" type="search">
+                  </div>              
+                <table id="myTable" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="header">Subject</th>
+                            <th class="header">Date</th>
+                            <th class="header">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-target="#myModal" data-toggle="modal">
+                            <td>The moderator granted your power as GodUser</td>
+                            <td>03/06/2014 - 13:52:35</td>
+                            <td>Read</td>                      
+                        </tr>
+                        <tr data-target="#myModal" data-toggle="modal">
+                            <td>Your post "ScarJo est pas beau" has been disaprooved</td>
+                            <td>01/12/2015 - 10:58:15</td>
+                            <td>Un-Read</td>
+                        </tr>
+                        <tr data-target="#myModal" data-toggle="modal">
+                            <td>2975 users reacted to your post</td>
+                            <td>03/06/2014 - 13:52:35</td>
+                            <td>Un-Read</td>
+                        </tr>
+                        <tr data-target="#myModal" data-toggle="modal">
+                            <td>The enterprise in which you work has been promoted as best of the year</td>
+                            <td>01/12/2015 - 10:58:15</td>
+                            <td>Read</td>
+                        </tr>
+                        <tr data-target="#myModal" data-toggle="modal">
+                            <td>Le sujet "Le Qébec c'est l'fun" que vous suivez a été supprimé</td>
+                            <td>03/06/2014 - 13:52:35</td>
+                            <td>Read</td>
+                        </tr>
+                    </tbody>
+                  </table>        
+              
+              <form class="form-horizontal">
+                </form></fieldset></form>
+                <fieldset class="legends choices"><legend><h4>Filter <i class="fa fa-plus-square"></i></h4><legend>
+                <div class="dates" style="color:#fff;">From : <input value="01/01/2014" style="color:#000; height:25px;" class="datepicker col-lg-2" type="date"> to : <input value="15/06/2014" style="color:#000; height:25px;" class="datepicker col-lg-2" type="date"></div>
+                </legend></legend></fieldset>
+              
+
+              </div>
+              </div>
+          </div>
+        </div>
+    </div>
+  </header>
+  <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Notification</h4>
+      </div>
+      <div class="modal-body">
+        <div class="subject"></div>
+        <br>
+        <div class="message"></div>
+        <br>
+        <div class="date"></div>
+        <br>
+        <div class="status"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+     <footer class="text-center">
+        <div class="footer-above footer-spacer">
+            <div class="container">
+                <div class="row">
+                    <br>
+                    <br>
+                    <div class="footer-col col-md-4">
+                        <h3>Address</h3>
+                        <p>1009 rue de Bleury
+                            <br>Monteal, QC H1L1L1</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Social Networks</h3>
+                        <ul class="list-inline">
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About NestFinder</h3>
+                        <p>
+                            Nestfinder is a startup created by young Montreal entrepreneurs.
+                            Visit the <a href="http://localhost:8888/neighborhood-guide/team.php">team</a> page to learn more about us!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 copyright">
+                        Copyright © 2014 - NestFinder
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    
+
+    <!-- Javascript -->
+    <script src="NestFinder%20Neigborhood%20Guide_files/jquery.js"></script>
+    <script src="NestFinder%20Neigborhood%20Guide_files/handlebars-v1.js"></script>
+    <script src="NestFinder%20Neigborhood%20Guide_files/fotorama.js"></script>
+
+
+    
+    
+
+<div style="display: block; top: 846px; left: 988px;" class="datepicker dropdown-menu"><div style="display: block;" class="datepicker-days"><table class=" table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">January 2014</th><th class="next">›</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day  old">29</td><td class="day  old">30</td><td class="day  old">31</td><td class="day  active">1</td><td class="day ">2</td><td class="day ">3</td><td class="day ">4</td></tr><tr><td class="day ">5</td><td class="day ">6</td><td class="day ">7</td><td class="day ">8</td><td class="day ">9</td><td class="day ">10</td><td class="day ">11</td></tr><tr><td class="day ">12</td><td class="day ">13</td><td class="day ">14</td><td class="day ">15</td><td class="day ">16</td><td class="day ">17</td><td class="day ">18</td></tr><tr><td class="day ">19</td><td class="day ">20</td><td class="day ">21</td><td class="day ">22</td><td class="day ">23</td><td class="day ">24</td><td class="day ">25</td></tr><tr><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td><td class="day ">29</td><td class="day ">30</td><td class="day ">31</td><td class="day  new">1</td></tr><tr><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td><td class="day  new">5</td><td class="day  new">6</td><td class="day  new">7</td><td class="day  new">8</td></tr></tbody></table></div><div style="display: none;" class="datepicker-months"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2014</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month active">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div style="display: none;" class="datepicker-years"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year active">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div><div class="datepicker dropdown-menu"><div style="display: block;" class="datepicker-days"><table class=" table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">March 2015</th><th class="next">›</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day  old">22</td><td class="day  old">23</td><td class="day  old">24</td><td class="day  old">25</td><td class="day  old">26</td><td class="day  old">27</td><td class="day  old">28</td></tr><tr><td class="day ">1</td><td class="day ">2</td><td class="day ">3</td><td class="day ">4</td><td class="day ">5</td><td class="day  active">6</td><td class="day ">7</td></tr><tr><td class="day ">8</td><td class="day ">9</td><td class="day ">10</td><td class="day ">11</td><td class="day ">12</td><td class="day ">13</td><td class="day ">14</td></tr><tr><td class="day ">15</td><td class="day ">16</td><td class="day ">17</td><td class="day ">18</td><td class="day ">19</td><td class="day ">20</td><td class="day ">21</td></tr><tr><td class="day ">22</td><td class="day ">23</td><td class="day ">24</td><td class="day ">25</td><td class="day ">26</td><td class="day ">27</td><td class="day ">28</td></tr><tr><td class="day ">29</td><td class="day ">30</td><td class="day ">31</td><td class="day  new">1</td><td class="day  new">2</td><td class="day  new">3</td><td class="day  new">4</td></tr></tbody></table></div><div style="display: none;" class="datepicker-months"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2015</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month active">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div style="display: none;" class="datepicker-years"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year active">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div><div class="datepicker dropdown-menu"><div class="datepicker-days"><table class=" table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch"></th><th class="next">›</th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody></tbody></table></div><div class="datepicker-months"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch"></th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody></table></div><div class="datepicker-years"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="switch"></th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"></td></tr></tbody></table></div></div></body></html>

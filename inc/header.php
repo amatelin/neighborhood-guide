@@ -31,6 +31,7 @@
     <script src="./js/scrollspy.js"></script>
     <script src="./js/bootstrap-datepicker.js"></script>
     <script src="./js/administration.js"></script>
+    <script type="text/javascript" src="./js/jquery.tablesorter.js"></script>
 
 
     <!-- Fonts -->
