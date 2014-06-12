@@ -1031,11 +1031,21 @@ nav {
     display: inline;
     height: 60px;
 }
+#presentation-menu a:hover {
+    color: #18bc9c;
+}
+.fa-angle-right:hover:before {
+    color: #18bc9c;
+}
+.fa-angle-left:hover:before {
+    color: #18bc9c;
+}
 @media(max-width: 892px) {
     .next-neighbourhood-name {
         display: none;
     }
 }
+
 #presentation-menu h1 {
     margin: 0 auto;
     text-align: center;
