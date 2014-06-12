@@ -863,12 +863,12 @@ header .fa-arrow-down:focus {
 
 .navbar .navbar-nav li a:hover, .page-scroll-hover {
     outline: 0;
-    background-color: #233140;
+    background-color: #233140 !important;
     color: #18BC9C !important;
 }
 
 #arrow {
-    background: none;
+    background: none !important;
     color: white !important;
 }
 
