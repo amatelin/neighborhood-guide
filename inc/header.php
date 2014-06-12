@@ -28,6 +28,7 @@
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/neighbourhoodguide.js"></script>
+    <script src="./js/scrollspy.js"></script>
     <script src="./js/bootstrap-datepicker.js"></script>
     <script src="./js/administration.js"></script>
 
@@ -218,10 +219,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#neighborhoods-list">Visit the Neighbourhoods</a>
+                        <a href="#neighborhoods_list">Visit the Neighbourhoods</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contribute">Contribute</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>

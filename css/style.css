@@ -851,20 +851,19 @@ header .fa-arrow-down:focus {
     color:#2c3e50;
     background-color: red;
 }
-.navbar .navbar-nav ul a:hover{
+.navbar .navbar-nav ul a:hover {
     font-size: 1em;
     color: #18BC9C;
 }
-
-
 .navbar .navbar-nav li a:focus,
-.navbar .navbar-nav li a:visited
-{
+.navbar .navbar-nav li a:visited {
     background-color: #2C3E50;
 }
-.navbar .navbar-nav li a:hover {
+
+.navbar .navbar-nav li a:hover, .page-scroll-hover {
     outline: 0;
     background-color: #233140;
+    color: #18BC9C !important;
 }
 .navbar-default,
 .navbar-inverse {
