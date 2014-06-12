@@ -4,7 +4,7 @@ $page = "index";
 include './inc/header.php'
 ?>
 
-    <section id="neighborhoods-list">
+    <section id="neighborhoods_list">
         <div class="container">
 
             <div class="neighborhoods-central">

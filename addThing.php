@@ -6,7 +6,7 @@
                 <div class="col-lg-12">
                     <div class="intro-text">
                         <span class="name">Add Place</span>
-                        <img src="img/white-star.png">
+                        <img class="intro-star" src="img/white-star.png">
                         <?php include './inc/breadcrumb.php' ?>
                     </div>
                 </div>
@@ -15,6 +15,7 @@
                 <div class="col-lg-12">
                     <div class="intro-text-form">
                         <div class="log-form">
+                            
                             <form class="form-horizontal">
                                 <fieldset>
 
@@ -42,18 +43,19 @@
                                     </style>
 
                                     <!-- Choice Categories -->
+                                    <span class="white">Choose a Category</span>
                                     <div id="jstree">
                                         <ul>
                                             <li class="jstree-open"><a href="#entertainement">Entertainement</a>
                                                 <ul>
                                                     <li><a href="#cinema">Cinema</a></li>
-                                                    <li><a href="#theatre">Theatre</a></li>
+                                                    <li><a href="#Bons Plans">Bons Plans</a></li>
                                                 </ul>
                                             </li>
                                             <li class="jstree-open"><a href="#restaurant">Restaurants</a>
                                                 <ul>
-                                                    <li><a href="#cafe">Cafe</a></li>
-                                                    <li><a href="#resto">Resto</a></li>
+                                                    <li><a href="#Café">Cafe</a></li>
+                                                    <li><a href="#Restaurant">Resto</a></li>
                                                 </ul>
                                             </li>
                                           </ul>
