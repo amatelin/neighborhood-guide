@@ -6,7 +6,7 @@
                 <div class="col-lg-12">                    
                     <div class="intro-text">                       
                         <span class="name">Login</span>
-                        <img src="img/white-star.png">
+                        <img class="intro-star" src="img/white-star.png">
                         <?php include './inc/breadcrumb.php' ?>                    
                         <div class="log-form">
                             <form class="form-horizontal">

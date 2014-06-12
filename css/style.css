@@ -486,9 +486,13 @@ header .intro-text .name {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
+    padding-top: 15px;
 }
 header .intro-text hr.star-light{
     background-color: transparent;
+}
+header .intro-star {
+    margin-bottom: 0;
 }
 header .intro-text .skills {
     font-size: 1.25em;
@@ -557,7 +561,7 @@ header .form-control:-ms-input-placeholder {
     background-color: #2C3E50;
 }
 
-.page-scroll a {
+.page-scroll a.fa {
     font-size: 50px;
     color: white;
 }
@@ -671,9 +675,6 @@ header .fa-arrow-down:focus {
     .navbar-toggle{
         margin-top: 5px;
     }
-    .navbar-fixed-top .navbar-brand {
-        font-size: 25px;
-    }
 
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
@@ -751,7 +752,7 @@ header .fa-arrow-down:focus {
 
 @media(max-width: 480px) {
     .navbar-fixed-top .navbar-brand {
-        font-size: 23px;
+        font-size: 19px;
     }
     /*.navbar-header {
         padding-top: 24px;
@@ -1101,9 +1102,6 @@ span.right a {
     width: 100%;
 }
 @media(max-width: 660px){
-    .navbar-fixed-top .navbar-brand {
-        font-size: 20px;
-    }
     .viewer .shadow {
         width: 99%;
         height: 10%;
