@@ -612,7 +612,7 @@ header .fa-arrow-down:focus {
     font-variant: normal;
     font-weight:normal;
     padding-top: 15px;
-    text-align: justify;
+    text-align: left;
 }
 
 .portfolio-link, .portfolio-link:hover, .portfolio-link:active {
