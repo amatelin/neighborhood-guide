@@ -2236,6 +2236,14 @@ header .intro-text-team{
     margin-right: 15px;
 }
 
+.legends-profile{
+    border: 1px solid #666665;
+    width: 335px;
+    float: left;
+    margin: 0px 15px 15px 0px;
+    margin-right: 15px;
+}
+
 legend{
     width: auto;
     border-width: 0px 0px 0px;
@@ -2369,9 +2377,7 @@ legend{
 
 /**
 *CONTROL PANEL
-    Notifications
     Edit profile
-    Settings
 **/
 .panel-choice{
     color: #FFFFFF;
@@ -2396,6 +2402,14 @@ legend{
 #aboutme{
     height: 104px;
     resize: none;
+}
+
+.legends-picture{
+    border: 1px solid #666665;
+    width: 100%;
+    float: left;
+    margin: 0px 15px 15px 0px;
+    margin-right: 15px;
 }
 
 /*

@@ -27,7 +27,7 @@
               <div class="log-form">
                 <form class="form-horizontal">
                     <!-- Text input-->
-                    <fieldset class="legends">
+                    <fieldset class="legends-profile">
                     <legend><h4>Informations</h4></legend>
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="name">Name</label>
@@ -58,7 +58,7 @@
                     </div>
                   </fieldset>
                     <!-- Text input-->
-                    <fieldset class="legends">
+                    <fieldset class="legends-profile">
                     <legend><h4>Login</h4></legend>
                     <div class="form-group">
                       <label class="col-md-4 control-label" for="email">Email</label>
