@@ -155,8 +155,8 @@ function filterDate(){
 
         console.log('RowDay : ' + rowDay + ' - dayFirstDate : '+ dayFirstDate + ' - daySecondDate : '+daySecondDate);
         if(!(rowYear>=yearFirstDate && rowYear<=yearSecondDate) || ((rowYear>=yearFirstDate && rowYear<=yearSecondDate) && !(rowMonth>=monthFirstDate && rowMonth<=monthSecondDate)) || ((rowYear>=yearFirstDate && rowYear<=yearSecondDate) && (rowMonth>=monthFirstDate && rowMonth<=monthSecondDate)) && !(rowDay>=dayFirstDate && rowDay<=daySecondDate)  ){
-            el.remove(); 
-            console.log('removed');       
+            //el.remove(); 
+            //console.log('removed');       
         }
     });
 

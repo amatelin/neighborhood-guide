@@ -2522,6 +2522,9 @@ legend{
 .controlpanel legend{
     color: white;
 }
+.controlpanel .intro-text {
+    position: relative;
+}
 .controlpanel .intro-text tbody tr td{
     text-align: left;
 }
@@ -2532,8 +2535,7 @@ legend{
 .controlpanel .intro-text tbody tr:hover {
     color:#2C3E50;
 }
-.controlpanel fieldset
-{
+.controlpanel fieldset {
     color:#fff;
 }
 .controlpanel .menulist ul {
@@ -2554,10 +2556,16 @@ legend{
     font-size: 12px;
 }
 
+.choices {
+     background:rgba(35,49,64,.8);
+}
 .controlpanel .legends{
     border: 1px solid #666665;
     border-radius: 9px;
     padding: 5px;
+    background:rgba(35,49,64,.8);
+    width: 900px;
+    margin-left: -100px;
 }
 
 .controlpanel legend{

@@ -18,9 +18,9 @@ include './inc/header.php'
           <div class="intro-text  table-responsive">
             <div class="menulist">
               <ul>
-                <li><a href="">Notifications</a></li>
-                <li><a href="">Edit Profile</a></li>
-                <li><a href="">Settings</a></li>
+                <li><a href="controlpanel.php">Notifications</a></li>
+                <li><a href="editprofile.php">Edit Profile</a></li>
+                <li><a href="settings.php">Settings</a></li>
               </ul>
             </div>
             <div class="log-form">
@@ -67,6 +67,7 @@ include './inc/header.php'
                     </tbody>
                   </table>        
               </form>
+      
               <form class="form-horizontal">
                 </fieldset>
                 <fieldset class="legends choices"><legend><h4>Filter <i class="fa fa-plus-square"></i></h4><legend>
@@ -75,6 +76,7 @@ include './inc/header.php'
               </form>
 
               </div>
+              
               </div>
           </div>
         </div>

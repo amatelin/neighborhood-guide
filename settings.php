@@ -4,18 +4,26 @@
   <div class="container middle">
     <div class="row">
       <div class="col-lg-12">
-        <div class="intro-text ">
-          <span class="name">Settings</span>
-          <hr class="star-white" />
-          <?php include './inc/breadcrumb.php' ?>
-        </div>
+          <div class="intro-text">
+            <span class="name">Control Panel</span>
+            <img src="img/white-star.png">
+            <?php include './inc/breadcrumb.php' ?>
+          </div>
         <div class="intro-text-form">
           <div class="log-form">
+                          <h4>
+                <a href="controlpanel.php">Notifications</a>
+                <a href="editprofile.php">Edit Profile</a>
+                <a href="settings.php">Settings</a>
+              </h4>
             <form class="form-horizontal">
+                
               <fieldset class="legends choices">
                 <legend><h4>Informations</h4></legend>
                 <!-- Text input-->
                 <div class="form-group">
+                    
+                    
                   <label class="col-md-4 control-label" for="name">Profile</label>
                   <div class="col-md-7">
                     <!-- <input class="" type="checkbox"><span>Public (allow anyone to see your profile)</span>
