@@ -7,9 +7,9 @@
         <div id="presentation-menu">
             <span class="right">
                 <div class="next-neighbourhood-name"><a class="next-neighbourhood goto prev name" href="#COTE ST-LUC">COTE ST-LUC</a></div>
-                <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-left valign"></i></a>
+                <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-angle-left valign"></i></a>
                 <h1 class="goto name"> LE PLATEAU </h1>
-                <a class="goto next" href="#WESTMOUNT"><i class="fa fa-arrow-right valign"></i></a>
+                <a class="goto next" href="#WESTMOUNT"><i class="fa fa-angle-right valign"></i></a>
                 <div class="next-neighbourhood-name"><a class="next-neighbourhood goto next name" href="#WESTMOUNT">WESTMOUNT</a></div>
             </span>
 
@@ -21,18 +21,17 @@
                 <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>Overview</h2>
-                    <img src="img/white-star.png">
+                    <hr class="star-white" />
                     <br/>
                     <br>
                 </div>
-                <p>
+                <p id="overview">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
                     eu fugiat nulla pariatur.
-                    <br>
-                    <img id="showMap" src="./img/Boussole.png">
                 </p>
+                <img id="showMap" src="./img/Boussole.png">
             </div>
 
             <div class="shadow-main scroll">
@@ -40,92 +39,94 @@
                 <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>The Neighbourhood</h2>
-                    <img src="img/white-star.png">
+                    <hr class="star-white" />
                     <?php include './inc/breadcrumb.php' ?>
                     <br/>
                     <br/>
                 </div>
-                <div class="place scroll">
-                    <a name="Restaurant" href="#">Restaurants</a>
-                    <a class="square" href="addThing.php#restaurant">
-                        <i class="fa fa-plus"></i>
-                    </a>
-                    <ul class="scroll">
-                        <li><a name="Au Petit Bigorneau" href="#">Au Petit Bigorneau</a></li>
-                        <li><a name="Satisfaction" href="#">Satisfaction</a></li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <a name="Restaurant" href="#">Café</a>
-                    <a class="square" href="addThing.php#restaurant">
-                        <i class="fa fa-plus"></i>
-                    </a>
-                    <ul class="scroll">
-                        <li><a name="Au Petit Bigorneau" href="#">Café 1</a></li>
-                        <li><a name="Satisfaction" href="#">Café 2</a></li>
-                        <li><a name="Satisfaction" href="#">Café 3</a></li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Shopping</li>
-                    <ul class="scroll">
-                        <li>Stores</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Sports</li>
-                    <ul class="scroll">
-                        <li>Gyms</li>
-                        <li>Soccer Fields</li>
-                        <li>Baseball Fields</li>
-                        <li>Swimming Pools</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Events</li>
-                    <ul class="scroll">
-                        <li>Shows</li>
-                        <li>Festivals</li>
-                        <li>Races</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Financial</li>
-                    <ul class="scroll">
-                        <li>Banks</li>
-                        <li>ATMs</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Accommodations</li>
-                    <ul class="scroll">
-                        <li>Hotels</li>
-                        <li>Motels</li>
-                        <li>Camping</li>
-                        <li>Bed Breakfast</li>
-                        <li>Hostels</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Public Services</li>
-                    <ul class="scroll">
-                        <li>Police Stations</li>
-                        <li>Fire Stations</li>
-                        <li>Hospitals</li>
-                        <li>Schools</li>
-                        <li>CLSC</li>
-                        <li>Library</li>
-                    </ul>
-                </div>
-                <div class="place scroll">
-                    <li>Transportation</li>
-                    <ul class="scroll">
-                        <li>Metro Stations</li>
-                        <li>Bus Stations</li>
-                        <li>Intercity Bus Station</li>
-                        <li>Train Stations</li>
-                        <li>Airports</li>
-                    </ul>
+                <div id="listing">
+                    <div class="place scroll">
+                        <a name="Restaurant" href="#">Restaurants</a>
+                        <a class="square" href="addThing.php#restaurant">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <ul class="scroll">
+                            <li><a name="Au Petit Bigorneau" href="#">Au Petit Bigorneau</a></li>
+                            <li><a name="Satisfaction" href="#">Satisfaction</a></li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <a name="Restaurant" href="#">Café</a>
+                        <a class="square" href="addThing.php#restaurant">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <ul class="scroll">
+                            <li><a name="Au Petit Bigorneau" href="#">Café 1</a></li>
+                            <li><a name="Satisfaction" href="#">Café 2</a></li>
+                            <li><a name="Satisfaction" href="#">Café 3</a></li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Shopping</li>
+                        <ul class="scroll">
+                            <li>Stores</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Sports</li>
+                        <ul class="scroll">
+                            <li>Gyms</li>
+                            <li>Soccer Fields</li>
+                            <li>Baseball Fields</li>
+                            <li>Swimming Pools</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Events</li>
+                        <ul class="scroll">
+                            <li>Shows</li>
+                            <li>Festivals</li>
+                            <li>Races</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Financial</li>
+                        <ul class="scroll">
+                            <li>Banks</li>
+                            <li>ATMs</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Accommodations</li>
+                        <ul class="scroll">
+                            <li>Hotels</li>
+                            <li>Motels</li>
+                            <li>Camping</li>
+                            <li>Bed Breakfast</li>
+                            <li>Hostels</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Public Services</li>
+                        <ul class="scroll">
+                            <li>Police Stations</li>
+                            <li>Fire Stations</li>
+                            <li>Hospitals</li>
+                            <li>Schools</li>
+                            <li>CLSC</li>
+                            <li>Library</li>
+                        </ul>
+                    </div>
+                    <div class="place scroll">
+                        <li>Transportation</li>
+                        <ul class="scroll">
+                            <li>Metro Stations</li>
+                            <li>Bus Stations</li>
+                            <li>Intercity Bus Station</li>
+                            <li>Train Stations</li>
+                            <li>Airports</li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="padding_shadow_main">&nbsp;</div>
             </div>
@@ -134,9 +135,9 @@
             <div class="mapbar shadow_map">
                 <span id="mapbar-title"><i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span></span>
                 <span class="right">
-                    <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-left valign"></i></a>
+                    <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-angle-left valign"></i></a>
                     <span class="goto name">LE PLATEAU</span>
-                    <a class="goto next"href="#WESTMOUNT"><i class="fa fa-arrow-right valign"></i></a>
+                    <a class="goto next"href="#WESTMOUNT"><i class="fa fa-angle-right valign"></i></a>
                 </span>
             </div>
             <div id="map_canvas"></div>
@@ -174,7 +175,21 @@
             </div>
         </div>
 
-
+        <script id="place-template" type="text/x-handlebars-template">
+            {{#each places }}
+                <div class="place scroll">
+                    <a name="{{this.name}}" href="#">{{this.name}}</a>
+                    <a class="square" href="addThing.php#{{this.name}}">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                    <ul class="scroll">
+                        {{#each this.infos }}
+                        <li><a name="{{this.name}}" href="#">{{this.name}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            {{/each}}
+        </script>
 
         <script id="item-template" type="text/x-handlebars-template">
             {{#each infos}}

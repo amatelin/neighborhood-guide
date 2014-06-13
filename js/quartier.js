@@ -1,5 +1,6 @@
 var datas = {
 	'LE PLATEAU': {
+		desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		coord: {
 			lat: 45.521624,
 			lng: -73.575468
@@ -61,24 +62,31 @@ var datas = {
 			},
 			{
 				name:'Café',
+				color: '56FE62',
 				infos: [
 					{
 						name: 'Café Salé',
 						stars: 4,
 						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-						url: 'resto'
+						url: 'resto',
+						lat: 45.514748,
+						lng: -73.575611
 					},
 					{
 						name: 'Patisserie Laurent Foutrey',
 						stars: 3,
 						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-						url: 'resto'
+						url: 'resto',
+						lat: 45.514230,
+						lng: -73.165671
 					},
 					{
 						name: 'Guimauve & Chocolat',
 						stars: 4,
 						desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.',
-						url: 'resto'
+						url: 'resto',
+						lat: 45.514638,
+						lng: -73.164661
 					},
 				]
 			}
@@ -86,6 +94,7 @@ var datas = {
 		]
 	},
 	'WESTMOUNT': {
+		desc: 'Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		coord: {
 			lat: 46.521624,
 			lng: -74.575468
@@ -104,10 +113,18 @@ var datas = {
 						lng: -74.566611
 					}
 				]
+			},
+			{
+				name: 'Shop',
+				color: 'FE6256',
+				infos: [
+
+				]
 			}
 		]
 	},
 	'COTE ST-LUC': {
+		desc: 'Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
 		coord: {
 			lat: 42.521624,
 			lng: -72.575468
@@ -198,8 +215,11 @@ $(function() {
         if (v1 == (v2 - 1))
 		      return block.fn(this)
 	})
+	// TODO: Refactor and prefix by item_
 	var source   = $('#item-template').html()
 	var template = Handlebars.compile(source)
+
+	var place_template = Handlebars.compile($('#place-template').html())
 
     // Close all Google Maps' marker
     function closeMarker() {
@@ -257,7 +277,14 @@ $(function() {
 		})
 	}
 
-	// Attach marker to li
+	// Show the list of places for the current quartier
+	function showCurrentListing() {
+		var html = place_template(datas[current_place])
+		$('#listing').html(html)
+		attachMarker()
+	}
+
+	// Attach marker to li in #listing
 	function attachMarker() {
 		// Li inner place
 		$('.place').children('ul').children('li').click(function() {
@@ -291,8 +318,8 @@ $(function() {
 		})
 
 		// Li outer
-		$('.place').children('li').click(function() {
-			var name = $(this).children('a').first().attr('name')
+		$('.place').children('a[name]').click(function() {
+			var name = $(this).attr('name')
 			showMap()
 			// Show the good panel
 			for (var x in datas[current_place].places) {
@@ -329,67 +356,76 @@ $(function() {
     }
 
     function checkWindowWidth() {
-        if(!top && (window.innerWidth < 690)) {
-            $('#mapbar-title').html('LE PLATEAU <i class="fa fa-arrow-down fa-arrow-down-quartier"></i>')
-        }
         if(top && (window.innerWidth < 690)) {
-            $('#mapbar-title').html('<i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>')
+            $('#mapbar-title').html('LE PLATEAU <i class="fa fa-arrow-down fa-arrow-down-quartier"></i>')
+            return
         }
+        $('#mapbar-title').html('<i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span>')
     }
+
     //480 x 320 support
-    $('.shadow').click(function (){
-        var min_shadow = '10%'
-            max_shadow = '70%'
-        if((window.innerWidth < 361) && (window.innerHeight < 641)){
-            if((window.innerWidth < 321) && (window.innerHeight < 481)){
-                min_shadow = '15%'
-                max_shadow = '47%'
-            }
-            $('.shadow').css('height', max_shadow)
-            $('.shadow').css('overflow-y', 'auto')
-            $('.viewer .shadow .fa-plus').css('display', 'none')
-            $('.viewer .shadow .fa-minus').css('display', 'block')
-            $('.shadow-main').css('height', min_shadow)
-            $('.shadow-main').css('overflow-y', 'hidden')
+    $('.shadow, .shadow-main').click(function () {
+    	if((window.innerWidth < 661)){
+    		var clicked = ''
+    			not_clicked = ''
+    			min_shadow = '10%'
+    			max_shadow = '69%'
+        if((window.innerWidth < 321)){
+          min_shadow = '15%'
+          max_shadow = '47%'
+        }
+        if($(this).attr("class").indexOf('shadow-main') != -1) {
+        	clicked = '.shadow-main'
+        	not_clicked = '.shadow'
+        }
+        else {
+        	clicked = '.shadow'
+        	not_clicked = '.shadow-main'
+        }
+
+        $(clicked).css({"height": max_shadow, "overflow": "auto"})
+        $('.viewer ' + clicked + ' .fa-plus').css('display', 'none')
+        $('.viewer ' + clicked + ' .fa-minus').css('display', 'block')
+        $(not_clicked).css({"height": min_shadow, "overflow-y": "hidden"})
+        $(not_clicked).scrollTop(0)
+        $('.viewer ' + not_clicked + ' .fa-plus').css('display', 'block')
+        $('.viewer ' + not_clicked + ' .fa-minus').css('display', 'none')
+        if(shadow_main_expanded){
+            $('.shadow-main').css({"height": min_shadow, "overflow-y": "hidden"})
+            $('.shadow-main').scrollTop(0)
             $('.viewer .shadow-main .fa-plus').css('display', 'block')
             $('.viewer .shadow-main .fa-minus').css('display', 'none')
-            if(shadow_expanded){
-                $('.shadow').css('height', min_shadow)
-                $('.shadow').scrollTop(0)
-                $('.shadow').css('overflow-y', 'hidden')
-                $('.viewer .shadow .fa-plus').css('display', 'block')
-                $('.viewer .shadow .fa-minus').css('display', 'none')
-            }
-            shadow_expanded = !shadow_expanded
+            // shadow_main_expanded = !shadow_main_expanded
         }
+        if(shadow_expanded){
+          $('.shadow').css({"height": min_shadow, "overflow-y": "hidden"})
+          $('.shadow').scrollTop(0)
+          $('.viewer .shadow .fa-plus').css('display', 'block')
+          $('.viewer .shadow .fa-minus').css('display', 'none')
+        	// shadow_expanded = !shadow_expanded
+        }
+        if (clicked == ".shadow-main") {
+        	shadow_main_expanded = !shadow_main_expanded
+        }
+        else {
+        	shadow_expanded = !shadow_expanded
+        }
+      }
     })
 
-    $('.shadow-main').click(function (){
-        var min_shadow = '10%'
-            max_shadow = '70%'
-        if((window.innerWidth < 361) && (window.innerHeight < 641)){
-            if((window.innerWidth < 321) && (window.innerHeight < 481)){
-                min_shadow = '15%'
-                max_shadow = '47%'
-            }
-            $('.shadow').css('height', min_shadow)
-            $('.shadow').css('overflow-y', 'hidden')
-            $('.shadow-main').css('height', max_shadow)
-            $('.viewer .shadow .fa-plus').css('display', 'block')
-            $('.viewer .shadow .fa-minus').css('display', 'none')
-            $('.shadow-main').css('overflow-y', 'auto')
-            $('.viewer .shadow-main .fa-plus').css('display', 'none')
-            $('.viewer .shadow-main .fa-minus').css('display', 'block')
-            if(shadow_main_expanded){
-                $('.shadow-main').css('height', min_shadow)
-                $('.shadow-main').scrollTop(0)
-                $('.shadow-main').css('overflow-y', 'hidden')
-                $('.viewer .shadow-main .fa-plus').css('display', 'block')
-                $('.viewer .shadow-main .fa-minus').css('display', 'none')
-            }
-            shadow_main_expanded = !shadow_main_expanded
-        }
-    })
+		$(window).resize(function () {
+			if((window.matchMedia("(min-height: 400px)").matches) && (window.matchMedia("(min-width: 400px)").matches)){
+				$('.iphone-toggle').css('display', 'none')
+				$('.shadow, .shadow-main').css({"height": "auto", "overflow": "auto"})
+			}
+			if((window.matchMedia("(max-width: 660px)").matches)) {
+				$('.viewer .shadow .fa-plus, .viewer .shadow-main .fa-plus').css('display', 'block')
+				$('.shadow-main, .shadow').css({"height": "10%", "overflow": "hidden"})
+			}
+			checkWindowWidth()
+			shadow_expanded = false
+			shadow_main_expanded = false
+		})
 
     /* Display Map on hover
     $('#map').mouseenter(function() {
@@ -426,20 +462,20 @@ $(function() {
 		$('#map').css('top', top ? fromtop : dist)
 		$('#map').find('.right').css('opacity', top ? '0' : '1')
 		$('#map').find('.piti') .css('opacity', top ? '1' : '0')
-		window.setTimeout(function() {top = !top}, 300)
+		top = !top
         checkWindowWidth()
 		if(!top) {
             renderPanel(datas[current_place].places[0], 1)
 		}
 	}
 
-    $('#showMap').click(function() {
-        showMap()
-    })
+  $('#showMap').click(function() {
+      showMap()
+  })
 
-    $('.mapbar').click(function() {
-        showMap()
-    })
+  $('#map').find('.mapbar').click(function() {
+      showMap()
+  })
 
 	// Hide Panel
 	$('.panel-heading').first().children('i').click(function() {
@@ -471,9 +507,11 @@ $(function() {
 		document.location.hash = $(this).attr('href')
 	})
 	function getFromAnchor() {
-		current_place = document.location.hash.substring(1) || 'LE PLATEAU'
+		current_place = document.location.hash.substring(1) || current_place || 'LE PLATEAU'
 		map.setCenter(new google.maps.LatLng(datas[current_place].coord.lat, datas[current_place].coord.lng))
 		renderPanel(datas[current_place].places[0], 1)
+		showCurrentListing()
+		$('#overview').html(datas[current_place].desc)
 		var names = Object.keys(datas)
 		var i = names.indexOf(current_place) + names.length
 		var next = names[(i + 1) % names.length]

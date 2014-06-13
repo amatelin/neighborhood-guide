@@ -12,9 +12,9 @@
         <div class="intro-text-form" id="intro-text-form"> 
           <div class="log-form">
             <h4>
-                <span class="panel-choice">Notifications - </span> 
-                <span class="panel-choice">Edit profile - </span>
-                <span class="panel-choice">Settings</span>
+                <a href="controlpanel.php">Notifications</a>
+                <a href="editprofile.php">Edit Profile</a>
+                <a href="settings.php">Settings</a>
               </h4>
             <form class="form-horizontal">
               <!-- Text input-->
