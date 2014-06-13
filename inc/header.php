@@ -78,7 +78,7 @@
                         <span class="glyphicon glyphicon-list"></span>
                       </button></a>
                       <ul class="dropdown-menu dropdown-home" role="menu" aria-labelledby="dLabel">
-                                <li class="dropdown-submenu">
+                                <li class="dropdown-submenu pull-left">
                                     <a tabindex="-1" href="#">Neibourhoods</a>
                                     <ul class="dropdown-menu">
                                       <li class="dropdown-submenu">
@@ -135,7 +135,6 @@
                                       </li>
                                     </ul>
                                 </li>
-                                <li class="divider"></li>
                                 <li><a href="register.php">Register</a></li>
                                 <li><a href="login.php">Login</a></li>
                                 <li><a href="addThing.php">Add Place</a></li>
