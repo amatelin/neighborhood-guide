@@ -2392,6 +2392,7 @@ legend{
     height: 69px;
     float: left;
     margin: 0px 25px 0px 15px;
+    border-radius: 50px;
 }
 
 .pic-panel input{
@@ -2406,10 +2407,50 @@ legend{
 
 .legends-picture{
     border: 1px solid #666665;
-    width: 100%;
+    width: 99%;
     float: left;
     margin: 0px 15px 15px 0px;
     margin-right: 15px;
+}
+
+@media(max-width: 1199px){
+    .legends-picture{
+    width: 441px;
+    }
+
+    #intro-text-form{
+    width: 625px;
+    }
+
+}
+
+@media(max-width: 767px){
+    #intro-text-form{
+    width: 435px;
+    }
+
+    .legends{
+        width: 320px;
+    }
+
+    .legends-picture{
+    width: 320px;
+    }
+
+}
+
+@media(max-width: 480px) {
+    #intro-text-form{
+    width: 325px;
+    }
+
+    .legends{
+        width: 240px;
+    }
+
+    .legends-picture{
+        width: 240px;
+    }
 }
 
 /*
