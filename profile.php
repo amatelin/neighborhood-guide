@@ -3,9 +3,9 @@
   <div class="container middle">
     <div class="row">
       <div class="col-lg-12">
-        <div class="intro-text" id="profile-intro">
+        <div class="intro-text">
           <span class="name">Profile</span>
-          <hr class="star-white" />
+          <img src="img/white-star.png">
           <?php include './inc/breadcrumb.php' ?>
         </div>
         <div class="row">

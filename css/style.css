@@ -2175,7 +2175,6 @@ header .intro-text-team{
 **/
 #profile-wrapper{
     width:77%;
-    height:505px;
 }
 
 .profile-left{
@@ -2211,10 +2210,6 @@ header .intro-text-team{
 
 #profile-wrapper .log-form h4{
     color: #FFFFFF;
-}
-
-#profile-intro{
-    width: 79%;
 }
 
 .fa-calendar{
@@ -2273,9 +2268,9 @@ legend{
     }
 
     #profile-wrapper{
-        width:77%;
-        height:405px;
+        width:625px;
     }
+
     .profile-pic>img{
         width:300px;
         height: 300px;
@@ -2284,30 +2279,13 @@ legend{
     #profile-wrapper fieldset{
     margin-top:15px;
     }
+
+    .legends-profile{
+        width: 441px;
+    }
 }
 
 @media(max-width: 991px){
-
-    #profile-wrapper{
-        width: 67%;
-    }
-
-    #profile-wrapper.profile-right{
-        height:550px;
-    }
-
-    #profile-wrapper.profile-left{
-        height:300px;
-    }
-
-    #profile-intro{
-        height: 130px;
-        width: 67%;
-    }
-
-    #profile-intro span{
-        font-size: 2em;
-    }
 
     .profile-pic>img{
     width:200px;
@@ -2321,7 +2299,6 @@ legend{
 }
 
 @media(max-width: 480px){
-
     .profile-pic>img{
     width:200px;
     height: 200px;
@@ -2329,6 +2306,14 @@ legend{
 
     #profile-wrapper.profile-left{
         height:300px;
+    }
+
+    .legends{
+        width: 240px;
+    }
+
+    .pic-panel input{
+        margin: 75px 0px 0px 30px;
     }
 
 
@@ -2342,9 +2327,14 @@ legend{
         margin-left: 10px;
     }
 
-    #profile-intro{
-        margin-top: 75px;
+    #profile-wrapper{
+        width: 435px;
     }
+
+    .legends-profile{
+        width: 320px;
+    }
+
 }
 
 @media(max-width: 480px) {
@@ -2366,13 +2356,14 @@ legend{
 
     }
 
-    #profile-intro{
-        width: 325px;
-    }
-
     #profile-wrapper{
         width:325px;
     }
+
+    .legends-profile{
+        width: 240px;
+    }
+
 }
 
 /**
@@ -2396,7 +2387,6 @@ legend{
 }
 
 .pic-panel input{
-    margin-top: 25px;
     color: #FFFFFF;
 }
 
