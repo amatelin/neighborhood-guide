@@ -2218,11 +2218,6 @@ header .intro-text-team{
     background-color: #fff;
 }
 
-.choices{
-    text-align: left;
-    font-size: 15px;
-}
-
 .legends{
     border: 1px solid #666665;
     width: 441px;
@@ -2553,6 +2548,18 @@ legend{
     font-size: 15px;
 }
 
+/**
+*CONTROL PANEL
+    Settings
+**/
+#radio-legends{
+    padding-left: 20px;
+}
+
+.choices{
+    text-align: left;
+    font-size: 15px;
+}
 
 /**
 *CONTROLPANEL
@@ -2601,9 +2608,6 @@ legend{
     font-size: 12px;
 }
 
-.choices {
-     background:rgba(35,49,64,.8);
-}
 .controlpanel .legends{
     border: 1px solid #666665;
     border-radius: 9px;

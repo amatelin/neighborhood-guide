@@ -18,20 +18,20 @@
             </h4>
             <form class="form-horizontal">
               <!-- Text input-->
-<fieldset class="legends-picture">
-              <legend><h4>Picture</h4></legend>
-              <div class="form-group">
-                <div class="col-md-7">
-                  <div class="pic-panel" >
-                    <img src="img/neighborhoods/neighborhoods/joscar.jpg" class="img-responsive">
-                    <!-- File Button --> 
-                    <div class="form-group">
-                      <span><input type="file" id="exampleInputFile"></span>
+              <fieldset class"legends-picture">
+                <legend><h4>Picture</h4></legend>
+                <div class="form-group">
+                  <div class="col-md-7">
+                    <div class="pic-panel" >
+                      <img src="img/neighborhoods/neighborhoods/joscar.jpg" class="img-responsive">
+                      <!-- File Button --> 
+                      <div class="form-group">
+                        <span><input type="file" id="exampleInputFile"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </fieldset>
+              </fieldset>
 
               <fieldset class="legends edit">
                 <legend><h4>Email</h4></legend>
@@ -48,11 +48,11 @@
                 </div>
               </div>
               <div class="form-group">
-            <label class="col-md-3 control-label" for="submit"></label>
-            <div class="col-md-3">
-              <button id="submit" name="submit" class="btn btn-inverse">Confirm</button>
-            </div>
-          </div>
+                <label class="col-md-3 control-label" for="submit"></label>
+                <div class="col-md-3">
+                  <button id="submit" name="submit" class="btn btn-inverse">Confirm</button>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset class="legends edit">
@@ -71,11 +71,11 @@
                 </div>
               </div>
               <div class="form-group">
-            <label class="col-md-3 control-label" for="submit"></label>
-            <div class="col-md-3">
-              <button id="submit" name="submit" class="btn btn-inverse">Confirm</button>
-            </div>
-          </div>
+                <label class="col-md-3 control-label" for="submit"></label>
+                <div class="col-md-3">
+                  <button id="submit" name="submit" class="btn btn-inverse">Confirm</button>
+                </div>
+              </div>
             </fieldset>
 
             <!-- Text input-->
