@@ -28,8 +28,10 @@
     <script src="./js/jquery-2.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/neighbourhoodguide.js"></script>
+    <script src="./js/scrollspy.js"></script>
     <script src="./js/bootstrap-datepicker.js"></script>
     <script src="./js/administration.js"></script>
+    <script type="text/javascript" src="./js/jquery.tablesorter.js"></script>
 
 
     <!-- Fonts -->
@@ -76,7 +78,7 @@
                         <span class="glyphicon glyphicon-list"></span>
                       </button></a>
                       <ul class="dropdown-menu dropdown-home" role="menu" aria-labelledby="dLabel">
-                                <li class="dropdown-submenu">
+                                <li class="dropdown-submenu pull-left">
                                     <a tabindex="-1" href="#">Neibourhoods</a>
                                     <ul class="dropdown-menu">
                                       <li class="dropdown-submenu">
@@ -133,7 +135,6 @@
                                       </li>
                                     </ul>
                                 </li>
-                                <li class="divider"></li>
                                 <li><a href="register.php">Register</a></li>
                                 <li><a href="login.php">Login</a></li>
                                 <li><a href="addThing.php">Add Place</a></li>
@@ -153,7 +154,7 @@
 
                         <div class="gps-image img-responsive">
                             <img width="100%" src="img/map-welcome-copie.png" alt="">
-                            <button type="button" class="btn btn-default bclose">Mouse over each icons to learn more about the Neighbourhood Guide <i class="fa fa-times"></i></button>
+                            <button type="button" class="btn btn-default bclose"><i class="fa fa-times"></i> Mouse over each icons to learn more<br/>about the Neighbourhood Guide </button>
                             <button type="button" class="btn btn-primary bplane" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Want to learn more about how to get around in your neighbourhood? Look no further!"><i class="fa fa-plane"></i></button>
                             <button type="button" class="btn btn-info bhome" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Learn about your neighboorhood, long time resident or not there's always more to discover."><i class="fa fa-home"></i></button>
                             <button type="button" class="btn btn-warning bcutlery" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find restaurants near you or submit your favorites to share them with your community!"><i class="fa fa-cutlery"></i></button>
@@ -161,14 +162,14 @@
                             <button type="button" class="btn btn-danger bcar" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Find a reputable shop, whether it's to fix your car or to fix you a cake the guide can help."><i class="fa fa-car"></i></button>
                         </div>
                         <span class="name">Neighbourhood Guide</span>
-                        <img src="img/white-star.png">
+                        <hr class="star-white" />
                         <span class="skills">
                             The open source neighbourhood guide created by the community for the community.
                         </span>
                         <br/>
                         <br/>
                         <div class="page-scroll">
-                            <a href="#neighborhoods-list" title="Discover the guide!" class="fa fa-arrow-down"></a>
+                            <a id="arrow" href="#neighborhoods_list" title="Discover the guide!" class="fa fa-arrow-down"></a>
                         </div>
                     </div>
                 </div>
@@ -218,10 +219,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#neighborhoods-list">Visit the Neighbourhoods</a>
+                        <a href="#neighborhoods_list">Visit the Neighbourhoods</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#contribute">Contribute</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
@@ -229,11 +233,10 @@
                     <li class="page-scroll">
                         <a href="#"><i  id="mail" class="fa fa-envelope-o no-msg"></i></a>
                     </li>
-                    <li class="page-scroll">
+                    <li class="page-scroll gear">
                         <div class="btn-group btn-group-nav">
                           <div class="btn" data-toggle="dropdown">
-                                <a href="profile.php"><i class="fa fa-gear"></i></a>
-                                <span class="caret white-caret"></span>
+                                <a href="profile.php"><i class="fa fa-gear"></i><span class="caret white-caret"></span></a>
                           </div>
                           <ul class="dropdown-menu">
                             <li><a href="addThing.php">Add Place</a></li>
@@ -262,7 +265,7 @@
                         <a href="index.php#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.php#neighborhoods-list">Visit Neighbourhoods</a>
+                        <a href="index.php#neighborhoods_list">Visit Neighbourhoods</a>
                     </li>
                     <li class="page-scroll">
                         <a href="index.php#contribute">Contribute</a>

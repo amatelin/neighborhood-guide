@@ -7,9 +7,9 @@
         <div id="presentation-menu">
             <span class="right">
                 <div class="next-neighbourhood-name"><a class="next-neighbourhood goto prev name" href="#COTE ST-LUC">COTE ST-LUC</a></div>
-                <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-left valign"></i></a>
+                <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-angle-left valign"></i></a>
                 <h1 class="goto name"> LE PLATEAU </h1>
-                <a class="goto next" href="#WESTMOUNT"><i class="fa fa-arrow-right valign"></i></a>
+                <a class="goto next" href="#WESTMOUNT"><i class="fa fa-angle-right valign"></i></a>
                 <div class="next-neighbourhood-name"><a class="next-neighbourhood goto next name" href="#WESTMOUNT">WESTMOUNT</a></div>
             </span>
 
@@ -21,7 +21,7 @@
                 <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>Overview</h2>
-                    <img src="img/white-star.png">
+                    <hr class="star-white" />
                     <br/>
                     <br>
                 </div>
@@ -39,7 +39,7 @@
                 <i class="fa fa-minus valign iphone-toggle"></i>
                 <div class="col-lg-12 text-center">
                     <h2>The Neighbourhood</h2>
-                    <img src="img/white-star.png">
+                    <hr class="star-white" />
                     <?php include './inc/breadcrumb.php' ?>
                     <br/>
                     <br/>
@@ -135,9 +135,9 @@
             <div class="mapbar shadow_map">
                 <span id="mapbar-title"><i class="fa fa-compass"></i> Map <span class="small">Click to toggle</span></span>
                 <span class="right">
-                    <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-arrow-left valign"></i></a>
+                    <a class="goto prev" href="#WESTMOUNT"><i class="fa fa-angle-left valign"></i></a>
                     <span class="goto name">LE PLATEAU</span>
-                    <a class="goto next"href="#WESTMOUNT"><i class="fa fa-arrow-right valign"></i></a>
+                    <a class="goto next"href="#WESTMOUNT"><i class="fa fa-angle-right valign"></i></a>
                 </span>
             </div>
             <div id="map_canvas"></div>

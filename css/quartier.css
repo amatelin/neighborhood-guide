@@ -48,6 +48,12 @@ body {
     margin-bottom: 0;
 }
 
+
+.goto.prev.name,
+.goto.next.name {
+    font-size: 2em;
+}
+
 footer {
     display: none;
 }

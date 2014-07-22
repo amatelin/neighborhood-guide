@@ -6,7 +6,7 @@
                 <div class="col-lg-12">
                     <div class="intro-text ">
                         <span class="name">Add Restaurant</span>
-                        <img src="img/white-star.png">
+                        <hr class="star-white" />
                         <?php include './inc/breadcrumb.php' ?>
                     </div>
                     <div class="intro-text-form">
